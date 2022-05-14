@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::view('/about-us', 'about-us');
+Route::view('/contact-us', 'contact-us');
+
 Route::post('/contact', function (Request $request) {
 
     Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactMail);

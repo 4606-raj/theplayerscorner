@@ -13,6 +13,8 @@
     <link href="{{ asset('public/css/theme.css') }}" rel="stylesheet" type="text/css" />
     <script type='text/javascript' src='../../ajax.googleapis.com/ajax/libs/mootools/1.3.1/mootools-yui-compressed.js'></script>
 
+    <link rel="stylesheet" href="https://uicdn.toast.com/chart/latest/toastui-chart.min.css" />
+    
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 </head>
 
@@ -63,8 +65,8 @@
                         </a>
 
                         <ul class="uk-navbar-nav uk-hidden-small">
-                            <li class="uk-parent uk-active" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="index.html">Home</a></li>
-                            <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="about.html">About Us</a></li>
+                            <li class="uk-parent uk-active" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="/">Home</a></li>
+                            <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="/about-us">About Us</a></li>
                             
                             <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="teams.html">Teams</a></li>
                             
@@ -85,7 +87,7 @@
                                 </div>
                             </li>
 
-                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="contact-us">Contact us</a></li>
                         </ul>
                         <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
                     </div>
@@ -276,6 +278,8 @@
         }
     });
     </script>
+
+    @stack('script')
 
 </body>
 </html>
