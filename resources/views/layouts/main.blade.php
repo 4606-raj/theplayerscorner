@@ -65,8 +65,8 @@
                         </a>
 
                         <ul class="uk-navbar-nav uk-hidden-small">
-                            <li class="uk-parent uk-active" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="/">Home</a></li>
-                            <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="/about-us">About Us</a></li>
+                            <li class="uk-parent uk-active" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="{{ route('home') }}">Home</a></li>
+                            <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="{{ route('about-us') }}">About Us</a></li>
                             
                             <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="teams.html">Teams</a></li>
                             
@@ -87,7 +87,7 @@
                                 </div>
                             </li>
 
-                            <li><a href="contact-us">Contact us</a></li>
+                            <li><a href="{{ route('contact-us') }}">Contact us</a></li>
                         </ul>
                         <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
                     </div>
