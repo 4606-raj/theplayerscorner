@@ -29,7 +29,7 @@
                                 </li>
 
                                 <li aria-hidden="false" class="uk-height-viewport">
-                                    <div style="background-image: url({{ asset('public/images/main-slider-img.jpg') }});" class="uk-cover-background uk-position-cover"></div>
+                                    <div style="background-image: url(images/main-slider-img.jpg);" class="uk-cover-background uk-position-cover"></div>
                                     <img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="{{ asset('public/images/main-slider-img.jpg') }}" alt="">
 
                                     <div class="uk-position-cover uk-flex-middle">
@@ -77,81 +77,6 @@
     </div>
 </div>
 <!-- Main Slider END-->
-
-<!-- <div class="tm-top-b-box tm-full-width  ">
-    <div class="uk-container uk-container-center">
-        <section id="tm-top-b" class="tm-top-b uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
-
-            <div class="uk-width-1-1">
-                <div class="uk-panel">
-
-                    <div class="va-latest-wrap">
-                        <div class="uk-container uk-container-center">
-                            <div class="va-latest-top">
-                                <h3>Latest <span>Results</span></h3>
-                                <div class="tournament">
-                                    <address>Cambridgeshire UK<br><br></address> </div>
-                                <div class="date">
-                                    November 29, 2015 | 12:00 am </div>
-                            </div>
-                        </div>
-                        <div class="va-latest-middle uk-flex uk-flex-middle">
-                            <div class="uk-container uk-container-center">
-                                <div class="uk-grid uk-flex uk-flex-middle">
-                                    <div class="uk-width-2-12 center">
-                                        <a href="results.html">
-                                            <img src="images/club-logo.png" class="img-polaroid" alt="" title="">
-                                        </a>
-                                    </div>
-                                    <div class="uk-width-3-12 name uk-vertical-align">
-                                        <div class="wrap uk-vertical-align-middle">
-                                            Cambridgehire </div>
-                                    </div>
-                                    <div class="uk-width-2-12 score">
-                                        <div class="title">score</div>
-                                        <div class="table">
-                                            <div class="left"> 3</div>
-                                            <div class="right"> 5</div>
-                                            <div class="uk-clearfix"></div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-width-3-12 name alt uk-vertical-align">
-                                        <div class="wrap uk-vertical-align-middle">
-                                            china </div>
-                                    </div>
-                                    <div class="uk-width-2-12 center">
-                                        <a href="results.html">
-                                           <img src="images/club-logo1.png" class="img-polaroid" alt="" title="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="uk-container uk-container-center">
-                            <div class="va-latest-bottom">
-                                <div class="uk-grid">
-                                    <div class="uk-width-8-12 uk-container-center text">
-                                        <p>Vivamus hendrerit, tortor sed luctus maximus, nunc urna hendrerit nibh, sit amet efficitur libero lorem quis mauris. Nunc a pulvinar lectus. Pellentesque aliquam justo ut rhoncus lobortis. In sed venenatis massa. Sed sodales faucibus odio, eget tempus nibh accumsan ut. Fusce tincidunt semper finibus. Nullam consequat non leo interdum pulvinar.</p>
-                                    </div>
-                                </div>
-
-                                <div class="uk-grid">
-                                    <div class="uk-width-1-1">
-                                        <div class="btn-wrap uk-container-center">
-                                            <a class="read-more" href="results.html">More Info</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-    </div>
-</div> -->
 
 <!-- About Us START-->
 <div class="tm-top-c-box tm-full-width home-about uk-margin-remove-top">
@@ -589,92 +514,8 @@
 </div>
 <!-- Teams END-->
 
-<!-- News Section START-->
-<div class="tm-top-f-box tm-full-width  va-main-our-news">
-    <div class="uk-container uk-container-center">
-        <section id="tm-top-f" class="tm-top-f uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
-            <div class="uk-width-1-1">
-                <div class="uk-panel">
-                    <div class="uk-container uk-container-center">
-                        <div class="uk-grid uk-grid-collapse" data-uk-grid-match="">
-                            <div class="uk-width-1-1">
-                                <div class="our-news-title">
-                                    <h3>Our <span>News</span></h3>
-                                </div>
-                                <!-- <div class="our-news-text">Nullam quis eros tellus. Duis sit amet neque nec orci feugiat tincidunt. Lorem ipsum dolor sit amet,
-                                    <br> consectetur adipiscing elit. Nulla sed turpis aliquet, pharetra enim sit amet, congue erat. 
-                                </div> -->
-                            </div>
-
-                            <article class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 our-news-article" data-uk-grid-match="">
-                                <div class="img-wrap uk-cover-background uk-position-relative" style="background-image: url(images/853d071dfa2f869fbd2a70dbcb3a8f5e.jpg); min-height: 280px;">
-
-
-                                    <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919"></a>
-                                    <img class="uk-invisible" src="images/853d071dfa2f869fbd2a70dbcb3a8f5e.jpg" alt="">
-
-                                </div>
-                                <div style="min-height: 280px;" class="info">
-                                    <div class="date">
-                                        29 JUN, 2021 </div>
-                                    <div class="name">
-                                        <h4>
-                                            <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919">'It's always a taboo': Southall's 'first ever all-female football team' trying to 'prove people wrong'</a>	
-                                        </h4>
-                                    </div>
-                                    <div class="text">
-                                        <p>Despite decades of awareness and attempts at change, the representation of British Asian people in professional football is pitifully low.
-
-                                            According to a report commissioned by the Football Supporters’</p>
-                                        <div class="read-more"><a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </article>
-
-
-                            <article class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 our-news-article" data-uk-grid-match="">
-                                <div class="img-wrap uk-cover-background uk-position-relative" style="background-image: url(images/534579b3c373c09398691a46025fe5e6.jpg); min-height: 280px;">
-
-
-                                    <a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/"></a>
-                                    <img class="uk-invisible" src="images/534579b3c373c09398691a46025fe5e6.jpg" alt="">
-
-                                </div>
-                                <div style="min-height: 280px;" class="info">
-                                    <div class="date">
-                                        8 August, 2021 </div>
-                                    <div class="name">
-                                        <h4>
-                                            <a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/">Southall gets first ever all-female football team</a>		
-                                        </h4>
-                                    </div>
-                                    <div class="text">
-                                        <p>A new women's football team in west London's "Little India" hopes to encourage diversity in football.
-
-                                            It follows government research in 2020 that suggested Asian women were the least physically active group.</p>
-                                        <div class="read-more"><a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </article>
-
-                        </div>
-                    </div>
-                    <div class="all-news-btn"><a href="news.html"><span>All News</span></a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </div>
-</div>
-<!-- News Section END-->
-
 <!-- Gallery START -->
-<div class="tm-top-g-box tm-full-width  ">
+<div class="tm-top-g-box tm-full-width home-gallery">
     <div class="uk-container uk-container-center">
         <section id="tm-top-g" class="tm-top-g uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
             <div class="uk-width-1-1">
@@ -734,7 +575,7 @@
                         <!-- Image 2 -->
                         <div class="uk-width-1-1 uk-width-medium-1-2 uk-width-large-1-4 grid-item tt_6081becaf04f5a1455407d73e09bca13">
                             <div class="gallery-album">
-                                <a href="images/gallery/img-1.jpg" data-uk-lightbox="{group:'my-group'}" class="img-0"><img src="{{ asset('public/images/gallery/img-1.jpg') }}" alt=""></a>
+                                <a href="{{ asset('public/images/gallery/img-1.jpg') }}" data-uk-lightbox="{group:'my-group'}" class="img-0"><img src="{{ asset('public/images/gallery/img-1.jpg') }}" alt=""></a>
                                 <div class="titles">
                                     <div class="title">
                                         Southall Athletic                    
@@ -845,8 +686,92 @@
 </div>
 <!-- Gallery END -->
 
+<!-- News Section START-->
+<div class="tm-top-f-box tm-full-width  va-main-our-news">
+    <div class="uk-container uk-container-center">
+        <section id="tm-top-f" class="tm-top-f uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
+            <div class="uk-width-1-1">
+                <div class="uk-panel">
+                    <div class="uk-container uk-container-center">
+                        <div class="uk-grid uk-grid-collapse" data-uk-grid-match="">
+                            <div class="uk-width-1-1">
+                                <div class="our-news-title">
+                                    <h3>Our <span>News</span></h3>
+                                </div>
+                                <!-- <div class="our-news-text">Nullam quis eros tellus. Duis sit amet neque nec orci feugiat tincidunt. Lorem ipsum dolor sit amet,
+                                    <br> consectetur adipiscing elit. Nulla sed turpis aliquet, pharetra enim sit amet, congue erat. 
+                                </div> -->
+                            </div>
+
+                            <article class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 our-news-article" data-uk-grid-match="">
+                                <div class="img-wrap uk-cover-background uk-position-relative" style="background-image: url({{ asset('public/images/853d071dfa2f869fbd2a70dbcb3a8f5e.jpg') }}); min-height: 344px;">
+
+
+                                    <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919"></a>
+                                    <img class="uk-invisible" src="{{ asset('public/images/853d071dfa2f869fbd2a70dbcb3a8f5e.jpg') }}" alt="">
+
+                                </div>
+                                <div style="min-height: 280px;" class="info">
+                                    <div class="date">
+                                        29 JUN, 2021 </div>
+                                    <div class="name">
+                                        <h4>
+                                            <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919">'It's always a taboo': Southall's 'first ever all-female football team' trying to 'prove people wrong'</a>	
+                                        </h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>Despite decades of awareness and attempts at change, the representation of British Asian people in professional football is pitifully low.
+
+                                            According to a report commissioned by the Football Supporters’</p>
+                                        <div class="read-more"><a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </article>
+
+
+                            <article class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 our-news-article" data-uk-grid-match="">
+                                <div class="img-wrap uk-cover-background uk-position-relative" style="background-image: url({{ asset('public/images/534579b3c373c09398691a46025fe5e6.jpg') }}); min-height: 280px;">
+
+
+                                    <a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/"></a>
+                                    <img class="uk-invisible" src="{{ asset('public/images/534579b3c373c09398691a46025fe5e6.jpg') }}" alt="">
+
+                                </div>
+                                <div style="min-height: 280px;" class="info">
+                                    <div class="date">
+                                        8 August, 2021 </div>
+                                    <div class="name">
+                                        <h4>
+                                            <a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/">Southall gets first ever all-female football team</a>		
+                                        </h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>A new women's football team in west London's "Little India" hopes to encourage diversity in football.
+
+                                            It follows government research in 2020 that suggested Asian women were the least physically active group.</p>
+                                        <div class="read-more"><a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </article>
+
+                        </div>
+                    </div>
+                    <div class="all-news-btn"><a href="news.html"><span>All News</span></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- News Section END-->
+
 <!-- Sponsers Section START -->
-<div class="tm-bottom-c-box tm-full-width  ">
+<div class="tm-bottom-c-box tm-full-width sponsers-sec ">
     <div class="uk-container uk-container-center">
         <section id="tm-bottom-c" class="tm-bottom-c uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
 
@@ -957,147 +882,6 @@
 </div>
 <!-- Sponsers Section END -->
 
-<!-- AACHIEVEMENTS Section START -->
-<!-- <div class="tm-bottom-a-box tm-full-width  ">
-    <div class="uk-container uk-container-center">
-        <section id="tm-bottom-a" class="tm-bottom-a uk-grid uk-grid-collapse" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
-            <div class="uk-width-1-1">
-                <div class="uk-panel tt-achievments-wrap">
-                    <div class="uk-grid uk-grid-collapse">
-                        <div class="uk-width-large-4-10 uk-width-medium-1-1 achievments-block">
-                            <div class="our-awards-main-wrap">
-                                <div class="uk-slidenav-position our-awards" data-uk-slider="{autoplay:true, autoplayInterval:7000}">
-                                    <div class="our-awards-main-title">
-                                        <h2>Our <span>Awards</span></h2>
-                                        <div class="our-awards-btn">
-                                            <a draggable="false" href="../index.html" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slider-item="previous"></a>
-                                            <a draggable="false" href="../index.html" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slider-item="next"></a>
-                                        </div>
-                                    </div>
-                                    <div class="uk-slider-container">
-                                        <ul class="uk-slider uk-grid uk-grid-width-large-1-2">
-                                            <li>
-                                                <div class="img-wrap"><img draggable="false" src="images/award-img.png" alt="">
-                                                </div>
-                                                <div class="text">2014 world cup champion</div>
-                                            </li>
-                                            <li>
-                                                <div class="img-wrap"><img draggable="false" src="images/award-img1.png" alt="">
-                                                </div>
-                                                <div class="text">2014 world cup champion</div>
-                                            </li>
-                                            <li>
-                                                <div class="img-wrap"><img draggable="false" src="images/award-img2.png" alt="">
-                                                </div>
-                                                <div class="text">2014 world cup champion</div>
-                                            </li>
-                                            <li>
-                                                <div class="img-wrap"><img draggable="false" src="images/award-img3.png" alt="">
-                                                </div>
-                                                <div class="text">2014 world cup champion</div>
-                                            </li>
-                                            <li>
-                                                <div class="img-wrap"><img draggable="false" src="images/award-img4.png" alt="">
-                                                </div>
-                                                <div class="text">2014 world cup champion</div>
-                                            </li>
-                                            <li>
-                                                <div class="img-wrap"><img draggable="false" src="images/award-img5.png" alt="">
-                                                </div>
-                                                <div class="text">2014 world cup champion</div>
-                                            </li>
-                                            <li>
-                                                <div class="img-wrap"><img draggable="false" src="images/award-img3.png" alt="">
-                                                </div>
-                                                <div class="text">2014 world cup champion</div>
-                                            </li>
-                                            <li>
-                                                <div class="img-wrap"><img draggable="false" src="images/award-img.png" alt="">
-                                                </div>
-                                                <div class="text">2014 world cup champion</div>
-                                            </li>
-                                            <li>
-                                                <div class="img-wrap"><img draggable="false" src="images/award-img1.png" alt="">
-                                                </div>
-                                                <div class="text">2014 world cup champion</div>
-                                            </li>
-                                            <li>
-                                                <div class="img-wrap"><img draggable="false" src="images/award-img2.png" alt="">
-                                                </div>
-                                                <div class="text">2014 world cup champion</div>
-                                            </li>
-                                            <li>
-                                                <div class="img-wrap"><img draggable="false" src="images/award-img3.png" alt="">
-                                                </div>
-                                                <div class="text">2014 world cup champion</div>
-                                            </li>
-                                            <li>
-                                                <div class="img-wrap"><img draggable="false" src="images/award-img4.png" alt="">
-                                                </div>
-                                                <div class="text">2014 world cup champion</div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="uk-width-large-5-10 uk-width-medium-1-1 achievments-block uk-push-1-10">
-                            <div class="achievments-inner">
-                                <div class="our-awards-main-title">
-                                    <h2>achievements</h2>
-                                </div>
-                                <div class="uk-grid">
-                                    <div class="uk-width-large-2-4 uk-width-medium-1-2 uk-width-small-1-2">
-                                        <div class="item">
-                                            <div class="icon"><img src="images/stat-icon.png" alt="">
-                                            </div>
-                                            <div class="info">
-                                                <div class="number">35</div>
-                                                <div class="text">goals</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-width-large-2-4 uk-width-medium-1-2 uk-width-small-1-2">
-                                        <div class="item">
-                                            <div class="icon"><img src="images/stat-icon1.png" alt="">
-                                            </div>
-                                            <div class="info">
-                                                <div class="number">12</div>
-                                                <div class="text">games played</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-width-large-2-4 uk-width-medium-1-2 uk-width-small-1-2">
-                                        <div class="item">
-                                            <div class="icon"><img src="images/stat-icon2.png" alt="">
-                                            </div>
-                                            <div class="info">
-                                                <div class="number">13</div>
-                                                <div class="text">violations</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-width-large-2-4 uk-width-medium-1-2 uk-width-small-1-2">
-                                        <div class="item">
-                                            <div class="icon"><img src="images/stat-icon3.png" alt="">
-                                            </div>
-                                            <div class="info">
-                                                <div class="number">8</div>
-                                                <div class="text">Awards</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-</div> -->
-<!-- AACHIEVEMENTS Section END -->
-
 <!-- Youtube Video Section START -->
 <div class="tm-bottom-d-box tm-full-width  ">
     <div class="uk-container uk-container-center">
@@ -1107,61 +891,10 @@
                     <div class="last-video-wrap">
                         <div class="uk-container uk-container-center">
                             <div class="uk-grid">
-                                <!-- <div class="uk-width-medium-1-1">
-                                    <div class="last-video-title">
-                                        <h2>Last <span>Video</span></h2>
-                                    </div>
-                                </div>
-                                <div class="uk-width-medium-8-10 uk-width-small-1-1 uk-push-1-10">
-                                    <div class="last-video-text">
-                                        Nullam quis eros tellus. Duis sit amet neque nec orci feugiat tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed turpis aliquet, pharetra enim sit amet, congue erat.
-                                    </div>
-                                </div> -->
                                 <div class="uk-width-medium-8-10 uk-width-small-1-1 uk-push-1-10">
                                     <iframe height="546" width="970" src="https://www.youtube.com/embed/yokQd9IHPxk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <!-- <iframe src="https://www.youtube.com/embed/yokQd9IHPxk" allowfullscreen="" height="546" width="970"></iframe> -->
                                 </div>
-                                <!-- <div class="uk-width-medium-1-1 uk-width-small-1-1 partners-slider">
-                                    <div data-uk-slideset="{small: 2, medium: 5, large: 5}">
-                                        <div class="uk-slidenav-position">
-                                            <ul class="uk-grid uk-slideset uk-grid-width-1-1 uk-grid-width-large-1-5 uk-grid-width-medium-1-5 uk-grid-width-small-1-2">
-                                                <li><img src="images/partners-img.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img1.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img2.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img3.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img4.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img1.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img2.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img3.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img4.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img1.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img2.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img3.png" alt="">
-                                                </li>
-                                                <li><img src="images/partners-img4.png" alt="">
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <ul class="uk-slideset-nav uk-dotnav uk-flex-center">
-                                           
-                                        </ul>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -1187,9 +920,9 @@
                                 <div class="uk-grid  uk-grid-collapse uk-flex-item-1 uk-height-1-1 uk-nbfc">
                                     <div class="uk-width-5-10 contact-left uk-vertical-align contact-left-wrap">
                                         <div class="contact-info-lines uk-vertical-align-middle">
-                                            <div class="item phone"><span class="icon"><i class="uk-icon-phone"></i></span>(846)-356-9322</div>
-                                            <div class="item mail"><span class="icon"><i class="uk-icon-envelope"></i></span><a href="mailto:support@torbara.com">support@torbara.com</a></div>
-                                            <div class="item location"><span class="icon"><i class="uk-icon-map-marker"></i></span>9478 Chestnut Street, Woodstock, GA 30188</div>
+                                            <div class="item phone"><span class="icon"><i class="uk-icon-phone"></i></span>(020) 3289 5010</div>
+                                            <div class="item mail"><span class="icon"><i class="uk-icon-envelope"></i></span><a href="malto:info@southallathleticfc.com">info@southallathleticfc.com</a></div>
+                                            <div class="item location"><span class="icon"><i class="uk-icon-map-marker"></i></span>Brentside Playing Fields, Ruislip</div>
                                         </div>
                                     </div>
 
@@ -1200,17 +933,17 @@
                                         <div class="contact-form uk-height-1-1">
                                             <div class="uk-position-cover uk-flex uk-flex-column uk-flex-center">
                                                 <div class="contact-form-title">
-                                                    <h2>Get in touch</h2>
+                                                    <h2>DROP US A LINE</h2>
                                                 </div>
                                                 <div id="aiContactSafe_form_1">
                                                     <div class="aiContactSafe" id="aiContactSafe_mainbody_1">
                                                         <div class="contentpaneopen">
                                                             <div id="aiContactSafeForm">
-                                                                <form method="post" id="adminForm_1" name="adminForm_1" action="{{ route('contact') }}">
-                                                                    @csrf
+                                                                <form method="post" id="adminForm_1" name="adminForm_1">
                                                                     <div id="displayAiContactSafeForm_1">
                                                                         <div class="aiContactSafe" id="aiContactSafe_contact_form">
                                                                             <div class="aiContactSafe" id="aiContactSafe_info"></div>
+
                                                                             <div class="aiContactSafe_row" id="aiContactSafe_row_aics_name">
                                                                                 <div class="aiContactSafe_contact_form_field_label_left"><span class="aiContactSafe_label" id="aiContactSafe_label_aics_name"><label for="aics_name">Name</label></span>&nbsp;
                                                                                     <label class="required_field">*</label>
@@ -1219,6 +952,7 @@
                                                                                     <input name="aics_name" id="aics_name" class="textbox" placeholder="Name" value="" type="text">
                                                                                 </div>
                                                                             </div>
+
                                                                             <div class="aiContactSafe_row" id="aiContactSafe_row_aics_email">
                                                                                 <div class="aiContactSafe_contact_form_field_label_left"><span class="aiContactSafe_label" id="aiContactSafe_label_aics_email"><label for="aics_email">E-mail</label></span>&nbsp;
                                                                                     <label class="required_field">*</label>
@@ -1227,6 +961,18 @@
                                                                                     <input name="aics_email" id="aics_email" class="email" placeholder="Email" value="" type="text">
                                                                                 </div>
                                                                             </div>
+                                                                            
+
+                                                                            <div class="aiContactSafe_contact_form_field_right uk-form-select contact-drop" data-uk-form-select>
+                                                                                <span>Nature of enquiry:</span>
+                                                                                <select>
+                                                                                    <option value="">General enquiry</option>
+                                                                                    <option value="">Player Registration</option>
+                                                                                    <option value="">Marketing</option>
+                                                                                    <option value="">Partnership Opportunities</option>
+                                                                                </select>
+                                                                            </div>
+
                                                                             <div class="aiContactSafe_row" id="aiContactSafe_row_aics_message">
                                                                                 <div class="aiContactSafe_contact_form_field_label_left"><span class="aiContactSafe_label" id="aiContactSafe_label_aics_message"><label for="aics_message">Message</label></span>&nbsp;
                                                                                     <label class="required_field">*</label>
@@ -1272,7 +1018,7 @@
                         </div>
                         <div id="main-map">
                             <div class="map-overlay"></div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2483.2633803574913!2d-0.3789361098342484!3d51.508383812192704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb48f18fb4ad78be!2sSouthall%20Sports%20Centre!5e0!3m2!1sen!2sin!4v1648806088971!5m2!1sen!2sin" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9929.044663455878!2d-0.3478684!3d51.5267695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x37d4a13908bc9231!2sBrentside%20Playing%20Fields!5e0!3m2!1sen!2sin!4v1652177917404!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                 </div>
             </div>

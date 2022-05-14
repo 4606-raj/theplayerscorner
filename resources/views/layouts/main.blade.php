@@ -56,9 +56,10 @@
 
             <div style="height: 70px;" class="uk-sticky-placeholder">
                 <nav style="margin: 0px;" class="tm-navbar uk-navbar" data-uk-sticky="">
-                    <div class="uk-container uk-container-center">
-                        <a class="tm-logo uk-float-left" href="index.html">
-                            <img src="{{ asset('public/images/logo-img.png') }}" alt="logo" title="logo"> <span>Southall<em> Athletic</em></span>
+                    <div class="uk-width-auto hdr-bg">
+                        <a class="tm-logo hdr-logo uk-float-left" href="index.html">
+                            <img src="{{ asset('public/images/logo-img.png') }}" alt="logo" title="logo">
+                            <span>Southall<br> <span>Athletic</span></span>
                         </a>
 
                         <ul class="uk-navbar-nav uk-hidden-small">
@@ -104,9 +105,13 @@
 
                         <div class="uk-width-1-1">
                             <div class="uk-panel">
-                                <div class="footer-logo">
+                                <a class="hdr-logo uk-float-left" href="index.html">
+                                    <img src="{{ asset('public/images/logo-img.png') }}" alt="logo" title="logo">
+                                    <span>Southall<br> <span>Athletic</span></span>
+                                </a>
+                                <!-- <div class="footer-logo">
                                     <a href="../index.html"><img src="images/footer-logo-img.png" alt=""><span>Southall</span> Athletic</a>
-                                </div>
+                                </div> -->
                                 <div class="footer-socials">
                                     <div class="social-top">
                                         <a href="https://www.instagram.com/southall_athletic/?hl=en" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-instagram"></span></a>
@@ -129,213 +134,20 @@
 
             <div class="tm-bottom-g-box  ">
                 <div class="uk-container uk-container-center">
-                    <section id="tm-bottom-g" class="tm-bottom-f uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
-
-                        <div class="uk-width-1-1 uk-width-large-1-2">
-                            <div class="uk-panel">
-                                <div class="match-list-wrap foot">
-                                    <div id="carusel-7" class="uk-slidenav-position" data-uk-slideshow="{ height : 37, autoplay:true, animation:'scroll' }">
-                                        <div class="last-match-top">
-                                            <div class="last-match-title">Last match</div>
-                                            <div class="footer-slider-btn">
-                                                <a href="../index.html" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-                                                <a href="../index.html" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <ul class="uk-slideshow">
-                                            <li class="" aria-hidden="true">
-                                                <div class="match-list-item alt foot">
-                                                    <div class="wrapper">
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava.png" class="img-polaroid" alt="England VS Amsterdam (2015-11-14)" title="England VS Amsterdam (2015-11-14)">
-                                                            </a>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            England </div>
-                                                        <div class="versus">VS</div>
-
-                                                        <div class="team-name">
-                                                            Amsterdam </div>
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava1.png" class="img-polaroid" alt="England VS Amsterdam (2015-11-14)" title="England VS Amsterdam (2015-11-14)">
-                                                            </a>
-                                                        </div>
-                                                        <a class="read-more" href="match-single.html">Read More</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="" aria-hidden="true">
-                                                <div class="match-list-item alt foot">
-                                                    <div class="wrapper">
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava2.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)">
-                                                            </a>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            Cambridgehire </div>
-                                                        <div class="versus">VS</div>
-
-                                                        <div class="team-name">
-                                                            china </div>
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava3.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)">
-                                                            </a>
-                                                        </div>
-                                                        <a class="read-more" href="match-single.html">Read More</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="" aria-hidden="true">
-                                                <div class="match-list-item alt foot">
-                                                    <div class="wrapper">
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava4.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-20)" title="Cambridgehire VS china (2015-11-20)">
-                                                            </a>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            Cambridgehire </div>
-                                                        <div class="versus">VS</div>
-
-                                                        <div class="team-name">
-                                                            china </div>
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava5.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-20)" title="Cambridgehire VS china (2015-11-20)">
-                                                            </a>
-                                                        </div>
-                                                        <a class="read-more" href="match-single.html">Read More</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="" aria-hidden="true">
-                                                <div class="match-list-item alt foot">
-                                                    <div class="wrapper">
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava.png" class="img-polaroid" alt="England VS Amsterdam (2015-11-14)" title="England VS Amsterdam (2015-11-14)">
-                                                            </a>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            England </div>
-                                                        <div class="versus">VS</div>
-
-                                                        <div class="team-name">
-                                                            Amsterdam </div>
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava1.png" class="img-polaroid" alt="England VS Amsterdam (2015-11-14)" title="England VS Amsterdam (2015-11-14)">
-                                                            </a>
-                                                        </div>
-                                                        <a class="read-more" href="match-single.html">Read More</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li aria-hidden="false">
-                                                <div class="match-list-item alt foot">
-                                                    <div class="wrapper">
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava2.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)">
-                                                            </a>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            Cambridgehire </div>
-                                                        <div class="versus">VS</div>
-
-                                                        <div class="team-name">
-                                                            china </div>
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava3.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)">
-                                                            </a>
-                                                        </div>
-                                                        <a class="read-more" href="match-single.html">Read More</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="" aria-hidden="true">
-                                                <div class="match-list-item alt foot">
-                                                    <div class="wrapper">
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava4.png" class="img-polaroid" alt="King VS china (2015-11-20)" title="King VS china (2015-11-20)">
-                                                            </a>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            King </div>
-                                                        <div class="versus">VS</div>
-
-                                                        <div class="team-name">
-                                                            china </div>
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava5.png" class="img-polaroid" alt="King VS china (2015-11-20)" title="King VS china (2015-11-20)">
-                                                            </a>
-                                                        </div>
-                                                        <a class="read-more" href="match-single.html">Read More</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="" aria-hidden="true">
-                                                <div class="match-list-item alt foot">
-                                                    <div class="wrapper">
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava.png" class="img-polaroid" alt="England VS Amsterdam (2015-11-14)" title="England VS Amsterdam (2015-11-14)">
-                                                            </a>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            England </div>
-                                                        <div class="versus">VS</div>
-
-                                                        <div class="team-name">
-                                                            Amsterdam </div>
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava1.png" class="img-polaroid" alt="England VS Amsterdam (2015-11-14)" title="England VS Amsterdam (2015-11-14)">
-                                                            </a>
-                                                        </div>
-                                                        <a class="read-more" href="match-single.html">Read More</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="" aria-hidden="true">
-                                                <div class="match-list-item alt foot">
-                                                    <div class="wrapper">
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava2.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)">
-                                                            </a>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            Cambridgehire </div>
-                                                        <div class="versus">VS</div>
-
-                                                        <div class="team-name">
-                                                            china </div>
-                                                        <div class="logo">
-                                                            <a href="match-single.html">
-                                                                <img src="images/team-ava3.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)">
-                                                            </a>
-                                                        </div>
-                                                        <a class="read-more" href="match-single.html">Read More</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-
-
-
-                                </div>
-                            </div>
+                    <section id="tm-bottom-g" class="tm-bottom-f footer-wrapper-2">
+                        <div class="foot-menu-wrap">
+                            <ul class="nav menu " style="padding-left: 0;">
+                                <li class="item-165"><a href="about.html">About Us</a>
+                                </li>
+                                <li class="item-166"><a href="offline.html">Social Media</a>
+                                </li>
+                                <li class="item-167"><a href="gallery.html">Gallery</a>
+                                </li>
+                                <li class="item-168"><a href="news.html">News</a>
+                                </li>
+                                <li class="item-169"><a href="offline.html">Teams</a>
+                                </li>
+                            </ul>
                         </div>
 
                         <div class="uk-width-1-1 uk-width-large-1-2">
@@ -381,26 +193,12 @@
 
             <footer id="tm-footer" class="tm-footer">
 
-
                 <div class="uk-panel">
                     <div class="uk-container uk-container-center">
                         <div class="uk-grid">
                             <div class="uk-width-1-1">
-                                <div class="footer-wrap">
-                                    <div class="foot-menu-wrap">
-                                        <ul class="nav menu " style="padding-left: 0;">
-                                            <li class="item-165"><a href="about.html">About Us</a>
-                                            </li>
-                                            <li class="item-166"><a href="offline.html">Social Media</a>
-                                            </li>
-                                            <li class="item-167"><a href="gallery.html">Gallery</a>
-                                            </li>
-                                            <li class="item-168"><a href="news.html">News</a>
-                                            </li>
-                                            <li class="item-169"><a href="offline.html">Teams</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <div class="footer-wrap" style="display: flex; justify-content: center;">
+                                    
                                     <div class="copyrights">Copyright © 2022 <a href="../index.html">Southall Athletic</a>. All Rights Reserved.</div>
                                     <div class="clear"></div>
                                 </div>
