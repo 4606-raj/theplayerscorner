@@ -76,12 +76,14 @@
         <!-- Our Objectives -->
         <div class="uk-width-large-5-10 uk-width-small-1-1 left-part our-Objectives">
             <div class="top-title">
-                <h2>Our <span>Objectives</span></h2>
+                <h2>CORE <span>VALUES</span></h2>
             </div>
             <ul>
                 <li><p>To address the issue of how underrepresented the South Asian and the BAME community as whole are in football.</p></li>
                 <li><p>To focus on actions that will benefit the whole community.</p></li>
                 <li><p>To create a visible presence and an identity within the community.</p></li>
+                <li><p>To work with schools, agencies, and social groups to enhance community contribution.</p></li>
+                <li><p>To provide opportunities for children and youth to fulfil their potential through football.</p></li>
             </ul>
         </div>
     </div>
@@ -97,6 +99,25 @@
             </div>
             <p>We are already a Middlesex affiliated football club (X-MID2820). We are a community grassroots football club, operating as a non-profit, looking to become the first ALL-INCLUSIVE club in Middlesex.</p> 
             <p>We currently have adult men's and women's teams and will be introducing, for the first time, youth teams this summer.</p>
+            <p>We use football as an education tool to not only encourage everyone to get involved regardless of gender, income, disability but also to help children stay away from crime. Every year in London the number of teenagers being stabbed to death is increasing. And our project can give these children a sense of belonging as well as a purpose in life - and this also includes helping children and young adults from re-offending. </p>
+
+            <ul class="who-we-are-list">
+                <div>
+                    <span>All our coaches are/have:</span>
+                </div><br>
+                <li>
+                    <p>FA Qualified to a minimum Level 1 standard (others have been approved for BAME funding by the FA to complete their Level 2). </p>
+                </li>
+                <li>
+                    <p>First-Aid qualified</p>
+                </li>
+                <li>
+                    <p>Completed safeguarding courses</p>
+                </li>
+                <li>
+                    <p>Current DBS on record. </p>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -104,11 +125,11 @@
 <!-- WHERE ARE WE FROM? -->
 <div class="about-team-page-top-wrap uk-container uk-container-center our-last-wr">
     <div class="uk-grid">
-        <!-- Our Aim -->
         <div class="uk-width-small-1-1 left-part">
             <div class="top-title">
                 <h2>WHERE ARE WE <span>FROM?</span></h2>
             </div>
+            <img src="{{ asset('public/images/southall-map.jpg') }}" alt="">
             <p>Our home, Ealing, is ranked as the 18th most deprived London borough out of the 33 Local Authorities in the region, and 87th most deprived out of 326 Local Authorities nationally. </p>
         </div>
     </div>

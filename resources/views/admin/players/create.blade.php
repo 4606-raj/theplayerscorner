@@ -27,7 +27,7 @@
                                 <label class="form-label">Name</label>
                                 <div class="row row-sm">
                                     <div class="col-lg">
-                                        <input class="form-control mb-4" placeholder="Name" type="text" name="name" required>
+                                        <input class="form-control mb-4" value="{{ old('name') }}" placeholder="Name" type="text" name="name" required>
                                     </div>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@
                                 <label class="form-label">Email</label>
                                 <div class="row row-sm">
                                     <div class="col-lg">
-                                        <input class="form-control mb-4" placeholder="Email" type="email" name="email" required>
+                                        <input class="form-control mb-4" value="{{ old('email') }}" placeholder="Email" type="email" name="email" required>
                                     </div>
                                 </div>
                             </div>
@@ -48,7 +48,7 @@
                                 <label class="form-label">Short Bio</label>
                                 <div class="row row-sm">
                                     <div class="col-lg">
-                                        <textarea class="form-control mb-4" placeholder="Short Bio" type="text" name="short_bio" required></textarea>
+                                        <textarea class="form-control mb-4" placeholder="Short Bio" type="text" name="short_bio" required>{{ old('squad_number') }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@
                                 <label class="form-label">Squad Number</label>
                                 <div class="row row-sm">
                                     <div class="col-lg">
-                                        <input class="form-control mb-4" placeholder="Squad Number" type="text" name="squad_number" required>
+                                        <input class="form-control mb-4" value="{{ old('squad_number') }}" placeholder="Squad Number" type="text" name="squad_number" required>
                                     </div>
                                 </div>
                             </div>

@@ -139,8 +139,46 @@
 </div>
 <!-- About Us END-->
 
+<!-- Captains START-->
+    <div class="uk-margin-large-bottom">
+        <div class="our-team-wrap">
+            <div class="our-team-title">
+                <h3>Our <span>Captains</span></h3>
+            </div>
+        </div>
+
+        <div class="uk-slidenav-position" data-uk-slider="{center:true, autoplay:true, pauseOnHover:true, autoplayInterval:5000}">
+
+            <div class="uk-slider-container uk-container uk-container-center">
+                <ul class="uk-slider uk-grid-width-large-1-4 uk-grid-width-medium-1-3 uk-grid-width-small-1-2 uk-grid uk-grid-medium">
+
+                    @foreach ($players as $player) 
+                        <li class="block_item">
+                            <div class="uk-card uk-card-default uk-child-width-1-2 cp-card" uk-grid>
+                                <div class="uk-card-media-left uk-cover-container cp-con-img">
+                                    <img src="{{ asset('storage/images/trainer-slider/' . $player->user->photo) }}" alt="" uk-cover>
+                                </div>
+                                <div>
+                                    <div class="uk-card-body">
+                                        <p class="cp-name">{{ $player->user->name }}</p>
+                                        <p class="cp-team">{{ $player->team->name }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    @endforeach
+
+                </ul>
+            </div>
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous cp-arrow-btn" data-uk-slider-item="previous"></a>
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next cp-arrow-btn" data-uk-slider-item="next"></a>
+        </div>
+        
+    </div>
+
+<!-- Captains END-->
 <!-- Teams START-->
-<div class="tm-bottom-b-box tm-full-width  ">
+{{-- <div class="tm-bottom-b-box tm-full-width  ">
     <div class="uk-container uk-container-center">
         <section id="tm-bottom-b" class="tm-bottom-b uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
             <div class="uk-width-1-1">
@@ -510,8 +548,7 @@
             </div>
         </section>
     </div>
-<!-- Teams START-->
-</div>
+</div> --}}
 <!-- Teams END-->
 
 <!-- Gallery START -->

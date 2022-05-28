@@ -42,6 +42,9 @@
         $(document).ready(function() {
             var table = $('.teams').DataTable({
                 "ajax": "{{ route('players.index') }}",
+                initComplete: function() {
+                    $('div.dataTables_filter input').attr('autocomplete', 'off')
+                },
                 columns: [
                     {name: 'name', data: 'name'},
                     {name: 'photo', data: 'photo'},

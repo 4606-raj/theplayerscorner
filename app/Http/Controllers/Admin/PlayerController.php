@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Team;
 use App\Models\Player;
 use App\Models\User;
-use Session, DB, DataTables, Response;
+use Session, DB, DataTables, Response, Auth;
 
 class PlayerController extends Controller
 {
@@ -69,17 +69,27 @@ class PlayerController extends Controller
             'is_captain' => 'required',
             'team_id' => 'required',
         ]);
+
+        if($request->hasfile('photo')) {
+            $file = $request->photo;
+            $name = time().'_'.$file->getClientOriginalName();
+            $filePath = $file->storeAs('images/trainer-slider/', $name, 'public');
+
+            $imageName = $name;
+        }
         
         $user = \Arr::except($data, ['squad_number', 'type', 'is_captain', 'team_id']);
         $user['password'] = \Hash::make(\Str::random());
+        $user['photo'] = $imageName;
         $player = \Arr::only($data, ['squad_number', 'type', 'is_captain', 'team_id']);
         $player['is_captain'] = $data['is_captain'] == 'on'? 1: 0;
-
+        
         // dd($user);
-
+        
         try {
             DB::beginTransaction();
-            User::create($user);
+            $user = User::create($user);
+            $player['user_id'] = $user->id;
             Player::create($player);
             DB::commit();
 

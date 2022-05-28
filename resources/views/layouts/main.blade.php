@@ -59,7 +59,7 @@
             <div style="height: 70px;" class="uk-sticky-placeholder">
                 <nav style="margin: 0px;" class="tm-navbar uk-navbar" data-uk-sticky="">
                     <div class="uk-width-auto hdr-bg">
-                        <a class="tm-logo hdr-logo uk-float-left" href="index.html">
+                        <a class="tm-logo hdr-logo uk-float-left" href="{{ route('home') }}">
                             <img src="{{ asset('public/images/logo-img.png') }}" alt="logo" title="logo">
                             <span>Southall<br> <span>Athletic</span></span>
                         </a>

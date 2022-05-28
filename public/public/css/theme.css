@@ -26,6 +26,50 @@ body {
 a {
   background: transparent;
 }
+.who-we-are-list{
+  list-style-type: '\2713';
+}
+.who-we-are-list div span{
+  font-size: 1.2rem;
+}
+.who-we-are-list li p {
+  margin-left: 10px ;
+}
+.cp-con-img{
+  /* min-width: 200px;
+  max-width: 200px; */
+  overflow: hidden;
+}
+.cp-con-img,
+.cp-con-img img{
+  min-height: 250px;
+  max-height: 250px;
+}
+.cp-con-img img{
+  min-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.cp-arrow-btn{
+  background: rgba(0, 0, 0, 0.4);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.cp-card{
+  border: 1px solid #ddd;
+}
+.cp-card .cp-name{
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.cp-card .cp-team{
+  color: #575757;
+  margin: 5px 0;
+}
+.cp-card .uk-card-body{
+  padding: 15px;
+}
 /*
  * Improve readability of focused elements when they are also in an active/hover state.
  */
