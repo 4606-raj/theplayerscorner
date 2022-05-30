@@ -1934,7 +1934,7 @@ iframe {
 }
 .hdr-logo span span{
   margin-left: 0;
-  color: #000 !important;
+  /* color: #000 !important; */
 }
 .hdr-logo:before{
    right: -33px !important;
