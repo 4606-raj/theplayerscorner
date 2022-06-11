@@ -192,7 +192,9 @@
 										</button>
 									</div>
 								</form>
-							</div><!-- SEARCH -->
+							</div>
+							
+							
 							<div class="d-flex order-lg-2 my-auto ml-auto">
 								<a class="nav-link my-auto icon p-0 nav-link-lg d-md-none navsearch" href="#" data-toggle="search">
 									<i class="feather feather-search search-icon header-icon"></i>

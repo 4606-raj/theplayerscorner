@@ -79,7 +79,7 @@
 <!-- Main Slider END-->
 
 <!-- About Us START-->
-<div class="tm-top-c-box tm-full-width home-about uk-margin-remove-top">
+{{-- <div class="tm-top-c-box tm-full-width home-about uk-margin-remove-top">
     <div class="uk-container uk-container-center">
         <section id="tm-top-c" class="tm-top-c uk-grid uk-grid-collapse" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
 
@@ -136,11 +136,11 @@
             </div>
         </section>
     </div>
-</div>
+</div> --}}
 <!-- About Us END-->
 
 <!-- Captains START-->
-    <div class="uk-margin-large-bottom">
+    {{-- <div class="uk-margin-large-bottom">
         <div class="our-team-wrap">
             <div class="our-team-title">
                 <h3>Our <span>Captains</span></h3>
@@ -174,7 +174,7 @@
             <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next cp-arrow-btn" data-uk-slider-item="next"></a>
         </div>
         
-    </div>
+    </div> --}}
 
 <!-- Captains END-->
 <!-- Teams START-->
@@ -551,6 +551,90 @@
 </div> --}}
 <!-- Teams END-->
 
+<!-- News Section START-->
+<div class="tm-top-f-box tm-full-width  va-main-our-news">
+    <div class="uk-container uk-container-center">
+        <section id="tm-top-f" class="tm-top-f uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
+            <div class="uk-width-1-1">
+                <div class="uk-panel">
+                    <div class="uk-container uk-container-center">
+                        <div class="uk-grid uk-grid-collapse" data-uk-grid-match="">
+                            <div class="uk-width-1-1">
+                                <div class="our-news-title">
+                                    <h3>Our <span>News</span></h3>
+                                </div>
+                                <!-- <div class="our-news-text">Nullam quis eros tellus. Duis sit amet neque nec orci feugiat tincidunt. Lorem ipsum dolor sit amet,
+                                    <br> consectetur adipiscing elit. Nulla sed turpis aliquet, pharetra enim sit amet, congue erat. 
+                                </div> -->
+                            </div>
+
+                            <article class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 our-news-article" data-uk-grid-match="">
+                                <div class="img-wrap uk-cover-background uk-position-relative" style="background-image: url({{ asset('public/images/853d071dfa2f869fbd2a70dbcb3a8f5e.jpg') }}); min-height: 344px;">
+
+
+                                    <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919"></a>
+                                    <img class="uk-invisible" src="{{ asset('public/images/853d071dfa2f869fbd2a70dbcb3a8f5e.jpg') }}" alt="">
+
+                                </div>
+                                <div style="min-height: 280px;" class="info">
+                                    <div class="date">
+                                        29 JUN, 2021 </div>
+                                    <div class="name">
+                                        <h4>
+                                            <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919">'It's always a taboo': Southall's 'first ever all-female football team' trying to 'prove people wrong'</a>	
+                                        </h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>Despite decades of awareness and attempts at change, the representation of British Asian people in professional football is pitifully low.
+
+                                            According to a report commissioned by the Football Supporters’</p>
+                                        <div class="read-more"><a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </article>
+
+
+                            <article class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 our-news-article" data-uk-grid-match="">
+                                <div class="img-wrap uk-cover-background uk-position-relative" style="background-image: url({{ asset('public/images/534579b3c373c09398691a46025fe5e6.jpg') }}); min-height: 280px;">
+
+
+                                    <a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/"></a>
+                                    <img class="uk-invisible" src="{{ asset('public/images/534579b3c373c09398691a46025fe5e6.jpg') }}" alt="">
+
+                                </div>
+                                <div style="min-height: 280px;" class="info">
+                                    <div class="date">
+                                        8 August, 2021 </div>
+                                    <div class="name">
+                                        <h4>
+                                            <a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/">Southall gets first ever all-female football team</a>		
+                                        </h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>A new women's football team in west London's "Little India" hopes to encourage diversity in football.
+
+                                            It follows government research in 2020 that suggested Asian women were the least physically active group.</p>
+                                        <div class="read-more"><a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </article>
+
+                        </div>
+                    </div>
+                    <div class="all-news-btn"><a href="news.html"><span>All News</span></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- News Section END-->
+
 <!-- Gallery START -->
 <div class="tm-top-g-box tm-full-width home-gallery">
     <div class="uk-container uk-container-center">
@@ -723,98 +807,17 @@
 </div>
 <!-- Gallery END -->
 
-<!-- News Section START-->
-<div class="tm-top-f-box tm-full-width  va-main-our-news">
-    <div class="uk-container uk-container-center">
-        <section id="tm-top-f" class="tm-top-f uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
-            <div class="uk-width-1-1">
-                <div class="uk-panel">
-                    <div class="uk-container uk-container-center">
-                        <div class="uk-grid uk-grid-collapse" data-uk-grid-match="">
-                            <div class="uk-width-1-1">
-                                <div class="our-news-title">
-                                    <h3>Our <span>News</span></h3>
-                                </div>
-                                <!-- <div class="our-news-text">Nullam quis eros tellus. Duis sit amet neque nec orci feugiat tincidunt. Lorem ipsum dolor sit amet,
-                                    <br> consectetur adipiscing elit. Nulla sed turpis aliquet, pharetra enim sit amet, congue erat. 
-                                </div> -->
-                            </div>
 
-                            <article class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 our-news-article" data-uk-grid-match="">
-                                <div class="img-wrap uk-cover-background uk-position-relative" style="background-image: url({{ asset('public/images/853d071dfa2f869fbd2a70dbcb3a8f5e.jpg') }}); min-height: 344px;">
-
-
-                                    <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919"></a>
-                                    <img class="uk-invisible" src="{{ asset('public/images/853d071dfa2f869fbd2a70dbcb3a8f5e.jpg') }}" alt="">
-
-                                </div>
-                                <div style="min-height: 280px;" class="info">
-                                    <div class="date">
-                                        29 JUN, 2021 </div>
-                                    <div class="name">
-                                        <h4>
-                                            <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919">'It's always a taboo': Southall's 'first ever all-female football team' trying to 'prove people wrong'</a>	
-                                        </h4>
-                                    </div>
-                                    <div class="text">
-                                        <p>Despite decades of awareness and attempts at change, the representation of British Asian people in professional football is pitifully low.
-
-                                            According to a report commissioned by the Football Supporters’</p>
-                                        <div class="read-more"><a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </article>
-
-
-                            <article class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 our-news-article" data-uk-grid-match="">
-                                <div class="img-wrap uk-cover-background uk-position-relative" style="background-image: url({{ asset('public/images/534579b3c373c09398691a46025fe5e6.jpg') }}); min-height: 280px;">
-
-
-                                    <a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/"></a>
-                                    <img class="uk-invisible" src="{{ asset('public/images/534579b3c373c09398691a46025fe5e6.jpg') }}" alt="">
-
-                                </div>
-                                <div style="min-height: 280px;" class="info">
-                                    <div class="date">
-                                        8 August, 2021 </div>
-                                    <div class="name">
-                                        <h4>
-                                            <a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/">Southall gets first ever all-female football team</a>		
-                                        </h4>
-                                    </div>
-                                    <div class="text">
-                                        <p>A new women's football team in west London's "Little India" hopes to encourage diversity in football.
-
-                                            It follows government research in 2020 that suggested Asian women were the least physically active group.</p>
-                                        <div class="read-more"><a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </article>
-
-                        </div>
-                    </div>
-                    <div class="all-news-btn"><a href="news.html"><span>All News</span></a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </div>
-</div>
-<!-- News Section END-->
 
 <!-- Sponsers Section START -->
 <div class="tm-bottom-c-box tm-full-width sponsers-sec ">
     <div class="uk-container uk-container-center">
         <section id="tm-bottom-c" class="tm-bottom-c uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
 
-            <div class="uk-width-1-1 sponsers-sec">
+            {{-- CLUB AFFILIATIONS --}}
+            <div class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 sp-fix1" style="padding-right: 35px;">
                 <div class="sponsers-title">
-                    <h3>Our <span>Sponsors</span></h3>
+                    <h3>CLUB <span>AFFILIATIONS</span></h3>
                 </div>
                 <div class="uk-panel">
                     <div class="sponser-main-page-wrap">
@@ -832,39 +835,7 @@
                                                 </a>
                                             </div>
                                         </li>
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://instagram.com/rapturebarbers/ " target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-2.jpg') }}" alt="Sportswear outerwear coats">
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://churchstreetdental.london" target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-3.png') }}" alt="Waterproof jackets">
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://instagram.com/queenspharmacysouthall/ " target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-4.png') }}" alt="Waterproof jackets">
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://cargo-overseas.co.uk/" target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-5.png') }}" alt="Thermoball Insulated Jacket">
-                                                </a>
-                                            </div>
-                                        </li>
-
+                                        
                                         <li class="block_item">
                                             <div class="image_block">
                                                 <a draggable="false" href="https://englandfootball.com/run/leagues-and-clubs/england-football-accreditation " target="_blank">
@@ -896,11 +867,75 @@
                                                 </a>
                                             </div>
                                         </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fun-shop-btn">
+                            <a href="sponsors.html"><span>View all</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            {{-- CLUB PARTNERS --}}
+            <div class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1" style="border-left: 1px solid #ddd">
+                <div class="sponsers-title">
+                    <h3>CLUB <span>PARTNERS</span></h3>
+                </div>
+                <div class="uk-panel">
+                    <div class="sponser-main-page-wrap">
+                        <div class="latest_products jshop">
+                            
+                            <div data-uk-slider="{center:true, autoplay:true, pauseOnHover:true, autoplayInterval:5000}">
+                                
+                                <div class="uk-slider-container">
+                                    <ul class="uk-slider uk-grid-width-large-1-6 uk-grid-width-medium-1-4 uk-grid-width-small-1-1  uk-grid uk-grid-medium">
+
+                                        <li class="block_item">
+                                            <div class="image_block">
+                                                <a draggable="false" href="https://instagram.com/rapturebarbers/ " target="_blank">
+                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-2.jpg') }}" alt="Sportswear outerwear coats">
+                                                </a>
+                                            </div>
+                                        </li>
+                            
+                                        <li class="block_item">
+                                            <div class="image_block">
+                                                <a draggable="false" href="https://churchstreetdental.london" target="_blank">
+                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-3.png') }}" alt="Waterproof jackets">
+                                                </a>
+                                            </div>
+                                        </li>
+                            
+                                        <li class="block_item">
+                                            <div class="image_block">
+                                                <a draggable="false" href="https://instagram.com/queenspharmacysouthall/ " target="_blank">
+                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-4.png') }}" alt="Waterproof jackets">
+                                                </a>
+                                            </div>
+                                        </li>
+                            
+                                        <li class="block_item">
+                                            <div class="image_block">
+                                                <a draggable="false" href="https://cargo-overseas.co.uk/" target="_blank">
+                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-5.png') }}" alt="Thermoball Insulated Jacket">
+                                                </a>
+                                            </div>
+                                        </li>
+                            
                                         <li class="block_item">
                                             <div class="image_block">
                                                 <a draggable="false" href="https://chanachemist.co.uk " target="_blank">
                                                     <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-11.png') }}" alt="Thermoball Insulated Jacket">
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="block_item">
+                                            <div class="image_block">
+                                                <a draggable="false" href="http://hiltons-estates.com/" target="_blank">
+                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-12.png') }}" alt="Thermoball Insulated Jacket">
                                                 </a>
                                             </div>
                                         </li>
@@ -920,7 +955,7 @@
 <!-- Sponsers Section END -->
 
 <!-- Youtube Video Section START -->
-<div class="tm-bottom-d-box tm-full-width  ">
+{{-- <div class="tm-bottom-d-box tm-full-width  ">
     <div class="uk-container uk-container-center">
         <section id="tm-bottom-d" class="tm-bottom-d uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
             <div class="uk-width-1-1">
@@ -939,7 +974,7 @@
             </div>
         </section>
     </div>
-</div>
+</div> --}}
 <!-- Youtube Video Section END -->
 
 <!-- Map & Contact Us Section START -->

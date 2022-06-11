@@ -59,36 +59,50 @@
             <div style="height: 70px;" class="uk-sticky-placeholder">
                 <nav style="margin: 0px;" class="tm-navbar uk-navbar" data-uk-sticky="">
                     <div class="uk-width-auto hdr-bg">
-                        <a class="tm-logo hdr-logo uk-float-left" href="{{ route('home') }}">
-                            <img src="{{ asset('public/images/logo-img.png') }}" alt="logo" title="logo">
-                            <span>Southall<br> <span>Athletic</span></span>
-                        </a>
+                       
+                        <div class="" style="width: 100%; display: flex;">
 
-                        <ul class="uk-navbar-nav uk-hidden-small">
-                            <li class="uk-parent uk-active" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="{{ route('home') }}">Home</a></li>
-                            <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="{{ route('about-us') }}">About Us</a></li>
+                            <div class="uk-width-1-2 uk-hidden-small nav-block1">
+                                <ul class="uk-navbar-nav uk-hidden-small" style="width: 100%">
+                                    <li class="uk-parent uk-active" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="{{ route('home') }}">Home</a></li>
+                                    <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="{{ route('about-us') }}">About Us</a></li>
+                                    
+                                    <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="teams.html">Teams</a></li>
+                                    
+                                    <li><a href="news.html">News</a>
+                                </ul>
+                            </div>
                             
-                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="teams.html">Teams</a></li>
-                            
-                            <li><a href="news.html">News</a>
-                            <li><a href="offline.html">Social media</a>
-                            <li><a href="sponsors.html">Sponsors</a>
-                            
-                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="gallery.html">Gallery</a></li>
-                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
-                                    <div class="uk-grid uk-dropdown-grid">
-                                        <div class="uk-width-1-1">
-                                            <ul class="uk-nav uk-nav-navbar">
-                                                <li><a href="results.html">Results</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                            <div class="logo-bl">
+                                <a class="tm-logo hdr-logo uk-float-left" href="{{ route('home') }}">
+                                    <img src="{{ asset('public/images/logo-img.png') }}" alt="logo" class="logo-img">
+                                    {{-- <span>Southall<br> <span>Athletic</span></span> --}}
+                                </a>
+                            </div>
 
-                            <li><a href="{{ route('contact-us') }}">Contact us</a></li>
-                        </ul>
+                            <div class="uk-width-1-2 uk-hidden-small nav-block2">
+                                <ul class="uk-navbar-nav uk-hidden-small">
+                                    <li><a href="offline.html">Social media</a>
+                                    <li><a href="sponsors.html">Sponsors</a>
+                                    
+                                    <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="gallery.html">Gallery</a></li>
+                                        {{-- <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                                            <div class="uk-grid uk-dropdown-grid">
+                                                <div class="uk-width-1-1">
+                                                    <ul class="uk-nav uk-nav-navbar">
+                                                        <li><a href="results.html">Results</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div> --}}
+                                    </li>
+    
+                                    <li><a href="{{ route('contact-us') }}">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
                     </div>
                 </nav>
@@ -101,6 +115,8 @@
 
         <!-- Footer START -->
         <div class="bottom-wrapper">
+            <div class="bg-overlay"></div>
+            
             <div class="tm-bottom-f-box  ">
                 <div class="uk-container uk-container-center">
                     <section id="tm-bottom-f" class="tm-bottom-f uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
@@ -251,6 +267,7 @@
 
     <script type="text/javascript" src="{{ asset('public/js/theme.js') }}"></script>
     <script type="text/javascript">
+        
         new SimpleCounter("countdown4", 1476154800, {
         'continue': 0,
         format: '{D} {H} {M} {S}',
@@ -277,6 +294,8 @@
             shrt: "<span class='countdown_number' style='color:  '>{number} </span>" //Format for short unit representation
         }
     });
+
+
     </script>
 
     @stack('script')

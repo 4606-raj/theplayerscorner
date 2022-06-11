@@ -1,5 +1,17 @@
 
 jQuery(function($) {
+    //Header Scroll size change
+    $(window).scroll(function(){
+        scroll = $(window).scrollTop();
+      
+        if (scroll >= 100){
+            // alert("chal")
+            $(".hdr-logo").addClass('logo-scroll');
+        }
+        else{
+            $(".hdr-logo").removeClass('logo-scroll');
+        }
+      });
 
     var config = $('html').data('config') || {};
     
