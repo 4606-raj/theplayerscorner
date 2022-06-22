@@ -19,7 +19,7 @@ Route::view('login', 'admin.login');
 
 Route::get('/', function () {
     return view('admin.dashboard');
-});
+})->name('admin.dashboard');
 
 Route::resource('/teams', TeamController::class);
 Route::resource('/players', PlayerController::class);

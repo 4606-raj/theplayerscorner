@@ -2,21 +2,21 @@
 <aside class="app-sidebar">
     <div class="app-sidebar__logo">
         <a class="header-brand" href="index.html">
-            <img src="{{ asset('assets/admin/images/brand/logo.png') }}" class="header-brand-img desktop-lgo" alt="Dayonelogo">
-            <img src="{{ asset('assets/admin/images/brand/logo-white.png') }}" class="header-brand-img dark-logo" alt="Dayonelogo">
-            <img src="{{ asset('assets/admin/images/brand/favicon.png') }}" class="header-brand-img mobile-logo" alt="Dayonelogo">
-            <img src="{{ asset('assets/admin/images/brand/favicon1.png') }}" class="header-brand-img darkmobile-logo" alt="Dayonelogo">
+            <img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img desktop-lgo" alt="southall-logo" width="15%">
+            <img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img dark-logo" alt="southall-logo" width="15%">
+            <img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img mobile-logo" alt="southall-logo" width="80%">
+            <img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img darkmobile-logo" alt="southall-logo" width="15%">
         </a>
     </div>
     <div class="app-sidebar3">
         <div class="app-sidebar__user">
             <div class="dropdown user-pro-body text-center">
                 <div class="user-pic">
-                    <img src="{{ asset('assets/admin/images/users/16.jpg') }}" alt="user-img" class="avatar-xxl rounded-circle mb-1">
+                    <img src="{{ asset('storage/images/users/' . Auth::user()->photo) }}" alt="user-img" class="avatar-xxl rounded-circle mb-1">
                 </div>
                 <div class="user-info">
-                    <h5 class=" mb-2">Abigali kelly</h5>
-                    <span class="text-muted app-sidebar__user-name text-sm">App Developer</span>
+                    <h5 class=" mb-2">{{ Auth::user()->name }}</h5>
+                    {{-- <span class="text-muted app-sidebar__user-name text-sm">App Developer</span> --}}
                 </div>
             </div>
         </div>

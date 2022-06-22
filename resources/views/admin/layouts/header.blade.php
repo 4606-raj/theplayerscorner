@@ -13,10 +13,10 @@
 		<meta name="keywords" content="admin dashboard, dashboard ui, backend, admin panel, admin template, dashboard template, admin, bootstrap, laravel, laravel admin panel, php admin panel, php admin dashboard, laravel admin template, laravel dashboard, laravel admin panel"/>
 
 		<!-- Title -->
-		<title>Dayone - Multipurpose Admin & Dashboard Template</title>
+		<title>Southall | Admin Dashboard</title>
 
         <!--Favicon -->
-		<link rel="icon" href="{{ asset('assets/admin/images/brand/favicon.ico') }}" type="image/x-icon"/>
+		<link rel="icon" href="{{ asset('assets/admin/images/favicon.ico') }}" type="image/x-icon"/>
 
 		<!-- Bootstrap css -->
 		<link href="{{ asset('assets/admin/plugins/bootstrap/css/bootstrap.css') }}" rel="stylesheet" />
@@ -75,7 +75,7 @@
 				<div class="form_holder sidebar-right1">
 					<div class="row">
 						<div class="predefined_styles">
-							<div class="swichermainleft text-center">
+							{{-- <div class="swichermainleft text-center">
 								<div class="p-3">
 									<a href="index.html" class="btn ripple btn-primary btn-block mt-0">View Demo</a>
 									<a href="https://themeforest.net/user/spruko/portfolio" class="btn ripple btn-secondary btn-block">Buy Now</a>
@@ -88,7 +88,7 @@
 									<a class="btn ripple btn-success btn-block" href="verticalmenu.html"> Leftmenu</a>
 									<a class="btn ripple btn-danger btn-block" href="horizontal.html"> Horizontal </a>
 								</div>
-							</div>
+							</div> --}}
 							<div class="swichermainleft">
 								<h4>Theme Layout</h4>
 								<div class="switch_section d-flex my-4">
@@ -170,10 +170,10 @@
 					<div class="container-fluid">
 						<div class="d-flex">
 							<a class="header-brand" href="index.html">
-								<img src="{{ asset('assets/admin/images/brand/logo.png') }}" class="header-brand-img desktop-lgo" alt="Dayonelogo">
-								<img src="{{ asset('assets/admin/images/brand/logo-white.png') }}" class="header-brand-img dark-logo" alt="Dayonelogo">
-								<img src="{{ asset('assets/admin/images/brand/favicon.png') }}" class="header-brand-img mobile-logo" alt="Dayonelogo">
-								<img src="{{ asset('assets/admin/images/brand/favicon1.png') }}" class="header-brand-img darkmobile-logo" alt="Dayonelogo">
+								<img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img desktop-lgo" alt="Dayonelogo">
+								<img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img dark-logo" alt="Dayonelogo">
+								<img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img mobile-logo" alt="Dayonelogo">
+								<img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img darkmobile-logo" alt="Dayonelogo">
 							</a>
 							<div class="app-sidebar__toggle" data-toggle="sidebar">
 								<a class="open-toggle" href="#">
@@ -183,7 +183,7 @@
 									<i class="feather feather-x"></i>
 								</a>
 							</div>
-							<div class="mt-0">
+							{{-- <div class="mt-0">
 								<form class="form-inline">
 									<div class="search-element">
 										<input type="search" class="form-control header-search" placeholder="Search…" aria-label="Search" tabindex="1">
@@ -192,14 +192,14 @@
 										</button>
 									</div>
 								</form>
-							</div>
+							</div> --}}
 							
 							
 							<div class="d-flex order-lg-2 my-auto ml-auto">
 								<a class="nav-link my-auto icon p-0 nav-link-lg d-md-none navsearch" href="#" data-toggle="search">
 									<i class="feather feather-search search-icon header-icon"></i>
 								</a>
-								<div class="dropdown header-flags">
+								{{-- <div class="dropdown header-flags">
 									<a class="nav-link icon" data-toggle="dropdown">
 										<img src="{{ asset('assets/admin/images/flags/flag-png/united-kingdom.png') }}" class="h-24" alt="img">
 									</a>
@@ -220,14 +220,14 @@
 											<div class="d-flex"> <span class="my-auto">Spain</span> </div>
 										</a>
 									</div>
-								</div>
+								</div> --}}
 								<div class="dropdown header-fullscreen">
 									<a class="nav-link icon full-screen-link">
 										<i class="feather feather-maximize fullscreen-button fullscreen header-icons"></i>
 										<i class="feather feather-minimize fullscreen-button exit-fullscreen header-icons"></i>
 									</a>
 								</div>
-								<div class="dropdown header-message">
+								{{-- <div class="dropdown header-message">
 									<a class="nav-link icon" data-toggle="dropdown">
 										<i class="feather feather-mail header-icon"></i>
 										<span class="badge badge-success side-badge">5</span>
@@ -325,7 +325,7 @@
 										<i class="feather feather-bell header-icon"></i>
 										<span class="bg-dot"></span>
 									</a>
-								</div>
+								</div> --}}
 								<div class="dropdown profile-dropdown">
 									<a href="#" class="nav-link pr-1 pl-0 leading-none" data-toggle="dropdown">
 										<span>
@@ -334,10 +334,10 @@
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow animated">
 										<div class="p-3 text-center border-bottom">
-											<a href="#" class="text-center user pb-0 font-weight-bold">John Thomson</a>
-											<p class="text-center user-semi-title">App Developer</p>
+											<a href="{{ route('admin.dashboard') }}" class="text-center user pb-0 font-weight-bold">{{ Auth::user()->name }}</a>
+											{{-- <p class="text-center user-semi-title">App Developer</p> --}}
 										</div>
-										<a class="dropdown-item d-flex" href="#">
+										{{-- <a class="dropdown-item d-flex" href="#">
 											<i class="feather feather-user mr-3 fs-16 my-auto"></i>
 											<div class="mt-1">Profile</div>
 										</a>
@@ -352,7 +352,7 @@
 										<a class="dropdown-item d-flex" href="#" data-toggle="modal" data-target="#changepasswordnmodal">
 											<i class="feather feather-edit-2 mr-3 fs-16 my-auto"></i>
 											<div class="mt-1">Change Password</div>
-										</a>
+										</a> --}}
 										<a class="dropdown-item d-flex" href="#">
 											<i class="feather feather-power mr-3 fs-16 my-auto"></i>
 											<form action="{{ route('logout') }}" method="POST">

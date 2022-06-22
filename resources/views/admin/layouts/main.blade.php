@@ -18,3 +18,10 @@
 @include('admin.layouts.footer')
 
 @stack('script')
+
+<script>
+    $(document).ready(function(){
+        $("input[type='search']").wrap("<form>");
+        $("input[type='search']").closest("form").attr("autocomplete","off");
+    });
+</script>
