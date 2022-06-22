@@ -37,10 +37,10 @@
                     <div class="uk-float-right">
                         <div class="uk-panel">
                             <div class="social-top">
-                                <a href="https://www.instagram.com/southall_athletic/?hl=en" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-instagram"></span></a>
                                 <a href="https://www.facebook.com/SouthallAthletic/" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-facebook"></span></a>
-                                <a href="https://twitter.com/southall_afc" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-twitter"></span></a>
+                                <a href="https://www.instagram.com/southall_athletic/?hl=en" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-instagram"></span></a>
                                 <a href="https://www.linkedin.com/company/southall-afc/"><span class="uk-icon-small uk-icon-hover uk-icon-linkedin"></span></a>
+                                <a href="https://twitter.com/southall_afc" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-twitter"></span></a>
                                 <!-- <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-pinterest"></span></a> -->
                                 <a href="https://www.youtube.com/channel/UC5puOkk0k-yIfngkssGtzWA" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-youtube"></span></a>
                                 <!-- <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-flickr"></span></a> -->
@@ -66,6 +66,7 @@
                                 <ul class="uk-navbar-nav uk-hidden-small" style="width: 100%">
                                     <li class="uk-parent uk-active" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="{{ route('home') }}">Home</a></li>
                                     <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="{{ route('about-us') }}">About Us</a></li>
+                                    <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="{{ route('community') }}">Community</a></li>
                                     
                                     <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="teams.html">Teams</a></li>
                                     
@@ -83,7 +84,7 @@
                             <div class="uk-width-1-2 uk-hidden-small nav-block2">
                                 <ul class="uk-navbar-nav uk-hidden-small">
                                     <li><a href="offline.html">Social media</a>
-                                    <li><a href="sponsors.html">Sponsors</a>
+                                    <li><a href="sponsors.html">Affiliations & Partners</a>
                                     
                                     <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="gallery.html">Gallery</a></li>
                                         {{-- <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
@@ -98,6 +99,7 @@
                                         </div> --}}
                                     </li>
     
+                                    <li><a href="{{ route('club-shop') }}">Club Shop</a></li>
                                     <li><a href="{{ route('contact-us') }}">Contact us</a></li>
                                 </ul>
                             </div>
@@ -233,17 +235,19 @@
         <div id="offcanvas" class="uk-offcanvas">
             <div class="uk-offcanvas-bar">
                 <ul class="uk-nav uk-nav-offcanvas">
-                    <li class="uk-parent uk-active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="uk-parent uk-active"><a href="{{ route('home') }}">Home</a></li>
+                    <li><a href="{{ route('about-us') }}">About Us</a></li>
+                    <li><a href="{{ route('community') }}">Community</a></li>
                     
                     <li class="uk-parent"><a href="teams.html">Teams</a></li>
 
                     <li><a href="news.html">News</a></li>
 
                     <li class="uk-parent"><a href="offline.html">Social Media</a></li>
-                    <li class="uk-parent"><a href="offline.html">Sponsors</a></li>
+                    <li class="uk-parent"><a href="offline.html">Affiliations & Partners</a></li>
                     <li class="uk-parent"><a href="gallery.html">gallery</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
+                    <li class="uk-parent"><a href="{{ route('club-shop') }}">Club Shop</a></li>
+                    <li><a href="{{ route('contact-us') }}">Contact us</a></li>
                 </ul>
             </div>
 

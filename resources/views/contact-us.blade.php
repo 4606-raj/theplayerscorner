@@ -58,6 +58,8 @@
                             <div class="uk-width-1-2 uk-panel">
                                 <div style="min-height: 139px;" class="contact-enquiries">
                                     <!-- <div class="title">HEAD OFFICE</div> -->
+                                    <span>Perivale Park</span>
+
                                     <div class="phone"><i class="uk-icon-phone"></i>(020) 3289 5010</div>
                                     <div class="mail">
                                         <i class="uk-icon-envelope"></i>
@@ -65,7 +67,27 @@
                                             info@southallathleticfc.com
                                         </a>
                                     </div>
-                                    <div class="location"><i class="uk-icon-map-marker"></i>Brentside Playing Fields, Ruislip Road East, Greenford UB6 9FH</div>
+                                    <div class="location"><i class="uk-icon-map-marker"></i>22 Betham Road Greenford Middlesex UB6 8RZ <br>
+                                        <span>(Access via Cowgate Road, Greenford, Middlesex UB6 8HQ)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-width-1-2 uk-panel">
+                                <div style="min-height: 139px;" class="contact-enquiries">
+                                    <!-- <div class="title">HEAD OFFICE</div> -->
+                                    <span>Norwood Hall Playing Fields</span>
+
+                                    <div class="phone"><i class="uk-icon-phone"></i>(020) 3289 5010</div>
+                                    <div class="mail">
+                                        <i class="uk-icon-envelope"></i>
+                                        <a href="malto:info@southallathleticfc.com">
+                                            info@southallathleticfc.com
+                                        </a>
+                                    </div>
+                                    <div class="location"><i class="uk-icon-map-marker"></i>Norwood Green Road Southall Middlesex UB2 4LA <br>
+                                        <span>(Behind Khalsa Primary School – access via Tentelow Lane, Southall UB2 4JA)</span>
+                                    </div>
                                 </div>
                             </div>
                             </div>

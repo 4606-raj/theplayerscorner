@@ -17,6 +17,8 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::view('/about-us', 'about-us')->name('about-us');
+Route::view('/community', 'community')->name('community');
+Route::view('/club-shop', 'club-shop')->name('club-shop');
 Route::view('/contact-us', 'contact-us')->name('contact-us');
 
 Route::post('/contact', function (Request $request) {

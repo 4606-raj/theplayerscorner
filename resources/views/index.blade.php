@@ -20,8 +20,8 @@
                                     <div class="uk-position-cover uk-flex-middle">
                                         <div class="uk-container uk-container-center uk-position-cover">
                                             <div class="va-promo-text uk-width-6-10 uk-push-4-10">
-                                                <h3>Just play.<span>Have fun.</span></h3>
-                                                <div class="promo-sub">Life is <span>about timing</span> Enjoy the game</div>
+                                                <h3>We are the <span>Community.</span></h3>
+                                                <div class="promo-sub">We are<span> SouthALL Athletic </span> Football Club!!!</div>
                                                 <!-- <a href="#" class="read-more">Read More<i class="uk-icon-chevron-right"></i></a> -->
                                             </div>
                                         </div>
@@ -35,8 +35,8 @@
                                     <div class="uk-position-cover uk-flex-middle">
                                         <div class="uk-container uk-container-center uk-position-cover">
                                             <div class="va-promo-text uk-width-6-10 uk-push-4-10">
-                                                <h3>Life is <span>about timing</span></h3>
-                                                <div class="promo-sub">Just play. <span>Have fun.</span> Enjoy the game</div>
+                                                <h3>We are the <span>Community.</span></h3>
+                                                <div class="promo-sub">We are<span> SouthALL Athletic </span> Football Club!!!</div>
                                                 <!-- <a href="#" class="read-more">Read More<i class="uk-icon-chevron-right"></i></a> -->
                                             </div>
                                         </div>
@@ -50,8 +50,8 @@
                                     <div class="uk-position-cover uk-flex-middle">
                                         <div class="uk-container uk-container-center uk-position-cover">
                                             <div class="va-promo-text uk-width-6-10 uk-push-4-10">
-                                                <h3>Life is <span>about timing</span></h3>
-                                                <div class="promo-sub">Just play. <span>Have fun.</span> Enjoy the game</div>
+                                                <h3>We are the <span>Community.</span></h3>
+                                                <div class="promo-sub">We are<span> SouthALL Athletic </span> Football Club!!!</div>
                                                 <!-- <a href="#" class="read-more">Read More<i class="uk-icon-chevron-right"></i></a> -->
                                             </div>
                                         </div>
@@ -815,9 +815,9 @@
         <section id="tm-bottom-c" class="tm-bottom-c uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
 
             {{-- CLUB AFFILIATIONS --}}
-            <div class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 sp-fix1" style="padding-right: 35px;">
+            <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 sp-fix1" style="padding-right: 35px;">
                 <div class="sponsers-title">
-                    <h3>CLUB <span>AFFILIATIONS</span></h3>
+                    <h3>IN <span>ASSOCIATION</span> WITH</h3>
                 </div>
                 <div class="uk-panel">
                     <div class="sponser-main-page-wrap">
@@ -867,6 +867,38 @@
                                                 </a>
                                             </div>
                                         </li>
+
+                                        <li class="block_item">
+                                            <div class="image_block">
+                                                <a draggable="false" href="https://chanachemist.co.uk " target="_blank">
+                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-11.png') }}" alt="Thermoball Insulated Jacket">
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="block_item">
+                                            <div class="image_block">
+                                                <a draggable="false" href="https://churchstreetdental.london" target="_blank">
+                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-3.png') }}" alt="Waterproof jackets">
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="block_item">
+                                            <div class="image_block">
+                                                <a draggable="false" href="https://instagram.com/queenspharmacysouthall/ " target="_blank">
+                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-4.png') }}" alt="Waterproof jackets">
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="block_item">
+                                            <div class="image_block">
+                                                <a draggable="false" href="https://cargo-overseas.co.uk/" target="_blank">
+                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-5.png') }}" alt="Thermoball Insulated Jacket">
+                                                </a>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -879,7 +911,7 @@
             </div>
 
             {{-- CLUB PARTNERS --}}
-            <div class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1" style="border-left: 1px solid #ddd">
+            {{-- <div class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1" style="border-left: 1px solid #ddd">
                 <div class="sponsers-title">
                     <h3>CLUB <span>PARTNERS</span></h3>
                 </div>
@@ -948,7 +980,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </section>
     </div>
 </div>
