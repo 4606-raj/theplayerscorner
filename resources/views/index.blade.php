@@ -3,7 +3,7 @@
 @section('content')
     
 <!-- Main Slider START-->
-<div class="tm-top-a-box tm-full-width  ">
+<div class="tm-top-a-box tm-full-width" id="main-slider">
     <div class="uk-container uk-container-center">
         <section id="tm-top-a" class="tm-top-a uk-grid uk-grid-collapse" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
 
@@ -15,7 +15,7 @@
                                 
                                 <li aria-hidden="true" class="uk-height-viewport uk-active">
                                     <div style="background-image: url(images/main-slider-img1.html);" class="uk-cover-background uk-position-cover"></div>
-                                    <img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="{{ asset('public/images/main-slider-img1.jpg') }}" alt="">
+                                    <img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="{{ asset('public/images/slider/slide-1.jpg') }}" alt="">
 
                                     <div class="uk-position-cover uk-flex-middle">
                                         <div class="uk-container uk-container-center uk-position-cover">
@@ -30,7 +30,7 @@
 
                                 <li aria-hidden="false" class="uk-height-viewport">
                                     <div style="background-image: url(images/main-slider-img.jpg);" class="uk-cover-background uk-position-cover"></div>
-                                    <img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="{{ asset('public/images/main-slider-img.jpg') }}" alt="">
+                                    <img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="{{ asset('public/images/slider/slide-2.jpg') }}" alt="">
 
                                     <div class="uk-position-cover uk-flex-middle">
                                         <div class="uk-container uk-container-center uk-position-cover">
@@ -45,7 +45,52 @@
 
                                 <li aria-hidden="true" class="uk-height-viewport">
                                     <div style="background-image: url(images/main-slider-img2.html);" class="uk-cover-background uk-position-cover"></div>
-                                    <img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="{{ asset('public/images/main-slider-img2.jpg') }}" alt="">
+                                    <img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="{{ asset('public/images/slider/slide-3.jpg') }}" alt="">
+                                    
+                                    <div class="uk-position-cover uk-flex-middle">
+                                        <div class="uk-container uk-container-center uk-position-cover">
+                                            <div class="va-promo-text uk-width-6-10 uk-push-4-10">
+                                                <h3>We are the <span>Community.</span></h3>
+                                                <div class="promo-sub">We are<span> SouthALL Athletic </span> Football Club!!!</div>
+                                                <!-- <a href="#" class="read-more">Read More<i class="uk-icon-chevron-right"></i></a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li aria-hidden="true" class="uk-height-viewport">
+                                    <div style="background-image: url(images/main-slider-img2.html);" class="uk-cover-background uk-position-cover"></div>
+                                    <img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="{{ asset('public/images/slider/slide-4.jpg') }}" alt="">
+                                    
+                                    <div class="uk-position-cover uk-flex-middle">
+                                        <div class="uk-container uk-container-center uk-position-cover">
+                                            <div class="va-promo-text uk-width-6-10 uk-push-4-10">
+                                                <h3>We are the <span>Community.</span></h3>
+                                                <div class="promo-sub">We are<span> SouthALL Athletic </span> Football Club!!!</div>
+                                                <!-- <a href="#" class="read-more">Read More<i class="uk-icon-chevron-right"></i></a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+ 
+                                <li aria-hidden="true" class="uk-height-viewport">
+                                    <div style="background-image: url(images/main-slider-img2.html);" class="uk-cover-background uk-position-cover"></div>
+                                    <img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="{{ asset('public/images/slider/slide-5.jpg') }}" alt="">
+                                    
+                                    <div class="uk-position-cover uk-flex-middle">
+                                        <div class="uk-container uk-container-center uk-position-cover">
+                                            <div class="va-promo-text uk-width-6-10 uk-push-4-10">
+                                                <h3>We are the <span>Community.</span></h3>
+                                                <div class="promo-sub">We are<span> SouthALL Athletic </span> Football Club!!!</div>
+                                                <!-- <a href="#" class="read-more">Read More<i class="uk-icon-chevron-right"></i></a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li aria-hidden="true" class="uk-height-viewport">
+                                    <div style="background-image: url(images/main-slider-img2.html);" class="uk-cover-background uk-position-cover"></div>
+                                    <img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="{{ asset('public/images/slider/slide-6.jpg') }}" alt="">
                                     
                                     <div class="uk-position-cover uk-flex-middle">
                                         <div class="uk-container uk-container-center uk-position-cover">
@@ -67,6 +112,12 @@
                                 <li data-uk-slideshow-item="1"><a href="../index.html">1</a>
                                 </li>
                                 <li data-uk-slideshow-item="2"><a href="../index.html">2</a>
+                                </li>
+                                <li data-uk-slideshow-item="3"><a href="../index.html">3</a>
+                                </li>
+                                <li data-uk-slideshow-item="4"><a href="../index.html">4</a>
+                                </li>
+                                <li data-uk-slideshow-item="5"><a href="../index.html">5</a>
                                 </li>
                             </ul>
                         </div>
@@ -808,184 +859,6 @@
 <!-- Gallery END -->
 
 
-
-<!-- Sponsers Section START -->
-<div class="tm-bottom-c-box tm-full-width sponsers-sec ">
-    <div class="uk-container uk-container-center">
-        <section id="tm-bottom-c" class="tm-bottom-c uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
-
-            {{-- CLUB AFFILIATIONS --}}
-            <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 sp-fix1" style="padding-right: 35px;">
-                <div class="sponsers-title">
-                    <h3>IN <span>ASSOCIATION</span> WITH</h3>
-                </div>
-                <div class="uk-panel">
-                    <div class="sponser-main-page-wrap">
-                        <div class="latest_products jshop">
-
-                            <div data-uk-slider="{center:true, autoplay:true, pauseOnHover:true, autoplayInterval:5000}">
-
-                                <div class="uk-slider-container">
-                                    <ul class="uk-slider uk-grid-width-large-1-6 uk-grid-width-medium-1-4 uk-grid-width-small-1-1  uk-grid uk-grid-medium">
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://ealing.gov.uk/" target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-1.png') }}" alt="Sportswear outerwear coats">
-                                                </a>
-                                            </div>
-                                        </li>
-                                        
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://englandfootball.com/run/leagues-and-clubs/england-football-accreditation " target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-7.png') }}" alt="Thermoball Insulated Jacket">
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://thefa.com/get-involved/respect" target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-8.png') }}" alt="Thermoball Insulated Jacket">
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://middlesexfa.com" target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-9.png') }}" alt="Thermoball Insulated Jacket">
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://thisgirlcan.co.uk " target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-10.png') }}" alt="Thermoball Insulated Jacket">
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://chanachemist.co.uk " target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-11.png') }}" alt="Thermoball Insulated Jacket">
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://churchstreetdental.london" target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-3.png') }}" alt="Waterproof jackets">
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://instagram.com/queenspharmacysouthall/ " target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-4.png') }}" alt="Waterproof jackets">
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://cargo-overseas.co.uk/" target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-5.png') }}" alt="Thermoball Insulated Jacket">
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fun-shop-btn">
-                            <a href="sponsors.html"><span>View all</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {{-- CLUB PARTNERS --}}
-            {{-- <div class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1" style="border-left: 1px solid #ddd">
-                <div class="sponsers-title">
-                    <h3>CLUB <span>PARTNERS</span></h3>
-                </div>
-                <div class="uk-panel">
-                    <div class="sponser-main-page-wrap">
-                        <div class="latest_products jshop">
-                            
-                            <div data-uk-slider="{center:true, autoplay:true, pauseOnHover:true, autoplayInterval:5000}">
-                                
-                                <div class="uk-slider-container">
-                                    <ul class="uk-slider uk-grid-width-large-1-6 uk-grid-width-medium-1-4 uk-grid-width-small-1-1  uk-grid uk-grid-medium">
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://instagram.com/rapturebarbers/ " target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-2.jpg') }}" alt="Sportswear outerwear coats">
-                                                </a>
-                                            </div>
-                                        </li>
-                            
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://churchstreetdental.london" target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-3.png') }}" alt="Waterproof jackets">
-                                                </a>
-                                            </div>
-                                        </li>
-                            
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://instagram.com/queenspharmacysouthall/ " target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-4.png') }}" alt="Waterproof jackets">
-                                                </a>
-                                            </div>
-                                        </li>
-                            
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://cargo-overseas.co.uk/" target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-5.png') }}" alt="Thermoball Insulated Jacket">
-                                                </a>
-                                            </div>
-                                        </li>
-                            
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="https://chanachemist.co.uk " target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-11.png') }}" alt="Thermoball Insulated Jacket">
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="block_item">
-                                            <div class="image_block">
-                                                <a draggable="false" href="http://hiltons-estates.com/" target="_blank">
-                                                    <img draggable="false" class="jshop_img" src="{{ asset('public/images/sponsers/img-12.png') }}" alt="Thermoball Insulated Jacket">
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fun-shop-btn">
-                            <a href="sponsors.html"><span>View all</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-        </section>
-    </div>
-</div>
-<!-- Sponsers Section END -->
-
 <!-- Youtube Video Section START -->
 {{-- <div class="tm-bottom-d-box tm-full-width  ">
     <div class="uk-container uk-container-center">
@@ -1130,5 +1003,40 @@
     </div>
 </div>
 <!-- Map & Contact Us Section END -->
+
+
+<!-- Social media icons -->
+<div id="social-ic">
+    <div class="uk-container uk-container-center">
+        <div class="sponsers-title">
+            <h3>Follow <span>Us</span></h3>
+        </div>
+        <div data-uk-slideset="{small: 3, medium: 4, large: 5}">
+            <ul class="uk-grid uk-slideset">
+                <li>
+                    <a href="https://www.instagram.com/southall_athletic/?hl=en" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-instagram"></span></a>
+                </li>
+    
+                <li>
+                    <a href="https://www.facebook.com/SouthallAthletic/" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-facebook"></span></a>
+                </li>
+    
+                <li>
+                    <a href="https://twitter.com/southall_afc" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-twitter"></span></a>
+                </li>
+    
+                <li>
+                    <a href="https://www.linkedin.com/company/southall-afc/"><span class="uk-icon-small uk-icon-hover uk-icon-linkedin"></span></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UC5puOkk0k-yIfngkssGtzWA" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-youtube"></span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<!-- Social media icons END -->
 
 @endsection

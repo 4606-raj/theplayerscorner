@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	
-<!-- Mirrored from laravel.spruko.com/dayone/ltr/index by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Apr 2022 14:28:49 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
 
 		<!-- Meta data -->

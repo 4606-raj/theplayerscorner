@@ -30,9 +30,16 @@
         
         <!-- Header's upper row START-->
         <div class="toolbar-wrap">
-            <div class="uk-container uk-container-center">
-                <div class="tm-toolbar uk-clearfix uk-hidden-small">
-                    
+            <div class="top-hdr-bg"></div>
+            <div class="uk-container uk-container-center top-br-fx"> 
+                <div class="tm-toolbar">
+
+                    <div class="logo-bl">
+                        <a class="tm-logo hdr-logo uk-float-left" href="{{ route('home') }}">
+                            <img src="{{ asset('public/images/logo-img.png') }}" alt="logo" class="logo-img">
+                            <span>Southall<br> <span>Athletic</span></span>
+                        </a>
+                    </div>
                     
                     <div class="uk-float-right">
                         <div class="uk-panel">
@@ -58,11 +65,17 @@
 
             <div style="height: 70px;" class="uk-sticky-placeholder">
                 <nav style="margin: 0px;" class="tm-navbar uk-navbar" data-uk-sticky="">
-                    <div class="uk-width-auto hdr-bg">
+                    {{-- <div class="uk-width-auto hdr-bg"> --}}
                        
-                        <div class="" style="width: 100%; display: flex;">
+                        <div class="uk-container uk-container-center" style="width: 100%; display: flex;">
+                            <div class="logo-bl lower-nav-logo">
+                                <a class="tm-logo hdr-logo uk-float-left" href="{{ route('home') }}">
+                                    <img src="{{ asset('public/images/logo-img.png') }}" alt="logo" class="logo-img">
+                                    {{-- <span>Southall<br> <span>Athletic</span></span> --}}
+                                </a>
+                            </div>
 
-                            <div class="uk-width-1-2 uk-hidden-small nav-block1">
+                            {{-- <div class="uk-width-1-1 uk-hidden-small nav-block1"> --}}
                                 <ul class="uk-navbar-nav uk-hidden-small" style="width: 100%">
                                     <li class="uk-parent uk-active" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="{{ route('home') }}">Home</a></li>
                                     <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="{{ route('about-us') }}">About Us</a></li>
@@ -70,24 +83,14 @@
                                     
                                     <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="teams.html">Teams</a></li>
                                     
-                                    <li><a href="news.html">News</a>
-                                </ul>
-                            </div>
-                            
-                            <div class="logo-bl">
-                                <a class="tm-logo hdr-logo uk-float-left" href="{{ route('home') }}">
-                                    <img src="{{ asset('public/images/logo-img.png') }}" alt="logo" class="logo-img">
-                                    {{-- <span>Southall<br> <span>Athletic</span></span> --}}
-                                </a>
-                            </div>
+                                    <li><a href="news.html">News</a></li>
 
-                            <div class="uk-width-1-2 uk-hidden-small nav-block2">
-                                <ul class="uk-navbar-nav uk-hidden-small">
-                                    <li><a href="offline.html">Social media</a>
+
+                                     <li><a href="offline.html">Social media</a>
                                     <li><a href="sponsors.html">Affiliations & Partners</a>
                                     
                                     <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="gallery.html">Gallery</a></li>
-                                        {{-- <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
                                             <div class="uk-grid uk-dropdown-grid">
                                                 <div class="uk-width-1-1">
                                                     <ul class="uk-nav uk-nav-navbar">
@@ -96,14 +99,21 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </div> --}}
+                                        </div>
                                     </li>
     
                                     <li><a href="{{ route('club-shop') }}">Club Shop</a></li>
                                     <li><a href="{{ route('contact-us') }}">Contact us</a></li>
                                 </ul>
-                            </div>
-                        </div>
+                            {{-- </div> --}}
+                            
+                            {{-- <div class="logo-bl">
+                                <a class="tm-logo hdr-logo uk-float-left" href="{{ route('home') }}">
+                                    <img src="{{ asset('public/images/logo-img.png') }}" alt="logo" class="logo-img">
+                                </a>
+                            </div> --}}
+
+                        {{-- </div> --}}
 
                         <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
                     </div>
@@ -119,6 +129,218 @@
         <div class="bottom-wrapper">
             <div class="bg-overlay"></div>
             
+            <div class="uk-container uk-container-center">
+                <section id="tm-bottom-c" class="tm-bottom-c uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
+        
+                    
+                    <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 sp-fix1 uk-row-first" style="padding-right: 35px;">
+                        {{-- <div class="sponsers-title">
+                            <h3>IN <span>ASSOCIATION</span> WITH</h3>
+                        </div> --}}
+                        <div class="uk-panel">
+                            <div class="sponser-main-page-wrap">
+                                <div class="latest_products jshop">
+        
+                                    <div data-uk-slider="{center:true, autoplay:true, pauseOnHover:true, autoplayInterval:5000}" dir="ltr">
+        
+                                        <div class="uk-slider-container">
+                                            <ul class="uk-slider uk-grid-width-large-1-6 uk-grid-width-medium-1-4 uk-grid-width-small-1-1  uk-grid uk-grid-medium" style="min-width: 5745.94px; min-height: 150px; transform: translateX(-319.25px);">
+        
+                                                <li class="block_item uk-slide-before" style="left: 0px; width: 212.812px;">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://ealing.gov.uk/" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-1.png" alt="Sportswear outerwear coats">
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                
+                                                <li class="block_item uk-slide-before" style="left: 212.812px; width: 212.812px;">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://englandfootball.com/run/leagues-and-clubs/england-football-accreditation " target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-7.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li>
+        
+                                                <li class="block_item uk-slide-before" style="left: 425.625px; width: 212.812px;">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://thefa.com/get-involved/respect" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-8.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li>
+        
+                                                <li class="block_item uk-slide-before" style="left: 638.438px; width: 212.812px;">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://middlesexfa.com" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-9.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li>
+        
+                                                <li class="block_item uk-active" style="left: 851.25px; width: 212.812px;">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://thisgirlcan.co.uk " target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-10.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li>
+        
+                                                <li class="block_item uk-slide-after" style="left: 1064.06px; width: 212.812px;">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://chanachemist.co.uk " target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-11.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li>
+        
+                                                <li class="block_item uk-slide-after" style="left: 1276.88px; width: 212.812px;">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://churchstreetdental.london" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-3.png" alt="Waterproof jackets">
+                                                        </a>
+                                                    </div>
+                                                </li>
+        
+                                                <li class="block_item uk-slide-after" style="left: 1489.69px; width: 212.812px;">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://instagram.com/queenspharmacysouthall/ " target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-4.png" alt="Waterproof jackets">
+                                                        </a>
+                                                    </div>
+                                                </li>
+        
+                                                <li class="block_item uk-slide-after" style="left: 1702.5px; width: 212.812px;">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://cargo-overseas.co.uk/" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-5.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            <li class="block_item uk-slide-after" style="left: 1915.31px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://ealing.gov.uk/" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-1.png" alt="Sportswear outerwear coats">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-after" style="left: 2128.12px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://englandfootball.com/run/leagues-and-clubs/england-football-accreditation " target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-7.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-after" style="left: 2340.94px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://thefa.com/get-involved/respect" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-8.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-after" style="left: 2553.75px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://middlesexfa.com" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-9.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-after" style="left: 2766.56px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://thisgirlcan.co.uk " target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-10.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-after" style="left: 2979.38px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://chanachemist.co.uk " target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-11.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-after" style="left: 3192.19px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://churchstreetdental.london" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-3.png" alt="Waterproof jackets">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-after" style="left: 3405px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://instagram.com/queenspharmacysouthall/ " target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-4.png" alt="Waterproof jackets">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-after" style="left: 3617.81px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://cargo-overseas.co.uk/" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-5.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-after" style="left: 3830.62px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://ealing.gov.uk/" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-1.png" alt="Sportswear outerwear coats">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-after" style="left: 4043.44px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://englandfootball.com/run/leagues-and-clubs/england-football-accreditation " target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-7.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-after" style="left: 4256.25px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://thefa.com/get-involved/respect" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-8.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-after" style="left: 4469.06px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://middlesexfa.com" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-9.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-before" style="left: -1064.06px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://thisgirlcan.co.uk " target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-10.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-before" style="left: -851.25px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://chanachemist.co.uk " target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-11.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-before" style="left: -638.438px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://churchstreetdental.london" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-3.png" alt="Waterproof jackets">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-before" style="left: -425.625px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://instagram.com/queenspharmacysouthall/ " target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-4.png" alt="Waterproof jackets">
+                                                        </a>
+                                                    </div>
+                                                </li><li class="block_item uk-slide-before" style="left: -212.812px; width: 212.812px;" id="">
+                                                    <div class="image_block">
+                                                        <a draggable="false" href="https://cargo-overseas.co.uk/" target="_blank">
+                                                            <img draggable="false" class="jshop_img" src="http://127.0.0.1:8000/public/images/sponsers/img-5.png" alt="Thermoball Insulated Jacket">
+                                                        </a>
+                                                    </div>
+                                                </li></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fun-shop-btn">
+                                    <a href="sponsors.html"><span>View all</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    
+                    
+                </section>
+            </div>
+
             <div class="tm-bottom-f-box  ">
                 <div class="uk-container uk-container-center">
                     <section id="tm-bottom-f" class="tm-bottom-f uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
@@ -129,18 +351,7 @@
                                     <img src="{{ asset('public/images/logo-img.png') }}" alt="logo" title="logo">
                                     <span>Southall<br> <span>Athletic</span></span>
                                 </a>
-                                <!-- <div class="footer-logo">
-                                    <a href="../index.html"><img src="images/footer-logo-img.png" alt=""><span>Southall</span> Athletic</a>
-                                </div> -->
-                                <div class="footer-socials">
-                                    <div class="social-top">
-                                        <a href="https://www.instagram.com/southall_athletic/?hl=en" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-instagram"></span></a>
-                                        <a href="https://www.facebook.com/SouthallAthletic/" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-facebook"></span></a>
-                                        <a href="https://twitter.com/southall_afc" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-twitter"></span></a>
-                                        <a href="https://www.linkedin.com/company/southall-afc/"><span class="uk-icon-small uk-icon-hover uk-icon-linkedin"></span></a>
-                                        <a href="https://www.youtube.com/channel/UC5puOkk0k-yIfngkssGtzWA" target="_blank"><span class="uk-icon-small uk-icon-hover uk-icon-youtube"></span></a>
-                                    </div>
-                                </div>
+                                
                                 <div class="clear"></div>
 
                                 <p class="footer-about-text">
@@ -151,65 +362,7 @@
                     </section>
                 </div>
             </div>
-
-            <div class="tm-bottom-g-box  ">
-                <div class="uk-container uk-container-center">
-                    <section id="tm-bottom-g" class="tm-bottom-f footer-wrapper-2">
-                        <div class="foot-menu-wrap">
-                            <ul class="nav menu " style="padding-left: 0;">
-                                <li class="item-165"><a href="about.html">About Us</a>
-                                </li>
-                                <li class="item-166"><a href="offline.html">Social Media</a>
-                                </li>
-                                <li class="item-167"><a href="gallery.html">Gallery</a>
-                                </li>
-                                <li class="item-168"><a href="news.html">News</a>
-                                </li>
-                                <li class="item-169"><a href="offline.html">Teams</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="uk-width-1-1 uk-width-large-1-2">
-                            <div  class="uk-panel">
-                                <div class="acymailing_module" id="acymailing_module_formAcymailing54111">
-                                    <div class="acymailing_fulldiv" id="acymailing_fulldiv_formAcymailing54111">
-                                        <form id="formAcymailing54111" method="post" name="formAcymailing54111">
-                                            <div class="acymailing_module_form">
-                                                <div class="mail-title">Newsletters</div>
-                                                <!-- <div class="acymailing_introtext">Suspendisse sodales, magna at dignissim cursus, velit ex porttitor eros.</div> -->
-                                                <div class="clear"></div>
-                                                <div class="space"></div>
-                                                <table class="acymailing_form">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="acyfield_email acy_requiredField">
-                                                                <span class="mail-wrap">
-								                                    <input id="user_email_formAcymailing54111" onfocus="if(this.value == 'Enter your email') this.value = '';" onblur="if(this.value=='') this.value='Enter your email';" class="inputbox" name="user[email]" style="width:80%" value="Enter your email" title="Enter your email" type="text">
-                                                            </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-
-                                                            <td class="acysubbuttons">
-                                                                <span class="submit-wrap">
-                                                                    <span class="submit-wrapper">
-                                                                        <input class="button subbutton btn btn-primary" value="Subscribe" name="Submit" onclick="try{ return submitacymailingform('optin','formAcymailing54111'); }catch(err){alert('The form could not be submitted '+err);return false;}" type="submit">
-                                                                    </span>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
+            
 
             <footer id="tm-footer" class="tm-footer">
 
@@ -217,15 +370,27 @@
                     <div class="uk-container uk-container-center">
                         <div class="uk-grid">
                             <div class="uk-width-1-1">
-                                <div class="footer-wrap" style="display: flex; justify-content: center;">
+                                <div class="footer-wrap" style="display: flex; justify-content: space-between;">
                                     
                                     <div class="copyrights">Copyright © 2022 <a href="../index.html">Southall Athletic</a>. All Rights Reserved.</div>
                                     <div class="clear"></div>
+
+                                    <ul class="doc-links">
+                                        <li>
+                                            <a href="#">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Terms of Use</a>
+                                        </li>
+                                    </ul>
+
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
+
             </footer>
 
         </div>

@@ -397,7 +397,6 @@
 
 </body>
 
-<!-- Mirrored from laravel.spruko.com/dayone/ltr/index by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Apr 2022 14:31:31 GMT -->
 </html>
 ;
 
