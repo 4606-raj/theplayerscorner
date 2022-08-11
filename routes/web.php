@@ -16,10 +16,14 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::view('/about-us', 'about-us')->name('about-us');
-Route::view('/community', 'community')->name('community');
-Route::view('/club-shop', 'club-shop')->name('club-shop');
+// Route::view('/about-us', 'about-us')->name('about-us');
+// Route::view('/community', 'community')->name('community');
+// Route::view('/club-shop', 'club-shop')->name('club-shop');
 Route::view('/contact-us', 'contact-us')->name('contact-us');
+Route::view('/privacy-policy', 'legal-documents.privacy-policy')->name('privacy-policy');
+Route::view('/company-details', 'legal-documents.company-details')->name('company-details');
+Route::view('/digital-privacy', 'legal-documents.digital-privacy')->name('digital-privacy');
+Route::view('/terms-of-use', 'legal-documents.terms-of-use')->name('terms-of-use');
 
 Route::post('/contact', function (Request $request) {
 

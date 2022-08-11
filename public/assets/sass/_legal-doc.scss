@@ -1,0 +1,54 @@
+// Privacy Policy page START
+#lg-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .lg-hdr-1,
+    .lg-sub-hdr{
+        font-weight: 500;
+        font-family: $open-sans;   
+    }
+    .lg-hdr-1{
+        margin-bottom: 40px;
+        color: $secondary-clr;
+        font-size: 2.5rem;
+    }
+    .lg-sub-hdr{
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
+    .lg-des-txt{
+        font-family: $open-sans;
+        // color: #484848;
+        line-height: 35px;
+        font-size: 1.1rem;
+    }
+    ol, ul{
+        font-family: $open-sans;
+        font-size: 1.1rem;
+        line-height: 35px;
+    }
+    a{
+        font-family: $open-sans;
+        font-size: 1.1rem;
+        color: $primary-clr;
+        font-weight: 500;
+
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .brief-box{
+        padding: 15px;
+        border: 1px solid $secondary-clr;
+        background: #eee;
+        font-family: $open-sans;
+        color: $secondary-clr;
+        max-width: 600px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+}
+// Privacy Policy page END

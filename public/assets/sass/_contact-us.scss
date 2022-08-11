@@ -1,0 +1,89 @@
+// Contact Page START
+#contact-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .ct-hdr-2{
+        background: #f7fbff;
+        padding: 10px 15px;
+        border-top: 1px solid #d4dbe1;
+        border-bottom: 1px solid #d4dbe1;
+    }
+    .ct-hdr,
+    .ct-hdr-2{
+        color: $secondary-clr;
+        font-family: $open-sans;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .ct-hdr{
+        line-height: 30px;
+        font-weight: 600;
+    }
+    .ct-phone{
+        color: $secondary-clr !important;
+        margin-top: 10px;
+
+        &:hover{
+            text-decoration: unset !important;
+        }
+    }
+    .ct-mail,
+    .ct-phone{
+        font-family: $open-sans;
+        color: $primary-clr;
+        text-decoration: none;
+        font-weight: 500;
+
+        i{
+            color: $secondary-clr;
+            margin-right: 10px;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .social-icons{
+        padding: 0 150px;
+
+        li a{
+            color: $secondary-clr;
+        }
+        li a span{
+            font-size: 1rem;
+        }
+    }
+    #ct-form{
+        margin: 120px 0;
+        padding: 20px;
+        border-radius: 6px;
+        border: 1px solid #d4dbe1;
+        background: #f7fbff;
+
+        #floatingTextarea{
+            min-height: 120px;
+        }
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #d4dbe1;
+            padding-bottom: 14px;
+        }
+
+        .form-floating > label{
+            left: 10px;
+        }
+        #sub-btn{
+            background: $primary-clr;
+            padding: 8px 50px;
+            font-family: $open-sans;
+
+            &:hover{
+                background: #135ff4;
+            }
+        }
+    }
+
+}
+// Contact Page END
