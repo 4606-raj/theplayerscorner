@@ -23,7 +23,7 @@
 					<span>Login to your ‘My Athletic Hub’ Account by entering your username and password below.</span> 
 				</p>
 				
-				<form class="card-body pt-3" id="login" name="login" action="{{ route('login') }}" method="POST">
+				<form class="card-body pt-3" name="login" action="{{ route('login') }}" method="POST">
 					@csrf
 					{{-- Email --}}
 					<div class="form-floating mb-3">
@@ -53,7 +53,7 @@
 					Please note that <span>‘My Athletic Hub’</span> accounts only allow an email address to be used once.
 				</p>
 				
-				<form class="card-body pt-3" id="login" name="login" action="{{ route('confirm-email') }}" method="POST">
+				<form class="card-body pt-3" name="login" action="{{ route('confirm-email') }}" method="POST">
 					@csrf
 					{{-- First Name --}}
 					<div class="form-floating mb-3">
@@ -98,30 +98,47 @@
 						  16 Under 16 years old?
 						</label>
 					</div>
-
+					
 					{{-- Parents details --}}
 					<div id="parent-details-bl">
 						<h3>Please add parents details</h3>
-					
+						
 						{{-- First Name --}}
 						<div class="form-floating mb-3">
 							<input type="text" class="form-control" placeholder="name@example.com">
 							<label>First Name</label>
 						</div>
-
+						
 						{{-- Surname --}}
 						<div class="form-floating mb-3">
 							<input type="text" class="form-control" placeholder="name@example.com">
 							<label>Surname</label>
 						</div>
-
+						
 						<div class="form-floating mb-3">
 							<input type="email" class="form-control" placeholder="name@example.com">
 							<label>Email</label>
 						</div>
-
+						
 					</div>
 
+					{{-- Terms Check --}}
+					<div class="form-check age-check">
+						<input class="form-check-input" id="condition-1" type="checkbox" value="">
+						<label for="condition-1" class="form-check-label">
+							I have read and understand The Club Terms of Use.
+						</label>
+					</div>
+
+					{{-- Terms Check --}}
+					<div class="form-check age-check">
+						<input class="form-check-input" id="condition-2" type="checkbox" value="">
+						<label for="condition-2" class="form-check-label">
+							I have read and understand The Club Privacy Policies.
+						</label>
+					</div>
+					
+					
 
 					<div class="d-flex justify-content-center">
 						<input type="submit" class="submit-btn">
