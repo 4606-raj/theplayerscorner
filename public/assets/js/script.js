@@ -6,9 +6,22 @@ $('.bi-caret-down-fill').click(function (){
 var currentYear = new Date().getFullYear();
 $('.currentYear').html(currentYear);
 
-console.log(CurrentYear = new Date().getFullYear());
 
 $( document ).ready(function() {
+    
+	$( "#datepicker1").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "1950:2022"
+    });
+    
+    // Parents details box on Register page
+    $( "#agecheck" ).click(function() {
+
+        $( "#agecheck" ).is( ":checked")? $('#parent-details-bl').addClass('show-hide-pt-details'): $('#parent-details-bl').removeClass('show-hide-pt-details');
+
+    })
+    
 
     // Header scroll effect
     if (window.matchMedia('(max-width: 767.98px)').matches) {

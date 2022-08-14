@@ -29,7 +29,7 @@
             <div class="container uppr-row-con">    
                 <!-- Logo -->
                 <div class="logo-1">
-                    <a href="index.html">
+                    <a href="{{ route('home') }}">
                         <img src="assets/images/logo-img.png" alt="">
                         <p>Southall <br>Athletic</p>
                     </a>
@@ -77,7 +77,7 @@
                 <ul>
                     <!-- Logo -->
                     <div class="logo-1 logo-2">
-                        <a href="index.html"><img src="assets/images/logo-img.png" alt=""></a>
+                        <a href="{{ route('home') }}"><img src="assets/images/logo-img.png" alt=""></a>
                     </div>
 
                     <li class="active-link"><a href="news.html">News</a>
@@ -135,7 +135,7 @@
 
                 <div class="login-srch">
                     <ul>
-                        <li><a href="account.html">Login/Register </a>
+                        <li><a href="{{ route('login') }}">Login/Register </a>
                             <i class="bi bi-caret-down-fill"></i>
                             <!-- Drop Down menu -->
                             <ul class="sub-menu">
@@ -160,7 +160,7 @@
         <footer>
             <div class="footer-wrap" >
                                 
-                <div class="copyright">Copyright © <span class="currentYear"></span> &nbsp;<a href="index.html"> Southall Athletic</a>. All Rights Reserved. <br><span>Designed by Naveen</span></div>
+                <div class="copyright">Copyright © <span class="currentYear"></span> &nbsp;<a href="{{ route('home') }}"> Southall Athletic</a>. All Rights Reserved. <br><span>Designed by Naveen</span></div>
     
                 <ul class="doc-links">
                     <li>
@@ -182,6 +182,7 @@
     
     
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="{{ asset('assets/js/jquery-ui.min.js') }}"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/script.js"></script>
         <script src="assets/js/index.bundle.min.js"></script>

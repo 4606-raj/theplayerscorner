@@ -289,7 +289,7 @@
     <br>
     <h2 class="lg-sub-hdr">12.	Cookies Policy</h2>
     <div class="primary-btn">
-        <a href="privacy_preference.html"><button>Cookie Settings</button></a>
+        <a href="{{route('privacy-preference')}}"><button>Cookie Settings</button></a>
     </div>
     <p class="lg-des-txt">A cookie is a small piece of data (text file) that a website – when visited by a user – asks your browser to store on your device in order to remember information about you, such as your language preference or login information. Those cookies are set by us and called first-party cookies. We also use third-party cookies – which are cookies from a domain different than the domain of the website you are visiting – for our advertising and marketing efforts. More specifically, we use cookies and other tracking technologies </p>
     

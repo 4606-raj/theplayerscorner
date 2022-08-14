@@ -15,7 +15,7 @@ use App\Http\Controllers\Admin\PlayerController;
 |
 */
 
-Route::view('login', 'admin.login');
+// Route::view('login', 'admin.login');
 
 Route::get('/', function () {
     return view('admin.dashboard');

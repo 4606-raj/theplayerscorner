@@ -269,6 +269,36 @@
 </section>
 <!-- News Section END -->
 
+<!-- Promo Banner START -->
+<section id="promo-banner" class="container">
+    <div id="promo-content">
+        <div class="contact-dt">
+            <p><i class="bi bi-telephone-fill"></i>0808 800 5000 </p>
+            <a href="mailto: help@nspcc.org.uk"><i class="bi bi-envelope-fill"></i>help@nspcc.org.uk </a>
+        </div>
+        <div class="logos-row">
+            
+            <div class="logo-1">
+                <img src="{{ asset('assets/images/partners/logo-1.png') }}" alt="">
+            </div>
+            <div class="logo-2">
+                <img src="{{ asset('assets/images/partners/logo-2.png') }}" alt="">
+            </div>
+            <div class="logo-3">
+                <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo-img.png') }}" alt=""></a>
+            </div>
+        </div>
+        <div class="logo-row-2">
+            <div class="logo-4">
+                <p>In partnership with</p>
+                <a href="https://www.nspcc.org.uk/" target="_blank"><img src="{{ asset('assets/images/partners/logo-4.png') }}" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Promo Banner END -->
+
+
 <!-- Social Media Section START -->
 <section class="social-media-sec">
     <div class="container">
@@ -322,6 +352,9 @@
             </div>
             <div class="logo-bl">
                 <img src="assets/images/partners/7. Logo - Maina Group of Companies (White).png" alt="">
+            </div>
+            <div class="logo-bl">
+                <img src="assets/images/partners/8. Logo - Queens Pharmacy Southall.png" alt="">
             </div>
             <div class="logo-bl">
                 <img src="assets/images/partners/8. Logo - Queens Pharmacy Southall.png" alt="">

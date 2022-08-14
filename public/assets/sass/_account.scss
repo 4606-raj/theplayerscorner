@@ -1,0 +1,286 @@
+// Login Page START
+.auth-sec{
+    display: flex;
+    justify-content: center;
+
+    .auth-block{
+        margin: 150px 0;
+        min-width: 600px;
+        max-width: 600px;
+        min-height: 60vh;
+
+        .auth-bl-hdr{
+            text-align: center;
+            font-family: $open-sans;
+            text-transform: capitalize;
+        }
+        .tab-content{
+            padding: 15px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            border: 1px solid #d4dbe1;
+            border-top-color: transparent;
+        }
+
+        .nav-tabs{
+            position: relative;
+            top: 1px;
+            border-color: #d4dbe1;
+        }
+        .nav-item{
+            .nav-link{
+                font-family: $open-sans;
+                font-weight: 500;
+                color: $secondary-clr;
+
+            }
+            .nav-link:hover{
+                border-color: #d4dbe1 !important;
+                border-bottom-color: #fff !important;
+            }
+
+            .active{
+                color: $primary-clr;
+                border-color: #d4dbe1;
+                border-bottom-color: #fff;
+            }
+        }
+        .auth-des{
+            font-family: $open-sans;
+            color: $secondary-clr;
+            text-align: center;
+            line-height: 30px;
+            margin: 30px 0;
+
+            a{
+                color: $primary-clr;
+                font-family: $open-sans;
+                font-weight: 500;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            span{
+                font-weight: 500;
+            }
+        }
+
+        form{
+            padding: 30px 15px !important; 
+            background: #f7fbff;
+            border: 1px solid #d4dbe1;
+            border-radius: 6px;
+
+            .form-control{
+                border-color: #d4dbe1;
+                background: #fff;
+            }
+            .age-check {
+                font-family: $open-sans;
+                Color: $secondary-clr;
+                margin-bottom: 20px;
+
+                label,.form-check-input{
+                    cursor: pointer;
+                }
+            }
+            .form-check-input:focus{
+                border-color: none;
+                box-shadow: 0 0 0 0rem rgba(40, 167, 69, 0.25);
+            }
+            .form-control:focus {
+                border-color: $primary-clr;
+                box-shadow: 0 0 0 0rem rgba(40, 167, 69, 0.25);
+            } 
+
+            .forgot-pswd{
+                font-size: .9rem;
+                color: $secondary-clr;
+                font-family: $open-sans;
+                margin-bottom: 0;
+
+                a{
+                    color: $primary-clr;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .show-hide-pt-details{
+        display: block !important;
+    }
+    #parent-details-bl{
+        border: 1px solid #d4dbe1;
+        border-radius: 6px;
+        background: #e7eef5;
+        padding: 15px;
+        margin: 15px;
+        display: none;
+
+        h3{
+            font-family: $open-sans;
+            color: $secondary-clr;
+            font-weight: 500;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            text-transform: capitalize;
+        }
+    }
+
+    .confirm-e-hdr{
+        color: $secondary-clr;
+        font-family: $open-sans;
+        text-transform: capitalize;
+        border-bottom: 1px solid $secondary-clr;
+        padding-bottom: 15px;
+
+    }
+    .cf-e-txt{
+        color: $secondary-clr;
+        font-family: $open-sans;
+        line-height: 30px;
+        font-size: 1rem;
+
+        a{
+            color: $primary-clr;
+            text-decoration: none;
+            font-weight: 500;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        
+        span{
+            font-weight: 600;
+        }
+    }
+    .cf-list{
+        li{
+            font-family: $open-sans;
+            color: $secondary-clr;
+            margin: 10px 0;
+
+            a{
+                color: $primary-clr;
+                text-decoration: none;
+                font-weight: 500;
+                
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+#ui-datepicker-div{
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid $primary-clr;
+    font-family: $open-sans;
+    
+    .ui-datepicker-header{
+        padding: 15px;
+        background: $primary-clr;
+        color: #fff;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .ui-datepicker-month{
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .ui-datepicker-year{
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        .ui-datepicker-month,
+        .ui-datepicker-year{
+            &:hover{
+                background: #e5eff8;
+            }
+            cursor: pointer;
+            outline: none;
+            // margin-right: 10px;
+            padding: 5px 8px;
+            border: none;
+        }
+        
+        .ui-datepicker-next{
+            order: 2;
+        }
+        .ui-datepicker-next,
+        .ui-datepicker-prev{
+            color: $secondary-clr;
+            outline: none;
+            font-family: $open-sans;
+            font-size: .9rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            background: #fff;
+            padding: 5px;
+            border-radius: 4px;
+
+            &:hover{
+                background: #e5eff8;
+            }
+        }   
+        .ui-datepicker-title{
+            text-align: center;
+        }
+    }
+    .ui-datepicker-calendar{
+        padding: 15px;
+
+        tr{
+            td{
+                padding: 5px;
+                a{
+                    border-radius: 3px;
+                    padding: 5px;
+                    font-family: $open-sans;
+                    color: $secondary-clr;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: #fff;
+                        background: $primary-clr;
+                        
+                    }
+                }
+            }
+            th{
+                padding: 10px;
+            }
+        }
+    }
+}
+.submit-btn{
+    background: $primary-clr;
+
+    border: none;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    font-family: $open-sans;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 6px;
+    margin-top: 25px;
+    transition: .2s;
+
+    &:hover{
+        box-shadow: 0 4px 6px rgba($color: #000000, $alpha: 0.3);
+    }
+}
+// Login Page END

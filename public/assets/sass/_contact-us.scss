@@ -61,6 +61,12 @@
         border: 1px solid #d4dbe1;
         background: #f7fbff;
 
+        .form-control:focus,
+        .form-select:focus {
+            border-color: $primary-clr;
+            box-shadow: 0 0 0 0rem rgba(40, 167, 69, 0.25);
+        } 
+        
         #floatingTextarea{
             min-height: 120px;
         }

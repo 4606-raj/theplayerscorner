@@ -261,7 +261,7 @@
     .partners-logos-con{
         margin-top: 20px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         justify-items: center;
         
@@ -271,12 +271,115 @@
         }
         .logo-bl,
         .logo-bl img{
-            min-width: 140px;
-            max-width: 140px;
+            min-width: 160px;
+            max-width: 160px;
             object-fit: contain;
         }
     }
 }
 // partners END
+
+// Promo Banner Section START
+#promo-banner{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    min-height: 745px;
+    max-height: 745px;
+    background-image: url(../images/image001.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+
+    .contact-dt{
+        position: absolute;
+        right: 0px;
+        top: 450px;
+        padding: 15px 30px;
+        border-top-left-radius: 50px;
+        background: #fff;
+        font-family: $open-sans;
+        
+        i{
+            color: #2d2525;
+            margin-right: 10px;
+        }
+        p{
+            color: $secondary-clr;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        a{
+            text-decoration: none;
+            font-weight: 500;
+            color: $primary-clr;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        
+    }
+    #promo-content{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        .logo-row-2{
+            position: absolute;
+            bottom: 200px !important;
+            left: 50px;
+
+            .logo-4 p{
+                font-family: $open-sans;
+                font-size: .9rem;
+                color: #fff;
+                margin-bottom: 0;
+            }
+            .logo-4, .logo-4 img{
+                min-width: 130px;
+                max-width: 130px;
+                min-height: 60px;
+                max-height: 60px;
+                object-fit: contain;
+            }
+        }
+        .logos-row {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 290px;
+            left: 0;
+            
+            .logo-1, .logo-2, .logo-3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // padding-left: 20px;
+                min-width: 130px;
+                max-width: 130px;
+                min-height: 80px;
+                max-height: 80px;
+            }
+            .logo-2,.logo-3{
+                border-left: 2px solid #bebebe;
+            }
+        }
+        img{
+            min-width: 130px;
+            max-width: 130px;
+            min-height: 80px;
+            max-height: 80px;
+            // min-width: 62px;
+            // max-width: 62px;
+            object-fit: contain;
+        }
+
+    }
+}
+// Promo Banner Section END
+
 // Section END
 
