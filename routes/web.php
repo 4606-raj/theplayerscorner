@@ -15,6 +15,7 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::post('/contact-us', [HomeController::class, 'contactUs'])->name('contact-us.submit');
 
 // Route::view('/about-us', 'about-us')->name('about-us');
 // Route::view('/community', 'community')->name('community');
@@ -28,9 +29,9 @@ Route::view('/privacy-preference', 'legal-documents.privacy-preference')->name('
 Route::view('/forgot-password', 'auth.forgot-password')->name('forgot-password');
 Route::view('/confirm-email', 'auth.confirm-email')->name('confirm-email');
 
-Route::post('/contact', function (Request $request) {
+// Route::post('/contact', function (Request $request) {
 
-    Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactMail);
-    return 'E-Mail Sent';
+//     Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactMail);
+//     return 'E-Mail Sent';
     
-})->name('contact');
+// })->name('contact');

@@ -26,24 +26,25 @@
      <div id="ct-form">
          <h2>DROP US A LINE</h2>
 
-         <form class="row g-3">
+         <form class="row g-3" action="{{ route('contact-us.submit') }}" method="POST">
+          @csrf
              <div class="form-floating mb-3 col-md-6">
-                 <input type="text" class="form-control" id="floatingInput" placeholder="Enter Name">
+                 <input type="text" class="form-control" name="name" id="floatingInput" placeholder="Enter Name" required>
                  <label for="floatingInput">Name</label>
                </div>
              <div class="form-floating mb-3 col-md-6">
-                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                 <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com" required>
                  <label for="floatingInput">Email address</label>
              </div>
 
              <div class="form-floating mb-3 col-md-6">
-                 <input type="phone" class="form-control" id="floatingInput" placeholder="name@example.com">
+                 <input type="phone" class="form-control" name="phone" id="floatingInput" placeholder="name@example.com" required>
                  <label for="floatingInput">Phone Number</label>
              </div>
              
              <div class="col-md-6 mt-0">
                <label for="inputState" class="form-label">Nature of enquiry </label>
-               <select id="inputState" class="form-select">
+               <select id="inputState" name="type" class="form-select" required>
                  <option selected>Choose...</option>
                  <option>General enquiry</option>
                  <option>Player Registration</option>
@@ -53,7 +54,7 @@
              </div>
              
              <div class="form-floating">
-                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                 <textarea class="form-control" placeholder="Leave a comment here" name="message" id="floatingTextarea" required></textarea>
                  <label for="floatingTextarea">Message</label>
                </div>
 
