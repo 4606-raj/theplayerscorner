@@ -15,6 +15,11 @@
 			</li>
 		  </ul>
 		  <div class="tab-content" id="myTabContent">
+
+			@if($errors->any())
+            	{!! implode('', $errors->all('<div class="alert alert-danger">:message</div>')) !!}
+        	@endif
+			
 			{{-- Login Section --}}
 			<div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
 				
@@ -27,12 +32,12 @@
 					@csrf
 					{{-- Email --}}
 					<div class="form-floating mb-3">
-						<input type="email" class="form-control" id="loginemail" placeholder="name@example.com">
+						<input type="email" class="form-control" id="loginemail" name="email" placeholder="name@example.com" required>
 						<label for="loginemail">Email address</label>
 					</div>
 					{{-- Password --}}
 					<div class="form-floating mb-3">
-						<input type="password" class="form-control" id="userpassword" placeholder="password">
+						<input type="password" class="form-control" id="userpassword" name="password" placeholder="password" required>
 						<label for="userpassword">Password</label>
 					</div>
 					

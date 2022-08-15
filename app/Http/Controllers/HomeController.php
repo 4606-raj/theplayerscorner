@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Player;
 use Mail;
+use Alert;
 
 class HomeController extends Controller
 {
@@ -15,6 +16,9 @@ class HomeController extends Controller
 
     public function contactUs (Request $reqeust) {
         Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactMail($reqeust->all()));
-        return redirect()->back()->with('success', 'Email Sent');
+        
+        // Alert::success('Congrats', 'You\'ve Successfully Registered');
+        Alert::toast('Email Sent', 'success');
+        return redirect()->back();
     }
 }
