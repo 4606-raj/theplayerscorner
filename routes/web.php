@@ -35,3 +35,12 @@ Route::view('/confirm-email', 'auth.confirm-email')->name('confirm-email');
 //     return 'E-Mail Sent';
     
 // })->name('contact');
+
+
+Route::get('/artisan-migrate', function () {
+    Artisan::call('migrate');
+});
+
+Route::get('/cache-clear', function () {
+    Artisan::call('cache:clear');
+});
