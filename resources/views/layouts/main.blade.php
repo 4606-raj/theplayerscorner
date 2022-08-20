@@ -11,7 +11,7 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,7 +80,7 @@
                         <a href="{{ route('home') }}"><img src="assets/images/logo-img.png" alt=""></a>
                     </div>
 
-                    <li class="active-link"><a href="news.html">News</a>
+                    <li class="active-link"><a href="{{ route('404') }}">News</a>
                         <i class="bi bi-caret-down-fill"></i>
                         <!-- Drop Down menu -->
                         <ul class="sub-menu">
@@ -92,7 +92,7 @@
                         </ul>
                     </li>
                     
-                    <li><a href="club.html">Club </a>
+                    <li><a href="{{ route('404') }}">Club </a>
                         <i class="bi bi-caret-down-fill"> </i>
                         <!-- Drop Down menu -->
                         <ul class="sub-menu">
@@ -105,9 +105,9 @@
                         </ul>
                     </li>
 
-                    <li><a href="community.html">Community</a></li>
+                    <li><a href="{{ route('404') }}">Community</a></li>
 
-                    <li><a href="teams.html">Teams </a>
+                    <li><a href="{{ route('404') }}">Teams </a>
                         <i class="bi bi-caret-down-fill"></i>
 
                         <!-- Drop Down menu -->
@@ -116,7 +116,7 @@
                             <li><a href="#">Youth Teams</a></li>
                         </ul>
                     </li>
-                    <li><a href="matches.html">Matches </a>
+                    <li><a href="{{ route('404') }}">Matches </a>
                         <i class="bi bi-caret-down-fill"></i>
 
                         <!-- Drop Down menu -->
@@ -139,7 +139,7 @@
                             <i class="bi bi-caret-down-fill"></i>
                             <!-- Drop Down menu -->
                             <ul class="sub-menu">
-                                <li><a href="account.html">My Athletic Hub</a></li>
+                                <li><a href="{{ route('login') }}">My Athletic Hub</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -172,9 +172,9 @@
                     <li>
                         <a href="{{ route('company-details') }}">Company Details</a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="{{ route('digital-privacy') }}">Digital Privacy Policy</a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </footer>

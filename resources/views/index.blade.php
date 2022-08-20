@@ -285,7 +285,7 @@
                 <img src="{{ asset('assets/images/partners/logo-2.png') }}" alt="">
             </div>
             <div class="logo-3">
-                <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo-img.png') }}" alt=""></a>
+                <a href="{{ route('home') }}"><img src="{{ asset('assets/images/Logo_Southall-Athletic-F.C_Capri.png') }}" alt=""></a>
             </div>
         </div>
         <div class="logo-row-2">
@@ -351,10 +351,10 @@
                 <img src="assets/images/partners/7._Logo_-_Ealing_Council_White.png" alt="">
             </div>
             <div class="logo-bl">
-                <img src="assets/images/partners/7. Logo - Maina Group of Companies (White).png" alt="">
+                <img src="assets/images/partners/9.Logo.png" alt="">
             </div>
             <div class="logo-bl">
-                <img src="assets/images/partners/8. Logo - Queens Pharmacy Southall.png" alt="">
+                <img src="assets/images/partners/7. Logo - Maina Group of Companies (White).png" alt="">
             </div>
             <div class="logo-bl">
                 <img src="assets/images/partners/8. Logo - Queens Pharmacy Southall.png" alt="">

@@ -1,4 +1,61 @@
 // Section START
+.pri-tabs{
+    margin-top: 80px;
+
+    .nav-link{
+        font-family: $open-sans;
+        font-weight: 500;
+        color: $secondary-clr;
+        border: none !important;
+        border-bottom: 1px solid #dee2e6 !important;
+        padding-bottom: 15px;
+    }
+    .nav-item .active{
+        border-bottom: 2px solid $secondary-clr !important;
+        color: $primary-clr !important;
+    }
+}
+#page-dev-sec{
+    background: #e1ebff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .social-icons{
+        width: 100%;
+
+        ul li a{
+            font-size: 2rem;
+            color: #616f89;
+            
+            span{
+                font-size: 1rem;
+            }
+        }
+    } 
+    .mid-bl{
+        margin-bottom: 150px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+        img{
+            min-width: 50px;
+            max-width: 50px;
+        }
+        p{
+            margin: 0;
+            font-family: $open-sans;
+            font-weight: 500;
+        }
+        div div:nth-child(2){
+            margin-left: 15px;
+            padding-left: 20px;
+            border-left: 1px solid $secondary-clr;
+        }
+    }
+}
 .primary-btn{
     text-decoration: none;
 
