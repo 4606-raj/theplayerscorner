@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Player;
+use App\Models\Gallery;
 use Mail;
 use Alert;
 
@@ -11,7 +12,8 @@ class HomeController extends Controller
 {
     public function index() {
         $players = Player::with('user')->whereIsCaptain(1)->get();
-        return view('index', compact('players'));
+        $images = Gallery::whereType(0)->get();
+        return view('index', compact('players', 'images'));
     }
 
     public function contactUs (Request $reqeust) {

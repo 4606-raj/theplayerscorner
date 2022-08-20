@@ -63,49 +63,13 @@
             <!-- Photos Tab 1 -->
             <div class="tab-pane fade show active gallery-slide" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 
-                <div class="img-con">
-                    <a href="assets/images/Gallery/img-1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="assets/images/Gallery/img-1.jpg" class="img-fluid">
-                    </a>
-                </div>
-
-                <div class="img-con">
-                    <a href="assets/images/Gallery/img-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="assets/images/Gallery/img-2.jpg" class="img-fluid">
-                    </a>
-                </div>
-                
-                <div class="img-con">
-                    <a href="assets/images/Gallery/img-3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="assets/images/Gallery/img-3.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="img-con">
-                    <a href="assets/images/Gallery/img-4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="assets/images/Gallery/img-4.jpg" class="img-fluid">
-                    </a>
-                </div>
-                
-                <div class="img-con">
-                    <a href="assets/images/Gallery/img-6.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="assets/images/Gallery/img-6.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="img-con">
-                    <a href="assets/images/Gallery/img-7.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="assets/images/Gallery/img-7.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="img-con">
-                    <a href="assets/images/Gallery/img-8.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="assets/images/Gallery/img-8.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="img-con">
-                    <a href="assets/images/Gallery/img-9.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="assets/images/Gallery/img-9.jpg" class="img-fluid">
-                    </a>
-                </div>
+                @foreach ($images as $image)    
+                    <div class="img-con">
+                        <a href="assets/images/Gallery/img-1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                            <img src="assets/images/Gallery/img-1.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                @endforeach
 
             </div>
 
