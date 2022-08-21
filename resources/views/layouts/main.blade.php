@@ -80,7 +80,7 @@
                         <a href="{{ route('home') }}"><img src="assets/images/logo-img.png" alt=""></a>
                     </div>
 
-                    <li class="active-link"><a href="{{ route('404') }}">News</a>
+                    <li class="active-link"><a href="404">News</a>
                         <i class="bi bi-caret-down-fill"></i>
                         <!-- Drop Down menu -->
                         <ul class="sub-menu">
@@ -92,7 +92,7 @@
                         </ul>
                     </li>
                     
-                    <li><a href="{{ route('404') }}">Club </a>
+                    <li><a href="404">Club </a>
                         <i class="bi bi-caret-down-fill"> </i>
                         <!-- Drop Down menu -->
                         <ul class="sub-menu">
@@ -105,9 +105,9 @@
                         </ul>
                     </li>
 
-                    <li><a href="{{ route('404') }}">Community</a></li>
+                    <li><a href="404">Community</a></li>
 
-                    <li><a href="{{ route('404') }}">Teams </a>
+                    <li><a href="404">Teams </a>
                         <i class="bi bi-caret-down-fill"></i>
 
                         <!-- Drop Down menu -->
@@ -116,7 +116,7 @@
                             <li><a href="#">Youth Teams</a></li>
                         </ul>
                     </li>
-                    <li><a href="{{ route('404') }}">Matches </a>
+                    <li><a href="404">Matches </a>
                         <i class="bi bi-caret-down-fill"></i>
 
                         <!-- Drop Down menu -->

@@ -21,6 +21,7 @@ class HomeController extends Controller
         
         // Alert::success('Congrats', 'You\'ve Successfully Registered');
         Alert::toast('Email Sent', 'success');
-        return redirect()->back();
+        // return redirect()->back();
+        return redirect()->route('after-contact-us');
     }
 }
