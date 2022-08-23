@@ -17,6 +17,11 @@ class HomeController extends Controller
     }
 
     public function contactUs (Request $request) {
+
+        $validate = Validator::make(Input::all(), [
+            'g-recaptcha-response' => 'required|captcha'
+        ]);
+        
         Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactMail($request->all()));
         Mail::to($request->email)->send(new \App\Mail\ContactReceivedMail());
         

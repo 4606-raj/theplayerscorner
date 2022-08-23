@@ -19,6 +19,12 @@
 			@if($errors->any())
             	{!! implode('', $errors->all('<div class="alert alert-danger">:message</div>')) !!}
         	@endif
+
+			@if ($errors->has('g-recaptcha-response'))
+				<span class="help-block">
+					<strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+				</span>
+			@endif
 			
 			{{-- Login Section --}}
 			<div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
