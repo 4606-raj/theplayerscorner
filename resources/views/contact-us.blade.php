@@ -24,12 +24,6 @@
      </div>
 
      <div id="ct-form">
-
-      @if ($errors->has('g-recaptcha-response'))
-          <span class="help-block">
-              <strong class="alert alert-danger">{{ $errors->first('g-recaptcha-response') }}</strong>
-          </span>
-      @endif
       
          <h2>DROP US A LINE</h2>
 
@@ -66,6 +60,12 @@
                </div>
 
                {!! NoCaptcha::display() !!}
+
+              @if ($errors->has('g-recaptcha-response'))
+                  <span class="help-block">
+                      <strong class="alert alert-danger">{{ $errors->first('g-recaptcha-response') }}</strong>
+                  </span>
+              @endif
 
              <div class="col-12 d-flex justify-content-center">
                <button type="submit" class="btn btn-primary" id="sub-btn">Submit</button>
