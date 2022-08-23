@@ -19,12 +19,6 @@
 			@if($errors->any())
             	{!! implode('', $errors->all('<div class="alert alert-danger">:message</div>')) !!}
         	@endif
-
-			@if ($errors->has('g-recaptcha-response'))
-				<span class="help-block">
-					<strong>{{ $errors->first('g-recaptcha-response') }}</strong>
-				</span>
-			@endif
 			
 			{{-- Login Section --}}
 			<div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
@@ -46,8 +40,6 @@
 						<input type="password" class="form-control" id="userpassword" name="password" placeholder="password" required>
 						<label for="userpassword">Password</label>
 					</div>
-
-					{!! NoCaptcha::display() !!}
 					
 					<p class="forgot-pswd">Forgot your password? <a href="{{ route('forgot-password') }}">Click here</a> to reset your password.</p>
 					

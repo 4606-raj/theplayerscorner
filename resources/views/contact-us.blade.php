@@ -58,6 +58,8 @@
                  <label for="floatingTextarea">Message</label>
                </div>
 
+               {!! NoCaptcha::display() !!}
+
              <div class="col-12 d-flex justify-content-center">
                <button type="submit" class="btn btn-primary" id="sub-btn">Submit</button>
              </div>
