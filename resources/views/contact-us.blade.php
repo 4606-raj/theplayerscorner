@@ -24,6 +24,13 @@
      </div>
 
      <div id="ct-form">
+
+      @if ($errors->has('g-recaptcha-response'))
+          <span class="help-block">
+              <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+          </span>
+      @endif
+      
          <h2>DROP US A LINE</h2>
 
          <form class="row g-3" action="{{ route('contact-us.submit') }}" method="POST">

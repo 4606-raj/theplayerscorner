@@ -7,6 +7,7 @@ use App\Models\Player;
 use App\Models\Gallery;
 use Mail;
 use Alert;
+use Validator;
 
 class HomeController extends Controller
 {
