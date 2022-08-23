@@ -16,8 +16,9 @@ class HomeController extends Controller
         return view('index', compact('players', 'images'));
     }
 
-    public function contactUs (Request $reqeust) {
-        Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactMail($reqeust->all()));
+    public function contactUs (Request $request) {
+        Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactMail($request->all()));
+        Mail::to($request->email)->send(new \App\Mail\ContactReceivedMail());
         
         // Alert::success('Congrats', 'You\'ve Successfully Registered');
         Alert::toast('Email Sent', 'success');
