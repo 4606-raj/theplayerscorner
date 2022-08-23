@@ -23,9 +23,7 @@ class HomeController extends Controller
             'g-recaptcha-response' => 'required|captcha'
         ], 
         [
-            'g-recaptcha-response' => [
-                'required' => 'Please verify that you are not a robot.',
-            ],
+            'g-recaptcha-response.required' => 'Please verify that you are not a robot.'
         ]);
         
         Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactMail($request->all()));
