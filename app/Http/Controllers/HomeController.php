@@ -19,7 +19,7 @@ class HomeController extends Controller
 
     public function contactUs (Request $request) {
 
-        $validate = Validator::make(Input::all(), [
+        $validate = Validator::make($request->all(), [
             'g-recaptcha-response' => 'required|captcha'
         ]);
         
