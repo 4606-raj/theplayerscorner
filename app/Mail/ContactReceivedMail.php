@@ -28,6 +28,8 @@ class ContactReceivedMail extends Mailable
      */
     public function build()
     {
-        return $this->view('mails.contact-received-mail');
+        return $this
+                    ->subject('Thank you for your enquiry')
+                    ->view('mails.contact-received-mail');
     }
 }

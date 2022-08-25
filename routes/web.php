@@ -31,6 +31,10 @@ Route::view('/forgot-password', 'auth.forgot-password')->name('forgot-password')
 Route::view('/confirm-email', 'auth.confirm-email')->name('confirm-email');
 // Route::view('/404', '404')->name('404');
 
+Route::get('/test', function() {
+    Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactReceivedMail());
+});
+
 // Route::post('/contact', function (Request $request) {
 
 //     Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactMail);

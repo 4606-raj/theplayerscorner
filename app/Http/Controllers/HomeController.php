@@ -17,7 +17,7 @@ class HomeController extends Controller
         return view('index', compact('players', 'images'));
     }
 
-    public function contactUs (Request $request) {
+    public function contactUs(Request $request) {
 
         $request->validate([
             'g-recaptcha-response' => 'required|captcha'
@@ -26,7 +26,7 @@ class HomeController extends Controller
             'g-recaptcha-response.required' => 'Please verify that you are not a robot.'
         ]);
         
-        Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactMail($request->all()));
+        Mail::to('info@southallathleticfc.com')->send(new \App\Mail\ContactMail($request->all()));
         Mail::to($request->email)->send(new \App\Mail\ContactReceivedMail());
         
         // Alert::success('Congrats', 'You\'ve Successfully Registered');
