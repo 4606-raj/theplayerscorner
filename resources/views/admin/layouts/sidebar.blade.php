@@ -73,8 +73,8 @@
                     <span class="side-menu__label">Gallery</span><i class="angle fa fa-angle-right"></i>
                 </a>
                 <ul class="slide-menu">
-                    {{-- <li><a href="{{ route('teams.create') }}" class="slide-item">Add New/a></li> --}}
-                    {{-- <li><a href="{{ route('teams.index') }}" class="slide-item">All Gallery</a></li> --}}
+                    <li><a href="{{ route('gallery.create') }}" class="slide-item">Add New</a></li>
+                    <li><a href="{{ route('gallery.index') }}" class="slide-item">All Gallery</a></li>
                 </ul>
             </li>
 

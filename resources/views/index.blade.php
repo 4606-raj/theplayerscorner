@@ -65,8 +65,8 @@
                 
                 @foreach ($images as $image)    
                     <div class="img-con">
-                        <a href="assets/images/Gallery/img-1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                            <img src="assets/images/Gallery/img-1.jpg" class="img-fluid">
+                        <a href="{{ asset('storage/images/gallery') . '/' . $image->name }}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                            <img src="{{ asset('storage/images/gallery') . '/' . $image->name }}" class="img-fluid">
                         </a>
                     </div>
                 @endforeach

@@ -112,7 +112,7 @@
 		$(".app-sidebar li a").each(function() {
 		  var pageUrl = window.location.href.split(/[?#]/)[0];
 
-		  console.log(pageUrl, 'ddddddddddddddddddddd');
+		//   console.log(pageUrl, 'ddddddddddddddddddddd');
 		  
 			if (this.href == pageUrl) { 
 				$(this).addClass("active");
