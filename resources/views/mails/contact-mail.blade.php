@@ -188,7 +188,7 @@
                                                  <p style="margin: 0;"><strong>Name</strong></p>
                                               </div>
                                               <div style="padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px; background: #ffffff; color:#101112;font-size:18px;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:180%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:28.8px;">
-                                                 <p style="margin: 0;">Naveen kumar</p>
+                                                 <p style="margin: 0;">{{ $data['name'] }}</p>
                                               </div>
                                            </td>
                                            <td width="50%" class="pad" style="border-radius: 4px; background: #f7fbff;border: 1px solid #d4dbe1;overflow: hidden;">
@@ -196,7 +196,7 @@
                                                  <p style="margin: 0;"><strong>Email</strong></p>
                                               </div>
                                               <div style="padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px; background: #ffffff; color:#101112;font-size:18px;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:180%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:28.8px;">
-                                                 <p style="margin: 0;">0066.navi@gmail.com</p>
+                                                 <p style="margin: 0;">{{ $data['email'] }}</p>
                                               </div>
                                            </td>
                                         </tr>
@@ -207,7 +207,7 @@
                                                  <p style="margin: 0;"><strong>Phone No.</strong></p>
                                               </div>
                                               <div style="padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px; background: #ffffff; color:#101112;font-size:18px;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:180%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:28.8px;">
-                                                 <p style="margin: 0;">+91 123 456 7890</p>
+                                                 <p style="margin: 0;">{{ $data['phone'] }}</p>
                                               </div>
                                            </td>
                                            <td width="50%" class="pad" style="border-radius: 4px; background: #f7fbff;border: 1px solid #d4dbe1;overflow: hidden;">
@@ -215,7 +215,7 @@
                                                  <p style="margin: 0;"><strong>Regarding</strong></p>
                                               </div>
                                               <div style="padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px; background: #ffffff; color:#101112;font-size:18px;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:180%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:28.8px;">
-                                                 <p style="margin: 0;">Partnership Opportunities</p>
+                                                 <p style="margin: 0;">{{ $data['type'] }}</p>
                                               </div>
                                            </td>
                                         </tr>
@@ -227,7 +227,7 @@
                                                    <p style="margin: 0;"><strong>Message</strong></p>
                                                 </div>
                                                 <div style="padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px; background: #ffffff; color:#101112;font-size:18px;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:180%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:28.8px;">
-                                                   <p style="margin: 0;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur id quae quia earum sit expedita, officia itaque, laboriosam facere nostrum aspernatur, laborum possimus dolore asperiores velit consequuntur error ex hic.</p>
+                                                   <p style="margin: 0;">{{ $data['message'] }}</p>
                                                 </div>
                                              </td>
                                           </tr>
