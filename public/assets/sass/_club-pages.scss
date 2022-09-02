@@ -1,0 +1,241 @@
+// Club pages START
+.club-sec{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: $open-sans;
+
+    #club-hdr{
+        color: $secondary-clr;
+        font-size:2rem;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+    .club-hdr-1{
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .blocks-row{
+        display: flex;
+        margin-top: 20px;
+    }
+    .cb-img-1{
+        background: url('../images/slider/slide-1.jpg');
+    }
+    .cb-img-2{
+        background: url('../images/slider/slide-2.jpg');
+    }
+    .cb-img-3{
+        background: url('../images/slider/slide-3.jpg');
+    }
+    .cb-img-4{
+        background: url('../images/slider/slide-6.jpg');
+    }
+    .cb-img-1,
+    .cb-img-2,
+    .cb-img-3,
+    .cb-img-4{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .club-block{
+        min-height: 350px;
+        max-height: fit-content;
+        flex-basis: 50%;
+        margin: 0 8px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #d4dbe1;   
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover .block-overlay{
+            max-width: 100%;
+            max-height: 100%;
+            left: 0;
+            border-bottom-right-radius: 0px;
+            background: rgba($color: #fff, $alpha: 0.8);
+            backdrop-filter: blur(10px);
+
+            .club-bl-des, .club-hdr-1{
+                color: $secondary-clr;
+                opacity: 1;
+            }         
+        }
+        .block-overlay{
+            max-height: 65px;
+            max-width: 50%;
+            border-bottom-right-radius: 50px;
+            overflow: hidden;
+            left: 0%;
+            top: 0;
+            height: 100%;
+            transition: .3s;
+            padding: 15px;
+            background: rgba($color: $primary-clr, $alpha: 0.9);
+            position: absolute;
+        }
+    }
+    .club-bl-des{
+        font-weight: 500;
+        line-height: 30px;
+        font-family: $open-sans;
+        color:#fff;
+        text-align: center;
+        opacity: .2;
+        transition: .5;
+    }
+    ul{
+        li{
+            font-weight: 500;
+            font-family: $open-sans;
+            // color: #fff;
+            line-height: 30px;
+        }
+    }
+
+
+
+}
+
+// Club pages END
+// Club Information page START
+.club-sub-hdr{
+    font-family: $open-sans;
+    color: $secondary-clr;
+    font-size: 1.4rem;
+}
+.club-address{
+    justify-content: space-between;
+
+    .blocks-row{
+        margin: 0;
+    }
+    .club-box{
+        border: 1px solid #d4dbe1;
+        background: #f7fbff;
+        padding: 15px;
+        border-radius: 4px;
+        margin: 8px 0;
+        flex-basis: 25%;
+    
+        address{
+            margin-bottom: 0;
+            line-height: 25px;
+            
+        }
+        .club-adr-hdr{
+            font-family: $open-sans;
+            color: $secondary-clr;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+    .ground-map{
+        width: 80%;
+        margin-left: 30px;
+
+        iframe{
+            width: 100%;
+            margin: 8px 0;
+            height: 100%;
+        }
+    }
+}
+.faq-wrapper{
+    margin: 30px 0;
+    font-family: $open-sans;
+
+    .accordion-item{
+        border-bottom: 1px solid #d4dbe1 !important;
+    }
+    .accordion-button{
+        font-weight: 500;
+    }
+    .accordion-button:not(.collapsed){
+        color: $primary-clr;
+    }
+    .accordion-button:focus{
+        box-shadow: 0 0 0 0;
+    }
+    .accordion-body{
+        background: #fcfdff;
+        padding: 15px !important;
+        border: 1px solid #d4dbe1;
+        border-radius: 4px;
+
+        p{
+            margin: 0;
+        }
+    }
+}
+.cl-wrapper-2{
+    margin-top: 60px;
+
+    .cl-img-box{
+        margin: 40px 0;
+        min-width: 350px;
+        max-width: 350px;
+        min-height: 260px;
+        max-height: 260px;
+        object-fit: cover;
+    
+        img{
+            width: 100%;
+        }
+        
+    }
+    .cl-wrapper-txt, .cl-wrapper-txt-2{
+        line-height: 30px;
+        font-family: $open-sans;
+        color: $secondary-clr;
+
+        a{
+            font-family: $open-sans;
+            color: $primary-clr;
+            text-decoration: none;
+            font-weight: 500;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+    .cl-wrapper-txt-2{
+        font-style: italic;
+        font-size: .9rem;
+        text-align: center;
+    }
+}
+.wrapper-3-row{
+    display: flex;
+    justify-content: space-between;
+
+    .divider-line{
+        // width: 1px;
+        margin-top: 110px;
+        border: 1px solid #d4dbe1;
+    }
+    .wrapper-3-tables{
+        width: 48%;
+        // margin-left: 25%;
+        margin-top: 60px;
+    
+        table{
+            width: 100%;
+    
+            th, td{
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+// Club Information page END
+
+

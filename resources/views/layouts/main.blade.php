@@ -92,13 +92,15 @@
                         </ul>
                     </li>
                     
-                    <li><a href="404">Club </a>
+                    <li><a href="{{ route('club') }}">Club </a>
                         <i class="bi bi-caret-down-fill"> </i>
                         <!-- Drop Down menu -->
                         <ul class="sub-menu">
-                            <li><a href="#">Club Information</a></li>
+                            <li><a href="{{ route('club') }}">Club</a></li>
+                            <li><a href="{{ route('club-information') }}">Club Information</a></li>
                             <li><a href="#">Safeguarding Policy</a></li>
                             <li><a href="#">Inclusion & Diversity</a></li>
+                            <li><a href="#">Sponsorship</a></li>
                             <li><a href="#">Social Media</a></li>
                             <li><a href="#">Gallery</a></li>
                             <li><a href="#">Club Shop</a></li>

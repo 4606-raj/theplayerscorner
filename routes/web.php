@@ -31,6 +31,10 @@ Route::view('/forgot-password', 'auth.forgot-password')->name('forgot-password')
 Route::view('/confirm-email', 'auth.confirm-email')->name('confirm-email');
 // Route::view('/404', '404')->name('404');
 
+// Pages for Club section
+Route::view('/club', 'club')->name('club');
+Route::view('/club-information', 'club-information')->name('club-information');
+
 Route::get('/test', function() {
     Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactReceivedMail());
 });
@@ -50,3 +54,11 @@ Route::get('/artisan-migrate', function () {
 Route::get('/cache-clear', function () {
     Artisan::call('cache:clear');
 });
+
+Route::get('/test', function () {
+    $data1 = \App\Models\Gallery::select('id', 'name', \DB::raw('"gallery" as type'));
+    $data2 = \App\Models\Team::select('id', 'name', \DB::raw('"team" as type'));
+
+    dd($data1->union($data2)->paginate(2)->toArray());
+});
+
