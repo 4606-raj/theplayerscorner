@@ -1,0 +1,61 @@
+@extends('layouts.main')
+
+@section('content')
+
+<section class="container" id="contact-container">
+    <h3 id="club-hdr" class="nopadding">Social Media</h3>
+    
+    <p class="ct-hdr-2 mt-4 mb-4"><b>Follow the Athletic on social media</b></p>
+    
+</section>
+<div class="sponsorship-wrapper">
+    <div class="social-media-sec social-m-wrapper mt-4">
+        <div class="overlay-bg"></div>
+
+        <div class="container">
+            <h2 class="sec-hdr">Follow Us</h2>
+    
+             <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <ul>
+                        <li>    
+                            <a href="https://www.facebook.com/SouthallAthletic/" target="_blank" class="cir-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.facebook.com/SouthallAthletic/" class="social-tag" target="_blank">@SOUTHALLATHLETICFC</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/southall_athletic/?hl=en" target="_blank" class="cir-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.instagram.com/southall_athletic/" class="social-tag" target="_blank">@SOUTHALL_ATHLETIC</a>
+                            <a href="https://www.instagram.com/southall_athletic_wfc/" class="social-tag" target="_blank">@SOUTHALL_ATHLETIC_WFC</a>
+                            <a href="https://www.instagram.com/southall_athletic_yfc/" class="social-tag" target="_blank">@SOUTHALL_ATHLETIC_YFC</a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/company/southall-afc/" target="_blank" class="cir-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/company/southall-afc/" class="social-tag" target="_blank">@SOUTHALL ATHLETIC FOOTBALL CLUB</a>
+                        </li>
+                        <li><a href="https://twitter.com/southall_afc" target="_blank" class="cir-icon"><i class="bi bi-twitter"></i> </a>
+                            <a href="https://twitter.com/southall_afc" class="social-tag" target="_blank">@Southall_AFC</a>
+                        </li>
+                        <li><a href="https://www.youtube.com/channel/UC5puOkk0k-yIfngkssGtzWA" target="_blank" class="cir-icon"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.youtube.com/channel/UC5puOkk0k-yIfngkssGtzWA" class="social-tag" target="_blank">@SOUTHALLATHLETICFOOTBALLCLUBTV</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>   
+    </div> 
+
+    <div class="container mt-5">
+        <p class="cl-wrapper-txt text-center">
+            The Athletic's official social media channels are the best place for all the latest news, highlights, interviews, behind-the-scenes, and feature content.  
+        </p>
+        <p class="cl-wrapper-txt text-center">
+            Wherever you are in the world, make sure you're keeping up with all the latest goings-on at Southall Athletic FC. 
+        </p>
+        <p class="cl-wrapper-txt-2">
+            To get in contact, or for further information, please email us <a href="mailto:social@southallathleticfc.com">here</a>.  
+        </p>
+    </div>
+</div>
+
+
+
+
+@endsection

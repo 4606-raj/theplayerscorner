@@ -5,12 +5,23 @@
 button{
     outline: none !important;
 }
-
+.nopadding{
+    padding: 0 !important;
+}
 $primary-clr: #0549ce;
 $secondary-clr: #2d2525;
 
 $open-sans: 'Open Sans', sans-serif;
 
+::-moz-selection { /* Code for Firefox */
+    color: #000000;
+    background: #a7c4ff;
+}
+
+::selection {
+      color: #000000;
+      background: #a7c4ff;
+  }
 
 @import 'header';
 @import 'section';

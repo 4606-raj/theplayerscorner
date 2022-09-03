@@ -57,7 +57,7 @@
              <div class="form-floating">
                  <textarea class="form-control" placeholder="Leave a comment here" name="message" id="floatingTextarea" required></textarea>
                  <label for="floatingTextarea">Message</label>
-               </div>
+              </div>
 
                {!! NoCaptcha::display() !!}
 

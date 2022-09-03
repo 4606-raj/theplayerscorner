@@ -34,6 +34,9 @@ Route::view('/confirm-email', 'auth.confirm-email')->name('confirm-email');
 // Pages for Club section
 Route::view('/club', 'club')->name('club');
 Route::view('/club-information', 'club-information')->name('club-information');
+Route::view('/inclusion-diversity', 'inclusion-diversity')->name('inclusion-diversity');
+Route::view('/sponsorship', 'sponsorship')->name('sponsorship');
+Route::view('/social-media', 'social-media')->name('social-media');
 
 Route::get('/test', function() {
     Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactReceivedMail());

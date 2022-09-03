@@ -3,7 +3,7 @@
 @section('content')
 
 <section class="container club-sec" id="contact-container">
-    <h3 id="club-hdr nopadding">Club Information</h3>
+    <h3 id="club-hdr" class="nopadding">Club Information</h3>
     
 
     <p class="ct-hdr-2 mt-4 mb-4">Southall Athletic Football Club (CIC) is wholly-owned by the community of Southall (Ealing), which is managed under the care of: <br> <B>Ajay Gore</B>, <B>Amar Chana</B>, <B>Mohit Pabbi </B>, <B>Neshal Madlani</B>, and <B>Ryan Rai</B>.</p>

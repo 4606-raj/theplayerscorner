@@ -58,41 +58,41 @@
 					Please note that <span>‘My Athletic Hub’</span> accounts only allow an email address to be used once.
 				</p>
 				
-				<form class="card-body pt-3" name="login" action="{{ route('confirm-email') }}" method="POST">
+				<form class="card-body pt-3" name="login" action="{{ route('register') }}" method="POST">
 					@csrf
 					{{-- First Name --}}
 					<div class="form-floating mb-3">
-						<input type="text" class="form-control" placeholder="name@example.com">
+						<input type="text" class="form-control" name="first_name" placeholder="name@example.com">
 						<label>First Name</label>
 					</div>
 
 					{{-- Surname --}}
 					<div class="form-floating mb-3">
-						<input type="text" class="form-control" placeholder="name@example.com">
+						<input type="text" class="form-control" name="last_name" placeholder="name@example.com">
 						<label>Surname</label>
 					</div>
 
 					{{-- User Email --}}
 					<div class="form-floating mb-3">
-						<input type="email" class="form-control" placeholder="name@example.com">
+						<input type="email" class="form-control" name="email" placeholder="name@example.com">
 						<label >Email address</label>
 					</div>
 
 					{{-- Password --}}
 					<div class="form-floating mb-3">
-						<input type="password" class="form-control" placeholder="password">
+						<input type="password" class="form-control" name="password" placeholder="password">
 						<label>Password</label>
 					</div>
 
 					{{-- Confirm Password --}}
 					<div class="form-floating mb-3">
-						<input type="password" class="form-control" placeholder="password">
+						<input type="password" class="form-control" name="password_confirmation" placeholder="password">
 						<label>Confirm Password</label>
 					</div>
 
 					{{-- DOB --}}
 					<div class="form-floating mb-4 d-flex">
-						<input type="text" class="datepicker_input form-control border-2" id="datepicker1" placeholder="DD/MM/YYYY">
+						<input type="text" class="datepicker_input form-control border-2" id="datepicker1" name="dob" placeholder="DD/MM/YYYY">
 						<label for="datepicker1">DOB</label>
 					</div>
 					

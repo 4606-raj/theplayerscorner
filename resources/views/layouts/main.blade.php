@@ -12,6 +12,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://uicdn.toast.com/chart/latest/toastui-chart.min.css" />
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -99,9 +100,9 @@
                             <li><a href="{{ route('club') }}">Club</a></li>
                             <li><a href="{{ route('club-information') }}">Club Information</a></li>
                             <li><a href="#">Safeguarding Policy</a></li>
-                            <li><a href="#">Inclusion & Diversity</a></li>
-                            <li><a href="#">Sponsorship</a></li>
-                            <li><a href="#">Social Media</a></li>
+                            <li><a href="{{ route('inclusion-diversity') }}">Inclusion & Diversity</a></li>
+                            <li><a href="{{ route('sponsorship') }}">Sponsorship</a></li>
+                            <li><a href="{{ route('social-media') }}">Social Media</a></li>
                             <li><a href="#">Gallery</a></li>
                             <li><a href="#">Club Shop</a></li>
                         </ul>
@@ -183,6 +184,40 @@
     
     
     
+        <script src="https://uicdn.toast.com/chart/latest/toastui-chart.min.js"></script>
+        <script>
+            const el = document.getElementById('chart-area');
+        const data = {
+            // categories: ['Browser'],
+            series: [
+            {
+                name: 'Asian',
+                data: 48.99,
+            },
+            {
+                name: 'Black',
+                data: 10.89,
+            },
+            {
+                name: 'Mixed',
+                data: 17.71,
+            },
+            {
+                name: 'Other',
+                data: 5.99,
+            },
+            {
+                name: 'White',
+                data: 26.68,
+            },
+            ],
+        };
+        const options = {
+            chart: { title: 'Ethnicity Data', width: '100%', height: 400 },
+        };
+
+        const chart = toastui.Chart.pieChart({ el, data, options });
+        </script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="{{ asset('assets/js/jquery-ui.min.js') }}"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
