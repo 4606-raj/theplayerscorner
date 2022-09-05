@@ -2,6 +2,7 @@
 @media (max-width: 1199.98px) { 
     header nav ul li{
         margin: 0;
+        // font-size: .9rem;
     }
     .srch-bar .search-box input{
         width: 85%;
@@ -62,6 +63,9 @@
             justify-content: center;
         }
     }
+    // #nav-row{
+    //     margin: 0 !important;
+    // }
     header{
 
         #uppr-row .uppr-row-con{
@@ -235,6 +239,9 @@
                 font-size: 1.6rem;
             }
         } 
+    }
+    .community-cards{
+        justify-content: center;
     }
 }
 
@@ -509,6 +516,11 @@
         width: 100%;
         margin-left: 0;
     }
+    .community-cards{
+        .card{
+            width: 14rem !important;
+        }
+    }
  }
 
 
@@ -653,6 +665,11 @@
     }
     .sponsorship-wrapper{
         height: auto;
+    }
+    .community-cards{
+        .card{
+            width: unset !important;
+        }
     }
 }
 

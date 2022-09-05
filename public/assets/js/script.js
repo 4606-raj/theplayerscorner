@@ -76,4 +76,30 @@ $( document ).ready(function() {
         
     });
 
+    // Swiper slider on Community page for Team captains
+    var swiper = new Swiper(".team-captains", {
+        // slideToClickedSlide: true,
+        slidePerView: "auto",
+        spaceBetween: 0,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: "auto",
+            // spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: "auto",
+            // spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: "auto",
+            // spaceBetween: 0,
+          },
+        },
+      });
+
 });

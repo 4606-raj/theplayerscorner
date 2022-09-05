@@ -1,0 +1,46 @@
+// Community Page START
+.community-cards{
+    font-family: $open-sans;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    
+    .card{
+        margin: 12px;
+    }
+    .card-body{
+        position: relative;
+        padding-top: 30px;
+    }
+    .des-tag{
+        padding: 8px 15px;
+        position: absolute;
+        right: 10px;
+        top: -20px;
+        text-transform: capitalize;
+        border-radius: 50px;
+        background: $primary-clr;
+        color: #fff;
+        font-weight: 500;
+    }
+    .com-email{
+        color: $primary-clr;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: .9rem;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .card-text{
+        margin-top: 10px;
+    }
+
+}
+.team-captains{
+    .swiper-slide{
+        width: fit-content !important;
+    }
+}
+// Community Page END

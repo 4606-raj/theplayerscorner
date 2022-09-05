@@ -38,6 +38,9 @@ Route::view('/inclusion-diversity', 'inclusion-diversity')->name('inclusion-dive
 Route::view('/sponsorship', 'sponsorship')->name('sponsorship');
 Route::view('/social-media', 'social-media')->name('social-media');
 
+Route::view('/community', 'community')->name('community');
+Route::view('/about-us', 'about-us')->name('about-us');
+
 Route::get('/test', function() {
     Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactReceivedMail());
 });

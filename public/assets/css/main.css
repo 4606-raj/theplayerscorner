@@ -141,7 +141,7 @@ header nav ul .active-link {
 }
 header nav ul li {
   cursor: pointer;
-  margin: 0 15px;
+  margin: 0 8px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1570,6 +1570,52 @@ header nav .logo-2 img {
   text-align: center;
 }
 
+.community-cards {
+  font-family: "Open Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 60px;
+}
+.community-cards .card {
+  margin: 12px;
+}
+.community-cards .card-body {
+  position: relative;
+  padding-top: 30px;
+}
+.community-cards .des-tag {
+  padding: 8px 15px;
+  position: absolute;
+  right: 10px;
+  top: -20px;
+  text-transform: capitalize;
+  border-radius: 50px;
+  background: #0549ce;
+  color: #fff;
+  font-weight: 500;
+}
+.community-cards .com-email {
+  color: #0549ce;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.community-cards .com-email:hover {
+  text-decoration: underline;
+}
+.community-cards .card-text {
+  margin-top: 10px;
+}
+
+.team-captains .swiper-slide {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
 footer {
   background: #0549ce;
   padding: 20px 30px;
@@ -1817,6 +1863,11 @@ footer .footer-wrap .doc-links li a {
     min-height: 60px;
     max-height: 60px;
     font-size: 1.6rem;
+  }
+  .community-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 767.98px) {
@@ -2087,6 +2138,9 @@ footer .footer-wrap .doc-links li a {
     width: 100%;
     margin-left: 0;
   }
+  .community-cards .card {
+    width: 14rem !important;
+  }
 }
 @media (max-width: 575.98px) {
   .right-logos {
@@ -2213,5 +2267,8 @@ footer .footer-wrap .doc-links li a {
   }
   .sponsorship-wrapper {
     height: auto;
+  }
+  .community-cards .card {
+    width: unset !important;
   }
 }/*# sourceMappingURL=main.css.map */

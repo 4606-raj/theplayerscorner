@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://uicdn.toast.com/chart/latest/toastui-chart.min.css" />
+
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,12 +110,12 @@
                             <li><a href="#">Club Shop</a></li>
                         </ul>
                     </li>
-
-                    <li><a href="404">Community</a></li>
-
+                    
+                    <li><a href="{{ route('community') }}">Community</a></li>
+                    
                     <li><a href="404">Teams </a>
                         <i class="bi bi-caret-down-fill"></i>
-
+                        
                         <!-- Drop Down menu -->
                         <ul class="sub-menu">
                             <li><a href="#">Women</a></li>
@@ -121,7 +124,7 @@
                     </li>
                     <li><a href="404">Matches </a>
                         <i class="bi bi-caret-down-fill"></i>
-
+                        
                         <!-- Drop Down menu -->
                         <ul class="sub-menu">
                             <li><a href="#">Fixtures</a></li>
@@ -131,9 +134,11 @@
                             <li><a href="#">Youth Table & Stats</a></li>
                             <li><a href="#">Newsletter Sign up</a></li>
                         </ul>
-                    
+                        
                     </li>
                     <li><a href="{{ route('contact-us') }}">Contact Us</a></li>
+
+                    {{-- <li><a href="{{ route('about-us') }}">About Us</a> --}}
                 </ul>
 
                 <div class="login-srch">
@@ -223,6 +228,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/script.js"></script>
         <script src="assets/js/index.bundle.min.js"></script>
+         <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        
         {!! NoCaptcha::renderJs() !!}
         @include('sweetalert::alert')
     </body>
