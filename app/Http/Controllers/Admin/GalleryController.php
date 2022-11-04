@@ -44,28 +44,20 @@ class GalleryController extends Controller
             $data['success'] = 0;
             $data['error'] = $validator->errors()->first('file');// Error response
 
-        }else{
+        }
+        else {
              if($request->file('file')) {
-
-                 $file = $request->file('file');
-                 $filename = $file->getClientOriginalName();
                  
-                 Gallery::create(['name' => $filename, 'type' => 0]);
+                $filename = saveImage($request->file('file'), 'storage/images/gallery/');
+                Gallery::create(['name' => $filename, 'type' => 0]);
 
-                  // File upload location
-                  $location = 'storage/images/gallery/';
+                $data['success'] = 1;
+                $data['message'] = 'Uploaded Successfully!';
 
-                  // Upload file
-                  $file->move($location,$filename);
-
-                  // Response
-                  $data['success'] = 1;
-                  $data['message'] = 'Uploaded Successfully!';
-
-             }else{
-                   // Response
-                   $data['success'] = 0;
-                   $data['message'] = 'File not uploaded.'; 
+             }
+             else {
+                $data['success'] = 0;
+                $data['message'] = 'File not uploaded.'; 
              }
         }
 
@@ -84,11 +76,7 @@ class GalleryController extends Controller
             $filename =  $file->name;
         }
         
-        $path = public_path() . '/storage/images/gallery/' . $filename;
-        
-        if (file_exists($path)) {
-            unlink($path);
-        }
+        deleteImage($file->name, '/storage/images/gallery/');
         return $filename;  
     }
 }

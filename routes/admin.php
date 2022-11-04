@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\PlayerController;
 use App\Http\Controllers\Admin\GalleryController;
+use App\Http\Controllers\Admin\NewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,4 @@ Route::get('/', function () {
 Route::resource('/teams', TeamController::class);
 Route::resource('/players', PlayerController::class);
 Route::resource('/gallery', GalleryController::class);
+Route::resource('/news', NewsController::class);
