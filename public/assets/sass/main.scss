@@ -10,6 +10,7 @@ button{
 }
 $primary-clr: #0549ce;
 $secondary-clr: #2d2525;
+$text-accent: #96A5C3;
 
 $open-sans: 'Open Sans', sans-serif;
 
@@ -30,5 +31,6 @@ $open-sans: 'Open Sans', sans-serif;
 @import 'account';
 @import 'club-pages';
 @import 'community';
+@import 'teams';
 @import 'footer';
 @import 'responsive';

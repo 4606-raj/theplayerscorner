@@ -20,6 +20,12 @@ Route::post('/contact-us', [HomeController::class, 'contactUs'])->name('contact-
 // Route::view('/about-us', 'about-us')->name('about-us');
 // Route::view('/community', 'community')->name('community');
 // Route::view('/club-shop', 'club-shop')->name('club-shop');
+
+// Teams section
+Route::view('/teams', 'teams')->name('teams');
+Route::view('/mens-team', 'mens-team')->name('mens-team');
+
+
 Route::view('/contact-us', 'contact-us')->name('contact-us');
 Route::view('/after-contact-us', 'after-contact-us')->name('after-contact-us');
 Route::view('/privacy-policy', 'legal-documents.privacy-policy')->name('privacy-policy');

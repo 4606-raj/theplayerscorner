@@ -50,6 +50,19 @@
         max-height: 60px;
         font-size: 1.6rem;
     }
+    .manager-img-bx{
+        // min-width: 270px;
+    }
+    .manager-card-row{
+        flex-direction: column;
+    }
+    .manager-card{
+        width: 90% !important;
+        // margin-left: 5%;
+        margin: 1rem 0 1rem 5%;
+        // margin: 
+    }
+    
  }
 
 // Medium devices (tablets, less than 992px)
@@ -63,9 +76,7 @@
             justify-content: center;
         }
     }
-    // #nav-row{
-    //     margin: 0 !important;
-    // }
+
     header{
 
         #uppr-row .uppr-row-con{
@@ -242,6 +253,16 @@
     }
     .community-cards{
         justify-content: center;
+    }
+    .team-cat-card{
+        transform: translateY(-15px);
+    }
+    .manager-card-row{
+        align-items: center;
+    }
+    .manager-card{
+        flex-direction: row;
+        margin: 20px 0;
     }
 }
 
@@ -521,6 +542,27 @@
             width: 14rem !important;
         }
     }
+    #teams-container{
+        padding: 40px 0;
+        .team-cat-card{
+            transform: translateY(-13px);
+        }
+        .youth-card-adjust{
+            margin-top: 100px;
+        }
+    }
+    .team-cat-card, .team-cat-card .team-cat-img{
+        min-height: 280px;
+        max-height: 280px;
+    }
+    .manager-card-row .manager-img-bx,
+    .manager-card-row .manager-img-bx img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        
+    }
  }
 
 
@@ -670,6 +712,32 @@
         .card{
             width: unset !important;
         }
+    }
+    .women-card-adjust{
+        margin: 0;
+
+        .card-cat-hdr{
+            text-align: left;
+        }
+    }
+    .youth-card-adjust .team-see-more{
+        padding: 0;
+        justify-content: center;
+
+        a{
+            min-width: 80%;
+            max-width: 80%;
+        }
+    } 
+    #teams-container{
+        overflow-x: hidden;
+    }
+    .manager-card{
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .manager-img-bx{
+        margin: 1rem;
     }
 }
 

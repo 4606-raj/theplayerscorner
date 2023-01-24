@@ -1616,6 +1616,201 @@ header nav .logo-2 img {
   width: fit-content !important;
 }
 
+#teams-container {
+  margin: 0 auto;
+}
+
+.teams-sec {
+  padding: 40px 8.33%;
+  background: #E1EBFF;
+}
+
+.sec-main-hdr {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: clamp(23px, 3vw, 30px);
+  margin-bottom: 16px;
+}
+
+.card-cat-hdr {
+  color: #96A5C3;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(32px, 4vw, 55px);
+}
+
+.team-cat-card {
+  width: 100%;
+  -webkit-transform: translateY(-24px);
+      -ms-transform: translateY(-24px);
+          transform: translateY(-24px);
+}
+.team-cat-card .team-cat-img {
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 330px;
+  max-height: 330px;
+}
+.team-cat-card .team-cat-img img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 330px;
+  max-height: 330px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team-see-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+  width: 80%;
+  margin-left: 10%;
+  -webkit-transform: translateY(-28px);
+      -ms-transform: translateY(-28px);
+          transform: translateY(-28px);
+}
+.team-see-more a {
+  background: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 4px 97px #C2CEE4;
+          box-shadow: 0px 4px 97px #C2CEE4;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+.team-see-more a span {
+  position: relative;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  left: 0;
+}
+.team-see-more a:hover {
+  color: #000;
+}
+.team-see-more a:hover span {
+  left: -5px;
+}
+.team-see-more a:hover svg {
+  left: 3px;
+  opacity: 1;
+}
+.team-see-more a svg {
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  position: relative;
+  left: -20px;
+}
+
+.women-card-adjust {
+  margin-left: 8.33%;
+  position: relative;
+  top: 55px;
+}
+.women-card-adjust .card-cat-hdr {
+  text-align: right;
+}
+
+.youth-card-adjust .team-see-more {
+  width: 100%;
+  margin: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 30px;
+}
+.youth-card-adjust .team-see-more a {
+  min-width: 190px;
+  max-width: 190px;
+}
+
+.sec-main-hdr span {
+  font-size: clamp(3px, 3vw, 40px);
+  font-weight: 600;
+}
+
+.manager-card-row {
+  margin: 40px 0 !important;
+}
+.manager-card-row .manager-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.manager-card-row .manager-img-bx {
+  min-width: 180px;
+  max-width: 180px;
+  min-height: 180px;
+  max-height: 180px;
+  background: red;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.manager-card-row .manager-img-bx img {
+  min-width: 180px;
+  max-width: 180px;
+  min-height: 180px;
+  max-height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.manager-card-row .manager-dec-bx {
+  padding: 20px 15px;
+  min-height: 300px;
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 97px #C2CEE4;
+          box-shadow: 0px 4px 97px #C2CEE4;
+  border-radius: 8px;
+}
+.manager-card-row .manager-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: #000;
+  font-size: clamp(17px, 3vw, 17px);
+}
+.manager-card-row .manager-dec-txt {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 25.41px;
+  color: #525252;
+}
+
+.manager-rd-more {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.manager-rd-more a {
+  width: unset;
+  padding: 0;
+  display: unset;
+  background: none;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
 footer {
   background: #0549ce;
   padding: 20px 30px;
@@ -1709,6 +1904,16 @@ footer .footer-wrap .doc-links li a {
     min-height: 60px;
     max-height: 60px;
     font-size: 1.6rem;
+  }
+  .manager-card-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .manager-card {
+    width: 90% !important;
+    margin: 1rem 0 1rem 5%;
   }
 }
 @media (max-width: 991.98px) {
@@ -1868,6 +2073,23 @@ footer .footer-wrap .doc-links li a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .team-cat-card {
+    -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  .manager-card-row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .manager-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px 0;
   }
 }
 @media (max-width: 767.98px) {
@@ -2141,6 +2363,28 @@ footer .footer-wrap .doc-links li a {
   .community-cards .card {
     width: 14rem !important;
   }
+  #teams-container {
+    padding: 40px 0;
+  }
+  #teams-container .team-cat-card {
+    -webkit-transform: translateY(-13px);
+        -ms-transform: translateY(-13px);
+            transform: translateY(-13px);
+  }
+  #teams-container .youth-card-adjust {
+    margin-top: 100px;
+  }
+  .team-cat-card, .team-cat-card .team-cat-img {
+    min-height: 280px;
+    max-height: 280px;
+  }
+  .manager-card-row .manager-img-bx,
+.manager-card-row .manager-img-bx img {
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    max-height: 150px;
+  }
 }
 @media (max-width: 575.98px) {
   .right-logos {
@@ -2270,5 +2514,34 @@ footer .footer-wrap .doc-links li a {
   }
   .community-cards .card {
     width: unset !important;
+  }
+  .women-card-adjust {
+    margin: 0;
+  }
+  .women-card-adjust .card-cat-hdr {
+    text-align: left;
+  }
+  .youth-card-adjust .team-see-more {
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .youth-card-adjust .team-see-more a {
+    min-width: 80%;
+    max-width: 80%;
+  }
+  #teams-container {
+    overflow-x: hidden;
+  }
+  .manager-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 0;
+  }
+  .manager-img-bx {
+    margin: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */

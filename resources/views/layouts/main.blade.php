@@ -113,11 +113,12 @@
                     
                     <li><a href="{{ route('community') }}">Community</a></li>
                     
-                    <li><a href="404">Teams </a>
+                    <li><a href="{{ route('teams') }}">Teams </a>
                         <i class="bi bi-caret-down-fill"></i>
                         
                         <!-- Drop Down menu -->
                         <ul class="sub-menu">
+                            <li><a href="{{ route('mens-team') }}">Men</a></li>
                             <li><a href="#">Women</a></li>
                             <li><a href="#">Youth Teams</a></li>
                         </ul>
