@@ -1748,49 +1748,41 @@ header nav .logo-2 img {
   font-weight: 600;
 }
 
-.manager-card-row {
-  margin: 40px 0 !important;
-}
-.manager-card-row .manager-card {
+.manager-card {
+  padding: 15px;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-radius: 8px;
 }
-.manager-card-row .manager-img-bx {
+.manager-card .manager-img-bx {
   min-width: 180px;
   max-width: 180px;
-  min-height: 180px;
-  max-height: 180px;
+  min-height: 240px;
+  max-height: 240px;
   background: red;
   border-radius: 10px;
   overflow: hidden;
 }
-.manager-card-row .manager-img-bx img {
+.manager-card .manager-img-bx img {
   min-width: 180px;
   max-width: 180px;
-  min-height: 180px;
-  max-height: 180px;
+  min-height: 240px;
+  max-height: 240px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.manager-card-row .manager-dec-bx {
-  padding: 20px 15px;
-  min-height: 300px;
-  background: #fff;
-  -webkit-box-shadow: 0px 4px 97px #C2CEE4;
-          box-shadow: 0px 4px 97px #C2CEE4;
-  border-radius: 8px;
+.manager-card .manager-des-bx {
+  margin-left: 15px;
 }
-.manager-card-row .manager-name {
+.manager-card .manager-des-bx .manager-name {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   color: #000;
   font-size: clamp(17px, 3vw, 17px);
 }
-.manager-card-row .manager-dec-txt {
+.manager-card .manager-des-bx .manager-dec-txt {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 25.41px;
@@ -1809,6 +1801,113 @@ header nav .logo-2 img {
   background: none;
   -webkit-box-shadow: 0 0 0;
           box-shadow: 0 0 0;
+}
+
+.player-card .pl-img {
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 380px;
+  max-height: 380px;
+}
+.player-card .pl-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 380px;
+  max-height: 380px;
+  width: 100%;
+}
+.player-card .pl-details {
+  -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+          transform: translateY(-30px);
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 4px 97px #C2CEE4;
+          box-shadow: 0px 4px 97px #C2CEE4;
+  padding-bottom: 15px;
+  background: #fff;
+  position: relative;
+}
+.player-card .pl-details .pl-name-row {
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.player-card .pl-details .pl-name {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #000;
+}
+.player-card .pl-details .pl-name::first-letter {
+  text-transform: uppercase;
+}
+.player-card .pl-details .manager-rd-more {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 0;
+}
+.player-card .pl-details .pl-des-tag {
+  background: #0549ce;
+  border-radius: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 8px 8px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -25px;
+}
+.player-card .pl-details .pl-des-tag span {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: clamp(14px, 3vw, 17px);
+}
+.player-card .pl-details .pl-des-tag .pl-tag-num {
+  margin-left: 10px;
+  background: #fff;
+  color: #000;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 35px;
+  max-width: 35px;
+  min-height: 35px;
+  max-height: 35px;
+}
+.player-card .pl-details .pl-des-txt {
+  padding: 15px 15px 0 15px;
+  color: #525252;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 25.41px;
+}
+.player-card .pl-details .pl-des-txt p {
+  margin: 0;
 }
 
 footer {

@@ -118,18 +118,17 @@
     font-size: clamp(3px, 3vw, 40px);
     font-weight: 600;
 }
-.manager-card-row{
-    margin: 40px 0 !important;
+.manager-card{
+    padding: 15px;
+    background: #fff;
+    display: flex;
+    border-radius: 8px;
     
-    .manager-card{
-        display: flex;
-        align-items: center;
-    }
     .manager-img-bx{
         min-width: 180px;
         max-width: 180px;
-        min-height: 180px;
-        max-height: 180px;
+        min-height: 240px;
+        max-height: 240px;
         background: red;
         border-radius: 10px;
         overflow: hidden;
@@ -137,35 +136,72 @@
         img{
             min-width: 180px;
             max-width: 180px;
-            min-height: 180px;
-            max-height: 180px;
+            min-height: 240px;
+            max-height: 240px;
             object-fit: cover;
         }
     }
-    .manager-dec-bx{
-        
-        // margin-left: 20px;
-        // min-width: 290px;
-        // width: 100%;
-        padding: 20px 15px;
-        min-height: 300px;
-        background: #fff;
-        box-shadow: 0px 4px 97px #C2CEE4;
-        border-radius: 8px;
-    }
-    .manager-name{
-        font-family: $open-sans;
-        font-weight: 500;
-        color: #000;
-        font-size: clamp(17px, 3vw, 17px);
-    }
-    .manager-dec-txt{
-        font-family: $open-sans;
-        font-weight: 400;
-        line-height: 25.41px;
-        color: #525252;
+    .manager-des-bx{
+        margin-left: 15px;
+
+        .manager-name{
+            font-family: $open-sans;
+            font-weight: 500;
+            color: #000;
+            font-size: clamp(17px, 3vw, 17px);
+        }
+        .manager-dec-txt{
+            font-family: $open-sans;
+            font-weight: 400;
+            line-height: 25.41px;
+            color: #525252;
+        }
     }
 }
+// .manager-card-row{
+//     margin: 40px 0 80px 0 !important;
+    
+//     .manager-card{
+//         display: flex;
+//         align-items: center;
+//     }
+//     .manager-img-bx{
+//         min-width: 180px;
+//         max-width: 180px;
+//         min-height: 180px;
+//         max-height: 180px;
+//         background: red;
+//         border-radius: 10px;
+//         overflow: hidden;
+        
+//         img{
+//             min-width: 180px;
+//             max-width: 180px;
+//             min-height: 180px;
+//             max-height: 180px;
+//             object-fit: cover;
+//         }
+//     }
+//     .manager-dec-bx{
+//         padding: 20px 15px;
+//         min-height: 300px;
+//         background: #fff;
+//         box-shadow: 0px 4px 97px #C2CEE4;
+//         border-radius: 8px;
+//     }
+//     .manager-name{
+//         font-family: $open-sans;
+//         font-weight: 500;
+//         color: #000;
+//         font-size: clamp(17px, 3vw, 17px);
+//     }
+//     .manager-dec-txt{
+//         font-family: $open-sans;
+//         font-weight: 400;
+//         line-height: 25.41px;
+//         color: #525252;
+//     }
+// }
 .manager-rd-more{
     transform: translateY(-0px);
     
@@ -177,4 +213,94 @@
         box-shadow: 0 0 0 ;
     }
 } 
+.player-card{
+    
+    .pl-img{
+        border-radius: 10px;
+        overflow: hidden;
+        min-height: 380px;
+        max-height: 380px;
+        
+        img{
+            object-fit: cover;
+            min-height: 380px;
+            max-height: 380px;
+            width: 100%;
+        }
+    }
+
+    .pl-details{
+        transform: translateY(-30px);
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 8px;
+        box-shadow: 0px 4px 97px #C2CEE4;
+        padding-bottom: 15px;
+        background: #fff;
+        position: relative;
+        
+        .pl-name-row{
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .pl-name{
+            margin: 0;
+            font-family: $open-sans;
+            font-weight: 500;
+            font-size: 17px;
+            color: #000;
+
+            &::first-letter{
+                text-transform: uppercase;
+            }
+        }
+        .manager-rd-more{
+            width: fit-content;
+            margin-left: 0;
+        }
+        .pl-des-tag{
+            background: $primary-clr;
+            border-radius: 50px;
+            width: fit-content;
+            padding: 8px 8px 8px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -25px;
+
+            span{
+                color: #fff;
+                font-family: $open-sans;
+                font-weight: 500;
+                font-size: clamp(14px, 3vw, 17px);
+            }
+            .pl-tag-num{
+                margin-left: 10px;
+                background: #fff;
+                color: #000;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 35px;
+                max-width: 35px;
+                min-height: 35px;
+                max-height: 35px;
+            }
+        }
+        .pl-des-txt{
+            padding: 15px 15px 0 15px;
+            color: #525252;
+            font-size: 14px;
+            font-family: $open-sans;
+            font-weight: 400;
+            line-height: 25.41px;
+            p{
+                margin: 0;
+            }
+        }
+    }
+}
 // Men's team page END
