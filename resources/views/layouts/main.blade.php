@@ -119,8 +119,8 @@
                         <!-- Drop Down menu -->
                         <ul class="sub-menu">
                             <li><a href="{{ route('mens-team') }}">Men</a></li>
-                            <li><a href="#">Women</a></li>
-                            <li><a href="#">Youth Teams</a></li>
+                            <li><a href="{{ route('womens-team') }}">Women</a></li>
+                            <li><a href="{{ route('youth-team') }}">Youth Teams</a></li>
                         </ul>
                     </li>
                     <li><a href="404">Matches </a>

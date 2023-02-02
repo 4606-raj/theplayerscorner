@@ -50,17 +50,26 @@
         max-height: 60px;
         font-size: 1.6rem;
     }
-    .manager-img-bx{
-        // min-width: 270px;
-    }
-    .manager-card-row{
-        flex-direction: column;
-    }
     .manager-card{
-        width: 90% !important;
-        // margin-left: 5%;
-        margin: 1rem 0 1rem 5%;
-        // margin: 
+        flex-direction: column;
+        align-items: center;
+
+        .manager-name, .manager-dec-txt{
+            text-align: center;
+        }
+        .manager-rd-more{
+            justify-content: center;
+        }
+        .manager-img-bx{
+            margin-bottom: 20px;
+        }
+    }
+    .manager-card .manager-img-bx,
+    .manager-card .manager-img-bx img{
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 180px;
+        max-height: 180px;
     }
     
  }
@@ -257,13 +266,11 @@
     .team-cat-card{
         transform: translateY(-15px);
     }
-    .manager-card-row{
-        align-items: center;
-    }
-    .manager-card{
-        flex-direction: row;
-        margin: 20px 0;
-    }
+    .youth-sec{
+        .nav-pills{
+            justify-content: flex-start;
+        }
+    } 
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -732,12 +739,8 @@
     #teams-container{
         overflow-x: hidden;
     }
-    .manager-card{
-        flex-direction: column;
-        margin: 20px 0;
-    }
-    .manager-img-bx{
-        margin: 1rem;
+    .teams-sec{
+        padding: 30px 0;
     }
 }
 

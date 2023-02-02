@@ -6,7 +6,7 @@
     <section class="teams-sec">
         <div class="container" id="">
             <div class="col-lg-9 col-sm-11 col-11">
-                <p class="sec-main-hdr"><span>Men's</span> Team</p>
+                <p class="sec-main-hdr"><span>Women's</span> Team</p>
             </div>
 
             <div class="manager-card-row row">
@@ -129,6 +129,9 @@
                             </div>    
                         </div>
     
+                        <div class="pl-des-txt">
+                            <p>Lorem ipsum dolor sit amet consectetur. Morbi dictum suspendisse feugiat eget fermentum consectetur penatibus ultrices euismod. Sem sit bibendum ultricies eget aliquam facilisis. </p>
+                        </div>
                     </div>
                 </div>
     
@@ -159,6 +162,9 @@
                             </div>    
                         </div>
     
+                        <div class="pl-des-txt">
+                            <p>Lorem ipsum dolor sit amet consectetur. Morbi dictum suspendisse feugiat eget fermentum consectetur penatibus ultrices euismod. Sem sit bibendum ultricies eget aliquam facilisis. </p>
+                        </div>
                     </div>
                 </div>
     
@@ -189,6 +195,9 @@
                             </div>    
                         </div>
     
+                        <div class="pl-des-txt">
+                            <p>Lorem ipsum dolor sit amet consectetur. Morbi dictum suspendisse feugiat eget fermentum consectetur penatibus ultrices euismod. Sem sit bibendum ultricies eget aliquam facilisis. </p>
+                        </div>
                     </div>
                 </div>
 
@@ -219,6 +228,9 @@
                             </div>    
                         </div>
     
+                        <div class="pl-des-txt">
+                            <p>Lorem ipsum dolor sit amet consectetur. Morbi dictum suspendisse feugiat eget fermentum consectetur penatibus ultrices euismod. Sem sit bibendum ultricies eget aliquam facilisis. </p>
+                        </div>
                     </div>
                 </div>
 
@@ -249,6 +261,9 @@
                             </div>    
                         </div>
     
+                        <div class="pl-des-txt">
+                            <p>Lorem ipsum dolor sit amet consectetur. Morbi dictum suspendisse feugiat eget fermentum consectetur penatibus ultrices euismod. Sem sit bibendum ultricies eget aliquam facilisis. </p>
+                        </div>
                     </div>
                 </div>
 
@@ -279,6 +294,9 @@
                             </div>    
                         </div>
     
+                        <div class="pl-des-txt">
+                            <p>Lorem ipsum dolor sit amet consectetur. Morbi dictum suspendisse feugiat eget fermentum consectetur penatibus ultrices euismod. Sem sit bibendum ultricies eget aliquam facilisis. </p>
+                        </div>
                     </div>
                 </div>
             </div>

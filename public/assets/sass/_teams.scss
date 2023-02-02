@@ -115,7 +115,7 @@
 
 // Men's team page START
 .sec-main-hdr span{
-    font-size: clamp(3px, 3vw, 40px);
+    font-size: clamp(23px, 3vw, 40px);
     font-weight: 600;
 }
 .manager-card{
@@ -129,7 +129,6 @@
         max-width: 180px;
         min-height: 240px;
         max-height: 240px;
-        background: red;
         border-radius: 10px;
         overflow: hidden;
         
@@ -143,7 +142,10 @@
     }
     .manager-des-bx{
         margin-left: 15px;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
         .manager-name{
             font-family: $open-sans;
             font-weight: 500;
@@ -157,9 +159,21 @@
             color: #525252;
         }
     }
+    .manager-rd-more{
+        justify-content: flex-end;
+        margin: 0;
+        width: 100%;
+    }
+}
+.manager-card-row{
+    position: relative;
+    margin: 40px 0 80px 0 !important;
+
+    .swiper-pagination{
+        bottom: -40px !important;
+    }
 }
 // .manager-card-row{
-//     margin: 40px 0 80px 0 !important;
     
 //     .manager-card{
 //         display: flex;
@@ -204,7 +218,7 @@
 // }
 .manager-rd-more{
     transform: translateY(-0px);
-    
+
     a{
         width: unset;
         padding:  0;
@@ -300,6 +314,61 @@
             p{
                 margin: 0;
             }
+        }
+    }
+}
+.youth-sec{
+    .pl-details{
+        padding-top: 15px;
+    }
+    .nav-pills{
+        margin: 40px 0 30px 0;
+        overflow-x: scroll;
+        padding-bottom: 5px;    
+        &::-webkit-scrollbar {
+            height: 4px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            border-radius: 50px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+            height: 2px;
+        }
+        
+        .nav-link-slider{
+            display: flex;
+            justify-content: space-between;
+            width: 1200px;
+
+            .nav-item{
+                width: fit-content;
+            }
+
+        }
+        li{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            
+            button{
+                min-width: 161px;
+                font-size: clamp(13px, 3vw, 15px);
+            }
+        }
+    }
+    .nav-link{
+        background: #fff !important;
+        border: 1px solid $primary-clr !important;
+    }
+    .nav-item{
+        // margin-right: 10px; 
+
+        button{
+            font-family: $open-sans;
+            font-weight: 500;
+        }
+        .active{
+            background: $primary-clr !important;
         }
     }
 }
