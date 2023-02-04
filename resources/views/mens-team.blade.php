@@ -121,7 +121,7 @@
                             <p class="pl-name">player name</p>
         
                             <div class="team-see-more manager-rd-more">
-                                <a href="http://127.0.0.1:8000/mens-team"><span>Read More</span>
+                                <a href="{{ route('player-profile') }}"><span>Read More</span>
                                     <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.84277 11.6567L7.61777 10.3276L10.724 7.07341H0.0927734V5.24007H10.724L7.61777 1.9859L8.84277 0.656738L14.0928 6.15674L8.84277 11.6567Z" fill="#DDDDDD"></path>
                                     </svg>                            
@@ -151,7 +151,7 @@
                             <p class="pl-name">player name</p>
         
                             <div class="team-see-more manager-rd-more">
-                                <a href="http://127.0.0.1:8000/mens-team"><span>Read More</span>
+                                <a href="{{ route('player-profile') }}"><span>Read More</span>
                                     <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.84277 11.6567L7.61777 10.3276L10.724 7.07341H0.0927734V5.24007H10.724L7.61777 1.9859L8.84277 0.656738L14.0928 6.15674L8.84277 11.6567Z" fill="#DDDDDD"></path>
                                     </svg>                            
@@ -181,7 +181,7 @@
                             <p class="pl-name">player name</p>
         
                             <div class="team-see-more manager-rd-more">
-                                <a href="http://127.0.0.1:8000/mens-team"><span>Read More</span>
+                                <a href="{{ route('player-profile') }}"><span>Read More</span>
                                     <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.84277 11.6567L7.61777 10.3276L10.724 7.07341H0.0927734V5.24007H10.724L7.61777 1.9859L8.84277 0.656738L14.0928 6.15674L8.84277 11.6567Z" fill="#DDDDDD"></path>
                                     </svg>                            
@@ -211,7 +211,7 @@
                             <p class="pl-name">player name</p>
         
                             <div class="team-see-more manager-rd-more">
-                                <a href="http://127.0.0.1:8000/mens-team"><span>Read More</span>
+                                <a href="{{ route('player-profile') }}"><span>Read More</span>
                                     <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.84277 11.6567L7.61777 10.3276L10.724 7.07341H0.0927734V5.24007H10.724L7.61777 1.9859L8.84277 0.656738L14.0928 6.15674L8.84277 11.6567Z" fill="#DDDDDD"></path>
                                     </svg>                            
@@ -241,7 +241,7 @@
                             <p class="pl-name">player name</p>
         
                             <div class="team-see-more manager-rd-more">
-                                <a href="http://127.0.0.1:8000/mens-team"><span>Read More</span>
+                                <a href="{{ route('player-profile') }}"><span>Read More</span>
                                     <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.84277 11.6567L7.61777 10.3276L10.724 7.07341H0.0927734V5.24007H10.724L7.61777 1.9859L8.84277 0.656738L14.0928 6.15674L8.84277 11.6567Z" fill="#DDDDDD"></path>
                                     </svg>                            
@@ -271,7 +271,7 @@
                             <p class="pl-name">player name</p>
         
                             <div class="team-see-more manager-rd-more">
-                                <a href="http://127.0.0.1:8000/mens-team"><span>Read More</span>
+                                <a href="{{ route('player-profile') }}"><span>Read More</span>
                                     <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.84277 11.6567L7.61777 10.3276L10.724 7.07341H0.0927734V5.24007H10.724L7.61777 1.9859L8.84277 0.656738L14.0928 6.15674L8.84277 11.6567Z" fill="#DDDDDD"></path>
                                     </svg>                            

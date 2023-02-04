@@ -26,6 +26,7 @@ Route::view('/teams', 'teams')->name('teams');
 Route::view('/mens-team', 'mens-team')->name('mens-team');
 Route::view('/womens-team', 'womens-team')->name('womens-team');
 Route::view('/youth-team', 'youth-team')->name('youth-team');
+Route::view('/player-profile', 'player-profile')->name('player-profile');
 
 
 Route::view('/contact-us', 'contact-us')->name('contact-us');
