@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TeamController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,13 @@ Route::post('/contact-us', [HomeController::class, 'contactUs'])->name('contact-
 // Route::view('/club-shop', 'club-shop')->name('club-shop');
 
 // Teams section
-Route::view('/teams', 'teams')->name('teams');
+Route::group(['prefix' => '/teams'], function() {
+    Route::get('/types', [TeamController::class, 'indexTeamTypes'])->name('team-types');
+    Route::get('/types/{id}', [TeamController::class, 'showTeamTypes'])->name('team-types.show');
+    Route::get('{id}', [TeamController::class, 'show'])->name('teams-show');
+});
+
+// Route::view('/teams', 'teams')->name('teams');
 Route::view('/mens-team', 'mens-team')->name('mens-team');
 Route::view('/womens-team', 'womens-team')->name('womens-team');
 Route::view('/youth-team', 'youth-team')->name('youth-team');

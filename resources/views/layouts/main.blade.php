@@ -113,7 +113,7 @@
                     
                     <li><a href="{{ route('community') }}">Community</a></li>
                     
-                    <li><a href="{{ route('teams') }}">Teams </a>
+                    <li><a href="{{ route('team-types') }}">Teams </a>
                         <i class="bi bi-caret-down-fill"></i>
                         
                         <!-- Drop Down menu -->
