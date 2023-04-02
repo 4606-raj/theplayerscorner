@@ -14,14 +14,12 @@
 
         <div class="blocks-row flex-column justify-content-center">
             <div class="club-box">
-                <p class="club-adr-hdr">Address</p>
+                <p class="club-adr-hdr">Registered Address</p>
                 <address>
-                    Southall Athletic Football Club (CIC) <br>
-                    11 Floriston Avenue <br>
-                    Uxbridge <br>
-                    Middlesex <br>
-                    UB10 9DZ
-    
+                    Southall Athletic Football Club (CIC)<br>
+                    27 Old Gloucester Street<br>
+                    London<br>
+                    WC1N 3AX
                 </address>
     
                 <div class="mt-4">
@@ -32,15 +30,14 @@
             <div class="club-box">
                 <p class="club-adr-hdr">Home Ground</p>
                 <address>
-                    Southall Athletic Football Club <br>
-                    Norwood Hall Playing Fields  <br>
-                    Tentelow Lane <br>
-                    Southall <br> 
-                    Middlesex <br>
-                    UB2 4LL
+                    Southall Athletic Football Club<br>
+                    Norwood Hall Playing Fields<br>
+                    Norwood Green Road<br>
+                    Southall<br>
+                    UB2 4LA
                 </address>
     
-                <p class="mt-4">[Entrance is situated between 53a and 55 Tentelow Lane]</p>
+                <p class="mt-4">[Access is via the pedestrian entrance of Khalsa Primary School. Please be advised that parking is NOT available on site.]</p>
             </div>
         </div>
 
