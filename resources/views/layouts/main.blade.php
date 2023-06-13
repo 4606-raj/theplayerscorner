@@ -34,7 +34,7 @@
                 <!-- Logo -->
                 <div class="logo-1">
                     <a href="{{ route('home') }}">
-                        <img src="assets/images/logo-img.png" alt="">
+                        <img src="{{ asset('assets/images/logo-img.png') }}" alt="">
                         <p>Southall <br>Athletic</p>
                     </a>
                 </div>
@@ -42,12 +42,12 @@
                 <!-- Right Side Logos -->
                 <div class="right-logos">
                     <div>
-                        <img src="assets/images/England-logo.png" alt="">
+                        <img src="{{ asset('assets/images/England-logo.png') }}" alt="">
                     </div>
                     <div>
                         <p class="mb-0">MAIN CLUB PARTNER </p>
                         <div class="chana-logo">
-                            <img src="assets/images/partners/1. Logo - Chana Chemist (White).png" alt="">
+                            <img src="{{ asset('assets/images/partners/1. Logo - Chana Chemist (White).png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                 <ul>
                     <!-- Logo -->
                     <div class="logo-1 logo-2">
-                        <a href="{{ route('home') }}"><img src="assets/images/logo-img.png" alt=""></a>
+                        <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo-img.png') }}" alt=""></a>
                     </div>
 
                     <li class="active-link"><a href="404">News</a>
@@ -227,8 +227,8 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="{{ asset('assets/js/jquery-ui.min.js') }}"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/script.js"></script>
-        <script src="assets/js/index.bundle.min.js"></script>
+        <script src="{{ asset('assets/js/script.js') }}"></script>
+        <script src="{{ asset('assets/js/index.bundle.min.js') }}"></script>
          <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         

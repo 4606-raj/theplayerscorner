@@ -61,6 +61,8 @@ Route::get('/test', function() {
     Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactReceivedMail());
 });
 
+Route::view('/player-registration', 'auth.player-registration')->name('player-registration');
+
 // Route::post('/contact', function (Request $request) {
 
 //     Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactMail);

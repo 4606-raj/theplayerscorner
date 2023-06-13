@@ -6,6 +6,16 @@ $(".bi-caret-down-fill").click(function () {
 var currentYear = new Date().getFullYear();
 $(".currentYear").html(currentYear);
 
+function showTextarea(e) {
+    if (e == "other") {
+        document.getElementById("otherTextarea").classList.add("showOtherText");
+    } else {
+        document
+            .getElementById("otherTextarea")
+            .classList.remove("showOtherText");
+    }
+}
+
 $(document).ready(function () {
     $("#datepicker1").datepicker({
         changeMonth: true,
