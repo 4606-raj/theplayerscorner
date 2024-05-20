@@ -15,15 +15,18 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        $user = User::create([
-            'first_name' => 'admin',
-            'last_name' => 'user',
-            'email' => 'admin@gmail.com',
-            'password' => \Hash::make(123456789),
-        ]);
+        if(!User::whereEmail('admin@gmail.com')->exists()) {
 
-        $role = Role::whereName('admin')->first();
-
-        $role->users()->attach($user);
+            $user = User::create([
+                'first_name' => 'admin',
+                'last_name' => 'user',
+                'email' => 'admin@gmail.com',
+                'password' => \Hash::make(123456789),
+            ]);
+            
+            $role = Role::whereName('admin')->first();
+            
+            $role->users()->attach($user);
+        }
     }
 }

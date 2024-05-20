@@ -92,7 +92,7 @@
 
 					{{-- DOB --}}
 					<div class="form-floating mb-4 d-flex">
-						<input type="text" class="datepicker_input form-control border-2" id="datepicker1" name="dob" placeholder="DD/MM/YYYY">
+						<input type="text" class="datepicker_input form-control datepicker" name="dob" placeholder="DD/MM/YYYY">
 						<label for="datepicker1">DOB</label>
 					</div>
 					

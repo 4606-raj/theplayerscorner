@@ -14,12 +14,15 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-        Role::create([
-            'name' => 'admin',
-        ]);
+        if(!Role::count()) {
 
-        Role::create([
-            'name' => 'player',
-        ]);
+            Role::create([
+                'name' => 'admin',
+            ]);
+            
+            Role::create([
+                'name' => 'player',
+            ]);
+        }
     }
 }

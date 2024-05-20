@@ -56,12 +56,13 @@ Route::view('/social-media', 'social-media')->name('social-media');
 
 Route::view('/community', 'community')->name('community');
 Route::view('/about-us', 'about-us')->name('about-us');
+Route::view('/testimonials', 'testimonials')->name('testimonials');
 
 Route::get('/test', function() {
     Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactReceivedMail());
 });
 
-Route::view('/player-registration', 'auth.player-registration')->name('player-registration');
+Route::view('/player-registration', 'auth.player-registration')->name('player-registration')->middleware('auth');
 
 // Route::post('/contact', function (Request $request) {
 
@@ -86,3 +87,5 @@ Route::get('/test', function () {
     dd($data1->union($data2)->paginate(2)->toArray());
 });
 
+// Route::view('test', 'test');
+Route::get('/test', [HomeController::class, 'index'])->name('home');

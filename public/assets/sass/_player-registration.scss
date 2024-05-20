@@ -1,11 +1,17 @@
+.player-multi-form{
+    #v-pills-tab{
+        flex-direction: column;
+    }
+}
 .player-res-sec{
 
     display: flex;
     justify-content: center;
-    margin: 150px 0;
+    margin: 100px 0;
 
     textarea, input, select{
         font-family: $open-sans;
+        
     }
     .form-body{
         background: #f7fbff;
@@ -13,17 +19,37 @@
         border: 1px solid #d4dbe1;
         border-radius: 5px;
         margin-top: 35px;
+        float: left;
     }
     .field-floating{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         background: #fff;
         border-radius: 5px;
         padding: 15px;
         border: 1px solid #d4dbe1;
-
+        
+        label{
+            color: #727a80;
+        }
+        textarea{
+            &::placeholder{
+                color: #727a80;
+            }
+            &:focus{
+                border-color: $primary-clr !important;
+            }
+        }
+        input{
+            box-shadow: 0 0 0;
+            &:focus{
+                border: 1px solid $primary-clr;
+            }
+        }
+        
         .left-bl{
-            padding-right: 15px;
+            // padding-right: 15px;
         }
         .right-bl{
             padding-left: 15px;
@@ -31,17 +57,15 @@
         .field-question{
             margin: 0;
             font-family: $open-sans;
-            font-size: 1.1rem;
-        }
-        .compulsory-mark{
-            color: red;
+            font-size: clamp(1rem, 3.5vw, 1.1rem);
+            
         }
         .question-des{
             margin-top: 10px;
             font-family: $open-sans;    
             font-size: 0.9375rem;   
             line-height: 25px;
-
+            
             p, ol{
                 margin: 0;
             }
@@ -52,29 +76,43 @@
                 margin-bottom: 10px;
             }
         }
+        .datepicker_input{
+            padding: 1rem .75rem;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            border: 1px solid #d4dbe1;
+            background: none;
+        }
         select{
             width: 100%;
-            padding: 10px;
+            padding: 1rem .75rem;
             border-radius: 4px;
             border: 1px solid #d4dbe1;
-            background: #e8f0fd;
+            background: none;
             outline: none;
             cursor: pointer;
+            color: #727a80;
+            
+            option:not(:first-of-type){
+                color: $secondary-clr;
+            }
+            &:focus{
+                border: 1px solid $primary-clr;
+            }
             
             option{
                 padding: 10px;
             }
         }
-        .showOtherText{
-            min-height: 50px !important;
-            visibility: visible !important;
-            opacity: 1 !important;
+        .med-textarea{
+            min-height: 200px;
         }
-        #otherTextarea:focus{
+        .otherTextarea:focus{
             outline: none;
             border-color: $primary-clr;
         }
-        #otherTextarea{
+        .otherTextarea{
             z-index: 10;
             border-radius: 4px;
             padding: 8px;
@@ -82,10 +120,7 @@
             margin-top: 10px;
             box-shadow: 2px 2px 4px #b2b2b2;
             width: 100%;
-            // transition: .3s ease;
-            min-height: 0;
-            visibility: hidden;
-            opacity: 0;
+            display: none;
             position: absolute;
             left: 0;
             top: 45px;
@@ -102,6 +137,7 @@
             height: 60px;
         }
     }
+    
 }
 .pl-res-des{
     padding: 0 15px;
@@ -110,7 +146,117 @@
     line-height: 30px;
     text-align: center;
     span{
-        font-size: clamp(1rem, 1.5vw, 1.5rem);
+        font-size: clamp(1.1rem, 1.5vw, 1.5rem);
         margin-bottom: 30px;
+    }
+}
+.pl-highlight-txt{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.compulsory-mark{
+    color: red;
+}
+.pl-res-hdr{
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-family: $open-sans;
+    font-weight: 600;
+    color: $secondary-clr;
+}
+.player-multi-form{
+    width: 100%;
+    float: left;
+    .tab-content{
+        float: left;
+    }
+    .sticky-sidebar{
+        position: sticky;
+        top: 80px;
+    }
+    .nav-pills{
+        float: left;
+        
+        .active{
+            background: none !important;
+            opacity: 1 !important;
+            color: $secondary-clr !important;
+            font-weight: 600;  
+        } 
+        .nav-link{
+            margin: 4px 0;
+            padding-left: 0;
+            transition: .2s;
+            text-align: left;
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            font-family: $open-sans;
+            color: $secondary-clr;
+            font-size: clamp(.9rem, 1vw, 1rem);
+            opacity: .6;
+            
+            .counter-num{
+                border: 1px solid $primary-clr;
+                min-width: 30px;
+                max-width: 30px;
+                min-height: 30px;
+                max-height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                border-radius: 50%;
+                color: $primary-clr;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.player-prev-btn{
+    background: none;
+    outline: none;
+    border: none;
+    border: 1px solid #d4dbe1;
+    border-radius: 4px;
+    padding: 10px 30px;
+    font-family: $open-sans;
+    color: $secondary-clr;
+    margin: 20px 10px 20px 0;
+    font-weight: 600;
+    transition: .2s;
+    
+    &:hover{
+        background: #ecf3fa;
+    }
+}
+.question-info{
+    font-family: $open-sans;
+    font-size: .9rem;
+    line-height: 25px;
+    padding-left: 8px;
+    background: #f7fbff;
+    border-left: 1px solid #d4dbe1;
+    color: #595959;
+    margin-bottom: 10px;
+}
+.note-red-alert{
+    font-family: $open-sans;
+    font-size: 1rem;
+    color: red;
+    line-height: 25px;
+}
+.player-conset-checkbox{
+    display: flex;
+    cursor: pointer;
+    font-family: $open-sans;
+    font-size: clamp(0.9375rem, 1vw, 1rem);
+    line-height: 28px;
+
+
+    input{
+        margin-top: 8px;
+        margin-right: 10px;
     }
 }

@@ -2,30 +2,49 @@
     margin: 0;
     padding: 0;
 }
+
+// Import font Bunken tech
+// @import url('../fonts/BunkenTechSansPro-ExBdIt.woff');
+$AnzeigenGrotesk: 'Anzeigen Grotesk W01 Regular';
+@font-face {
+    font-family: $AnzeigenGrotesk;
+    src: url('../fonts/AnzeigenGroteskW01Regular.woff');
+    // src: local('Bunken Tech Sans Pro Bold'), local('BunkenTechSansPro-Bold'),
+}
+
+$bukenFont: 'Bunken Tech Sans Pro Bold';
+@font-face {
+    font-family: $bukenFont;
+    src: url('../fonts/BunkenTechSansPro-ExBdIt.woff');
+    // src: local('Bunken Tech Sans Pro Bold'), local('BunkenTechSansPro-Bold'),
+}
+$open-sans: 'Open Sans', sans-serif;
+
 button{
     outline: none !important;
 }
 .nopadding{
     padding: 0 !important;
 }
-$primary-clr: #0549ce;
-$secondary-clr: #2d2525;
-$text-accent: #96A5C3;
+$primary-clr: #FBE746;
+$secondary-clr: #000;
+$text-accent: #fff;
 
-$open-sans: 'Open Sans', sans-serif;
 
 ::-moz-selection { /* Code for Firefox */
     color: #000000;
-    background: #a7c4ff;
+    background: #f7ffa0be;
 }
 
 ::selection {
       color: #000000;
-      background: #a7c4ff;
+      background: #f7ffa0be;
   }
 
 @import 'header';
 @import 'section';
+@import 'testimonials';
+
 @import 'legal-doc';
 @import 'contact-us';
 @import 'account';

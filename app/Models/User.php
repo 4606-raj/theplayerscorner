@@ -49,4 +49,8 @@ class User extends Authenticatable
     public function roles() {
         return $this->belongsToMany('App\Models\Role');
     }
+
+    public function player() {
+        return $this->hasOne(Player::class);
+    }
 }
