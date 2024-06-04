@@ -2,10 +2,10 @@
 <aside class="app-sidebar">
     <div class="app-sidebar__logo">
         <a class="header-brand" href="index.html">
-            <img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img desktop-lgo" alt="southall-logo" width="15%">
-            <img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img dark-logo" alt="southall-logo" width="15%">
-            <img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img mobile-logo" alt="southall-logo" width="80%">
-            <img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img darkmobile-logo" alt="southall-logo" width="15%">
+            <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img desktop-lgo" alt="southall-logo" width="15%">
+            <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img dark-logo" alt="southall-logo" width="15%">
+            <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img mobile-logo" alt="southall-logo" width="80%">
+            <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img darkmobile-logo" alt="southall-logo" width="15%">
         </a>
     </div>
     <div class="app-sidebar3">

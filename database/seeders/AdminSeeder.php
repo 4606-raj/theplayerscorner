@@ -21,6 +21,7 @@ class AdminSeeder extends Seeder
                 'first_name' => 'admin',
                 'last_name' => 'user',
                 'email' => 'admin@gmail.com',
+                'photo' => '16.jpg',
                 'password' => \Hash::make(123456789),
             ]);
             
