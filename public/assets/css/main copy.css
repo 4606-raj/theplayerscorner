@@ -231,15 +231,15 @@ header nav .logo-2 img {
   max-width: 30px;
 }
 
-.hide-top-row {
+.fix-header-top {
   position: fixed;
   top: 0;
   width: 100%;
 }
-.hide-top-row #uppr-row {
+.fix-header-top #uppr-row {
   padding: 0;
 }
-.hide-top-row .logo-2 img {
+.fix-header-top .logo-2 img {
   display: block;
 }
 

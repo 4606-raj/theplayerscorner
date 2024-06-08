@@ -29,24 +29,24 @@
 
 <!-- Icons -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header>
-        <div id="uppr-row">
+    <header class="container-fluid"> 
+            <div class="row justify-content-center">
+
+            
+
+      
+        {{-- <div id="uppr-row">
             <div class="overlay-hdr"></div>
 
             <div class="container uppr-row-con">    
                 <!-- Logo -->
-                <div class="logo-1">
-                    <a href="{{ route('home') }}">
-                        <img src="{{ asset('assets/images/logo-1.png') }}" alt="">
-                        <p>The Players <span><br>Corner</span></p>
-                    </a>
-                </div>
+                
                 
                 <!-- Right Side Logos -->
-                {{-- <div class="right-logos">
+                <div class="right-logos">
                     <div>
                         <img src="{{ asset('assets/images/partners/PFSA-logo.png') }}" alt="">
                         <img src="{{ asset('assets/images/partners/England-logo.png') }}" alt="">
@@ -58,9 +58,9 @@
                             <img src="{{ asset('assets/images/partners/UEFA-logo.png') }}" alt="">
                         </div>
                     </div>
-                </div> --}}
+                </div> 
                 <!-- Social Media Icons -->
-                <!-- <div class="social-icons">
+                <div class="social-icons">
                     <ul>
                         <li><a href="https://www.instagram.com/southall_athletic/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a></li>
                         <li><a href="https://www.facebook.com/SouthallAthletic/" target="_blank"><i class="bi bi-facebook"></i></a></li>
@@ -68,32 +68,33 @@
                         <li><a href="https://www.linkedin.com/company/southall-afc/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UC5puOkk0k-yIfngkssGtzWA" target="_blank"><i class="bi bi-youtube"></i></a></li>
                     </ul>
-                </div> -->
+                </div> 
 
                 <!-- Hamburger Menu -->
-                <button id="ham-button">
-                    <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="45" onclick="this.classList.toggle('active')">
-                        <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-                        <path class="line middle" d="m 30,50 h 40" />
-                        <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-                    </svg>
-                </button>
             </div>
-        </div>
+        </div> --}}
         
         <!-- Navigation Bar -->
-        <nav>
-            <div class="container nav-small" id="nav-row">
+        <div class="logo-1 col-6 col-sm-7 col-md-auto">
+            <a href="{{ route('home') }}">
+                <img src="{{ asset('assets/images/logo-1.png') }}" alt="">
+                <p>The <span><br> Players Corner</span></p>
+            </a>
+        </div>
+        <nav class="d-flex col-lg-7 col-md-7 ps-0 justify-content-between">
+
+            <div class="nav-small offset-md-2" id="nav-row">
                 
                 <ul>
                     <!-- Logo -->
-                    <div class="logo-1 logo-2">
+                    {{-- <div class="logo-1 logo-2">
                         <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo-img.png') }}" alt=""></a>
-                    </div>
+                    </div> --}}
 
                     <li class="active-link"><a href="{{ route('home') }}">Home</a>
-                    <li class="active"><a href="404">About</a>
-                    <li class="active"><a href="{{ route('contact-us') }}">Contact</a>
+                    <li class="active"><a href="404">About us</a>
+                    <li class="active"><a href="{{ route('blogs') }}">Our Blog</a>
+                    <li class="active"><a href="{{ route('contact-us') }}">Contact us</a>
                         {{-- <i class="bi bi-caret-down-fill"></i>
                         <!-- Drop Down menu -->
                         <ul class="sub-menu">
@@ -169,34 +170,48 @@
                     </div> --}}
                     <!-- Social Media Icons -->
                     
-                    <div class="social-icons hdr-social-icons">
-                        <ul>
-                            <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                            <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter"></i></a></li>
-                            <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
+            <div class="social-icons hdr-social-icons">
+                <ul>
+                    <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                </ul>
+            </div>
+
         </nav>
+        {{-- Login button to portal --}}
+        <div class="col-auto d-flex align-items-center">
+            <a href="#" class="primary-btn"><button><i class="bi bi-box-arrow-in-right"></i> Login</button></a>
+        </div>
+        <button class="col-auto" id="ham-button">
+            <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="45" onclick="this.classList.toggle('active')">
+                <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+            
+        </button>
+    </div>
     </header>
 
 <!-- Wrapper 1 -->
-<section class="container" id="wrapper-1">
-    <div class="row">
-        <div class="banner-wrapper col-lg-6 col-md-6 col-sm-12 col-12">
-            <img src="{{ asset('storage/images/slider/img-2.jpg') }}" alt="">
-            <div class="border-box"></div>
-        </div>
-        <div class="side-txt-wrapper col-lg-6 col-md-6 col-sm-12 col-12">
-            <div>
-                <h3>Welcome to the <br> players corner</h3>
-                <p>we're levelling the field</p>
+    <section class="container-fluid" id="wrapper-1">
+        <div class="row">
+            
+            <div class="heroBanner col-lg-12">
+                {{-- <img src="{{ asset('assets/images/banner.jpg') }}" alt=""> --}}
+                <div class="bannerText">
+                    <h3>the players corner</h3>
+                    <p>we're levelling the field</p>
+                </div>
+                <div class="topOverlay"></div>
+                <div class="makeShape">sdf</div>
+
             </div>
+            
         </div>
-        
-    </div>
 
     {{-- <!-- Main Slider -->
         <div id="hero-slider" class="carousel slide" data-bs-ride="carousel">
@@ -280,7 +295,7 @@
             <div class="about-site">
                 {{-- Site logo --}}
                 <div class="ab-logo">
-                    <img src="{{ asset('assets/images/logo-1.png') }}" alt="">
+                    <img src="{{ asset('assets/images/logo-img.png') }}" alt="">
                 </div>
                 {{-- Site title --}}
                 <h3 class="title-hdr">the players corner</h3>
@@ -347,71 +362,71 @@
             <!-- Slides -->
             <div class="swiper-slide">
                 <div class="grid-wrapper" id="animated-thumbnails">
-                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-1.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-1.jpg') }}" alt="" />
+                    <div class="tall" data-src="{{ asset('storage/app/public/images/gallery/img-1.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-1.jpg') }}" alt="" />
                     </div>
                     
-                    <div class="wide" data-src="{{ asset('storage/images/gallery/img-2.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-2.jpg') }}" alt="" />
+                    <div class="wide" data-src="{{ asset('storage/app/public/images/gallery/img-2.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-2.jpg') }}" alt="" />
                     </div>
 
-                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-3.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-3.jpg') }}" alt="">
+                    <div class="tall" data-src="{{ asset('storage/app/public/images/gallery/img-3.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-3.jpg') }}" alt="">
                     </div>
 
-                    <div class="wide" data-src="{{ asset('storage/images/gallery/img-4.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-4.jpg') }}" alt="" />
+                    <div class="wide" data-src="{{ asset('storage/app/public/images/gallery/img-4.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-4.jpg') }}" alt="" />
                     </div>
 
-                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-5.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-5.jpg') }}" alt="" />
+                    <div class="tall" data-src="{{ asset('storage/app/public/images/gallery/img-5.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-5.jpg') }}" alt="" />
                     </div>
 
-                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-6.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-6.jpg') }}" alt="" />
+                    <div class="tall" data-src="{{ asset('storage/app/public/images/gallery/img-6.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-6.jpg') }}" alt="" />
                     </div>
 
-                    <div class="big" data-src="{{ asset('storage/images/gallery/img-7.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-7.jpg') }}" alt="" />
+                    <div class="big" data-src="{{ asset('storage/app/public/images/gallery/img-7.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-7.jpg') }}" alt="" />
                     </div>
 
-                    <div data-src="{{ asset('storage/images/gallery/img-8.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-8.jpg') }}" alt="" />
+                    <div data-src="{{ asset('storage/app/public/images/gallery/img-8.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-8.jpg') }}" alt="" />
                     </div> 
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="grid-wrapper" id="animated-thumbnails">
-                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-1.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-1.jpg') }}" alt="" />
+                    <div class="tall" data-src="{{ asset('storage/app/public/images/gallery/img-1.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-1.jpg') }}" alt="" />
                     </div>
                     
-                    <div class="wide" data-src="{{ asset('storage/images/gallery/img-2.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-2.jpg') }}" alt="" />
+                    <div class="wide" data-src="{{ asset('storage/app/public/images/gallery/img-2.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-2.jpg') }}" alt="" />
                     </div>
 
-                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-3.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-3.jpg') }}" alt="">
+                    <div class="tall" data-src="{{ asset('storage/app/public/images/gallery/img-3.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-3.jpg') }}" alt="">
                     </div>
 
-                    <div class="wide" data-src="{{ asset('storage/images/gallery/img-4.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-4.jpg') }}" alt="" />
+                    <div class="wide" data-src="{{ asset('storage/app/public/images/gallery/img-4.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-4.jpg') }}" alt="" />
                     </div>
 
-                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-5.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-5.jpg') }}" alt="" />
+                    <div class="tall" data-src="{{ asset('storage/app/public/images/gallery/img-5.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-5.jpg') }}" alt="" />
                     </div>
 
-                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-6.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-6.jpg') }}" alt="" />
+                    <div class="tall" data-src="{{ asset('storage/app/public/images/gallery/img-6.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-6.jpg') }}" alt="" />
                     </div>
 
-                    <div class="big" data-src="{{ asset('storage/images/gallery/img-7.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-7.jpg') }}" alt="" />
+                    <div class="big" data-src="{{ asset('storage/app/public/images/gallery/img-7.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-7.jpg') }}" alt="" />
                     </div>
 
-                    <div data-src="{{ asset('storage/images/gallery/img-8.jpg') }}">
-                        <img src="{{ asset('storage/images/gallery/img-8.jpg') }}" alt="" />
+                    <div data-src="{{ asset('storage/app/public/images/gallery/img-8.jpg') }}">
+                        <img src="{{ asset('storage/app/public/images/gallery/img-8.jpg') }}" alt="" />
                     </div> 
                 </div>
             </div>
@@ -615,9 +630,9 @@
     {{-- 24/7 Phone support SECTION START --}}
     <section class="container support-wrapper" id="wrapper-1">
         <div class="row">
-            <div class="banner-wrapper col-lg-4 offset-lg-1 col-md-5 offset-md-1 offest-sm-1 col-sm-10 col-12">
-                <img src="{{ asset('storage/images/slider/img-1.jpg') }}" alt="">
-                <div class="border-box" style="background: #fff; left: -10px; bottom: -20px"></div>
+            <div class="promoBanner col-lg-4 offset-lg-1 col-md-5 offset-md-1 offest-sm-1 col-sm-10 col-12">
+                <img src="{{ asset('assets/images/banner.jpg') }}" alt="">
+                <div class="border-box"></div>
             </div>
             <div class="side-txt-wrapper col-lg-6 col-md-5 col-sm-10 col-12">
                 <div>
@@ -791,7 +806,7 @@
 <!-- Promo Banner START -->
 <section id="promo-banner" class="container-fuild">
     <div class="banner-overlay"></div>
-    <img src="{{ asset('storage/images/gallery/img-5.jpg') }}" alt="">
+    <img src="{{ asset('assets/images/banner.jpg') }}" alt="">
 </section>
 <!-- Promo Banner END -->
 
@@ -808,7 +823,7 @@
                 <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i> <span>facebook</span></a></li>
                 <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i> <span>instagram</span></a></li>
                 <li><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i><span>linkedin</span></a></li>
-                <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter"></i> <span>twitter</span></a></li>
+                <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i> x</a></li>
             </ul>
         </div>
         {{-- Social live feed --}}
@@ -836,7 +851,7 @@
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthe.playerscorner%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
                 </div>
-                <a href="https://twitter.com/twitter?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @twitter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a href="https://twitter.com/twitter?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @X</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
         </div>
 
@@ -856,24 +871,72 @@
 <!-- Social Media Section END -->
 
 {{-- Contact Us START --}}
-<section class="container-fuild contact-us-sec">
-    <div class="container contact-block">
+<section class="container contact-us-sec">
         <div class="row">
-            <div class="left-bx col-lg-6 col-md-6 col-sm-12">
-                <h2 class="sec-hdr">Contact Us</h2>
+            <div class="left-bx col-lg-6 col-md-5 col-sm-12 col-12">
+                <h2 class="sec-hdr">Speak to us!</h2>
                 <div>
-                    <p>Colnbrook Cour, Old Bath road, Colnbrook, Berkshine SL3 ONN</p>
+                    {{-- <p>Colnbrook Cour, Old Bath road, Colnbrook, Berkshine SL3 ONN</p>
                     <a href="mailto:hello@theplayerscorner.co.uk">hello@theplayerscorner.co.uk</a>
-                    <p>020 3289 1181</p>
+                    <p>020 3289 1181</p> --}}
+                    <p class="text-center">Contact us today for an informal chat</p>
                 </div>
             </div>
     
-            <div class="right-bx col-lg-6 col-md-6 col-sm-12 p-0">
-                <img src="{{ asset('storage/images/gallery/img-1.jpg') }}" alt="">
+            <div class="right-bx col-lg-6 col-md-7 col-sm-12 col-12">
+                    <div class="card p-4">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-lg-6">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-7">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-lg-5">
+                                    <label for="contactNumber" class="form-label">Contact Number</label>
+                                    <input type="tel" class="form-control" id="contactNumber" required>
+                                </div>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Speak to me about</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="" disabled selected>Select a topic</option>
+                                    <option value="1-2-1 Coaching">1-2-1 Coaching</option>
+                                    <option value="Performance Analysis">Performance Analysis</option>
+                                    <option value="Representation">Representation</option>
+                                    <option value="Scouting">Scouting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4"></textarea>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="consent" required>
+                                <label class="form-check-label" for="consent">
+                                    Consent required <br>
+                                    The Players Corner needs the contact information you provide to us to contact you about our products and services. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, check out our privacy policy.
+                                </label>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="send-btn">Send</button>
+                            </div>
+                        </form>
+                    </div>
             </div>
         </div>
 
-    </div>
 </section>
 {{-- Contact Us END --}}
 <!-- Partners Section START -->
@@ -927,7 +990,17 @@
         <div>
             <span>Designed by Naveen</span> 
         </div>
-        <div class="copyright">Copyright ©<span class="currentYear"></span> &nbsp;<a href="{{ route('home') }}">The Players Corner</a>. All Rights Reserved.</div>
+        <div class="copyright">
+            Copyright ©<span class="currentYear"></span> &nbsp;
+            <a href="{{ route('home') }}">The Players Corner</a>. All Rights Reserved.
+
+        </div>
+        <ul class="doc-links">
+            <li><a href="#" target="_blank">Privacy Policy</a></li>
+            <li><a href="#" target="_blank">Terms of use</a></li>
+            <li><a href="#" target="_blank">Accessibility</a></li>
+            <li><a href="#" target="_blank">Company details</a></li>
+        </ul>
 
         {{-- <ul class="doc-links">
             <li>

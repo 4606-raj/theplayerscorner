@@ -1,42 +1,55 @@
 // Contact Page START
 #contact-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 100px;
+    // margin-bottom: 80px;
 
-    .ct-hdr-2{
-        background: #f7fbff;
+    .ct-des-txt{
+        // background: #f7fbff;
         padding: 10px 15px;
-        border-top: 1px solid #d4dbe1;
-        border-bottom: 1px solid #d4dbe1;
+        // border-top: 1px solid rgba($color: #fff, $alpha: 0.2);
+        color: $text-accent;
+        // border-bottom: 1px solid #d4dbe1;
     }
     .ct-hdr,
-    .ct-hdr-2{
-        color: $secondary-clr;
+    .ct-des-txt{
         font-family: $open-sans;
         font-size: 1rem;
-        text-align: center;
     }
     .ct-hdr{
+        padding-left: 15px;
+        color: $primary-clr;
+        font-family: $parksonSemiB;
+        font-size: clamp(2rem, 2.2vw, 2.2rem);
         line-height: 30px;
         font-weight: 600;
     }
     .ct-phone{
-        color: $secondary-clr !important;
+        color: $text-accent ;
         margin-top: 10px;
 
         &:hover{
             text-decoration: unset !important;
         }
     }
+    .ct-mail{
+        color: $text-accent;
+
+        &:hover{
+            color: $primary-clr;
+        }
+    }
     .ct-mail,
     .ct-phone{
+        transition: .2s;
+        display: block;
+        margin: 8px 0;
         font-family: $open-sans;
-        color: $primary-clr;
+        // color: $primary-clr;
         text-decoration: none;
         font-weight: 500;
 
         i{
-            color: $secondary-clr;
+            color: $primary-clr;
             margin-right: 10px;
         }
         &:hover{
@@ -45,21 +58,31 @@
     }
 
     .social-icons{
-        padding: 0 150px;
+        padding: 0 40px 0 15px;
+        margin-top: 0;
 
-        li a{
-            color: $secondary-clr;
+        i{
+            font-size: 1.4rem;
         }
-        li a span{
-            font-size: 1rem;
+        li a{
+            color: $primary-clr;
+            transition: .2s;
+            position: relative;
+            top: 0; 
+
+            &:hover{
+                top: -3px;
+
+                color: $text-accent;
+            }
         }
     }
     #ct-form{
-        margin: 120px 0;
+        margin-bottom: 40px;
         padding: 20px;
         border-radius: 6px;
-        border: 1px solid #d4dbe1;
-        background: #f7fbff;
+        // border: 1px solid #d4dbe1;
+        background: $primary-clr;
 
         .form-control:focus,
         .form-select:focus {
@@ -80,14 +103,22 @@
         .form-floating > label{
             left: 10px;
         }
-        #sub-btn{
-            background: $primary-clr;
-            padding: 8px 50px;
-            font-family: $open-sans;
+        // #sub-btn{
+        //     background: $primary-clr;
+        //     padding: 8px 50px;
+        //     font-family: $open-sans;
 
-            &:hover{
-                background: #135ff4;
-            }
+        //     &:hover{
+        //         background: #135ff4;
+        //     }
+        // }
+    }
+    .form-check{
+        padding-left: 35px !important;
+
+        .form-check-input{
+            box-shadow: 0 0 0;
+            color: red;
         }
     }
 

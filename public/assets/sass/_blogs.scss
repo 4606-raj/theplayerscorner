@@ -1,0 +1,191 @@
+// Blogs START 
+.blogs-sec{
+
+    margin: 60px 0;
+
+    .card{
+
+        font-family: $open-sans;
+
+        .postedBy span{
+            color: $secondary-clr;
+            font-weight: 500;
+        }
+    }
+    .card-title a{
+        color: $secondary-clr;
+        // font-family: $open-sans;
+        text-decoration: none;
+        font-size: clamp(1.1rem, 1.2vw, 1.2rem);
+        line-height: 27px;
+        transition: .2s;
+
+        &::first-letter{
+            text-transform: capitalize;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .readMore-btn{
+        outline: none;
+        background: $primary-clr;
+        color: $secondary-clr;
+        border: none;
+        font-size:15px;
+        width: fit-content;
+        box-shadow: 0px 7px 25px 2px rgba(198, 179, 28, 0);
+        transition: .3s;
+        position: relative;
+        top: 0px;
+        margin: 10px auto 0px auto;
+        
+        &:hover{
+            top: -5px;
+            background: $primary-clr;
+            color: $secondary-clr;
+            box-shadow: 0px 7px 25px 2px rgba(198, 179, 28, .6);
+        }
+        &:focus{
+            box-shadow: 0px 0px 0px !important;
+            background: $secondary-clr;
+            color: $text-accent;
+        }
+    }
+}
+.blog-sidebar{
+    background: $text-accent;
+    position: sticky;
+    height: fit-content;
+    top: 110px;
+    margin-left: 4.165%;
+    padding: 20px 15px;
+
+    .recent-blogs{
+        padding-top: 20px;
+        h4{
+            font-family: $parksonSemiB;
+            font-size: 1.8rem;
+            
+            color: $secondary-clr;
+        }
+        ul{
+            padding-left: 0;
+            list-style: none;
+
+            li{
+                margin: 10px 0;
+                border-bottom: .5px solid rgba(0, 0, 0,0.1);
+                
+                &:last-child{
+                    border-bottom: none !important;
+                }
+                a{
+                    text-decoration: none;
+                    color: $secondary-clr;
+                    font-family: $open-sans;
+                    font-size: 15px;
+                    line-height: 24px;
+                    transition: .2s;
+    
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            } 
+        }
+    }
+    .search-bar{
+        // margin-top: 20px;
+
+        .form-control{
+            padding: 8px 15px;
+            // width: 80% !important;
+            height: fit-content;
+
+            &:focus{
+                box-shadow: 0 0 0;
+                border-color: $secondary-clr;
+            }
+        }
+        .srch-btn{
+            width: fit-content;
+            margin-top: 0;
+            background: $secondary-clr;
+            font-family: $open-sans;
+            font-size: 15px;
+            text-transform: capitalize;
+            color: $text-accent;
+            border: none;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0,0);
+            
+            &:hover{
+                box-shadow: 2px 2px 4px rgba(0, 0, 0,0.4);
+            }
+            &:focus{
+                box-shadow: 0 0 0;
+            }
+        }
+    }
+}
+.comment-sec{
+    margin-bottom: 40px;
+
+    h2{
+        font-family: $parksonSemiB;
+        font-size: 1.8rem;
+        color: $text-accent;
+    }
+    p{
+        opacity: .9;
+        color: $text-accent;
+        font-family: $open-sans;
+    }
+    .form-label{
+        font-family: $open-sans;
+        color: $text-accent;
+        font-size: 15px;
+    }
+    .form-control{
+        color: $primary-clr !important;
+        background: none;
+        border-color: rgba(255, 255, 255,0.6);
+        
+        &::placeholder{
+            color: rgba(255, 255, 255,0.6);
+        }
+    }
+    .form-control:focus{
+        background: none;
+        border-color: $primary-clr;
+    }
+}
+.blog-view{
+    .blog-hdr{
+        color: $text-accent;
+        font-family: $open-sans;
+        font-family: clamp(1.2rem, 1.2vew, 1.2rem);
+        line-height: 32px;
+
+        &::first-letter{
+            text-transform: capitalize;
+        }
+    }
+    .blog-des-txt{
+        p{
+            color: $text-accent;
+            font-family: $open-sans;
+            opacity: .9;
+            line-height: 26px;
+        }
+    }
+    .blog-postedBy{
+        color: $text-accent;
+        opacity: .9;
+
+        span{
+            color: $primary-clr;
+        }
+    }
+}
+// Blogs END

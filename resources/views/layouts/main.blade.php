@@ -45,10 +45,10 @@
                         <img src="{{ asset('assets/images/England-logo.png') }}" alt="">
                     </div>
                     <div>
-                        <p class="mb-0">MAIN CLUB PARTNER </p>
+                        {{-- <p class="mb-0">MAIN CLUB PARTNER </p>
                         <div class="chana-logo">
                             <img src="{{ asset('assets/images/partners/1. Logo - Chana Chemist (White).png') }}" alt="">
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <!-- Social Media Icons -->

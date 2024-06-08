@@ -38,6 +38,7 @@ $(document).ready(function () {
 
     // Header scroll effect
     if (window.matchMedia("(max-width: 767.98px)").matches) {
+        
         $(window).on("scroll", function () {
             if ($(window).scrollTop()) {
                 $("header").addClass("fixed-hdr-small");
@@ -50,11 +51,14 @@ $(document).ready(function () {
             // Header Scroll
             $(window).on("scroll", function () {
                 if ($(window).scrollTop()) {
-                    $("header").addClass("hide-top-row");
-                    $(".uppr-row-con").fadeOut(0);
+                    $("header").addClass("fix-header-top");
+                    $(".logo-1 img").attr("src","./assets/images/logo-img.png");
+                    
+                    // $(".uppr-row-con").fadeOut(0);
                 } else {
-                    $(".uppr-row-con").fadeIn();
-                    $("header").removeClass("hide-top-row");
+                    // $(".uppr-row-con").fadeIn();
+                    $("header").removeClass("fix-header-top");
+                    $(".logo-1 img").attr("src","./assets/images/logo-1.png");
                 }
             });
         }

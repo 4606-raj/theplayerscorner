@@ -18,6 +18,33 @@ $bukenFont: 'Bunken Tech Sans Pro Bold';
     src: url('../fonts/BunkenTechSansPro-ExBdIt.woff');
     // src: local('Bunken Tech Sans Pro Bold'), local('BunkenTechSansPro-Bold'),
 }
+
+$parksonFont: 'Parkson';
+@font-face {
+    font-family: $parksonFont;
+    src: url('../fonts/Parkson Regular.woff');
+    // src: local('Bunken Tech Sans Pro Bold'), local('BunkenTechSansPro-Bold'),
+}
+
+$parksonMedium: 'Parkson Medium';
+@font-face {
+    font-family: $parksonMedium;
+    src: url('../fonts/Parkson Medium.woff');
+    // src: local('Bunken Tech Sans Pro Bold'), local('BunkenTechSansPro-Bold'),
+}
+$parksonSemiB: 'Parkson semi bold';
+@font-face {
+    font-family: $parksonSemiB;
+    src: url('../fonts/Parkson-Semi-Bold_1.woff');
+    // src: local('Bunken Tech Sans Pro Bold'), local('BunkenTechSansPro-Bold'),
+}
+$parksonBlack: 'Parkson black';
+@font-face {
+    font-family: $parksonBlack;
+    src: url('../fonts/Parkson Black.woff');
+    // src: local('Bunken Tech Sans Pro Bold'), local('BunkenTechSansPro-Bold'),
+}
+
 $open-sans: 'Open Sans', sans-serif;
 
 button{
@@ -27,7 +54,7 @@ button{
     padding: 0 !important;
 }
 $primary-clr: #FBE746;
-$secondary-clr: #000;
+$secondary-clr: #141414;
 $text-accent: #fff;
 
 
@@ -51,6 +78,7 @@ $text-accent: #fff;
 @import 'club-pages';
 @import 'community';
 @import 'teams';
+@import 'blogs';
 @import 'footer';
 @import 'player-registration';
 @import 'responsive';

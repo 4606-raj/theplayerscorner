@@ -58,6 +58,9 @@ Route::view('/community', 'community')->name('community');
 Route::view('/about-us', 'about-us')->name('about-us');
 Route::view('/testimonials', 'testimonials')->name('testimonials');
 
+Route::view('/blogs', 'blogs')->name('blogs');
+Route::view('/blog-view', 'blog-view')->name('blog-view');
+
 Route::get('/test', function() {
     Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactReceivedMail());
 });
