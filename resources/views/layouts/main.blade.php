@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Southall Athletic</title>
+    <title>The Players Corner</title>
 
     <!-- Title Icon -->
     <link rel="icon" type="image/x-icon" href="assets/images/title-logo.png">
@@ -16,223 +16,121 @@
 
      <!-- Link Swiper's CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+     
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lg-zoom.css"/>
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.css"/>
+     
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<!-- Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header>
-        <div id="uppr-row">
-            <div class="overlay-hdr"></div>
-
-            <div class="container uppr-row-con">    
-                <!-- Logo -->
-                <div class="logo-1">
-                    <a href="{{ route('home') }}">
-                        <img src="{{ asset('assets/images/logo-img.png') }}" alt="">
-                        <p>Southall <br>Athletic</p>
-                    </a>
-                </div>
-                
-                <!-- Right Side Logos -->
-                <div class="right-logos">
-                    <div>
-                        <img src="{{ asset('assets/images/England-logo.png') }}" alt="">
-                    </div>
-                    <div>
-                        {{-- <p class="mb-0">MAIN CLUB PARTNER </p>
-                        <div class="chana-logo">
-                            <img src="{{ asset('assets/images/partners/1. Logo - Chana Chemist (White).png') }}" alt="">
-                        </div> --}}
-                    </div>
-                </div>
-                <!-- Social Media Icons -->
-                <!-- <div class="social-icons">
-                    <ul>
-                        <li><a href="https://www.instagram.com/southall_athletic/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a></li>
-                        <li><a href="https://www.facebook.com/SouthallAthletic/" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/southall_afc" target="_blank"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/southall-afc/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UC5puOkk0k-yIfngkssGtzWA" target="_blank"><i class="bi bi-youtube"></i></a></li>
-                    </ul>
-                </div> -->
-
-                <!-- Hamburger Menu -->
-                <button id="ham-button">
-                    <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="45" onclick="this.classList.toggle('active')">
-                        <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-                        <path class="line middle" d="m 30,50 h 40" />
-                        <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-                    </svg>
-                </button>
-
-            </div>
-        </div>
+    <header class="container-fluid"> 
+            <div class="row justify-content-center">
         
         <!-- Navigation Bar -->
-        <nav>
-            <div class="container nav-small" id="nav-row">
+        <div class="logo-1 col-6 col-sm-7 col-md-auto">
+            <a href="{{ route('home') }}">
+                <img src="{{ asset('assets/images/logo-1.png') }}" alt="">
+                <p>The <span><br> Players Corner</span></p>
+            </a>
+        </div>
+        <nav class="d-flex col-lg-7 col-md-7 ps-0 justify-content-between">
+
+            <div class="nav-small offset-md-2" id="nav-row">
                 
                 <ul>
-                    <!-- Logo -->
-                    <div class="logo-1 logo-2">
-                        <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo-img.png') }}" alt=""></a>
-                    </div>
-
-                    <li class="active-link"><a href="404">News</a>
-                        <i class="bi bi-caret-down-fill"></i>
-                        <!-- Drop Down menu -->
-                        <ul class="sub-menu">
-                            <li><a href="#">Latest News</a></li>
-                            <li><a href="#">Latest Videos</a></li>
-                            <li><a href="#">Women News</a></li>
-                            <li><a href="#">Youth News</a></li>
-                            <li><a href="#">Newsletter Sign up</a></li>
-                        </ul>
+                    <li class="active-link"><a href="{{ route('home') }}">Home</a>
+                    <li class="active"><a href="404">About us</a>
+                    <li class="active"><a href="{{ route('blogs') }}">Our Blog</a>
+                    <li class="active"><a href="{{ route('contact-us') }}">Contact us</a>
                     </li>
-                    
-                    <li><a href="{{ route('club') }}">Club </a>
-                        <i class="bi bi-caret-down-fill"> </i>
-                        <!-- Drop Down menu -->
-                        <ul class="sub-menu">
-                            <li><a href="{{ route('club') }}">Club</a></li>
-                            <li><a href="{{ route('club-information') }}">Club Information</a></li>
-                            <li><a href="#">Safeguarding Policy</a></li>
-                            <li><a href="{{ route('inclusion-diversity') }}">Inclusion & Diversity</a></li>
-                            <li><a href="{{ route('sponsorship') }}">Sponsorship</a></li>
-                            <li><a href="{{ route('social-media') }}">Social Media</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Club Shop</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li><a href="{{ route('community') }}">Community</a></li>
-                    
-                    <li><a href="{{ route('team-types') }}">Teams </a>
-                        <i class="bi bi-caret-down-fill"></i>
-                        
-                        <!-- Drop Down menu -->
-                        <ul class="sub-menu">
-                            <li><a href="{{ route('mens-team') }}">Men</a></li>
-                            <li><a href="{{ route('womens-team') }}">Women</a></li>
-                            <li><a href="{{ route('youth-team') }}">Youth Teams</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="404">Matches </a>
-                        <i class="bi bi-caret-down-fill"></i>
-                        
-                        <!-- Drop Down menu -->
-                        <ul class="sub-menu">
-                            <li><a href="#">Fixtures</a></li>
-                            <li><a href="#">Results</a></li>
-                            <li><a href="#">League Table</a></li>
-                            <li><a href="#">Women Table & Stats</a></li>
-                            <li><a href="#">Youth Table & Stats</a></li>
-                            <li><a href="#">Newsletter Sign up</a></li>
-                        </ul>
-                        
-                    </li>
-                    <li><a href="{{ route('contact-us') }}">Contact Us</a></li>
-
-                    {{-- <li><a href="{{ route('about-us') }}">About Us</a> --}}
                 </ul>
-
-                <div class="login-srch">
-                    <ul>
-                        <li><a href="{{ route('login') }}">Login/Register </a>
-                            <i class="bi bi-caret-down-fill"></i>
-                            <!-- Drop Down menu -->
-                            <ul class="sub-menu">
-                                <li><a href="{{ route('login') }}">My Athletic Hub</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <div class="srch-bar">
-                        <button class="srch-i"><i class="bi bi-search"></i></button>
-                        <form action="" class="search-box">
-                            <input type="text" class="input-srch" placeholder="Type here to search..." />
-                        </form>
-                    </div>
-                </div>
+                    <!-- Social Media Icons -->
+                    
             </div>
+            <div class="social-icons hdr-social-icons">
+                <ul>
+                    <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                </ul>
+            </div>
+
         </nav>
+        {{-- Login button to portal --}}
+        <div class="col-auto d-flex align-items-center">
+            <a href="#" class="primary-btn"><button><i class="bi bi-box-arrow-in-right"></i> Login</button></a>
+        </div>
+        <button class="col-auto" id="ham-button">
+            <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="45" onclick="this.classList.toggle('active')">
+                <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+            
+        </button>
+    </div>
     </header>
 
         @yield('content')
 
-        <footer>
-            <div class="footer-wrap" >
-                                
-                <div class="copyright">Copyright © <span class="currentYear"></span> &nbsp;<a href="{{ route('home') }}"> Southall Athletic</a>. All Rights Reserved. <br><span>Designed by Naveen</span></div>
-    
-                <ul class="doc-links">
-                    <li>
-                        <a href="{{ route('privacy-policy') }}">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('terms-of-use') }}">Terms of Use</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('company-details') }}">Company Details</a>
-                    </li>
-                    {{-- <li>
-                        <a href="{{ route('digital-privacy') }}">Digital Privacy Policy</a>
-                    </li> --}}
-                </ul>
+    <footer>
+        <div class="footer-wrap" >
+                            
+            <div>
+                <span>Designed by Naveen</span> 
             </div>
-        </footer>
+            <div class="copyright">
+                Copyright ©<span class="currentYear"></span> &nbsp;
+                <a href="{{ route('home') }}">The Players Corner</a>. All Rights Reserved.
+    
+            </div>
+            <ul class="doc-links">
+                <li><a href="#" target="_blank">Privacy Policy</a></li>
+                <li><a href="#" target="_blank">Terms of use</a></li>
+                <li><a href="#" target="_blank">Accessibility</a></li>
+                <li><a href="#" target="_blank">Company details</a></li>
+            </ul>
+        </div>
+    </footer>
     
     
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
-        <script src="https://uicdn.toast.com/chart/latest/toastui-chart.min.js"></script>
-        <script>
-            const el = document.getElementById('chart-area');
-        const data = {
-            // categories: ['Browser'],
-            series: [
-            {
-                name: 'Asian',
-                data: 48.99,
-            },
-            {
-                name: 'Black',
-                data: 10.89,
-            },
-            {
-                name: 'Mixed',
-                data: 17.71,
-            },
-            {
-                name: 'Other',
-                data: 5.99,
-            },
-            {
-                name: 'White',
-                data: 26.68,
-            },
-            ],
-        };
-        const options = {
-            chart: { title: 'Ethnicity Data', width: '100%', height: 400 },
-        };
-
-        const chart = toastui.Chart.pieChart({ el, data, options });
-        </script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="{{ asset('assets/js/jquery-ui.min.js') }}"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="{{ asset('assets/js/script.js') }}"></script>
-        <script src="{{ asset('assets/js/index.bundle.min.js') }}"></script>
-         <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.js"></script>
+    
+    <script type="text/javascript">
+        lightGallery(document.getElementById('animated-thumbnails'), {
+            plugins: [lgZoom],
+            download: false,
+            // share: false,
+            speed: 500,
+            // autoplayControls: false,
+            
+            // ... other settings
+        });
+    
         
-        {!! NoCaptcha::renderJs() !!}
-        @include('sweetalert::alert')
-    </body>
-    </html>
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="{{ URL::asset('assets/js/script.js') }}"></script>
+    
+    
+    {!! NoCaptcha::renderJs() !!}
+    @include('sweetalert::alert')
+</body>
+</html>

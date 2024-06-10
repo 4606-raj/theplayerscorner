@@ -1,264 +1,212 @@
 @extends('layouts.main')
-
 @section('content')
+
 <!-- Wrapper 1 -->
-<section class="container" id="wrapper-1">
-    <!-- Main Slider -->
-    <div id="hero-slider" class="carousel slide" data-bs-ride="carousel">
-
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-
-        <div class="carousel-inner">
-            <div class="slider-over">
-                <p>WE ARE THE COMMUNITY.</p>
-                <p>We are <span>SouthALL Athletic</span> Football Club!!!</p>
-            </div>
-            <div class="carousel-item active">
-                <img src="assets/images/slider/slide-1.jpg" class="d-block w-100" alt="...">
-            </div>
-
-            <div class="carousel-item">
-                <img src="assets/images/slider/slide-2.jpg" class="d-block w-100" alt="...">
-            </div>
-
-            <div class="carousel-item">
-                <img src="assets/images/slider/slide-3.jpg" class="d-block w-100" alt="...">
-            </div>
-
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#hero-slider" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#hero-slider" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        
-    </div>
-    
-    <div class="container-fluid gallery-sec">
-
-        <!-- Gallery Tabs -->
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Photos</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Videos</button>
-            </li>
-            <!-- <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-            </li> -->
-        </ul>
-
-        <!-- Gallery images -->
-        <div class="tab-content" id="pills-tabContent">
-            <!-- Photos Tab 1 -->
-            <div class="tab-pane fade show active gallery-slide" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                
-                @foreach ($images as $image)    
-                    <div class="img-con">
-                        <a href="{{ asset('storage/images/gallery') . '/' . $image->name }}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                            <img src="{{ asset('storage/images/gallery') . '/' . $image->name }}" class="img-fluid">
-                        </a>
-                    </div>
-                @endforeach
-
-            </div>
-
-            <!-- Videos Tab 2 -->
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Coming Soon..!!</div>
-          </div>
-    </div>
-
-    
-</section>
-
-<!-- News Section START -->
-<section class="container-fluid news-sec">
-    
-    <div class="container">
-        <h2>OUR NEWS</h2>
-
-        <!-- News Tabs -->
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">Latest News</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">Videos</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3" aria-selected="false">Women's Team News</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false">Youth Team News</button>
-            </li>
-        </ul>
-
-        <div class="tab-content container-fluid" id="pills-tabContent">
+    <section class="container-fluid" id="wrapper-1">
+        <div class="row">
             
-            <!-- News Tab 1 -->
-            <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+            <div class="heroBanner col-lg-12">
+                <div class="bannerText">
+                    <h3>the players corner</h3>
+                    <p>we're levelling the field</p>
+                </div>
+                <div class="topOverlay"></div>
+                <div class="makeShape">sdf</div>
+
+            </div>
+            
+        </div>
+        
+    </section>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="about-site">
+                {{-- Site logo --}}
+                <div class="ab-logo">
+                    <img src="{{ asset('assets/images/logo-img.png') }}" alt="">
+                </div>
+                {{-- Site title --}}
+                <h3 class="title-hdr">the players corner</h3>
+                <div class="col-10 col-lg-6 col-md-6 col-sm-8">
+                    <p class="ab-des-txt">
+                        In 2000, The Players Corner was founded when a group of individuals decided to turn their shared interests into an
+                        official Gaming Club. After a couple of quick meetings, we were on our way to creating something extraordinary. <br><br>
+                        With time, we've grown into a more serious and mature organization, allowing us to take our interests to new levels.
+                        When you decide to join us, you too will gain access to various events and, more importantly, to a community of
+                        people who are just as passionate as you are.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <section class="container-fuild gallery-sec">
                 
-                <!-- News Cards -->
-                <div class="news-row"> 
-
-                    <!-- News 1 -->
-                    <div class="card">
-                        <img src="assets/images/news/image-1.jpg" class="card-img-top" alt="...">
-
-                        <div class="card-body">
-                            <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919" target="_blank">
-                                <p class="news-hdr">'It's always a taboo': Southall's 'first ever all-female football team' trying</p>
-                                <p class="news-date">29 JUN, 2021</p>
-                                <!-- <p class="card-text">Despite decades of awareness and attempts at change, the representation of British Asian people in professional football is pitifully low. According to a report commissioned by the Football Supporters’</p> -->
-                            </a>
-                        </div>
+    <!-- Slider main container -->
+        <div class="swiper lightbox-swiper" id="gallery-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="grid-wrapper" id="animated-thumbnails">
+                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-1.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-1.jpg') }}" alt="" />
                     </div>
                     
-                    <!-- News 2 -->
-                    <div class="card">
-                        <img src="assets/images/news/image-2.jpg" class="card-img-top" alt="...">
-
-                        <div class="card-body">
-                            <a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/" target="_blank">
-                                <p class="news-hdr">Southall gets first ever all-female football team</p>
-                                <p class="news-date">8 August, 2021</p>
-                            <!-- <p class="card-text">A new women's football team in west London's "Little India" hopes to encourage diversity in football. It follows government research in 2020 that suggested Asian women were the least physically active group.</p> -->
-                            </a>
-                        </div>
-
-                        <!-- <div class="d-flex justify-content-center">
-                            <a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/" target="_blank" class="read-more-btn"><button type="button" class="btn btn-primary">Read More</button></a>
-                        </div> -->
+                    <div class="wide" data-src="{{ asset('storage/images/gallery/img-2.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-2.jpg') }}" alt="" />
                     </div>
+
+                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-3.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-3.jpg') }}" alt="">
+                    </div>
+
+                    <div class="wide" data-src="{{ asset('storage/images/gallery/img-4.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-4.jpg') }}" alt="" />
+                    </div>
+
+                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-5.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-5.jpg') }}" alt="" />
+                    </div>
+
+                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-6.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-6.jpg') }}" alt="" />
+                    </div>
+
+                    <div class="big" data-src="{{ asset('storage/images/gallery/img-7.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-7.jpg') }}" alt="" />
+                    </div>
+
+                    <div data-src="{{ asset('storage/images/gallery/img-8.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-8.jpg') }}" alt="" />
+                    </div> 
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="grid-wrapper" id="animated-thumbnails">
+                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-1.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-1.jpg') }}" alt="" />
+                    </div>
+                    
+                    <div class="wide" data-src="{{ asset('storage/images/gallery/img-2.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-2.jpg') }}" alt="" />
+                    </div>
+
+                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-3.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-3.jpg') }}" alt="">
+                    </div>
+
+                    <div class="wide" data-src="{{ asset('storage/images/gallery/img-4.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-4.jpg') }}" alt="" />
+                    </div>
+
+                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-5.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-5.jpg') }}" alt="" />
+                    </div>
+
+                    <div class="tall" data-src="{{ asset('storage/images/gallery/img-6.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-6.jpg') }}" alt="" />
+                    </div>
+
+                    <div class="big" data-src="{{ asset('storage/images/gallery/img-7.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-7.jpg') }}" alt="" />
+                    </div>
+
+                    <div data-src="{{ asset('storage/images/gallery/img-8.jpg') }}">
+                        <img src="{{ asset('storage/images/gallery/img-8.jpg') }}" alt="" />
+                    </div> 
+                </div>
+            </div>
         
-                    <!-- News 3 -->
-                    <div class="card">
-                        <img src="assets/images/news/image-1.jpg" class="card-img-top" alt="...">
-
-                        <div class="card-body">
-                            <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919" target="_blank">
-                                <p class="news-hdr">'It's always a taboo': Southall's 'first ever all-female football team' trying</p>
-                                <p class="news-date">29 JUN, 2021</p>
-                            <!-- <p class="card-text">Despite decades of awareness and attempts at change, the representation of British Asian people in professional football is pitifully low. According to a report commissioned by the Football Supporters’</p> -->
-                            </a>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+                
+                <div class="lightbox-swiper">
+                    <div class="swiper-wrapper"  id="lg-swipper">
+                        <div class="swiper-slide">
                         </div>
-                    </div>
+    </section>
 
-                    <!-- News 4 -->
-                    <div class="card">
-                        <img src="assets/images/news/image-1.jpg" class="card-img-top" alt="...">
 
-                        <div class="card-body">
-                            <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919" target="_blank" >
-                                <p class="news-hdr">'It's always a taboo': Southall's 'first ever all-female football team' trying</p>
-                                <p class="news-date">29 JUN, 2021</p>
-                            </a>
-                            <!-- <p class="card-text">Despite decades of awareness and attempts at change, the representation of British Asian people in professional football is pitifully low. According to a report commissioned by the Football Supporters’</p> -->
-                        </div>
-                    </div>
-
-                    <div class="view-all-btn">
-                        <a href="#"><button>View All</button></a>
-                    </div>
-
+    {{-- Meetings Cards --}}
+    <section class="container meetup-card mt-5">
+        <div class="row">
+            {{-- Card 1 --}}
+            <div class="card col-lg-4 col-md-4 col-sm-6 col-6">
+                <div class="card-img">
+                    <img src="{{ asset('storage/images/gallery/img-8.jpg') }}" class="card-img-top" alt="...">
+                </div>
+ 
+                <div class="card-body">
+                    <p class="card-hdr">small business meetup</p>
+                    <p class="card-date">tue, 09 Jan | Mountain View</p>
+                    <a href="#" class="meetup-btn"><button>rsvp</button></a>
+                </div>
+            </div>
+            
+            {{-- Card 2 --}}
+            <div class="card col-lg-4 col-md-4 col-sm-6 col-6">
+                <div class="card-img">
+                    <img src="{{ asset('storage/images/gallery/img-3.jpg') }}" class="card-img-top" alt="...">
+                </div>
+                
+                <div class="card-body">
+                    <p class="card-hdr">City Networking Event</p>
+                    <p class="card-date">tue, 06 feb | flatiron district</p>
+                    <a href="#" class="meetup-btn"><button>rsvp</button></a>
+                </div>
+            </div>
+            
+            {{-- Card 3 --}}
+            <div class="card col-lg-4 col-md-4 col-sm-6 col-6">
+                <div class="card-img">
+                    <img src="{{ asset('storage/images/gallery/img-4.jpg') }}" class="card-img-top" alt="...">
+                </div>
+                
+                <div class="card-body">
+                    <p class="card-hdr">sunset rooftop party</p>
+                    <p class="card-date">sat, 17 mar | west village</p>
+                    <a href="#" class="meetup-btn"><button>rsvp</button></a>
                 </div>
             </div>
 
-            <!-- News Tab 2 -->
-            <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
-                <div class="news-row row"> 
-                    <!-- News 2 -->
-                    <div class="card">
-                        <img src="assets/images/news/image-2.jpg" class="card-img-top" alt="...">
 
-                        <div class="card-body">
-                            <a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/" target="_blank">
-                                <p class="news-hdr">Southall gets first ever all-female football team</p>
-                                <p class="news-date">8 August, 2021</p>
-                            <!-- <p class="card-text">A new women's football team in west London's "Little India" hopes to encourage diversity in football. It follows government research in 2020 that suggested Asian women were the least physically active group.</p> -->
-                            </a>
-                        </div>
+        </div>
+    </section>
 
-                        <!-- <div class="d-flex justify-content-center">
-                            <a href="http://www.easterneye.biz/southall-gets-first-ever-all-female-football-team/" target="_blank" class="read-more-btn"><button type="button" class="btn btn-primary">Read More</button></a>
-                        </div> -->
-                    </div>
-        
-                    <!-- News 3 -->
-                    <div class="card">
-                        <img src="assets/images/news/image-1.jpg" class="card-img-top" alt="...">
-
-                        <div class="card-body">
-                            <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919" target="_blank">
-                                <p class="news-hdr">'It's always a taboo': Southall's 'first ever all-female football team' trying</p>
-                                <p class="news-date">29 JUN, 2021</p>
-                            <!-- <p class="card-text">Despite decades of awareness and attempts at change, the representation of British Asian people in professional football is pitifully low. According to a report commissioned by the Football Supporters’</p> -->
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- News 4 -->
-                    <div class="card">
-                        <img src="assets/images/news/image-1.jpg" class="card-img-top" alt="...">
-
-                        <div class="card-body">
-                            <a href="https://www.mylondon.news/news/west-london-news/its-always-taboo-southalls-first-20929919" target="_blank" >
-                                <p class="news-hdr">'It's always a taboo': Southall's 'first ever all-female football team' trying</p>
-                                <p class="news-date">29 JUN, 2021</p>
-                            </a>
-                            <!-- <p class="card-text">Despite decades of awareness and attempts at change, the representation of British Asian people in professional football is pitifully low. According to a report commissioned by the Football Supporters’</p> -->
-                        </div>
-                    </div>
-
-                    <div class="view-all-btn">
-                        <a href="#"><button>View All</button></a>
-                    </div>
+    {{-- 24/7 Phone support SECTION START --}}
+    <section class="container support-wrapper" id="wrapper-1">
+        <div class="row">
+            <div class="promoBanner col-lg-4 offset-lg-1 col-md-5 offset-md-1 offest-sm-1 col-sm-10 col-12">
+                <img src="{{ asset('assets/images/banner.jpg') }}" alt="">
+                <div class="border-box"></div>
+            </div>
+            <div class="side-txt-wrapper col-lg-6 col-md-5 col-sm-10 col-12">
+                <div>
+                    <h3>24/7 <br> phone support</h3>
+                    <h4>Outstanding Quality</h4>
+                    <p>this is your feature description. Write a short blurb explaning what the feature is and why it matter for visitors. customers or clients. Don't be afraid tot your own horn! Take this opportunity to emphasize the important benefits or key advantages.</p>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-          </div>
+            
+        </div>
+        
+        
+        
+    </section>
+    {{-- 24/7 Phone support SECTION END --}}
 
-    </div>
-
-</section>
 <!-- News Section END -->
 
 <!-- Promo Banner START -->
-<section id="promo-banner" class="container">
-    <div id="promo-content">
-        <div class="contact-dt">
-            <p><i class="bi bi-telephone-fill"></i>0808 800 5000 </p>
-            <a href="mailto: help@nspcc.org.uk"><i class="bi bi-envelope-fill"></i>help@nspcc.org.uk </a>
-        </div>
-        <div class="logos-row">
-            
-            <div class="logo-1">
-                <img src="{{ asset('assets/images/partners/logo-1.png') }}" alt="">
-            </div>
-            <div class="logo-2">
-                <img src="{{ asset('assets/images/partners/logo-2.png') }}" alt="">
-            </div>
-            <div class="logo-3">
-                <a href="{{ route('home') }}"><img src="{{ asset('assets/images/Logo_Southall-Athletic-F.C_Capri.png') }}" alt=""></a>
-            </div>
-        </div>
-        <div class="logo-row-2">
-            <div class="logo-4">
-                <p>In partnership with</p>
-                <a href="https://www.nspcc.org.uk/" target="_blank"><img src="{{ asset('assets/images/partners/logo-4.png') }}" alt=""></a>
-            </div>
-        </div>
-    </div>
+<section id="promo-banner" class="container-fuild">
+    <div class="banner-overlay"></div>
+    <img src="{{ asset('assets/images/banner.jpg') }}" alt="">
 </section>
 <!-- Promo Banner END -->
 
@@ -267,64 +215,112 @@
 <section class="social-media-sec">
     <div class="container">
         <h2 class="sec-hdr">Follow Us</h2>
+        <p class="follow-us-des">This is you Donate section paragraph. Encourge your site visitors to provide their information so that you can get in touch about how they <br> can make a donation to your Gaming Club.</p>
+        
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <ul>
+                <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i> <span>facebook</span></a></li>
+                <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i> <span>instagram</span></a></li>
+                <li><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i><span>linkedin</span></a></li>
+                <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i> x</a></li>
+            </ul>
+        </div>
+        {{-- Social live feed --}}
+        <div class="social-feed row">
+            <!-- Instagram Feed -->
+                <div class="nopadding col-lg-4 col-md-4 col-sm-4 col-12" id="insta-feed">
+                    <h3 style="text-align: center" class="feed-hdr">Follow Us on Instagram</h3>
+                    <div id="instafeed-container"></div>
+                    
+                    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+                    <script type="text/javascript">
+                        var userFeed = new Instafeed({
+                            get: 'user',
+                            target: "instafeed-container",
+                            resolution: 'low_resolution',
+                            accessToken: 'IGQWRPYjdLSWYwY0lMcDd5aDNhZAURpS0tiMmpIelI5bUZAGMjBRbzc0MDVCMUZAnVHhQa0dqZATdITGdTZAmE1cTRZAZAHpVajhUcVQ0Xzk3RW1EZAnVibHY4c1o5eU4wNW1oeTY1M185VmplZAkdsM3VrcDd3bklPVzJRNkEZD'
+                        });
+                        userFeed.run();
+                    </script>
+    
+                    <script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/youtube.xml&up_channel=UCafm3C_bpyMEdua4UbUFsyA&synd=open&w=320&h=390&title=&border=%23ffffff%7C3px%2C1px+solid+%23999999&output=js"></script>	
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthe.playerscorner%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-         <!-- Social Media Icons -->
-            <div class="social-icons">
-                <ul>
-                    <li><a href="https://www.facebook.com/SouthallAthletic/" target="_blank"><i class="bi bi-facebook"></i> <span>facebook</span></a></li>
-                    <li><a href="https://www.instagram.com/southall_athletic/?hl=en" target="_blank"><i class="bi bi-instagram"></i> <span>instagram</span></a></li>
-                    <li><a href="https://www.linkedin.com/company/southall-afc/" target="_blank"><i class="bi bi-linkedin"></i><span>linkedin</span></a></li>
-                    <li><a href="https://twitter.com/southall_afc" target="_blank"><i class="bi bi-twitter"></i> <span>twitter</span></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC5puOkk0k-yIfngkssGtzWA" target="_blank"><i class="bi bi-youtube"></i><span>youtube</span></a></li>
-                </ul>
-            </div>
-    </div>
+                </div>
+                <a href="https://twitter.com/twitter?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @X</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+        </div>
+    
 </section>
 <!-- Social Media Section END -->
 
-<!-- Partners Section START -->
-<section class="partners-sec">
-    <div class="container">
-        <div class="logo-1">
-            <a href="index.html"><img src="assets/images/image051.png" alt=""></a>
-        </div>
+{{-- Contact Us START --}}
+<section class="container contact-us-sec">
+        <div class="row">
+            <div class="left-bx col-lg-6 col-md-5 col-sm-12 col-12">
+                <h2 class="sec-hdr">Speak to us!</h2>
+                <div>
+                    <p class="text-center">Contact us today for an informal chat</p>
+                </div>
+            </div>
+    
+            <div class="right-bx col-lg-6 col-md-7 col-sm-12 col-12">
+                    <div class="card p-4">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-lg-6">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-7">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-lg-5">
+                                    <label for="contactNumber" class="form-label">Contact Number</label>
+                                    <input type="tel" class="form-control" id="contactNumber" required>
+                                </div>
 
-        <div class="logo-1">
-            <img src="assets/images/partners/1. Logo - Chana Chemist (White).png" alt="">
-        </div>
-
-        <!-- Partners Logos -->
-        <div class="partners-logos-con">
-            <div class="logo-bl">
-                <img src="assets/images/partners/2. Logo - Bang & Olufsen (White).png" alt="">
-            </div>
-            <div class="logo-bl">
-                <img src="assets/images/partners/3. Logo - Canvas Cosmetics (White).png" alt="">
-            </div>
-            <div class="logo-bl">
-                <img src="assets/images/partners/4. Logo_Cargo-Overseas_White.png" alt="">
-            </div>
-            <div class="logo-bl">
-                <img src="assets/images/partners/5. Logo - Chana Media (White).png" alt="">
-            </div>
-            <div class="logo-bl">
-                <img src="assets/images/partners/6. Logo - Church-Street-Dental.png" alt="">
-            </div>
-            <div class="logo-bl">
-                <img src="assets/images/partners/7._Logo_-_Ealing_Council_White.png" alt="">
-            </div>
-            <div class="logo-bl">
-                <img src="assets/images/partners/9.Logo.png" alt="">
-            </div>
-            <div class="logo-bl">
-                <img src="assets/images/partners/7. Logo - Maina Group of Companies (White).png" alt="">
-            </div>
-            <div class="logo-bl">
-                <img src="assets/images/partners/8. Logo - Queens Pharmacy Southall.png" alt="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Speak to me about</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="" disabled selected>Select a topic</option>
+                                    <option value="1-2-1 Coaching">1-2-1 Coaching</option>
+                                    <option value="Performance Analysis">Performance Analysis</option>
+                                    <option value="Representation">Representation</option>
+                                    <option value="Scouting">Scouting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4"></textarea>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="consent" required>
+                                <label class="form-check-label" for="consent">
+                                    Consent required <br>
+                                    The Players Corner needs the contact information you provide to us to contact you about our products and services. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, check out our privacy policy.
+                                </label>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="send-btn">Send</button>
+                            </div>
+                        </form>
+                    </div>
             </div>
         </div>
-    </div>
 
 </section>
 <!-- Partners Section END -->
