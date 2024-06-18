@@ -112,6 +112,17 @@
                     {{-- <li><a href="{{ route('teams.index') }}" class="slide-item">All Result</a></li> --}}
                 </ul>
             </li>
+
+            <li class="slide">
+                <a class="side-menu__item" data-toggle="slide" href="#">
+                    <i class="feather feather-home sidemenu_icon"></i>
+                    <span class="side-menu__label">Blog</span><i class="angle fa fa-angle-right"></i>
+                </a>
+                <ul class="slide-menu">
+                    <li><a href="{{ route('blogs.create') }}" class="slide-item">Add New Blog</a></li>
+                    <li><a href="{{ route('blogs.index') }}" class="slide-item">All Blogs</a></li>
+                </ul>
+            </li>
             
         </ul>
     </div>
