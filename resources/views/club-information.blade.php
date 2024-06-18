@@ -24,7 +24,7 @@
     
                 <div class="mt-4">
                     <p class="ct-phone mb-2"><i class="bi bi-telephone-fill"></i>020 3289 5010</p>
-                    <a href="mailto:info@southallathleticfc.com" class="ct-mail"><i class="bi bi-envelope-fill"></i>info@southallathleticfc.com</a>
+                    <a href="mailto:hello@theplayerscorner.co.uk" class="ct-mail"><i class="bi bi-envelope-fill"></i>hello@theplayerscorner.co.uk</a>
                 </div>
             </div>
             <div class="club-box">

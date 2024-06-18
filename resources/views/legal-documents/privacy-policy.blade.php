@@ -163,7 +163,7 @@
               
               <br>
               <h2 class="lg-sub-hdr">11. Right of Access, Correction, Erasure and Restriction</h2>
-              <p class="lg-des-txt">It is important that the personal information we hold about you is accurate and current. Please keep us informed if your personal information changes at any point by emailing <a href="mailto: info@southallathleticfc.com">info@southallathleticfc.com </a></p>
+              <p class="lg-des-txt">It is important that the personal information we hold about you is accurate and current. Please keep us informed if your personal information changes at any point by emailing <a href="mailto: hello@theplayerscorner.co.uk">hello@theplayerscorner.co.uk </a></p>
               
               <h2 class="lg-sub-hdr">11.1. Your rights in connection with personal information</h2>
               <p class="lg-des-txt">Under certain circumstances, by law you have the right to:</p>

@@ -20,14 +20,14 @@ class HomeController extends Controller
 
     public function contactUs(Request $request) {
 
-        $request->validate([
-            'g-recaptcha-response' => 'required|captcha'
-        ], 
-        [
-            'g-recaptcha-response.required' => 'Please verify that you are not a robot.'
-        ]);
+        // $request->validate([
+        //     'g-recaptcha-response' => 'required|captcha'
+        // ], 
+        // [
+        //     'g-recaptcha-response.required' => 'Please verify that you are not a robot.'
+        // ]);
         
-        Mail::to('info@southallathleticfc.com')->send(new \App\Mail\ContactMail($request->all()));
+        Mail::to('hello@theplayerscorner.co.uk')->send(new \App\Mail\ContactMail($request->all()));
         Mail::to($request->email)->send(new \App\Mail\ContactReceivedMail());
         
         // Alert::success('Congrats', 'You\'ve Successfully Registered');

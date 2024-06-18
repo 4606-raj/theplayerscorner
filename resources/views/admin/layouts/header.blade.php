@@ -357,7 +357,7 @@
 											<form action="{{ route('logout') }}" method="POST">
 												@csrf
 												<div class="mt-1">
-													<input type="submit" value="Sign Out" />
+													<input type="submit" class="btn" value="Sign Out" />
 												</div>
 											</form>
 										</a>

@@ -16,3 +16,7 @@
             unlink($path);
         }
     }
+
+    function activeClass($route) {
+        return \Request::route()->getName() == $route? 'active-link': '';
+    }

@@ -46,12 +46,11 @@
                 <nav class="d-flex col-lg-7 col-md-7 ps-0 justify-content-between">
                     
                     <div class="nav-small offset-md-2" id="nav-row">
-                        
                         <ul>
-                            <li class="active-link"><a href="{{ route('home') }}">Home</a>
-                                <li class="active"><a href="{{ route('about-us') }}">About us</a>
-                                    <li class="active"><a href="{{ route('blogs') }}">Our Blog</a>
-                                        <li class="active"><a href="{{ route('contact-us') }}">Contact us</a>
+                            <li class="{{ activeClass('home') }}"><a href="{{ route('home') }}">Home</a>
+                                <li class="{{ activeClass('about-us') }}"><a href="{{ route('about-us') }}">About us</a>
+                                    <li class="{{ activeClass('blogs') }}"><a href="{{ route('blogs') }}">Our Blog</a>
+                                        <li class="{{ activeClass('contact-us') }}"><a href="{{ route('contact-us') }}">Contact us</a>
                                         </li>
                                     </ul>
                                     <!-- Social Media Icons -->

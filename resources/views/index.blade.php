@@ -262,31 +262,32 @@
     
             <div class="right-bx col-lg-6 col-md-7 col-sm-12 col-12">
                     <div class="card p-4">
-                        <form>
+                        <form method="POST" action="{{ route('contact-us.submit') }}">
+                            @csrf
                             <div class="row mb-3">
                                 <div class="col-lg-6">
                                     <label for="firstName" class="form-label">First Name</label>
-                                    <input type="text" class="form-control" id="firstName" required>
+                                    <input type="text" class="form-control" name="first_name" id="firstName" required>
                                 </div>
                                 <div class="col-lg-6">
                                     <label for="lastName" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" required>
+                                    <input type="text" class="form-control" name="last_name" id="lastName" required>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-lg-7">
                                     <label for="email" class="form-label">Email Address</label>
-                                    <input type="email" class="form-control" id="email" required>
+                                    <input type="email" class="form-control" name="email" id="email" required>
                                 </div>
                                 <div class="col-lg-5">
                                     <label for="contactNumber" class="form-label">Contact Number</label>
-                                    <input type="tel" class="form-control" id="contactNumber" required>
+                                    <input type="tel" class="form-control" name="phone" id="contactNumber" required>
                                 </div>
 
                             </div>
                             <div class="mb-3">
                                 <label for="subject" class="form-label">Speak to me about</label>
-                                <select class="form-select" id="subject" required>
+                                <select class="form-select" name="type" id="subject" required>
                                     <option value="" disabled selected>Select a topic</option>
                                     <option value="1-2-1 Coaching">1-2-1 Coaching</option>
                                     <option value="Performance Analysis">Performance Analysis</option>
@@ -297,7 +298,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="4"></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="4"></textarea>
                             </div>
                             <div class="form-check mb-3">
                                 <input class="form-check-input" type="checkbox" id="consent" required>

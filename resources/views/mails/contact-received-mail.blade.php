@@ -117,7 +117,7 @@
                                         <tr>
                                            <td class="pad" style="padding-top:40px;">
                                               <div style="font-family:Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif; text-align:left; line-height: 25px; padding-left: 15px; padding-right: 15px;">
-                                                 <p>If for any reason you have the need to contact us, then please email us at: <a href="mailto: info@southallathleticfc.com" target="_blank" style="text-decoration: none;">info@southallathleticfc.com</a> <br>
+                                                 <p>If for any reason you have the need to contact us, then please email us at: <a href="mailto: hello@theplayerscorner.co.uk" target="_blank" style="text-decoration: none;">hello@theplayerscorner.co.uk</a> <br>
                                                     <br>Regards,
                                                     </br>
                                                  </p>

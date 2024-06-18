@@ -748,7 +748,7 @@
 								
 								<p class="pl-res-des text-start">Southall Athletic Football Club wants to meet the aims and commitments set out in its equality policy. This includes not discriminating under the Equality Act 2010, and building an accurate picture of the make-up of the community football club in encouraging equality and diversity.
 									The football club needs your help and co-operation to enable it to do this, but filling in this form is voluntary. The information provided will be kept confidential and will be used for monitoring purposes.
-									If you have any questions about the form contact Southall Athletic F.C. via email at <a href="mailto:info@southallathleticfc.com">info@southallathleticfc.com</a>
+									If you have any questions about the form contact Southall Athletic F.C. via email at <a href="mailto:hello@theplayerscorner.co.uk">hello@theplayerscorner.co.uk</a>
 								</p>
 
 								{{-- Gender* --}}

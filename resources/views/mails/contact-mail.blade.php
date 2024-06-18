@@ -87,7 +87,7 @@
                                      <table border="0" cellpadding="0" cellspacing="0" class="heading_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
                                         <tr>
                                            <td class="pad" style="padding-left:15px; width:100%;text-align:center;">
-                                              <h1 style="margin: 0; color: #2d2525; font-size: 1.8rem; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 120%; text-align: left; direction: ltr; font-weight: 700; letter-spacing: normal; margin-top: 0; margin-bottom: 0;">Email from Southall Website</h1>
+                                              <h1 style="margin: 0; color: #2d2525; font-size: 1.8rem; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 120%; text-align: left; direction: ltr; font-weight: 700; letter-spacing: normal; margin-top: 0; margin-bottom: 0;">Email from The Players Corner Website</h1>
                                            </td>
                                         </tr>
                                      </table>
@@ -111,7 +111,7 @@
                                                  <p style="margin: 0;"><strong>Name</strong></p>
                                               </div>
                                               <div style="padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px; background: #ffffff; color:#101112;font-size:18px;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:180%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:28.8px;">
-                                                 <p style="margin: 0;">{{ $data['name'] }}</p>
+                                                 <p style="margin: 0;">{{ $data['first_name'] . ' ' . $data['last_name'] }}</p>
                                               </div>
                                            </td>
                                            <td width="50%" class="pad" style="border-radius: 4px; background: #f7fbff;border: 1px solid #d4dbe1;overflow: hidden;">

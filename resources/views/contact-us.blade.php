@@ -29,11 +29,11 @@
                 <form class="row g-3" action="{{ route('contact-us.submit') }}" method="POST">
                 @csrf
                     <div class="form-floating mb-3 col-md-6">
-                        <input type="text" class="form-control" name="firstname" id="floatingInput" placeholder="First Name" required>
+                        <input type="text" class="form-control" name="first_name" id="floatingInput" placeholder="First Name" required>
                         <label for="floatingInput">First Name</label>
                     </div>
                     <div class="form-floating mb-3 col-md-6">
-                        <input type="text" class="form-control" name="lastname" id="floatingInput" placeholder="Last Name" required>
+                        <input type="text" class="form-control" name="last_name" id="floatingInput" placeholder="Last Name" required>
                         <label for="floatingInput">Last Name</label>
                     </div>
                     <div class="form-floating mb-3 col-md-6">
