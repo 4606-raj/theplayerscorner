@@ -10,9 +10,8 @@
                     <h3>the players corner</h3>
                     <p>we're levelling the field</p>
                 </div>
-                <div class="topOverlay"></div>
-                <div class="makeShape">sdf</div>
-
+                <div class="makeShape"></div>
+                <div class="topOverlayBanner"></div>
             </div>
             
         </div>
@@ -40,7 +39,7 @@
         </div>
     </section>
      
-    <section class="container-fuild gallery-sec">
+    {{-- <section class="container-fuild gallery-sec">
                 
     <!-- Slider main container -->
         <div class="swiper lightbox-swiper" id="gallery-swiper">
@@ -125,19 +124,14 @@
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div>
-                
-                <div class="lightbox-swiper">
-                    <div class="swiper-wrapper"  id="lg-swipper">
-                        <div class="swiper-slide">
-                        </div>
-    </section>
+    </section> --}}
 
 
     {{-- Meetings Cards --}}
-    <section class="container meetup-card mt-5">
-        <div class="row">
+    {{-- <section class="container meetup-card mt-5">
+        <div class="row"> --}}
             {{-- Card 1 --}}
-            <div class="card col-lg-4 col-md-4 col-sm-6 col-6">
+            {{-- <div class="card col-lg-4 col-md-4 col-sm-6 col-6">
                 <div class="card-img">
                     <img src="{{ asset('storage/images/gallery/img-8.jpg') }}" class="card-img-top" alt="...">
                 </div>
@@ -147,10 +141,10 @@
                     <p class="card-date">tue, 09 Jan | Mountain View</p>
                     <a href="#" class="meetup-btn"><button>rsvp</button></a>
                 </div>
-            </div>
+            </div> --}}
             
             {{-- Card 2 --}}
-            <div class="card col-lg-4 col-md-4 col-sm-6 col-6">
+            {{-- <div class="card col-lg-4 col-md-4 col-sm-6 col-6">
                 <div class="card-img">
                     <img src="{{ asset('storage/images/gallery/img-3.jpg') }}" class="card-img-top" alt="...">
                 </div>
@@ -160,10 +154,10 @@
                     <p class="card-date">tue, 06 feb | flatiron district</p>
                     <a href="#" class="meetup-btn"><button>rsvp</button></a>
                 </div>
-            </div>
+            </div> --}}
             
             {{-- Card 3 --}}
-            <div class="card col-lg-4 col-md-4 col-sm-6 col-6">
+            {{-- <div class="card col-lg-4 col-md-4 col-sm-6 col-6">
                 <div class="card-img">
                     <img src="{{ asset('storage/images/gallery/img-4.jpg') }}" class="card-img-top" alt="...">
                 </div>
@@ -173,14 +167,12 @@
                     <p class="card-date">sat, 17 mar | west village</p>
                     <a href="#" class="meetup-btn"><button>rsvp</button></a>
                 </div>
-            </div>
-
-
-        </div>
-    </section>
+            </div> --}}
+        {{-- </div>
+    </section> --}}
 
     {{-- 24/7 Phone support SECTION START --}}
-    <section class="container support-wrapper" id="wrapper-1">
+    {{-- <section class="container support-wrapper" id="wrapper-1">
         <div class="row">
             <div class="promoBanner col-lg-4 offset-lg-1 col-md-5 offset-md-1 offest-sm-1 col-sm-10 col-12">
                 <img src="{{ asset('assets/images/banner.jpg') }}" alt="">
@@ -198,7 +190,7 @@
         
         
         
-    </section>
+    </section> --}}
     {{-- 24/7 Phone support SECTION END --}}
 
 <!-- News Section END -->

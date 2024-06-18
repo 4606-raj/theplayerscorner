@@ -1,88 +1,92 @@
 var currentYear = new Date().getFullYear();
 $(".currentYear").html(currentYear);
 
-function showOtherTextarea(e) {
-    var val = e.options[e.selectedIndex].value;
-    if (val == "other") {
-        $(".otherTextarea").show();
-        // `${document.querySelector('.otherTextarea')}`
-    } else {
-        $(".otherTextarea").hide();
+    function showOtherTextarea(e) {
+        var val = e.options[e.selectedIndex].value;
+        if (val == "other") {
+            $(".otherTextarea").show();
+            // `${document.querySelector('.otherTextarea')}`
+        } else {
+            $(".otherTextarea").hide();
+        }
+        //     if (e == "other") {
+            //         document.querySelector(".otherTextarea").classList.add("showOtherText");
+            //     } else {
+                //         document
+                //             .querySelector(".otherTextarea")
+                //             .classList.remove("showOtherText");
+                //     }
     }
-    //     if (e == "other") {
-    //         document.querySelector(".otherTextarea").classList.add("showOtherText");
-    //     } else {
-    //         document
-    //             .querySelector(".otherTextarea")
-    //             .classList.remove("showOtherText");
-    //     }
-}
-
-$(document).ready(function () {
-    $(".bi-caret-down-fill").click(function () {
-        $(this).toggleClass("rotate-i");
-        $($(this).siblings()[1]).toggleClass("show-hide-sub-menu");
-    });
-    // $(".datepicker").datepicker({
-    //     changeMonth: true,
-    //     changeYear: true,
-    //     yearRange: "1950:2022",
-    // });
-
-    // Parents details box on Register page
-    $("#agecheck").click(function () {
-        $("#agecheck").is(":checked")
+        
+    $(document).ready(function () {
+        $(".bi-caret-down-fill").click(function () {
+            $(this).toggleClass("rotate-i");
+            $($(this).siblings()[1]).toggleClass("show-hide-sub-menu");
+        });
+        // $(".datepicker").datepicker({
+            //     changeMonth: true,
+            //     changeYear: true,
+            //     yearRange: "1950:2022",
+            // });
+            
+        // Parents details box on Register page
+        $("#agecheck").click(function () {
+            $("#agecheck").is(":checked")
             ? $("#parent-details-bl").addClass("show-hide-pt-details")
             : $("#parent-details-bl").removeClass("show-hide-pt-details");
-    });
-
-    // Header scroll effect
-    if (window.matchMedia("(max-width: 767.98px)").matches) {
-        
-        $(window).on("scroll", function () {
-            if ($(window).scrollTop()) {
-                $("header").addClass("fixed-hdr-small");
-            } else {
-                $("header").removeClass("fixed-hdr-small");
-            }
         });
-    } else {
-        if (window.matchMedia("(min-width: 768px)").matches) {
-            // Header Scroll
+        
+        // Header scroll effect
+        if (window.matchMedia("(max-width: 767.98px)").matches) {
+            
             $(window).on("scroll", function () {
                 if ($(window).scrollTop()) {
-                    $("header").addClass("fix-header-top");
-                    $(".logo-1 img").attr("src","./assets/images/logo-img.png");
-                    
-                    // $(".uppr-row-con").fadeOut(0);
+                    $("header").addClass("fixed-hdr-small");
                 } else {
-                    // $(".uppr-row-con").fadeIn();
-                    $("header").removeClass("fix-header-top");
-                    $(".logo-1 img").attr("src","./assets/images/logo-1.png");
+                    $("header").removeClass("fixed-hdr-small");
                 }
             });
+        } else {
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                // Header Scroll
+                $(window).on("scroll", function () {
+                    if ($(window).scrollTop()) {
+                        $("header").addClass("fix-header-top");
+                        $(".logo-1 img").attr("src","./assets/images/logo-img.png");
+                        
+                        // $(".uppr-row-con").fadeOut(0);
+                    } else {
+                        // $(".uppr-row-con").fadeIn();
+                        $("header").removeClass("fix-header-top");
+                        $(".logo-1 img").attr("src","./assets/images/logo-1.png");
+                    }
+                });
+            }
         }
-    }
 
-    // Seach bar dropdown
-    $(".srch-i").on("click", function () {
+        // Seach bar dropdown
+        $(".srch-i").on("click", function () {
         $(".search-box").toggleClass("show-hide-srch");
     });
 
     // Hamburger Menu
     $("#ham-button").on("click", function () {
         $("nav").toggleClass("show-hide-menu");
+        $(".hamRotate").toggleClass("active");
+        $(".topOverlay").toggleClass("addBackDrop");
     });
-
+    
     // $(document).click(function(event) {
-    //     console.log($(event.target).is('.show-hide-menu'));
-    //     if (!($(event.target).is('#ham-button')) && !($(event.target).is('.show-hide-menu'))) {
-    //         $('.hamRotate').removeClass('active');
-    //         $('nav').removeClass('show-hide-menu');
-    //     }
     // });
-
+    
     $(document).click(function (event) {
+        console.log(!$(event.target).is('#ham-button'));
+        if (!($(event.target).is('#ham-button')) && !($(event.target).is('.show-hide-menu')) && ($(event.target).is('.addBackDrop'))) {
+            $('.hamRotate').removeClass('active');
+            $('nav').removeClass('show-hide-menu');
+            $('.topOverlay').removeClass('addBackDrop');
+        }
+        
         if (
             !$(event.target).is(".srch-i") &&
             !$(event.target).is(".input-srch")
@@ -90,7 +94,7 @@ $(document).ready(function () {
             $(".search-box").removeClass("show-hide-srch");
         }
     });
-
+    
     // Swiper slider on Community page for Team captains
     // var swiper = new Swiper(".team-captains", {
     //     // slideToClickedSlide: true,

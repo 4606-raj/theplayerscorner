@@ -394,7 +394,7 @@
                 opacity: 1;
                 z-index: 100;
                 visibility: visible;
-                top: 70px;
+                top: 60px;
             }
         
             .show-hide-sub-menu{
@@ -855,6 +855,23 @@
             font-size: 1rem;
         }
     }
+    header{
+        padding: 0 15px;
+        div:nth-child(1){
+            justify-content: space-between !important;
+        }
+            
+        .logo-1{
+            img{
+                min-width: 60px;
+                max-width: 60px;
+            }
+            p{
+                display: none;
+            }
+        } 
+    } 
+
     // #promo-banner{
     //     margin-top: 0;
 

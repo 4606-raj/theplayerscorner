@@ -9,8 +9,8 @@
                     <h3>the players corner</h3>
                     <p>we're levelling the field</p>
                 </div>
-                <div class="topOverlay"></div>
-                <div class="makeShape">sdf</div>
+                <div class="topOverlayBanner"></div>
+                <div class="makeShape"></div>
             </div>
         </div>
     </section>

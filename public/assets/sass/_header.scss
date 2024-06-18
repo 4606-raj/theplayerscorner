@@ -5,6 +5,8 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 100;
+    position: relative;
+
     // padding: 0 4.165% !important;
 
     // .overlay-hdr{
@@ -319,9 +321,34 @@ header{
         
         
         // Navigation
-    }
+}
     
-    .fix-header-top{
+.topOverlay, .topOverlayBanner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.topOverlayBanner{
+    backdrop-filter: blur(0px);
+    opacity: 1;
+    z-index: 5;
+    visibility: visible;
+    background: rgba(166, 149, 18, 0.5);
+}
+.addBackDrop{
+    opacity: 1;
+    visibility: visible;
+    background: rgba(49, 45, 14, 0.3);
+}
+.fix-header-top{
         position: fixed;
         top: 0;
         width: 100%;
@@ -420,6 +447,7 @@ header{
         //     pointer-events: none;
         // }
         .ham {
+            pointer-events: none;
             cursor: pointer;
             -webkit-tap-highlight-color: transparent;
             transition: transform 400ms;

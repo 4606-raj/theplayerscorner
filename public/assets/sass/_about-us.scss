@@ -1,0 +1,45 @@
+// About Us START
+.aboutUs-sec{
+    margin: 60px auto;
+
+    #ab-hdr{
+        color: $primary-clr;
+        font-family: $parksonSemiB;
+        font-size: clamp(3rem, 3vw, 3rem);
+    }
+    .ab-note-txt, .ab-list, .ab-sub-hdr, .ab-des-txt{
+        color: $text-accent;
+        font-family: $open-sans;
+    }
+    .ab-sub-hdr{
+        font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+        width: fit-content;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        border-bottom: 1px solid $primary-clr;
+
+        span{
+            color: $primary-clr;
+        }
+    }
+    .ab-des-txt{
+        font-size: 1rem;
+        line-height: 28px;  
+        margin: 15px 0;
+    }
+    .ab-note-txt{
+        font-size: 14px;
+        border: 1px solid $primary-clr;
+        padding: 15px;
+        background: #312f1c;
+        line-height: 26px;
+        font-weight: 600;
+    }
+    .ab-list{
+        font-size: 15px;
+        li{
+            margin: 6px 0;
+        }
+    }
+}
+// About Us END

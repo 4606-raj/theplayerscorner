@@ -61,11 +61,16 @@ Route::view('/testimonials', 'testimonials')->name('testimonials');
 Route::view('/blogs', 'blogs')->name('blogs');
 Route::view('/blog-view', 'blog-view')->name('blog-view');
 
+// Routes for Web App
+Route::view('/user-type', 'user-type')->name('user-type');
+Route::view('/user-login', 'auth.user-login')->name('user-login');
+
+
 Route::get('/test', function() {
     Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactReceivedMail());
 });
 
-Route::view('/player-registration', 'auth.player-registration')->name('player-registration')->middleware('auth');
+Route::view('/player-registration', 'auth.player-registration')->name('player-registration');
 
 // Route::post('/contact', function (Request $request) {
 
@@ -91,4 +96,4 @@ Route::get('/test', function () {
 });
 
 // Route::view('test', 'test');
-Route::get('/test', [HomeController::class, 'index'])->name('home');
+// Route::get('/test', [HomeController::class, 'index'])->name('home');

@@ -23,7 +23,7 @@ class BasicDetails extends Component
     
     public function render()
     {
-        $this->player = Auth::user()->player;
+        // $this->player = Auth::user()->player;
         return view('livewire.player.basic-details');
     }
 

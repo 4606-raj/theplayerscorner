@@ -32,31 +32,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+    
     <header class="container-fluid"> 
             <div class="row justify-content-center">
         
-        <!-- Navigation Bar -->
-        <div class="logo-1 col-6 col-sm-7 col-md-auto">
-            <a href="{{ route('home') }}">
-                <img src="{{ asset('assets/images/logo-1.png') }}" alt="">
-                <p>The <span><br> Players Corner</span></p>
-            </a>
-        </div>
-        <nav class="d-flex col-lg-7 col-md-7 ps-0 justify-content-between">
-
-            <div class="nav-small offset-md-2" id="nav-row">
-                
-                <ul>
-                    <li class="active-link"><a href="{{ route('home') }}">Home</a>
-                    <li class="active"><a href="404">About us</a>
-                    <li class="active"><a href="{{ route('blogs') }}">Our Blog</a>
-                    <li class="active"><a href="{{ route('contact-us') }}">Contact us</a>
-                    </li>
-                </ul>
-                    <!-- Social Media Icons -->
+                <!-- Navigation Bar -->
+                <div class="logo-1 col-2 col-sm-7 col-md-auto">
+                    <a href="{{ route('home') }}">
+                        <img src="{{ asset('assets/images/logo-1.png') }}" alt="">
+                        <p>The <span><br> Players Corner</span></p>
+                    </a>
+                </div>
+                <nav class="d-flex col-lg-7 col-md-7 ps-0 justify-content-between">
                     
-            </div>
-            <div class="social-icons hdr-social-icons">
+                    <div class="nav-small offset-md-2" id="nav-row">
+                        
+                        <ul>
+                            <li class="active-link"><a href="{{ route('home') }}">Home</a>
+                                <li class="active"><a href="{{ route('about-us') }}">About us</a>
+                                    <li class="active"><a href="{{ route('blogs') }}">Our Blog</a>
+                                        <li class="active"><a href="{{ route('contact-us') }}">Contact us</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Social Media Icons -->
+                                    
+                                </div>
+                                <div class="social-icons hdr-social-icons">
                 <ul>
                     <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i></a></li>
@@ -64,14 +65,15 @@
                     <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
                 </ul>
             </div>
-
+            
         </nav>
         {{-- Login button to portal --}}
         <div class="col-auto d-flex align-items-center">
-            <a href="#" class="primary-btn"><button><i class="bi bi-box-arrow-in-right"></i> Login</button></a>
+            <a href="{{ route('admin.dashboard') }}" class="primary-btn"><button><i class="bi bi-box-arrow-in-right"></i> Login / Register</button></a>
         </div>
+
         <button class="col-auto" id="ham-button">
-            <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="45" onclick="this.classList.toggle('active')">
+            <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="45" >
                 <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
                 <path class="line middle" d="m 30,50 h 40" />
                 <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
@@ -79,10 +81,11 @@
             
         </button>
     </div>
-    </header>
-
-        @yield('content')
-
+</header>
+<div class="topOverlay"></div>
+    
+    @yield('content')
+    
     <footer>
         <div class="footer-wrap" >
                             

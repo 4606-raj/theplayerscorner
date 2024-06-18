@@ -9,12 +9,12 @@
         
 		{{-- Player registration Section --}}
 		
-				<p class="pl-res-des"><span> New Season for 2023-24 is here!</span> <br> <br>
+				{{-- <p class="pl-res-des"><span> New Season for 2023-24 is here!</span> <br> <br>
 
                     To register your interest in representing Southall Athletic Football Club for the upcoming tournaments and the new season, you are required to complete and submit the form below.
                     
                     <br>For NEW players, looking to play for Southall Athletic for the very first time We will also need the following:
-				</p>
+				</p> --}}
 				
 				{{-- <form class="form-body col-sm-12 col-lg-12 col-md-12 col-12 pt-3" name="player-register"> --}}
 					

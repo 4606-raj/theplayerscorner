@@ -8,11 +8,13 @@
             @if($errors->any())
                 {!! implode('', $errors->all('<div class="alert alert-danger">:message</div>')) !!}
             @endif
+
+                <h4 class="pane-hdr">Personal Details</h4>
                 {{-- Upload Photo --}}
                 <div class="field-floating mb-3">
                     <div class="col-lg-6 col-md-7 col-sm-12 order-2 order-md-1 left-bl">
                         <p class="field-question">
-                            1. Photos must be a Passport style photograph.
+                            1. Photo must be a Passport style photograph.
                         </p>
                         <div class="question-des">
                             <span>(Photo Guidelines) The photo must:</span> 

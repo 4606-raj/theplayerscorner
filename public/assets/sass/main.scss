@@ -55,7 +55,7 @@ button{
 }
 $primary-clr: #FBE746;
 $secondary-clr: #141414;
-$text-accent: #fff;
+$text-accent: #fafafa;
 
 
 ::-moz-selection { /* Code for Firefox */
@@ -65,7 +65,8 @@ $text-accent: #fff;
 
 ::selection {
       color: #000000;
-      background: #f7ffa0be;
+      background: #fcf1a2bb;
+    //   background: #f7ffa0be;
   }
 
 @import 'header';
@@ -79,6 +80,7 @@ $text-accent: #fff;
 @import 'community';
 @import 'teams';
 @import 'blogs';
+@import 'about-us';
 @import 'footer';
 @import 'player-registration';
 @import 'responsive';

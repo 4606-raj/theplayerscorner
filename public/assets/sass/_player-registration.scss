@@ -9,6 +9,13 @@
     justify-content: center;
     margin: 100px 0;
 
+    .pane-hdr{
+        font-size: clamp(1.8rem, 2.8vw, 2.5rem);
+        font-family: $parksonSemiB;   
+        color: $secondary-clr;
+        
+    }
+
     textarea, input, select{
         font-family: $open-sans;
         
@@ -48,9 +55,6 @@
             }
         }
         
-        .left-bl{
-            // padding-right: 15px;
-        }
         .right-bl{
             padding-left: 15px;
         }
@@ -141,7 +145,7 @@
 }
 .pl-res-des{
     padding: 0 15px;
-    color: $secondary-clr;
+    color: $text-accent;
     font-family: $open-sans;
     line-height: 30px;
     text-align: center;
@@ -181,7 +185,7 @@
         .active{
             background: none !important;
             opacity: 1 !important;
-            color: $secondary-clr !important;
+            color: $primary-clr !important;
             font-weight: 600;  
         } 
         .nav-link{
@@ -193,9 +197,9 @@
             display: flex;
             align-items: center;
             font-family: $open-sans;
-            color: $secondary-clr;
+            color: $text-accent;
             font-size: clamp(.9rem, 1vw, 1rem);
-            opacity: .6;
+            // opacity: .6;
             
             .counter-num{
                 border: 1px solid $primary-clr;
