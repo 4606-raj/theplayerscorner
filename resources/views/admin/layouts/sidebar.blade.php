@@ -45,7 +45,7 @@
                 </ul>
             </li>
             
-            <li class="slide">
+            {{-- <li class="slide">
                 <a class="side-menu__item" data-toggle="slide" href="#">
                     <i class="feather feather-home sidemenu_icon"></i>
                     <span class="side-menu__label">News</span><i class="angle fa fa-angle-right"></i>
@@ -53,8 +53,8 @@
                 <ul class="slide-menu">
                     <li><a href="{{ route('news.create') }}" class="slide-item">Add New News</a></li>
                     <li><a href="{{ route('news.index') }}" class="slide-item">All News</a></li>
-                    {{-- <li><a href="{{ route('teams.create') }}" class="slide-item">Add News</a></li> --}}
-                    {{-- <li><a href="{{ route('teams.index') }}" class="slide-item">All News</a></li> --}}
+                    <li><a href="{{ route('teams.create') }}" class="slide-item">Add News</a></li>
+                    <li><a href="{{ route('teams.index') }}" class="slide-item">All News</a></li>
                 </ul>
             </li>
 
@@ -64,8 +64,8 @@
                     <span class="side-menu__label">Affiliates & Partners</span><i class="angle fa fa-angle-right"></i>
                 </a>
                 <ul class="slide-menu">
-                    {{-- <li><a href="{{ route('teams.create') }}" class="slide-item">Add New/a></li> --}}
-                    {{-- <li><a href="{{ route('teams.index') }}" class="slide-item">All Affiliates & Partners</a></li> --}}
+                    <li><a href="{{ route('teams.create') }}" class="slide-item">Add New/a></li>
+                    <li><a href="{{ route('teams.index') }}" class="slide-item">All Affiliates & Partners</a></li>
                 </ul>
             </li>
             
@@ -75,7 +75,7 @@
                     <span class="side-menu__label">Gallery</span><i class="angle fa fa-angle-right"></i>
                 </a>
                 <ul class="slide-menu">
-                    {{-- <li><a href="{{ route('gallery.create') }}" class="slide-item">Add New</a></li> --}}
+                    <li><a href="{{ route('gallery.create') }}" class="slide-item">Add New</a></li>
                     <li><a href="{{ route('gallery.index') }}" class="slide-item">All Gallery</a></li>
                 </ul>
             </li>
@@ -86,8 +86,8 @@
                     <span class="side-menu__label">Team Sponsors</span><i class="angle fa fa-angle-right"></i>
                 </a>
                 <ul class="slide-menu">
-                    {{-- <li><a href="{{ route('teams.create') }}" class="slide-item">Add New Team Sponsor/a></li> --}}
-                    {{-- <li><a href="{{ route('teams.index') }}" class="slide-item">All Team Sponsors</a></li> --}}
+                    <li><a href="{{ route('teams.create') }}" class="slide-item">Add New Team Sponsor/a></li>
+                    <li><a href="{{ route('teams.index') }}" class="slide-item">All Team Sponsors</a></li>
                 </ul>
             </li>
 
@@ -97,8 +97,8 @@
                     <span class="side-menu__label">Fixtures</span><i class="angle fa fa-angle-right"></i>
                 </a>
                 <ul class="slide-menu">
-                    {{-- <li><a href="{{ route('teams.create') }}" class="slide-item">Add New Fixture/a></li> --}}
-                    {{-- <li><a href="{{ route('teams.index') }}" class="slide-item">All Fixtures</a></li> --}}
+                    <li><a href="{{ route('teams.create') }}" class="slide-item">Add New Fixture/a></li>
+                    <li><a href="{{ route('teams.index') }}" class="slide-item">All Fixtures</a></li>
                 </ul>
             </li>
             
@@ -108,10 +108,10 @@
                     <span class="side-menu__label">Result</span><i class="angle fa fa-angle-right"></i>
                 </a>
                 <ul class="slide-menu">
-                    {{-- <li><a href="{{ route('teams.create') }}" class="slide-item">Add New Result/a></li> --}}
-                    {{-- <li><a href="{{ route('teams.index') }}" class="slide-item">All Result</a></li> --}}
+                    <li><a href="{{ route('teams.create') }}" class="slide-item">Add New Result/a></li>
+                    <li><a href="{{ route('teams.index') }}" class="slide-item">All Result</a></li>
                 </ul>
-            </li>
+            </li> --}}
 
             <li class="slide">
                 <a class="side-menu__item" data-toggle="slide" href="#">
