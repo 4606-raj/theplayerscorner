@@ -605,14 +605,18 @@ body {
 .pri-tabs .nav-link {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  color: #141414;
+  color: #fafafa;
   border: none !important;
   border-bottom: 1px solid #dee2e6 !important;
   padding-bottom: 15px;
 }
+.pri-tabs .nav-link:hover {
+  color: #fafafa;
+}
 .pri-tabs .nav-item .active {
-  border-bottom: 2px solid #141414 !important;
-  color: #FBE746 !important;
+  background: #FBE746 !important;
+  border-bottom: 2px solid #FBE746 !important;
+  color: #141414 !important;
 }
 
 #page-dev-sec {
@@ -5229,10 +5233,10 @@ body {
 #lg-container .lg-sub-hdr {
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
+  color: #FBE746;
 }
 #lg-container .lg-hdr-1 {
   margin-bottom: 40px;
-  color: #141414;
   font-size: 2.5rem;
 }
 #lg-container .lg-sub-hdr {
@@ -5241,6 +5245,7 @@ body {
 }
 #lg-container .lg-des-txt {
   font-family: "Open Sans", sans-serif;
+  color: #fafafa;
   line-height: 35px;
   font-size: 1.1rem;
 }
@@ -5248,6 +5253,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   line-height: 35px;
+  color: #fafafa;
 }
 #lg-container a {
   font-family: "Open Sans", sans-serif;
@@ -6826,6 +6832,12 @@ footer .footer-wrap .doc-links li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.form-select {
+  -webkit-box-shadow: 0 0 0 !important;
+          box-shadow: 0 0 0 !important;
+  border: none;
 }
 
 .player-res-sec {

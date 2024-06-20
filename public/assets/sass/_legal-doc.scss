@@ -7,10 +7,11 @@
     .lg-sub-hdr{
         font-weight: 500;
         font-family: $open-sans;   
+        color: $primary-clr;
     }
     .lg-hdr-1{
         margin-bottom: 40px;
-        color: $secondary-clr;
+        // color: $secondary-clr;
         font-size: 2.5rem;
     }
     .lg-sub-hdr{
@@ -20,6 +21,7 @@
     .lg-des-txt{
         font-family: $open-sans;
         // color: #484848;
+        color: $text-accent;
         line-height: 35px;
         font-size: 1.1rem;
     }
@@ -27,6 +29,7 @@
         font-family: $open-sans;
         font-size: 1.1rem;
         line-height: 35px;
+        color: $text-accent;
     }
     a{
         font-family: $open-sans;
@@ -50,5 +53,10 @@
         line-height: 30px;
         margin-bottom: 20px;
     }
+    // .pri-tabs{
+    //     .nav-link{
+    //         color: $text-accent;
+    //     }
+    // }
 }
 // Privacy Policy page END

@@ -3,6 +3,10 @@
         flex-direction: column;
     }
 }
+.form-select{
+    box-shadow: 0 0 0 !important;
+    border: none;
+}
 .player-res-sec{
 
     display: flex;
@@ -257,7 +261,6 @@
     font-family: $open-sans;
     font-size: clamp(0.9375rem, 1vw, 1rem);
     line-height: 28px;
-
 
     input{
         margin-top: 8px;

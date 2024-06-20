@@ -114,14 +114,19 @@ body{
     .nav-link{
         font-family: $open-sans;
         font-weight: 500;
-        color: $secondary-clr;
+        color: $text-accent;
         border: none !important;
         border-bottom: 1px solid #dee2e6 !important;
         padding-bottom: 15px;
+
+        &:hover{
+            color: $text-accent;
+        }
     }
     .nav-item .active{
-        border-bottom: 2px solid $secondary-clr !important;
-        color: $primary-clr !important;
+        background: $primary-clr !important;
+        border-bottom: 2px solid $primary-clr !important;
+        color: $secondary-clr !important;
     }
 }
 

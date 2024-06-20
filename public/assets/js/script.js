@@ -19,6 +19,26 @@ $(".currentYear").html(currentYear);
     }
         
     $(document).ready(function () {
+        // Player Registration
+        $('#height-unit').change(function() {
+            if ($(this).val() == 'feet') {
+                $('#height-feet').removeClass('d-none').prop('required', true);
+                $('#height-cm').addClass('d-none').prop('required', false);
+            } else {
+                $('#height-cm').removeClass('d-none').prop('required', true);
+                $('#height-feet').addClass('d-none').prop('required', false);
+            }
+        });
+        $('#weight-unit').change(function() {
+            if ($(this).val() == 'lbs') {
+                $('#weight-lbs').removeClass('d-none').prop('required', true);
+                $('#weight-kg').addClass('d-none').prop('required', false);
+            } else if ($(this).val() == 'kg') {
+                $('#weight-kg').removeClass('d-none').prop('required', true);
+                $('#weight-lbs').addClass('d-none').prop('required', false);
+            }
+        });
+
         $(".bi-caret-down-fill").click(function () {
             $(this).toggleClass("rotate-i");
             $($(this).siblings()[1]).toggleClass("show-hide-sub-menu");
