@@ -49,7 +49,7 @@
                     
                         <li class="active-link"><a href="{{ route('home') }}">Home</a>
                         <li class="active"><a href="404">About us</a>
-                        <li class="active"><a href="{{ route('blogs') }}">Our Blog</a>
+                        <li class="active"><a href="{{ route('blogs.index') }}">Our Blog</a>
                         <li class="active"><a href="{{ route('contact-us') }}">Contact us</a>
                             {{-- <i class="bi bi-caret-down-fill"></i>
                             <!-- Drop Down menu -->

@@ -49,7 +49,7 @@
                         <ul>
                             <li class="{{ activeClass('home') }}"><a href="{{ route('home') }}">Home</a>
                                 <li class="{{ activeClass('about-us') }}"><a href="{{ route('about-us') }}">About us</a>
-                                    <li class="{{ activeClass('blogs') }}"><a href="{{ route('blogs') }}">Our Blog</a>
+                                    <li class="{{ activeClass('blogs') }}"><a href="{{ route('blogs.index') }}">Our Blog</a>
                                         <li class="{{ activeClass('contact-us') }}"><a href="{{ route('contact-us') }}">Contact us</a>
                                         </li>
                                     </ul>

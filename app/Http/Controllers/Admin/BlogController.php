@@ -27,6 +27,8 @@ class BlogController extends Controller
     {
         $request->validate([
             'title' => 'required',
+            'author' => 'required',
+            'category' => 'required',
             'content' => 'required',
         ]);
 
@@ -37,7 +39,7 @@ class BlogController extends Controller
         
         Blog::create($request->except('cover'));
 
-        return redirect()->route('blogs.index')->with('success','Blog created successfully.');
+        return redirect()->route('admin.blogs.index')->with('success','Blog created successfully.');
     }
 
     // Display the specified resource.
@@ -71,7 +73,7 @@ class BlogController extends Controller
     {
         $blog->delete();
 
-        return redirect()->route('admin.blogs.index')
-                        ->with('success','Blog deleted successfully');
+        return Response::json(['message' => 'Blog deleted successfully']);
+
     }
 }

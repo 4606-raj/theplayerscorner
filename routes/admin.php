@@ -27,4 +27,7 @@ Route::resource('/teams', TeamController::class);
 Route::resource('/players', PlayerController::class);
 Route::resource('/gallery', GalleryController::class);
 Route::resource('/news', NewsController::class);
-Route::resource('/blogs', BlogController::class);
+Route::group(['as' => 'admin.'], function() {
+
+    Route::resource('/blogs', BlogController::class);
+});

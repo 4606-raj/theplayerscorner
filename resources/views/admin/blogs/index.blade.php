@@ -27,8 +27,11 @@
                         @foreach($blogs as $blog)
                             <tr>
                                 <td>{{ $blog->title }}</td>
-                                <td><img src="{{ asset('storage/images/blog-covers/' . $blog->cover_image) }}" width="100px" alt=""></td>
-                                <td>--</td>
+                                <td><img src="{{ $blog->cover_image }}" width="100px" alt=""></td>
+                                <td>
+                                    <a href="{{ route('admin.blogs.edit', $blog->id) }}" class="btn btn-warning">Edit</a>
+                                    <button type="button" data-url="{{ route('admin.blogs.destroy', $blog->id) }}" class="btn btn-danger delete-btn">Delete</button>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>
@@ -39,3 +42,25 @@
 
 
 @endsection
+
+@push('script')
+    <script>
+        $('body').on('click', '.delete-btn', function(e) {
+                if(!confirm('Are You Sure ?'))
+                    exit();
+                
+                url = $(e.target).data('url');
+                console.log(url);
+                $.ajax({
+                    url: url,
+                    type: 'DELETE',
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                    },
+                    success: function(response) {
+                        location.reload();
+                    }
+                })
+            })
+    </script>
+@endpush

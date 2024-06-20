@@ -9,8 +9,9 @@
 
     <x-flash />
 
-    <form action="{{ route('admin.blogs.store') }}" method="POST" class="w-100" enctype="multipart/form-data">
+    <form action="{{ route('admin.blogs.update', $blog->id) }}" method="POST" class="w-100" enctype="multipart/form-data">
         @csrf
+        @method('PUT')
 
         <div class="row">
             <div class="col-lg-12 col-md-12">
@@ -24,7 +25,7 @@
                         <label class="form-label">Title</label>
                         <div class="row row-sm">
                             <div class="col-lg">
-                                <input class="form-control mb-4" placeholder="Title" type="text" name="title" required>
+                                <input class="form-control mb-4" placeholder="Title" type="text" name="title" value="{{ $blog->title }}" required>
                             </div>
                         </div>
 
@@ -33,14 +34,14 @@
                             <div class="col-6">
                                 <label class="form-label">Author</label>
                                 <div class="col-lg">
-                                    <input class="form-control mb-4" placeholder="Author" type="text" name="author" required>
+                                    <input class="form-control mb-4" placeholder="Author" type="text" name="author" value="{{ $blog->author }}" required>
                                 </div>
                             </div>
 
                             <div class="col-6">
                                 <label class="form-label">Category</label>
                                 <div class="col-lg">
-                                    <input class="form-control mb-4" placeholder="Category" type="text" name="category" required>
+                                    <input class="form-control mb-4" placeholder="Category" type="text" name="category" value="{{ $blog->category }}" required>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +55,7 @@
 
                         <div class="form-group">
                             <label for="content">Content</label>
-                            <textarea class="form-control" id="content" name="content"></textarea>
+                            <textarea class="form-control" id="content" name="content">{{ $blog->content }}</textarea>
                         </div>
 
                         <div class="row row-sm">

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,8 +59,9 @@ Route::view('/community', 'community')->name('community');
 Route::view('/about-us', 'about-us')->name('about-us');
 Route::view('/testimonials', 'testimonials')->name('testimonials');
 
-Route::view('/blogs', 'blogs')->name('blogs');
-Route::view('/blog-view', 'blog-view')->name('blog-view');
+Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
+Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('blogs.show');
+Route::post('/comments', [BlogController::class, 'storeComment'])->name('blogs.store-comment');
 
 // Routes for Web App
 Route::view('/user-type', 'user-type')->name('user-type');

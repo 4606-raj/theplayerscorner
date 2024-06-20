@@ -119,8 +119,8 @@
                     <span class="side-menu__label">Blog</span><i class="angle fa fa-angle-right"></i>
                 </a>
                 <ul class="slide-menu">
-                    <li><a href="{{ route('blogs.create') }}" class="slide-item">Add New Blog</a></li>
-                    <li><a href="{{ route('blogs.index') }}" class="slide-item">All Blogs</a></li>
+                    <li><a href="{{ route('admin.blogs.create') }}" class="slide-item">Add New Blog</a></li>
+                    <li><a href="{{ route('admin.blogs.index') }}" class="slide-item">All Blogs</a></li>
                 </ul>
             </li>
             

@@ -21,13 +21,14 @@
             {{-- Blogs --}}
             <div class="blogs-sec blog-view col-lg-8 col-md-7">
                 <article>
-                    <h4 class="blog-hdr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nisi fugit officia aliquam, expedita quas, cupiditate tenetur placeat cum suscipit laboriosam quis earum! Enim quam maiores consequuntur voluptas, asperiores fugit.</h4>
-                    <p class="blog-postedBy">by <span>Allan McGoldrick </span> | Dec 29, 2018 | <span>[Searched keyword here]</span> | <span>0</span> comments</p>
-                    <img src={{ asset('assets/images/blogs/img-1.jpg') }} class="img-fluid mb-4" alt="Article Image">
+                    <h4 class="blog-hdr">{{ $blog->title }}</h4>
+                    <p class="blog-postedBy">by <span>{{ $blog->author }} </span> | {{ date_format($blog->created_at, 'M d, Y') }} | 
+                        {{-- <span>[Searched keyword here]</span> |  --}}
+                        <span>0</span> comments</p>
+                    <img src={{ $blog->cover_image }} class="img-fluid mb-4" alt="Article Image">
                     <div class="blog-des-txt">
                         
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatum doloribus earum id quia nemo ducimus dolorem, ullam, maxime reiciendis itaque nihil recusandae, illo amet optio expedita iste dignissimos quam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt laborum cupiditate debitis corporis optio quibusdam vitae aspernatur atque ea libero rem obcaecati iusto in, accusamus a quidem ullam porro accusantium. </p>
-                        <p>voluptatum doloribus earum id quia nemo ducimus dolorem, ullam, maxime reiciendis itaque nihil recusandae, illo amet optio expedita iste dignissimos quam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt laborum cupiditate debitis corporis optio quibusdam vitae aspernatur atque ea libero rem obcaecati iusto in, accusamus a quidem ullam porro accusantium.</p>
+                        {!! $blog->content !!}
 
                     </div>
                 </article>
@@ -64,26 +65,30 @@
         <div class="col-lg-8 mt-5 comment-sec">
             <h2>Submit a Comment</h2>
             <p>Your email address will not be published. Required fields are marked *</p>
-            <form>
+            <form method="POST" action="{{ route('blogs.store-comment') }}">
+
+                @csrf
+                <input type="hidden" name="blog_id" value="{{ $blog->id }}">
+                
                 <div class="mb-3">
                     <label for="comment" class="form-label">Comment</label>
-                    <textarea class="form-control" id="comment" rows="4" placeholder="Comment" required></textarea>
+                    <textarea class="form-control" id="comment" name="comment" rows="4" placeholder="Comment" required></textarea>
                 </div>
                 <div class="row">
                     <div class="mb-3 col-lg-6">
                         <label for="name" class="form-label">Name *</label>
-                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                     </div>
                     <div class="mb-3 col-lg-6">
                         <label for="email" class="form-label">Email *</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="website" class="form-label">Website</label>
-                    <input type="url" class="form-control" id="website" placeholder="website">
+                    <input type="url" class="form-control" id="website" name="website" placeholder="website">
                 </div>
-                <button type="submit" class="submit-btn submit-shadow">Submit</button>
+                <button type="submit" class="submit-btn submit-shadow" style="background: #FBE746">Submit</button>
             </form>
         </div>
     </section>
