@@ -25,15 +25,16 @@
                     <img src="{{ asset('assets/images/logo-img.png') }}" alt="">
                 </div>
                 {{-- Site title --}}
-                <h3 class="title-hdr">the players corner</h3>
+                <h3 class="title-hdr">The Players Corner <br> <span>The World’s First FREE Scouting and Talent Development Platform for Football Players</span></h3>
                 <div class="col-10 col-lg-6 col-md-6 col-sm-8">
                     <p class="ab-des-txt">
-                        In 2000, The Players Corner was founded when a group of individuals decided to turn their shared interests into an
-                        official Gaming Club. After a couple of quick meetings, we were on our way to creating something extraordinary. <br><br>
-                        With time, we've grown into a more serious and mature organization, allowing us to take our interests to new levels.
-                        When you decide to join us, you too will gain access to various events and, more importantly, to a community of
-                        people who are just as passionate as you are.
+                        Taking control of your footballing career can be tough, particularly if you don’t have the right connections. All the talent in the world won’t land a career on your doorstep; you’ll need to be able to get in front of the right people at the right time to succeed. This is where we come in. <br><br>
+                        The Players Corner gives you the unique opportunity to connect with the wider global footballing community, giving you the best shot at success. We can even help find a club that suits your skills and talent, and represent you in negotiations to make sure you’re taken care of. 
                     </p>
+                    <p class="ab-des-txt">
+                    </p>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -197,8 +198,28 @@
 
 <!-- Promo Banner START -->
 <section id="promo-banner" class="container-fuild">
-    <div class="banner-overlay"></div>
-    <img src="{{ asset('assets/images/banner.jpg') }}" alt="">
+    <div class="banner-overlay">
+        <div class="ab-overBox">
+            <ul class="ab-txt-list">
+                <div class="ab-liner">
+                    <p>We’re in <span>YOUR CORNER.</span></p>
+                    <span>With us, you can:</span>
+                </div>
+                <li>Showcase your talent - Create your FREE profile, to highlight your talents, skills and achievements.</li>
+                <li>Get discovered - Connect with scouts and coaches from across the world.</li>
+                <li>Develop with expert coaching - Improve your skills with personalised coaching and analysis from experts in their field.</li>
+                <li>Get representation from the TPC professionals, who can negotiate contracts with clubs you’ve only dreamed of playing for*</li>
+            </ul>
+            <div class="ab-last-liner">
+                <p>Learn more about our platform <span><a href="{{ route('about-us') }}">here</a></span>.</p>
+                <span>OR</span>
+                <p><span><a href="{{ route('login') }}">Create a free profile </a></span>and explore our global footballing talent database here. </p>
+            </div>
+        </div>
+
+    </div>
+    {{-- <img src="{{ asset('assets/images/banner.jpg') }}" alt=""> --}}
+
 </section>
 <!-- Promo Banner END -->
 

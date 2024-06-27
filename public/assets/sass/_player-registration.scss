@@ -25,9 +25,9 @@
         
     }
     .form-body{
-        background: #f7fbff;
+        background: $primary-clr;
         padding: 15px;
-        border: 1px solid #d4dbe1;
+        border: 1px solid $primary-clr;
         border-radius: 5px;
         margin-top: 35px;
         float: left;
@@ -39,7 +39,7 @@
         background: #fff;
         border-radius: 5px;
         padding: 15px;
-        border: 1px solid #d4dbe1;
+        // border: 1px solid $primary-clr;
         
         label{
             color: #727a80;
@@ -53,17 +53,19 @@
             }
         }
         input{
+            background: $text-accent;
             box-shadow: 0 0 0;
             &:focus{
                 border: 1px solid $primary-clr;
             }
         }
         
-        .right-bl{
-            padding-left: 15px;
-        }
+        // .right-bl{
+        //     padding-left: 15px;
+        // }
         .field-question{
             margin: 0;
+            color: $secondary-clr;
             font-family: $open-sans;
             font-size: clamp(1rem, 3.5vw, 1.1rem);
             
@@ -73,6 +75,7 @@
             font-family: $open-sans;    
             font-size: 0.9375rem;   
             line-height: 25px;
+            color: $secondary-clr;
             
             p, ol{
                 margin: 0;
@@ -96,8 +99,8 @@
             width: 100%;
             padding: 1rem .75rem;
             border-radius: 4px;
-            border: 1px solid #d4dbe1;
-            background: none;
+            border: 1px solid #ced4da;
+            background: $text-accent;
             outline: none;
             cursor: pointer;
             color: #727a80;
@@ -145,7 +148,66 @@
             height: 60px;
         }
     }
-    
+    .unit-switcher{
+        background: none !important;
+        border: none !important;
+        position: relative;
+        align-items: center;
+        display: flex;
+
+        
+        select {
+            background: none;
+            border: none;
+            padding: 0;
+            width: fit-content;
+
+            &:focus{
+                border: none;
+            }
+        }
+        
+        i{
+            transition: .2s;
+            position: relative;
+            pointer-events: none;
+            right: 10px;
+            color: #ced4da;
+        }
+    }
+    .activeIcon i{
+        transform: rotate(180deg);
+        color: $primary-clr;
+    }
+    .pl-location{
+        display: flex;
+        
+        .right-bl{
+            display: flex;
+            align-items: center;
+
+            input{
+                width: 100%;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            .location-btn button{
+                border: none;
+                background: $primary-clr;
+                color: $secondary-clr;
+                padding: 10px 15px;
+                height: calc(3.5rem + 2px);
+                font-size: .9rem;
+                font-family: $open-sans;
+                text-transform: capitalize;
+                border-top-right-radius: .25rem;
+                border-bottom-right-radius: .25rem;
+                outline: none;
+            }
+
+
+        }
+    }
 }
 .pl-res-des{
     padding: 0 15px;
@@ -221,7 +283,9 @@
             }
         }
     }
+    
 }
+
 .player-prev-btn{
     background: none;
     outline: none;

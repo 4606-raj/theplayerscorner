@@ -20,6 +20,9 @@ $(".currentYear").html(currentYear);
         
     $(document).ready(function () {
         // Player Registration
+        $('.unit-switcher').on('click', function(){
+            $(this).toggleClass('activeIcon');
+        })
         $('#height-unit').change(function() {
             if ($(this).val() == 'feet') {
                 $('#height-feet').removeClass('d-none').prop('required', true);

@@ -34,35 +34,36 @@
                     {{-- @error('photo') <span class="error">{{ $message }}</span> @enderror --}}
                 </div>
                 
-                {{-- First Name --}}
-                <div class="field-floating mb-3">
-                    <div class="col-lg-4 col-md-5 col-sm-12  left-bl">
-                        <p class="field-question">First Name <span class="compulsory-mark">*</span></p>
-                    </div>
-                    
-                    <div class="right-bl col-lg-8 col-md-7 col-sm-12 ps-lg-3 mb-3 mb-md-0 ps-lg-3">
-                        <x-text-field name="first_name" type="text" label="First Name" />
+                <div class="field-floating justify-content-center mb-3">
+                    <div class="row col-12">
+                        {{-- First Name --}}
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 ps-0">
+                            <div class="left-bl mb-2">
+                                <p class="field-question">First Name <span class="compulsory-mark">*</span></p>
+                            </div>
+                            
+                            <div class="right-bl mb-3 mb-md-0">
+                                <x-text-field name="first_name" type="text" label="First Name" />
+                            </div>
+                        </div>
+                        
+                        {{-- last Name --}}
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 pe-0">
+                            <div class="left-bl mb-2">
+                                <p class="field-question">Last Name <span class="compulsory-mark">*</span></p>
+                            </div>
+                            
+                            <div class="right-bl mb-3 mb-md-0">
+                                <x-text-field name="last_name" type="text" label="Last Name" />
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 {{-- Last Name --}}
-                <div class="field-floating mb-3">
-                    <div class="col-lg-4 col-md-5 col-sm-12 left-bl">
-                        <p class="field-question">Last Name <span class="compulsory-mark">*</span></p>
-
-                        {{-- <p class="field-question">2. Proof of ID (Copy of Passport page/Birth Certificate).</p> --}}
-                        
-                        {{-- <div class="question-des">
-                            <p>Please be advised that NO player is permitted by the FA and the respective league(s) to participate in ANY league/cup matches until the player has been <u>successfully registered</u>, and this has been <u>communicated by the league(s)</u>. 
-                                <br><br><span>FEES FOR THE 2023-24 SEASON ARE YET TO BE CONFIRMED</span>
-                            </p>
-                        </div> --}}    
-                    </div>
-                    
-                    <div class="right-bl col-lg-8 col-md-7 col-sm-12 ps-lg-3 mb-3 mb-md-0 ps-lg-3">
-                        <x-text-field name="last_name" type="text" label="Last Name" />
-                    </div>
-                </div>
+                {{-- <div class="field-floating mb-3">
+                </div> --}}
                 
                 {{-- Select Date of birth --}}
                 <div class="field-floating mb-3">
@@ -164,11 +165,14 @@
                     
                     <div class="right-bl col-lg-8 col-md-7 col-sm-12 ps-lg-3 mb-3 mb-md-0 ps-lg-3">
                         <div class="row">
-                            <div class="col-4">
-                                <select class="form-select" id="height-unit" required>
-                                    <option value="feet">Feet</option>
-                                    <option value="cm">Centimeters</option>
-                                </select>
+                            <div class="col-4 d-flex align-items-center">
+                                <div class="unit-switcher">
+                                    <i class="bi bi-caret-down-fill"></i>
+                                    <select class="form-select" id="height-unit" required>
+                                        <option value="feet">Feet</option>
+                                        <option value="cm">Centimeters</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="col-8">
                                 <select class="form-select col-6 " id="height-feet" required>
@@ -204,11 +208,14 @@
                     
                     <div class="right-bl col-lg-8 col-md-7 col-sm-12 ps-lg-3 mb-3 mb-md-0 ps-lg-3">
                         <div class="row">
-                            <div class="col-4">
-                                <select class="form-select" id="weight-unit" required>
-                                    <option value="lbs">Pounds</option>
-                                    <option value="kg">Kilograms</option>
-                                </select>
+                            <div class="col-4 d-flex align-items-center">
+                                <div class="unit-switcher">
+                                    <i class="bi bi-caret-down-fill"></i>
+                                    <select class="form-select" id="weight-unit" required>
+                                        <option value="lbs">Pounds</option>
+                                        <option value="kg">Kilograms</option>
+                                    </select>
+                                </div>
                             </div>
     
                             <div class="col-8 justify-content-between">
@@ -235,6 +242,20 @@
 
                 </div>
 
+                <!-- Location -->
+                <div class="pl-location field-floating">
+                    <div class="col-lg-3 col-md-5 col-sm-12 left-bl">
+                        <p class="field-question">Location <span class="compulsory-mark">*</span></p>    
+                    </div>
+                    
+                    <div class="right-bl justify-content-end col-lg-9 col-md-7 col-sm-12 ps-lg-3 mb-3 mb-md-0 ps-lg-3">
+                        <x-text-field name="last_name" type="text" label="Postcode [show dropdown]"/>
+                        
+                        <div class="location-btn ">
+                            <button type="button"> <i class="bi bi-crosshair"></i> current location</button>
+                        </div>
+                    </div>
+                </div>
                 @if ($heard_from == 'other')
 
                     <div class="field-floating mb-3">

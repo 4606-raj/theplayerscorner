@@ -10,11 +10,11 @@ body{
     min-height: 300px;
     max-height: 300px;
     position: relative;
-    background-image: url("../images/banner.jpg");
+    background-image: url("../images/banners/Edited-Image-3.4.png");
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: color;
-    background-position: top;
+    background-position: 100% -170px;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -78,10 +78,17 @@ body{
 
     .title-hdr{
         margin-top: 20px;
+        text-align: center;
         color: $primary-clr;
         font-family: $parksonBlack;
         text-transform: uppercase;
         font-size: clamp(2rem, 3vw, 3rem);
+
+        span{
+            font-family: $open-sans;
+            text-transform: capitalize;
+            font-size: clamp(1rem, 1.5vw, 1.5rem);
+        }
     }
     .ab-des-txt{
         font-family: $open-sans;
@@ -90,7 +97,12 @@ body{
         text-align: center;
         font-weight: 500;
         font-size: 1rem;
+
+        span{
+            color: $primary-clr;
+        }
     }
+  
     .ab-logo{
         min-width: 180px;
         max-width: 180px;
@@ -577,6 +589,8 @@ body{
         }
         .form-check-label{
             font-size: .9rem;
+            text-align: justify;
+            word-wrap: nowrap;
         }
     }
 }
@@ -864,18 +878,79 @@ body{
 }
 // Promo Banner Section START
 #promo-banner{
-    min-height: 350px;
+    min-height: 500px;
     max-height: 500px;
     overflow: hidden;
     position: relative;
     object-fit: cover;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    // background-blend-mode: color;
+
     
     .banner-overlay{
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgba(166, 149, 18, 0.6);
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
+        .ab-overBox{
+            backdrop-filter: blur(8px);
+            // background: #312f1c;
+            background: rgba(58, 53, 18, 0.6);
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border: 1px solid #FBE746;
+            z-index: 1;
+            padding: 25px 35px;
+            margin: 0 20px;
+    
+            .ab-txt-list{
+                font-family: $open-sans;
+                color: $text-accent;        
+                .ab-liner{
+                    color: $text-accent;
+                    font-size: 1.2rem;
+        
+                    p{
+                        margin-bottom: 5px;
+                    }
+                    span{
+                        color: $primary-clr;
+                        // font-size: 1.1rem;
+                    }
+                    span:nth-child(2){
+                        font-size: 1.1rem;
+                        color: $text-accent;
+                    }
+                }
+                li{
+                    margin: 5px 0;
+                    font-size: 15px;
+                }
+            }
+            .ab-last-liner{
+                color: $text-accent;
+                text-align: center;
+                font-family: $open-sans;
+        
+                p{
+                    margin: 0;
+                }
+        
+                span, span a{
+                    text-decoration: none;
+                    color: $primary-clr !important;
+                }
+                span a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
     }
     img{
         width: 100%;

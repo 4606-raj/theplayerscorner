@@ -761,7 +761,7 @@
         }
     }
     #promo-banner{
-        min-height: 250px;
+        min-height: 550px;
     }
     .lightbox-swiper .grid-wrapper{
         grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -983,7 +983,14 @@
         }
     }
     #promo-banner{
-        min-height: 150px;
+        min-height: 600px;
+    }
+    .banner-overlay .ab-overBox{
+        padding: 15px 20px !important;
+
+        .ab-last-liner{
+            font-size: .9rem;
+        }
     }
     .contact-us-sec{
         padding: 0;
