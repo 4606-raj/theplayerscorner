@@ -9,14 +9,21 @@ use App\Models\Comment;
 class BlogController extends Controller
 {
     public function index() {
-        $blogs = Blog::latest()->paginate(12);
-        return view('blogs.index', compact('blogs'));
+        $blogs = Blog::latest();
+        if(!empty(request()->search)) {
+            $blogs = $blogs->where('title', 'like', '%' . request()->search . '%');
+        }
+        $blogs = $blogs->paginate(12);
+
+        $recentBlogs = Blog::latest()->limit(4)->select('title', 'id')->get();
+        return view('blogs.index', compact('blogs', 'recentBlogs'));
     }
 
     public function show($id) {
         $blog = Blog::find($id);
+        $recentBlogs = Blog::latest()->limit(4)->select('title', 'id')->get();
 
-        return view('blogs.show', compact('blog'));
+        return view('blogs.show', compact('blog', 'recentBlogs'));
     }
 
     public function storeComment(Request $request) {

@@ -30,6 +30,10 @@
 <!-- Icons -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+    @stack('style')
+    
+    @livewireStyles
 </head>
 <body>
     
@@ -134,5 +138,8 @@
     
     {!! NoCaptcha::renderJs() !!}
     @include('sweetalert::alert')
+
+    @livewireScripts
+
 </body>
 </html>
