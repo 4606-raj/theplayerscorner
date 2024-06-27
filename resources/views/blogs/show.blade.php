@@ -39,9 +39,9 @@
 
                 </div>
                 {{-- Search Bar --}}
-                <form class="search-bar">
+                <form class="search-bar" action="{{ route('blogs.index') }}">
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search articles..." aria-label="Search articles">
+                      <input type="text" class="form-control" name="search" placeholder="Search articles..." aria-label="Search articles">
                       <button class="btn btn-outline-primary srch-btn" type="button">Search</button>
                     </div>
                 </form>
@@ -50,10 +50,9 @@
                     <h4>Our Recent Articles</h4>
 
                     <ul>
-                        <li><a href="#">Scotland's First Ring Magazine Junior Welterweight Champion Josh Taylor Targets Clean Sweep of The 140lb Division</a></li>
-                        <li><a href="#">Scotland's First Ring Magazine Junior Welterweight Champion Josh Taylor Targets Clean Sweep of The 140lb Division</a></li>
-                        <li><a href="#">Scotland's First Ring Magazine Junior Welterweight Champion Josh Taylor Targets Clean Sweep of The 140lb Division</a></li>
-                        <li><a href="#">Scotland's First Ring Magazine Junior Welterweight Champion Josh Taylor Targets Clean Sweep of The 140lb Division</a></li>
+                        @foreach ($recentBlogs as $recentBlog)
+                            <li><a href="{{ route('blogs.show', $recentBlog->id) }}">{{ $recentBlog->title }}</a></li>
+                        @endforeach
                     </ul>
                 </div>
 
@@ -91,6 +90,19 @@
                 <button type="submit" class="submit-btn submit-shadow" style="background: #FBE746">Submit</button>
             </form>
         </div>
+
+        <div class="comments">
+            @foreach ($blog->comments()->latest()->get() as $comment)
+                <div class="comment-box text-white">
+                    <p>{{ $comment->comment }}</p>
+                    <p><small>By: <i>{{ $comment->name }} ({{ $comment->email }})</i></small></p>
+                    <p><small>Website: <i>{{ $comment->website }}</i> | <i>{{ date_format($comment->created_at, 'M d, Y') }}</i></small></p>
+                    <hr>
+                </div>
+            @endforeach
+
+        </div>
+        
     </section>
 
 @endsection
