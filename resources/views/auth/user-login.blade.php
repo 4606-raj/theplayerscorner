@@ -6,7 +6,7 @@
 <section class="container auth-sec">
 	
     <div class="auth-block">
-        <h2 class="auth-bl-hdr">Login Details</h2>
+        <h2 class="auth-bl-hdr">Register Details</h2>
 
         {{-- <p class="auth-des">Can’t remember your ‘My Players Hub’ Account password? No problem, simply enter your email address below and we will send you an email containing a password reset link. <a href="{{ route('login') }}">Click here</a> to log in.
         </p> --}}

@@ -89,19 +89,22 @@
                 </div>
                 <button type="submit" class="submit-btn submit-shadow" style="background: #FBE746">Submit</button>
             </form>
+
+            <div class="comments">
+                @foreach ($blog->comments()->latest()->get() as $comment)
+                    <div class="comment-box text-white">
+                        <div class="cmt-hdr row">
+                            <p><small><i class="bi bi-pencil-square"></i> <span>{{ $comment->name }}</span> </small></p>
+                            <p><i class="bi bi-check-lg me-2"></i><small>{{ date_format($comment->created_at, 'M d, Y') }}</small></p>
+                            
+                        </div>
+                        <p class="cmt-block">{{ $comment->comment }}</p>
+                    </div>
+                @endforeach
+    
+            </div>
         </div>
 
-        <div class="comments">
-            @foreach ($blog->comments()->latest()->get() as $comment)
-                <div class="comment-box text-white">
-                    <p>{{ $comment->comment }}</p>
-                    <p><small>By: <i>{{ $comment->name }} ({{ $comment->email }})</i></small></p>
-                    <p><small>Website: <i>{{ $comment->website }}</i> | <i>{{ date_format($comment->created_at, 'M d, Y') }}</i></small></p>
-                    <hr>
-                </div>
-            @endforeach
-
-        </div>
         
     </section>
 

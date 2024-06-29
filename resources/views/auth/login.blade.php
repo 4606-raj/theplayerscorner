@@ -8,10 +8,10 @@
 
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
 			<li class="nav-item" role="presentation">
-			  <button class="nav-link" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+			  <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
 			</li>
 			<li class="nav-item" role="presentation">
-			  <button class="nav-link active" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Sign Up</button>
+			  <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Sign Up</button>
 			</li>
 		  </ul>
 		  <div class="tab-content" id="myTabContent">
@@ -21,7 +21,7 @@
         	@endif
 			
 			{{-- Login Section --}}
-			<div class="tab-pane fade " id="login" role="tabpanel" aria-labelledby="login-tab">
+			<div class="tab-pane fade active show" id="login" role="tabpanel" aria-labelledby="login-tab">
 				
 				<p class="auth-des">Welcome to the new home of The Players Corner Our new online hub to help players, parents, and supporters manage and navigate through their season.
 					<br>
@@ -50,7 +50,7 @@
 			</div>
 			
 			{{-- Register Section --}}
-			<div class="tab-pane fade active show" id="register" role="tabpanel" aria-labelledby="register-tab">
+			<div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
 				
 				<p class="auth-des mb-2">WHO ARE YOU?</p>
 

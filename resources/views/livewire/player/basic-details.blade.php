@@ -139,20 +139,23 @@
                 </div>
                 
                 {{-- Nationalities --}}
-                <div class="field-floating mb-3">
+                <div class="field-floating mb-3 sel-nationalities">
                     <div class="col-lg-4 col-md-7 col-sm-12 left-bl">
                         <p class="field-question">Nationality <span class="compulsory-mark">*</span></p>    
                     </div>
                     
                     <div class="right-bl col-lg-8 col-md-5 col-sm-12 ps-lg-3 mb-3 mb-md-0 ps-lg-3">
-                        <!-- Gender Selector -->
-                        make a Select option
-                        {{-- <select class="form-select" id="gender" required>
-                            <option value="" selected disabled>Gender</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
-                        </select> --}}
+                            <div class="dropdown">
+                                <div class="form-control dropdown-toggle selInput" placeholder="test" id="selInput" data-bs-toggle="dropdown" aria-expanded="false" contenteditable="true"></div>
+
+                                <ul class="dropdown-menu" aria-labelledby="selInput">
+                                    <!-- List of countries in alphabetical order -->
+                                    <li><a class="dropdown-item" href="#">Afghanistan </a></li>
+                                    <li><a class="dropdown-item" href="#">Albania</a></li>
+                                    <li><a class="dropdown-item" href="#">Algeria</a></li>
+                                    <!-- Add more countries here -->
+                                </ul>
+                            </div>
                     </div>
 
                 </div>
@@ -279,13 +282,14 @@
                 @endif
         </div>
 
-        <div class="d-flex justify-content-center float-end">
-            <input type="submit" class="submit-btn" value="Next">
+        <div class="d-flex justify-content-center mt-3 float-end">
+            <input type="submit" class="submit-btn" value="Continue">
         </div>
-        <div class="d-flex justify-content-center float-end">
+        {{-- <div class="d-flex justify-content-center float-end">
             <input type="button" onclick="history.back();" value="Back" class="player-prev-btn">
-        </div>
+        </div> --}}
 
     </form>
 </div>
+
     

@@ -350,3 +350,32 @@ const swiper = new Swiper("#gallery-swiper", {
         el: ".swiper-scrollbar",
     },
 });
+
+// Select nationalities
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    const inputs = document.querySelectorAll('.selInput');
+
+    inputs.forEach(input => {
+        dropdownItems.forEach(item => {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                const selectedText = this.textContent;
+                if (!input.querySelector(`[data-value="${selectedText}"]`)) {
+                    const badge = document.createElement('span');
+                    badge.className = 'badge';
+                    badge.dataset.value = selectedText;
+                    badge.textContent = selectedText;
+                    badge.addEventListener('click', function () {
+                        this.remove();
+                    });
+                    input.appendChild(badge);
+                }
+            });
+        });
+
+        input.addEventListener('focus', function () {
+            this.blur(); // Prevents typing in the input field
+        });
+    });
+});

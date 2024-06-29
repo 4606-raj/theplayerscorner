@@ -25,21 +25,26 @@
 									<button class="nav-link" id="v-pills-step-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-step-2" type="button" role="tab" aria-controls="v-pills-step-2" aria-selected="false"><div class="counter-num">2</div>club details</button>
 									<button class="nav-link" id="v-pills-step-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-step-3" type="button" role="tab" aria-controls="v-pills-step-3" aria-selected="false"><div class="counter-num">3</div>playing details</button>
 									<button class="nav-link" id="v-pills-step-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-step-4" type="button" role="tab" aria-controls="v-pills-step-4" aria-selected="false"><div class="counter-num">4</div>consent</button>
-									<button class="nav-link" id="v-pills-step-5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-step-5" type="button" role="tab" aria-controls="v-pills-step-5" aria-selected="false"><div class="counter-num">5</div>medical information</button>
+									{{-- <button class="nav-link" id="v-pills-step-5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-step-5" type="button" role="tab" aria-controls="v-pills-step-5" aria-selected="false"><div class="counter-num">5</div>medical information</button>
 									<button class="nav-link" id="v-pills-step-6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-step-6" type="button" role="tab" aria-controls="v-pills-step-6" aria-selected="false"><div class="counter-num">6</div>matchday and training kits</button>
 									<button class="nav-link" id="v-pills-step-7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-step-7" type="button" role="tab" aria-controls="v-pills-step-7" aria-selected="false"><div class="counter-num">7</div>additional information</button>
 									<button class="nav-link" id="v-pills-step-8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-step-8" type="button" role="tab" aria-controls="v-pills-step-8" aria-selected="false"><div class="counter-num">8</div>consent</button>
-									<button class="nav-link" id="v-pills-step-9-tab" data-bs-toggle="pill" data-bs-target="#v-pills-step-9" type="button" role="tab" aria-controls="v-pills-step-9" aria-selected="false"><div class="counter-num">9</div>equality & diversity monitoring</button>
+									<button class="nav-link" id="v-pills-step-9-tab" data-bs-toggle="pill" data-bs-target="#v-pills-step-9" type="button" role="tab" aria-controls="v-pills-step-9" aria-selected="false"><div class="counter-num">9</div>equality & diversity monitoring</button> --}}
 								</div>
 							</div>
 							
 						<div class="tab-content col-lg-8" id="v-pills-tabContent">
 
-							<livewire:basic-details />
+							{{-- STEP 1 --}}
+							<div class="tab-pane fade active show" id="v-pills-step-1" role="tabpanel" aria-labelledby="v-pills-step-1-tab">
+								<livewire:basic-details />
+							</div>
 
 							{{-- STEP 2 --}}
 							<div class="tab-pane fade" id="v-pills-step-2" role="tabpanel" aria-labelledby="v-pills-step-2-tab">
 
+								<livewire:player.club-details />
+							<!--
 								{{-- Age Category for 2023-24 --}}
 								<div class="field-floating mb-3">
 									<div class="col-lg-5 col-md-5 col-sm-4 col-12 left-bl">
@@ -203,10 +208,13 @@
 										<x-text-field name="fa_number" type="text" label="FA Number"/>
 									</div>
 								</div>
+							-->
 							</div>
 
 							{{-- STEP 3 --}}
 							<div class="tab-pane fade" id="v-pills-step-3" role="tabpanel" aria-labelledby="v-pills-step-3-tab">
+								<livewire:player.playing-details />
+							<!--
 								<p class="pl-res-des">Please note that this person needs to be an adult, and will be contacted in the event of an emergency. </p>
 
 								{{-- First Name --}}
@@ -329,12 +337,13 @@
 										<x-text-field name="fa_number" type="text" label="FA Number"/>
 									</div>
 								</div>
-
+							-->
 							</div>
 
 							{{-- STEP 4 --}}
 							<div class="tab-pane fade" id="v-pills-step-4" role="tabpanel" aria-labelledby="v-pills-step-4-tab">
-								
+								<livewire:player.player-consent />
+								<!--
 								<p class="pl-res-des">Please note that this person needs to be an adult, and will be contacted in the event of an emergency if the main contact is unreachable. </p>
 
 								{{-- First Name --}}
@@ -457,9 +466,10 @@
 										<x-text-field name="fa_number" type="text" label="FA Number"/>
 									</div>
 								</div>
-
+							-->
 							</div>
 
+						<!--
 							{{-- STEP 5 --}}
 							<div class="tab-pane fade" id="v-pills-step-5" role="tabpanel" aria-labelledby="v-pills-step-5-tab">
 								
@@ -822,6 +832,7 @@
 								</div>
 
 							</div>
+						-->
 						</div>
 					  </div>
 

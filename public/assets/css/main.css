@@ -400,6 +400,26 @@ header nav ul .logo-2 img {
           box-shadow: 0px 7px 50px 2px rgba(251, 231, 70, 0.6);
 }
 
+.register-btn {
+  margin-left: 8px !important;
+}
+.register-btn button {
+  background: #141414 !important;
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
+  color: #FBE746 !important;
+  border: 1px solid #FBE746 !important;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(251, 231, 70, 0.6);
+          box-shadow: 0px 0px 0px 0px rgba(251, 231, 70, 0.6);
+}
+.register-btn button:hover {
+  top: 0px;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(251, 231, 70, 0.6);
+          box-shadow: 0px 0px 0px 0px rgba(251, 231, 70, 0.6);
+  background: #FBE746 !important;
+  color: #141414 !important;
+}
+
 #ham-button {
   display: none;
   border: none;
@@ -6590,6 +6610,7 @@ body {
 }
 
 .blogs-sec {
+  min-height: 50vh;
   margin: 60px 0;
 }
 .blogs-sec .card {
@@ -6650,6 +6671,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin-bottom: 20px;
   top: 110px;
   margin-left: 4.165%;
   padding: 20px 15px;
@@ -6760,6 +6782,47 @@ body {
 .comment-sec .form-control:focus {
   background: none;
   border-color: #FBE746;
+}
+.comment-sec .comments {
+  margin-top: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+.comment-sec .comments .comment-box {
+  border-bottom: 1px solid #FBE746;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+.comment-sec .comments .comment-box:last-child {
+  border-bottom: 0px solid #FBE746;
+}
+.comment-sec .comments .cmt-hdr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comment-sec .comments .cmt-hdr p {
+  color: #FBE746;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 6px;
+}
+.comment-sec .comments .cmt-hdr p span {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-left: 6px;
+}
+.comment-sec .comments .cmt-block {
+  padding: 10px 15px 10px 25px;
+  border-radius: 6px;
+  color: #fafafa;
+  background: rgba(251, 231, 70, 0.1);
+}
+.comment-sec .comments .cmt-block::first-letter {
+  text-transform: capitalize;
 }
 
 .blog-view .blog-hdr {
@@ -6911,6 +6974,9 @@ footer .footer-wrap .doc-links li a {
   font-family: "Open Sans", sans-serif;
 }
 
+.player-multi-form {
+  min-height: 80vh;
+}
 .player-multi-form #v-pills-tab {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -6996,6 +7062,13 @@ footer .footer-wrap .doc-links li a {
   color: #141414;
   font-family: "Open Sans", sans-serif;
   font-size: clamp(1rem, 3.5vw, 1.1rem);
+}
+.player-res-sec .field-floating .field-question p {
+  margin: 0 15px;
+}
+.player-res-sec .field-floating .field-question hr {
+  width: 20%;
+  border: 1px solid #FBE746;
 }
 .player-res-sec .field-floating .question-des {
   margin-top: 10px;
@@ -7178,7 +7251,7 @@ footer .footer-wrap .doc-links li a {
 }
 .player-multi-form .sticky-sidebar {
   position: sticky;
-  top: 80px;
+  top: 120px;
 }
 .player-multi-form .nav-pills {
   float: left;
@@ -7231,18 +7304,19 @@ footer .footer-wrap .doc-links li a {
   background: none;
   outline: none;
   border: none;
-  border: 1px solid #d4dbe1;
+  border: 1px solid #141414;
   border-radius: 4px;
   padding: 10px 30px;
   font-family: "Open Sans", sans-serif;
   color: #141414;
-  margin: 20px 10px 20px 0;
+  margin-right: 15px;
   font-weight: 600;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 .player-prev-btn:hover {
-  background: #ecf3fa;
+  background: #141414;
+  color: #fafafa;
 }
 
 .question-info {
@@ -7250,10 +7324,19 @@ footer .footer-wrap .doc-links li a {
   font-size: 0.9rem;
   line-height: 25px;
   padding-left: 8px;
-  background: #f7fbff;
+  background: rgba(185, 185, 185, 0.1);
   border-left: 1px solid #d4dbe1;
   color: #595959;
   margin-bottom: 10px;
+}
+.question-info a {
+  color: #141414;
+  text-decoration: none;
+  font-weight: 600;
+}
+.question-info a:hover {
+  text-decoration: underline;
+  color: #141414;
 }
 
 .note-red-alert {
@@ -7275,6 +7358,92 @@ footer .footer-wrap .doc-links li a {
 .player-conset-checkbox input {
   margin-top: 8px;
   margin-right: 10px;
+}
+
+.consent_checkbox[type=checkbox] {
+  accent-color: #141414;
+  border-radius: 0.25em;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.25em;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.sel-nationalities {
+  position: relative;
+}
+.sel-nationalities .dropdown input {
+  padding: 1rem 0.75rem;
+}
+.sel-nationalities .form-control[contenteditable=true] {
+  cursor: text;
+}
+.sel-nationalities .dropdown-toggle {
+  overflow-x: auto;
+  padding: 1rem 0.75rem;
+}
+.sel-nationalities .dropdown-toggle::-webkit-scrollbar {
+  display: block;
+  width: 5px;
+  height: 4px;
+}
+.sel-nationalities .dropdown-toggle::-webkit-scrollbar-track {
+  background: gray;
+  height: 2px;
+}
+.sel-nationalities .dropdown-toggle::-webkit-scrollbar-thumb {
+  height: 3px;
+}
+.sel-nationalities .badge {
+  background: #141414;
+  cursor: pointer;
+  padding-right: 30px;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-right: 5px;
+  -webkit-transform: scale(var(--ggs, 1));
+      -ms-transform: scale(var(--ggs, 1));
+          transform: scale(var(--ggs, 1));
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #fafafa;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+          box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.sel-nationalities .badge:hover {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) !important;
+  background: #FBE746;
+  color: #141414;
+}
+.sel-nationalities .badge::after,
+.sel-nationalities .badge::before {
+  content: "";
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background: currentColor;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 5px;
+  top: 13px;
+  right: 10px;
+}
+.sel-nationalities .badge::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.sel-nationalities .dropdown-menu {
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 @media (max-width: 1199.98px) {

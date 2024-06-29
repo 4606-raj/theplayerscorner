@@ -1,6 +1,6 @@
 // Blogs START 
 .blogs-sec{
-
+    min-height: 50vh;
     margin: 60px 0;
 
     .card{
@@ -57,6 +57,7 @@
     background: $text-accent;
     position: sticky;
     height: fit-content;
+    margin-bottom: 20px;
     top: 110px;
     margin-left: 4.165%;
     padding: 20px 15px;
@@ -130,7 +131,7 @@
 }
 .comment-sec{
     margin-bottom: 40px;
-
+ 
     h2{
         font-family: $parksonSemiB;
         font-size: 1.8rem;
@@ -158,6 +159,50 @@
     .form-control:focus{
         background: none;
         border-color: $primary-clr;
+    }
+
+
+    .comments{
+        margin-top: 30px;
+        font-family: $open-sans;
+
+        .comment-box{
+            // border-radius: 8px;
+            border-bottom: 1px solid $primary-clr;
+            // border: 1px solid $primary-clr;
+            padding: 10px 15px;
+            margin-top: 10px;
+            
+            &:last-child{
+                border-bottom: 0px solid $primary-clr;
+            }
+        }
+        .cmt-hdr{
+            display: flex;
+            justify-content: space-between;
+            
+            p{
+                color: $primary-clr;
+                width: fit-content;
+                margin-bottom: 6px;
+
+                span{
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    margin-left: 6px;
+                }
+            }
+        }
+        .cmt-block{
+            padding: 10px 15px 10px 25px;
+            border-radius: 6px;
+            color: $text-accent;
+            background: rgba($color: $primary-clr, $alpha: 0.1);
+
+            &::first-letter{
+                text-transform: capitalize;
+            }
+        }
     }
 }
 .blog-view{
