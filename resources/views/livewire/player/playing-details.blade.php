@@ -54,7 +54,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <select class="form-select" id="second_position" required>
-                                            <option value="" selected disabled>Select szecond position</option>
+                                            <option value="" selected disabled>Select second position</option>
                                             <option value="1">Goalkeeper (GK)</option>
                                             <option value="2">Centre Back (CB)</option>
                                             <option value="3">Right Back (RB)</option>
