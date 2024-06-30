@@ -138,6 +138,8 @@
     {!! NoCaptcha::renderJs() !!}
     @include('sweetalert::alert')
 
+    @stack('script')
+
     @livewireScripts
 
 </body>

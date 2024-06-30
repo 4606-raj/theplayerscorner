@@ -1,6 +1,10 @@
 @extends('layouts.main')
 @section('content')
 
+@php
+    $searchText = trim($_GET['search'] ?? null);
+@endphp
+
     <!-- Hero Banner -->
     <section class="container-fluid" id="wrapper-1">
         <div class="row">
@@ -55,7 +59,7 @@
                 {{-- Search Bar --}}
                 <form class="search-bar" action="{{ route('blogs.index') }}">
                     <div class="input-group">
-                      <input type="text" class="form-control" name="search" placeholder="Search articles..." aria-label="Search articles">
+                      <input type="search" class="form-control" name="search" value="{{ $searchText }}" placeholder="Search articles..." aria-label="Search articles" onsearch="searchBlog(this.value)">
                       <button type="submit" class="btn btn-outline-primary srch-btn" type="button">Search</button>
                     </div>
                 </form>
@@ -84,4 +88,15 @@
 
     </section>
 
+    @push('script')
+        <script>
+            function searchBlog(query) {
+                console.log(query);
+
+                let url = "{{ route('blogs.index') }}?search=" + query
+                window.location.replace(url)
+            }
+        </script>
+    @endpush
+    
 @endsection
