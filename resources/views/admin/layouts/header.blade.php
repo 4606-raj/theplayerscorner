@@ -12,10 +12,10 @@
 		<meta name="keywords" content="admin dashboard, dashboard ui, backend, admin panel, admin template, dashboard template, admin, bootstrap, laravel, laravel admin panel, php admin panel, php admin dashboard, laravel admin template, laravel dashboard, laravel admin panel"/>
 
 		<!-- Title -->
-		<title>Southall | Admin Dashboard</title>
+		<title>The Players Corner | Admin Dashboard</title>
 
         <!--Favicon -->
-		<link rel="icon" href="{{ asset('assets/admin/images/favicon.ico') }}" type="image/x-icon"/>
+		<link rel="icon" href="{{ asset('assets/admin/images/favicon.png') }}" type="image/x-icon"/>
 
 		<!-- Bootstrap css -->
 		<link href="{{ asset('assets/admin/plugins/bootstrap/css/bootstrap.css') }}" rel="stylesheet" />
@@ -36,7 +36,7 @@
 
 		<!---Icons css-->
 		<link href="{{ asset('assets/admin/plugins/icons/icons.css') }}" rel="stylesheet" />
-
+		
 		<!---Sidebar css-->
 		<link href="{{ asset('assets/admin/plugins/sidebar/sidebar.css') }}" rel="stylesheet" />
 
@@ -66,7 +66,7 @@
 	<body class="app sidebar-mini" id="index1">
 
         <!-- Switcher -->
-		<div class="switcher-wrapper">
+		<!--<div class="switcher-wrapper">
 			<div class="demo_changer">
 				<div class="demo-icon bg_dark">
 					<i class="fa fa-cog fa-spin  text_primary"></i>
@@ -154,8 +154,8 @@
 				</div>
 			</div>
 		</div>
+		-->
 		<!-- End Switcher -->
-
 		<!---Global-loader-->
 		<div id="global-loader" >
 			<img src="{{ asset('assets/admin/images/svgs/loader.svg') }}" alt="loader">
@@ -168,11 +168,10 @@
 				<div class="app-header header">
 					<div class="container-fluid">
 						<div class="d-flex">
-							<a class="header-brand" href="index.html">
-								<img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img desktop-lgo" alt="Dayonelogo">
-								<img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img dark-logo" alt="Dayonelogo">
-								<img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img mobile-logo" alt="Dayonelogo">
-								<img src="{{ asset('public/images/logo-img.png') }}" class="header-brand-img darkmobile-logo" alt="Dayonelogo">
+							<a class="header-brand sm-mob-logo d-flex justify-content-center" href="index.html">
+								<img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img mt-0 desktop-lgo" alt="players-logo" width="20%">
+								<img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img mt-0 dark-logo" alt="players-logo" width="25%">
+								<img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img mt-0 mobile-logo" alt="players-logo" width="30%">
 							</a>
 							<div class="app-sidebar__toggle" data-toggle="sidebar">
 								<a class="open-toggle" href="#">
@@ -332,10 +331,10 @@
 										</span>
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow animated">
-										<div class="p-3 text-center border-bottom">
+										{{-- <div class="p-3 text-center border-bottom">
 											<a href="{{ route('admin.dashboard') }}" class="text-center user pb-0 font-weight-bold">{{ Auth::user()->name }}</a>
-											{{-- <p class="text-center user-semi-title">App Developer</p> --}}
-										</div>
+											<p class="text-center user-semi-title">App Developer</p>
+										</div> --}}
 										{{-- <a class="dropdown-item d-flex" href="#">
 											<i class="feather feather-user mr-3 fs-16 my-auto"></i>
 											<div class="mt-1">Profile</div>
@@ -352,14 +351,14 @@
 											<i class="feather feather-edit-2 mr-3 fs-16 my-auto"></i>
 											<div class="mt-1">Change Password</div>
 										</a> --}}
-										<a class="dropdown-item d-flex" href="#">
+										<a class="dropdown-item d-flex" href="#" onclick="logout()">
 											<i class="feather feather-power mr-3 fs-16 my-auto"></i>
-											<form action="{{ route('logout') }}" method="POST">
+											<input type="submit" class="btn" value="Sign Out" />
+											{{-- <form action="{{ route('logout') }}" method="POST">
 												@csrf
 												<div class="mt-1">
-													<input type="submit" class="btn" value="Sign Out" />
 												</div>
-											</form>
+											</form> --}}
 										</a>
 									</div>
 								</div>
@@ -368,3 +367,20 @@
 					</div>
 				</div>
 				<!--/app header-->
+
+				@push('script')
+					<script>
+						function logout() {
+							$.ajax({
+								url: "{{ route('logout') }}",
+								method: "POST",
+								data: {
+									"_token": "{{ csrf_token() }}",
+								},
+								success: function() {
+									window.location.replace("{{ route('home') }}");
+								}
+							})
+						}
+					</script>
+				@endpush

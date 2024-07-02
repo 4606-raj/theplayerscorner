@@ -38,6 +38,31 @@
         $(document).ready(function() {
             var table = $('.teams').DataTable({
                 "ajax": "{{ route('teams.index') }}",
+                initComplete: function() {
+            var dataTableFilterLabel = $('div.dataTables_filter label');
+            var dataTableFilterInput = dataTableFilterLabel.find('input');
+            dataTableFilterLabel.contents().filter(function() {
+                return this.nodeType === Node.TEXT_NODE;
+            }).remove();
+            dataTableFilterInput.detach();
+            dataTableFilterLabel.after(dataTableFilterInput);
+            
+            $('div.dataTables_filter input')
+                .attr('autocomplete', 'off')
+                .attr('placeholder', 'Search...')
+                .attr('class', 'pl-searchInput');
+            
+            // Create a new parent div
+            var newParentDiv = $('<div class="dataTables_controls"></div>');
+            
+            // Append dataTables_length and dataTables_filter to the new parent div
+            $('div.dataTables_length').appendTo(newParentDiv);
+            $('div.dataTables_filter').appendTo(newParentDiv);
+            
+            // Prepend the new parent div to the container
+            newParentDiv.prependTo('.dataTables_wrapper');
+        },
+        
                 columns: [
                     {name: 'name', data: 'name'},
                     {name: 'action', data: 'action'},

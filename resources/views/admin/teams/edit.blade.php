@@ -31,7 +31,7 @@
 
                         <div class="row row-sm">
                             <div class="col-lg text-center">
-                                <button class="btn btn-primary mt-4 mb-0">Submit</button>
+                                <button class="btn primary-btn mt-4 mb-0">Submit</button>
                             </div>
                         </div>
                         

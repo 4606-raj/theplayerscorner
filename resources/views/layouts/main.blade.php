@@ -54,7 +54,7 @@
                         <li class="{{ activeClass('home') }}"><a href="{{ route('home') }}">Home</a></li>
                         <li class="{{ activeClass('about-us') }}"><a href="{{ route('about-us') }}">About us</a></li>
                         <li class="{{ activeClass('blogs.index') }}"><a href="{{ route('blogs.index') }}">Our Blog</a></li>
-                        <li class="{{ activeClass('contact-us') }}"><a href="{{ route('contact-us') }}">Contact us</a></li><
+                        <li class="{{ activeClass('contact-us') }}"><a href="{{ route('contact-us') }}">Contact us</a></li>
                     </ul>
                 </div>
 
@@ -71,8 +71,8 @@
 
             {{-- Login button to portal --}}
             <div class="col-auto d-flex align-items-center">
-                <a href="{{ route('admin.dashboard', ['id' => '#login']) }}" class="primary-btn"><button><i class="bi bi-box-arrow-in-right"></i> Login</button></a>
-                <a href="{{ route('admin.dashboard', ['id' => '#register']) }}" class="primary-btn register-btn"><button><i class="bi bi-box-arrow-in-right"></i> Register</button></a>
+                <a href="{{ route('login') }}" class="primary-btn"><button><i class="bi bi-box-arrow-in-right"></i> Login</button></a>
+                <a href="{{ route('register') }}" class="primary-btn register-btn"><button><i class="bi bi-box-arrow-in-right"></i> Register</button></a>
             </div>
 
             <button class="col-auto" id="ham-button">

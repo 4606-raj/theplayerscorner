@@ -2,24 +2,24 @@
 <aside class="app-sidebar">
     <div class="app-sidebar__logo">
         <a class="header-brand" href="index.html">
-            <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img desktop-lgo" alt="southall-logo" width="15%">
-            <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img dark-logo" alt="southall-logo" width="15%">
-            <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img mobile-logo" alt="southall-logo" width="80%">
-            <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img darkmobile-logo" alt="southall-logo" width="15%">
+            <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img desktop-lgo" alt="players-logo" width="20%">
+            <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img dark-logo" alt="players-logo" width="25%">
+            <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img mobile-logo" alt="players-logo" width="100%">
+            {{-- <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img darkmobile-logo" alt="players-logo" width="15%"> --}}
         </a>
     </div>
     <div class="app-sidebar3">
-        <div class="app-sidebar__user">
+        {{-- <div class="app-sidebar__user">
             <div class="dropdown user-pro-body text-center">
                 <div class="user-pic">
                     <img src="{{ asset('storage/images/users/' . Auth::user()->photo) }}" alt="user-img" class="avatar-xxl rounded-circle mb-1">
                 </div>
                 <div class="user-info">
                     <h5 class=" mb-2">{{ Auth::user()->name }}</h5>
-                    {{-- <span class="text-muted app-sidebar__user-name text-sm">App Developer</span> --}}
+                    <span class="text-muted app-sidebar__user-name text-sm">App Developer</span>
                 </div>
             </div>
-        </div>
+        </div> --}}
         
         <ul class="side-menu">
             <li class="side-item side-item-category mt-4">Dashboards</li>

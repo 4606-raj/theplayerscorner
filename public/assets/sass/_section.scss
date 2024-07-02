@@ -474,32 +474,49 @@ body{
 // }
 // Social Media START
 .social-media-sec{
-    background: $primary-clr;
     // background: #040404;
+    background: rgb(20,20,16);
+background: linear-gradient(0deg, rgba(20,20,16,1) 0%, rgba(251,231,70,1) 100%);
+    // background: rgba(251, 231, 70, 0.1);
     padding: 50px 0;
-
+    
     .follow-us-des{
         font-family: $open-sans;
-        color: $secondary-clr;
+        color: $text-accent;
         opacity: .8;
         text-align: center;
         font-size: .9rem;
-
+        
         &::first-letter{
             text-transform: capitalize;
         }
     }
-    .sec-hdr{
-        color: $secondary-clr;
-        text-transform: uppercase;
-        font-family: $AnzeigenGrotesk;
-        font-size: clamp(2.5rem, 3vw, 3rem);
-        text-align: center;
+    .media-con{
+
     }
+    .sec-hdr{
+        margin-bottom: 30px;
+        padding: 15px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background: $secondary-clr;
+        
+        h2{
+            color: $primary-clr;
+            text-transform: uppercase;
+            font-family: $AnzeigenGrotesk;
+            font-size: clamp(2.5rem, 3vw, 3rem);
+            text-align: center;
+        }
+    } 
 }
 .social-icons{
-    margin-top: 30px;
-
+    // margin-top: 30px;
+    // margin: 30px 0px auto 0px auto;
     ul{
         padding: 0;
         list-style-type: none;
@@ -512,15 +529,16 @@ body{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                color: $secondary-clr;
+                color: $primary-clr;
                 text-transform: capitalize;
-                font-size: 2.3rem;
+                font-size: 1.3rem;
 
                 &:hover span{
                     text-decoration: underline;
                 }
                 span{
                     font-size: 1.4rem;
+                    color: $text-accent;
                 }
             }
         }

@@ -29,8 +29,8 @@
                                 <td>{{ $blog->title }}</td>
                                 <td><img src="{{ $blog->cover_image }}" width="100px" alt=""></td>
                                 <td>
-                                    <a href="{{ route('admin.blogs.edit', $blog->id) }}" class="btn btn-warning">Edit</a>
-                                    <button type="button" data-url="{{ route('admin.blogs.destroy', $blog->id) }}" class="btn btn-danger delete-btn">Delete</button>
+                                    <a href="{{ route('admin.blogs.edit', $blog->id) }}" class="btn second-btn"> <i class="bi bi-pencil-square"></i> Edit</a>
+                                    <button type="button" data-url="{{ route('admin.blogs.destroy', $blog->id) }}" class="btn btn-danger delete-btn"><i class="bi bi-trash3-fill"></i> Delete</button>
                                 </td>
                             </tr>
                         @endforeach

@@ -19,7 +19,7 @@
                     <div class="card-header border-bottom-0">
                         <h3 class="card-title">Blog Details Here </h3>
                     </div>
-                    <div class="card-body pb-2">
+                    <div class="card-body">
                         
                         <label class="form-label">Title</label>
                         <div class="row row-sm">
@@ -32,14 +32,14 @@
 
                             <div class="col-6">
                                 <label class="form-label">Author</label>
-                                <div class="col-lg">
+                                <div class="col-lg px-0">
                                     <input class="form-control mb-4" placeholder="Author" type="text" name="author" required>
                                 </div>
                             </div>
 
                             <div class="col-6">
                                 <label class="form-label">Category</label>
-                                <div class="col-lg">
+                                <div class="col-lg px-0">
                                     <input class="form-control mb-4" placeholder="Category" type="text" name="category" required>
                                 </div>
                             </div>
@@ -52,14 +52,14 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="content">Content</label>
+                        <div class="form-group content-input">
+                            <label for="content" class="form-label">Content</label>
                             <textarea class="form-control" id="content" name="content"></textarea>
                         </div>
 
                         <div class="row row-sm">
                             <div class="col-lg text-center">
-                                <button class="btn btn-primary mt-4 mb-0">Submit</button>
+                                <button class="btn primary-btn mt-4 mb-0">Submit</button>
                             </div>
                         </div>
                         

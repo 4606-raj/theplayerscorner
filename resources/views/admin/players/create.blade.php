@@ -19,7 +19,7 @@
                     <div class="card-header border-bottom-0">
                         <h3 class="card-title">Player Details Here </h3>
                     </div>
-                    <div class="card-body pb-2">
+                    <div class="card-body">
                         
                         <div class="row">
 
@@ -116,7 +116,7 @@
 
                         <div class="row row-sm">
                             <div class="col-lg text-center">
-                                <button class="btn btn-primary mt-4 mb-0">Submit</button>
+                                <button class="btn primary-btn mt-4 mb-0">Submit</button>
                             </div>
                         </div>
                         

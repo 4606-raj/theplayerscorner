@@ -4,8 +4,10 @@
     <div class="page-main">
 
         @include('admin.layouts.sidebar')
-        
-        @yield('content')
+        <div class="container">
+            @yield('content')
+
+        </div>
         
     </div><!-- end app-content-->
 </div>

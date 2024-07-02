@@ -227,45 +227,49 @@
 <!-- Social Media Section START -->
 <section class="social-media-sec">
     <div class="container">
-        <h2 class="sec-hdr">Follow Us</h2>
-        <p class="follow-us-des">This is you Donate section paragraph. Encourge your site visitors to provide their information so that you can get in touch about how they <br> can make a donation to your Gaming Club.</p>
-        
-        <!-- Social Media Icons -->
-        <div class="social-icons">
-            <ul>
-                <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i> <span>facebook</span></a></li>
-                <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i> <span>instagram</span></a></li>
-                <li><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i><span>linkedin</span></a></li>
-                <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i> x</a></li>
-            </ul>
+        <div class="sec-hdr">
+            <h2 class="">Follow Us</h2>
+            <p class="follow-us-des">This is you Donate section paragraph. Encourge your site visitors to provide their information so that you can get in touch about how they <br> can make a donation to your Gaming Club.</p>
+            <!-- Social Media Icons -->
+            <div class="social-icons col-2">
+                <ul>
+                    <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i> </a></li>
+                    <li><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                </ul>
+            </div>
         </div>
-        {{-- Social live feed --}}
-        <div class="social-feed row">
-            <!-- Instagram Feed -->
-                <div class="nopadding col-lg-4 col-md-4 col-sm-4 col-12" id="insta-feed">
-                    <h3 style="text-align: center" class="feed-hdr">Follow Us on Instagram</h3>
-                    <div id="instafeed-container"></div>
+        <div class="media-con">
+
+            {{-- Social live feed --}}
+            <div class="social-feed row">
+                <!-- Instagram Feed -->
+                    <div class="nopadding col-lg-4 col-md-4 col-sm-4 col-12" id="insta-feed">
+                        <h3 style="text-align: center" class="feed-hdr">Follow Us on Instagram</h3>
+                        <div id="instafeed-container"></div>
+                        
+                        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+                        <script type="text/javascript">
+                            var userFeed = new Instafeed({
+                                get: 'user',
+                                target: "instafeed-container",
+                                resolution: 'low_resolution',
+                                accessToken: 'IGQWRPYjdLSWYwY0lMcDd5aDNhZAURpS0tiMmpIelI5bUZAGMjBRbzc0MDVCMUZAnVHhQa0dqZATdITGdTZAmE1cTRZAZAHpVajhUcVQ0Xzk3RW1EZAnVibHY4c1o5eU4wNW1oeTY1M185VmplZAkdsM3VrcDd3bklPVzJRNkEZD'
+                            });
+                            userFeed.run();
+                        </script>
+        
+                        <script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/youtube.xml&up_channel=UCafm3C_bpyMEdua4UbUFsyA&synd=open&w=320&h=390&title=&border=%23ffffff%7C3px%2C1px+solid+%23999999&output=js"></script>	
+                    </div>
                     
-                    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-                    <script type="text/javascript">
-                        var userFeed = new Instafeed({
-                            get: 'user',
-                            target: "instafeed-container",
-                            resolution: 'low_resolution',
-                            accessToken: 'IGQWRPYjdLSWYwY0lMcDd5aDNhZAURpS0tiMmpIelI5bUZAGMjBRbzc0MDVCMUZAnVHhQa0dqZATdITGdTZAmE1cTRZAZAHpVajhUcVQ0Xzk3RW1EZAnVibHY4c1o5eU4wNW1oeTY1M185VmplZAkdsM3VrcDd3bklPVzJRNkEZD'
-                        });
-                        userFeed.run();
-                    </script>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthe.playerscorner%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
     
-                    <script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/youtube.xml&up_channel=UCafm3C_bpyMEdua4UbUFsyA&synd=open&w=320&h=390&title=&border=%23ffffff%7C3px%2C1px+solid+%23999999&output=js"></script>	
-                </div>
-                
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthe.playerscorner%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-
-                </div>
-                <a href="https://twitter.com/twitter?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @X</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+                    </div>
+                    <a href="https://twitter.com/twitter?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @X</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+            </div>
         </div>
     
 </section>
