@@ -240,12 +240,13 @@
                 </ul>
             </div>
         </div>
-        <div class="media-con">
+
+            {{-- <div class="media-con"> --}}
 
             {{-- Social live feed --}}
-            <div class="social-feed row">
+            {{-- <div class="social-feed row"> --}}
                 <!-- Instagram Feed -->
-                    <div class="nopadding col-lg-4 col-md-4 col-sm-4 col-12" id="insta-feed">
+                    {{-- <div class="nopadding col-lg-4 col-md-4 col-sm-4 col-12" id="insta-feed">
                         <h3 style="text-align: center" class="feed-hdr">Follow Us on Instagram</h3>
                         <div id="instafeed-container"></div>
                         
@@ -270,7 +271,7 @@
                     <a href="https://twitter.com/twitter?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @X</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     
             </div>
-        </div>
+        </div> --}}
     
 </section>
 <!-- Social Media Section END -->

@@ -20,7 +20,7 @@
                     <div class="card-header border-bottom-0">
                         <h3 class="card-title">Blog Details Here </h3>
                     </div>
-                    <div class="card-body pb-2">
+                    <div class="card-body">
                         
                         <label class="form-label">Title</label>
                         <div class="row row-sm">
@@ -60,7 +60,7 @@
 
                         <div class="row row-sm">
                             <div class="col-lg text-center">
-                                <button class="btn btn-primary mt-4 mb-0">Submit</button>
+                                <button class="btn primary-btn mt-4 mb-0">Submit</button>
                             </div>
                         </div>
                         

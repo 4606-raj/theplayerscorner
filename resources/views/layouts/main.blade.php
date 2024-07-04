@@ -7,7 +7,7 @@
     <title>The Players Corner</title>
 
     <!-- Title Icon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/title-logo.png">
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/admin/images/favicon.png') }}">
     
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
@@ -55,6 +55,7 @@
                         <li class="{{ activeClass('about-us') }}"><a href="{{ route('about-us') }}">About us</a></li>
                         <li class="{{ activeClass('blogs.index') }}"><a href="{{ route('blogs.index') }}">Our Blog</a></li>
                         <li class="{{ activeClass('contact-us') }}"><a href="{{ route('contact-us') }}">Contact us</a></li>
+                        <li class="{{ activeClass('404') }}"><a href="{{ route('404') }}">Social Hub</a></li>
                     </ul>
                 </div>
 

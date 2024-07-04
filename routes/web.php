@@ -46,7 +46,7 @@ Route::view('/terms-of-use', 'legal-documents.terms-of-use')->name('terms-of-use
 Route::view('/privacy-preference', 'legal-documents.privacy-preference')->name('privacy-preference');
 Route::view('/forgot-password', 'auth.forgot-password')->name('forgot-password');
 Route::view('/confirm-email', 'auth.confirm-email')->name('confirm-email');
-// Route::view('/404', '404')->name('404');
+Route::view('/404', 'errors.404')->name('404');
 
 // Pages for Club section
 Route::view('/club', 'club')->name('club');
