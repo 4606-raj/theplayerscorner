@@ -75,13 +75,13 @@ $(".currentYear").html(currentYear);
                 $(window).on("scroll", function () {
                     if ($(window).scrollTop()) {
                         $("header").addClass("fix-header-top");
-                        $(".logo-1 img").attr("src","./assets/images/logo-img.png");
+                        $(".logo-1 img").attr("src","/assets/images/logo-img.png");
                         
                         // $(".uppr-row-con").fadeOut(0);
                     } else {
                         // $(".uppr-row-con").fadeIn();
                         $("header").removeClass("fix-header-top");
-                        $(".logo-1 img").attr("src","./assets/images/logo-1.png");
+                        $(".logo-1 img").attr("src","/assets/images/logo-1.png");
                     }
                 });
             }
