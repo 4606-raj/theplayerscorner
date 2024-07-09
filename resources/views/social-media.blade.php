@@ -2,13 +2,22 @@
 
 @section('content')
 
-<section class="container" id="contact-container">
-    <h3 id="club-hdr" class="nopadding">Social Media</h3>
+    {{-- <h3 id="club-hdr" class="nopadding">Social Media</h3>
     
     <p class="ct-hdr-2 mt-4 mb-4"><b>Follow the Athletic on social media</b></p>
-    
+     --}}
+     <style>
+            .feed-powered-by-es{
+                display: none !important;
+            }
+     </style>
+     <section class="container">
+        <div class="embedsocial-hashtag" data-ref="07d3e952eba73ef07551ac34c77947c52cf2b612"> <a class="feed-powered-by-es feed-powered-by-es-feed-img" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Instagram widget"> <img src="https://embedsocial.com/cdn/images/embedsocial-icon.png" alt="EmbedSocial"> Instagram widget </a> </div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+        <div class="embedsocial-hashtag" data-ref="93ac438eae607eca58136e380eefdc01945580c2"> <a class="feed-powered-by-es feed-powered-by-es-slider-img" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Instagram widget"> <img src="https://embedsocial.com/cdn/images/embedsocial-icon.png" alt="EmbedSocial"> Instagram widget </a> </div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
 </section>
-<div class="sponsorship-wrapper">
+
+
+{{-- <div class="sponsorship-wrapper">
     <div class="social-media-sec social-m-wrapper mt-4">
         <div class="overlay-bg"></div>
 
@@ -53,7 +62,7 @@
             To get in contact, or for further information, please email us <a href="mailto:social@southallathleticfc.com">here</a>.  
         </p>
     </div>
-</div>
+</div> --}}
 
 
 

@@ -35,7 +35,11 @@
                         
                         <div class="col">
                             <div class="card h-100">
-                                <img src={{ $blog->cover_image }} class="card-img-top" alt="Card image">
+                                <div class="blog-cr-img">
+                                    <a href={{route('blogs.show', $blog->id)}}>
+                                        <img src={{ $blog->cover_image }} class="card-img-top" alt="Card image">
+                                    </a>
+                                </div>
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a href={{route('blogs.show', $blog->id)}}>{{ $blog->title }}</a>
@@ -98,5 +102,7 @@
             }
         </script>
     @endpush
+
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     
 @endsection

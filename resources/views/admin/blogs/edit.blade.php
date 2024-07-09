@@ -52,8 +52,7 @@
                                 <input class="form-control mb-4" placeholder="Image" type="file" name="cover">
                             </div>
                         </div>
-
-                        <div class="form-group">
+                        <div class="form-group content-input">
                             <label for="content">Content</label>
                             <textarea class="form-control" id="content" name="content">{{ $blog->content }}</textarea>
                         </div>

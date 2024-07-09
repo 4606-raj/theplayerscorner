@@ -7,6 +7,9 @@ header{
     z-index: 100;
     position: relative;
 
+    .row:first-child{
+        justify-content: center;
+    }
     // padding: 0 4.165% !important;
 
     // .overlay-hdr{
@@ -22,6 +25,9 @@ header{
             display: flex;
             align-items: center;
             text-decoration: none;
+            position: relative;
+            min-width: 190px;
+            max-width: 190px;
         }
 
         // &:hover img{
@@ -35,22 +41,25 @@ header{
             max-width: 90px;
         }
         p{
-            left: -20px;
-            position: relative;
+            font-family: $parksonMedium;
+            position: absolute;
+            top: 20px;
+            right: 25px;
             text-transform: uppercase;
             margin: 0;
             margin-top: 20px;
+            // background-color: red;
+            // width: fit-content;
+            max-width: 89px;
+            max-height: 35px;
+            overflow: hidden;
             line-height: 18px;
             font-size: 1.1rem;
             letter-spacing: 2px;
             color: $text-accent;
-            font-family: $parksonMedium;
-            font-weight: 500;
             
             span{
-                letter-spacing: 2px;
                 letter-spacing: 1px;
-                font-size: 1.1rem;
             }
         }
     } 
@@ -67,7 +76,7 @@ header{
             margin: 0;
             display: flex;
             align-items: center;
-            
+            margin-left: 5vw;
             li{
                 // margin: 0;
                 overflow: hidden;
@@ -78,24 +87,32 @@ header{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin: auto;
-                padding: 14px 35px 14px 15px;
+                min-width: 36px;
+                min-height: 30px;
+                padding: 0;
+                // min-width: 10px;
+                // padding: 14px 35px 14px 15px;
                 
+                .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
+                    transition: .2s;
+                    // header nav ul li .bi::before {
+                    top: 7px;
+                    margin: 0;
+                    font-size: 1.1rem;       
+                }
                 &:hover{
                     .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
                         color: $text-accent;
                     }
-                }
+                    .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
+                        // header nav ul li .bi::before {
+                            top: 2px;
+                            margin: 0;
+                            font-size: 1.2rem;       
+                        }
+                    }
             }
             
-            .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
-                // header nav ul li .bi::before {
-                    top: 7px;
-                    margin: 0;
-                    font-size: 1rem;
-                    
-                    
-                }
                 // &:hover{
                     //     .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
                         //         transform: rotate(0deg);

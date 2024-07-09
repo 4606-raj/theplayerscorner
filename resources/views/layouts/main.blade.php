@@ -38,24 +38,26 @@
 <body>
     
     <header class="container-fluid"> 
-        <div class="row justify-content-center">
+        <div class="row ">
     
             <!-- Navigation Bar -->
-            <div class="logo-1 col-2 col-sm-7 col-md-auto">
+            <div class="logo-1 col-auto col-sm-5 col-md-2">
                 <a href="{{ route('home') }}">
                     <img src="{{ asset('assets/images/logo-1.png') }}" alt="">
-                    <p>The <span><br> Players Corner</span></p>
+                    <div class="overflow-hidden">
+                        <p>The <span><br> Players Corner</span></p>
+                    </div>
                 </a>
             </div>
-            <nav class="d-flex col-lg-7 col-md-7 ps-0 justify-content-between">
+            <nav class="d-flex col-lg-7 col-md-6 pe-0 justify-content-end">
                 
-                <div class="nav-small offset-md-2" id="nav-row">
+                <div class="nav-small " id="nav-row">
                     <ul>
                         <li class="{{ activeClass('home') }}"><a href="{{ route('home') }}">Home</a></li>
                         <li class="{{ activeClass('about-us') }}"><a href="{{ route('about-us') }}">About us</a></li>
                         <li class="{{ activeClass('blogs.index') }}"><a href="{{ route('blogs.index') }}">Our Blog</a></li>
                         <li class="{{ activeClass('contact-us') }}"><a href="{{ route('contact-us') }}">Contact us</a></li>
-                        <li class="{{ activeClass('404') }}"><a href="{{ route('404') }}">Social Hub</a></li>
+                        <li class="{{ activeClass('social-media') }}"><a href="{{ route('social-media') }}">Social Hub</a></li>
                     </ul>
                 </div>
 
@@ -71,9 +73,9 @@
             </nav>
 
             {{-- Login button to portal --}}
-            <div class="col-auto d-flex align-items-center">
+            <div class="col-6 col-sm-auto col-md-auto d-flex justify-content-evenly align-items-center">
                 <a href="{{ route('login') }}" class="primary-btn"><button><i class="bi bi-box-arrow-in-right"></i> Login</button></a>
-                <a href="{{ route('register') }}" class="primary-btn register-btn"><button><i class="bi bi-box-arrow-in-right"></i> Register</button></a>
+                <a href="{{ route('register') }}" class="primary-btn register-btn"><button><i class="bi bi-pencil-square"></i> Register</button></a>
             </div>
 
             <button class="col-auto" id="ham-button">

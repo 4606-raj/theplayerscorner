@@ -1,3 +1,33 @@
+@media (max-width: 1399.98px) { 
+    header{
+        .logo-1 {
+            a{
+                min-width: 160px;
+            }
+
+            p{
+                top: 10px;
+                right: 10px;
+            }
+            img{
+                min-width: 70px;
+                max-width: 70px;
+            }
+        } 
+        nav {
+            .hdr-social-icons{
+                margin-left: 2vw;
+            }
+            ul li {
+                margin: 0 3px;
+                a{
+                    font-size: 15px;
+                }
+            }
+        }
+    } 
+ }
+
 // `xl` applies to large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) { 
     header nav ul li{
@@ -6,6 +36,20 @@
     }
     .srch-bar .search-box input{
         width: 85%;
+    }
+    header{
+        nav{
+            ul li a{
+                    padding: 10px 8px;
+            }
+            .hdr-social-icons{
+                margin-left: 1vw;
+            }
+        } 
+        .primary-btn button, .register-btn button{
+            padding: 8px 10px;
+            font-size: 15px;
+        }
     }
     // #promo-banner{
     //     min-height: 560px;
@@ -83,7 +127,38 @@
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
-
+    .hdr-social-icons{
+        display: none !important;
+    }
+    header{
+        .row:first-child{
+            justify-content: space-around;
+        }
+        .logo-1{
+            a{
+                min-width: 140px;
+            }
+            p{
+                font-size: 15px;
+                top: 0px;
+                right: 10px;
+            }
+            img {
+                min-width: 60px;
+                max-width: 60px;
+            }
+        } 
+        nav{
+            justify-content: space-between !important;
+            ul li{
+                min-width: 10px;
+                a{
+                    line-height: 16px;
+                    padding: 10px 12px;
+                }
+            } 
+        }
+    }
     .nav-small{
         margin: 0 auto !important;
         max-width: 95% !important;
@@ -93,40 +168,40 @@
         }
     }
 
-    header{
+    // header{
 
-        #uppr-row .uppr-row-con{
+    //     #uppr-row .uppr-row-con{
     
-            .logo-1 img{
-                min-width: 40px ;
-                max-width: 40px;
-            }
-            .logo-1 p{
-                font-size: 1rem;
-            }
-            .social-icons ul li a{
-                font-size: 1.3rem;
-            }
-        }
-        nav ul li{
-            margin: 0;
+    //         .logo-1 img{
+    //             min-width: 40px ;
+    //             max-width: 40px;
+    //         }
+    //         .logo-1 p{
+    //             font-size: 1rem;
+    //         }
+    //         .social-icons ul li a{
+    //             font-size: 1.3rem;
+    //         }
+    //     }
+    //     nav ul li{
+    //         margin: 0;
     
-            a{
-                font-size: .9rem;
-                font-weight: 500;
-                padding: 14px 25px 14px 10px;
-            }
-            .bi::before, header nav ul li [class^=bi-]::before, header nav ul li [class*=" bi-"]::before{
-                right: 10px;
-                font-size: .8rem;
-            }
-        } 
-        .login-srch{
-            .sub-menu{
-                left: -68px;
-            }
-        }
-    }  
+    //         a{
+    //             font-size: .9rem;
+    //             font-weight: 500;
+    //             // padding: 14px 25px 14px 10px;
+    //         }
+    //         .bi::before, header nav ul li [class^=bi-]::before, header nav ul li [class*=" bi-"]::before{
+    //             right: 10px;
+    //             font-size: .8rem;
+    //         }
+    //     } 
+    //     .login-srch{
+    //         .sub-menu{
+    //             left: -68px;
+    //         }
+    //     }
+    // }  
     .srch-bar .search-box input{
         width: 95%;
     }
@@ -380,11 +455,11 @@
                     width: fit-content;
                 }
                 p{
-                    left: -10px;
+                    right: 0px;
                 }
                 img{
-                    min-width: 50px;
-                    max-width: 50px;
+                    min-width: 65px;
+                    max-width: 65px;
                 }
             } 
             .login-btn button{
@@ -394,14 +469,19 @@
                 opacity: 1;
                 z-index: 100;
                 visibility: visible;
-                top: 60px;
+                top: 85px;
+                width: 80%;
+
+                ul li a:hover{
+                    color: $secondary-clr;
+                }
             }
         
-            .show-hide-sub-menu{
-                visibility: visible !important;
-                opacity: 1 !important;
-                top: 52px !important;
-        }
+            // .show-hide-sub-menu{
+            //     visibility: visible !important;
+            //     opacity: 1 !important;
+            //     top: 52px !important;
+            // }
         .nav-small ul{
             // order: 2;
             justify-content: space-evenly;
@@ -438,7 +518,7 @@
             padding: 20px 0;
             position: absolute;
             background: $primary-clr;
-            width: 100%;
+            width: 80%;
             // margin-left: 5%;
             border-radius: 6px;
             
@@ -463,6 +543,8 @@
                 
                 .hdr-social-icons{
                     margin-right: 5%;
+                    display: flex !important;
+                    align-items: center;
                     
                     ul{
                         li{
@@ -470,7 +552,7 @@
                         }
                         li .bi::before,  li a [class^=bi-]::before,li a [class*=" bi-"]::before{
                             max-width: 60px;
-                            min-width: 60px;
+                            min-width: 50px;
                             color: $secondary-clr;
                         }
                         // flex-direction: row;
@@ -766,12 +848,68 @@
     .lightbox-swiper .grid-wrapper{
         grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     }
- }
+}
 
 
 
- // X-Small devices (portrait phones, less than 576px)
+// X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
+    header{
+        nav{
+            min-height: 0px;
+            max-height: 0px;
+            transition: .3s;
+            overflow: hidden !important;
+        }
+        .primary-btn button, 
+        .register-btn button{
+            padding: 3px 0px;
+            border: none !important;
+            background: none;
+            color: $text-accent !important;
+            margin: 0 0px;
+
+            i{
+                color: $primary-clr;
+            }
+        }
+        .primary-btn button:hover{
+            box-shadow: 0px 0px 0px 0px rgba(251, 231, 70, 0.0);   
+            background: transparent !important;
+            top: 0;
+            color: $primary-clr !important;
+        }
+        .regiter-btn button:hover{
+            background: transparent !important;
+            box-shadow: 0px 0px 0px 0px rgba(251, 231, 70, 0.0);   
+        }
+
+        .show-hide-menu{
+            width: 100%;
+            min-height: 200px;
+            max-height: 260px;
+            overflow: unset;
+            top: 60px;
+        }
+        padding: 0 15px;
+    
+        div:nth-child(1){
+            justify-content: space-between !important;
+        }
+            
+        .logo-1{
+            a{
+                min-width: fit-content;
+            }
+            img{
+                min-width: 60px;
+                max-width: 60px;
+            }
+            p{
+                display: none;
+            }
+        } 
+    } 
     
     // .banner-wrapper{
     //     padding: 0 20px !important;
@@ -855,22 +993,6 @@
             font-size: 1rem;
         }
     }
-    header{
-        padding: 0 15px;
-        div:nth-child(1){
-            justify-content: space-between !important;
-        }
-            
-        .logo-1{
-            img{
-                min-width: 60px;
-                max-width: 60px;
-            }
-            p{
-                display: none;
-            }
-        } 
-    } 
 
     // #promo-banner{
     //     margin-top: 0;
