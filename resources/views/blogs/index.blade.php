@@ -37,7 +37,7 @@
                             <div class="card h-100">
                                 <div class="blog-cr-img">
                                     <a href={{route('blogs.show', $blog->id)}}>
-                                        <img src={{ $blog->cover_image }} class="card-img-top" alt="Card image">
+                                        <img src="{{ $blog->cover_image }}" class="card-img-top" alt="Card image">
                                     </a>
                                 </div>
                                 <div class="card-body">
