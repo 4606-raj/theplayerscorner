@@ -12,10 +12,10 @@ use Validator;
 class HomeController extends Controller
 {
     public function index() {
-        $players = Player::with('user')->whereIsCaptain(1)->get();
+        // $players = Player::with('user')->whereIxsCaptain(1)->get();
         $images = Gallery::whereType(0)->get();
         // return view('test', compact('players', 'images'));
-        return view('index', compact('players', 'images'));
+        return view('index', compact('images'));
     }
 
     public function contactUs(Request $request) {
