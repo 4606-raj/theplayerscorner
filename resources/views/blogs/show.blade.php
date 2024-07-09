@@ -24,8 +24,8 @@
                     <h4 class="blog-hdr">{{ $blog->title }}</h4>
                     <p class="blog-postedBy">by <span>{{ $blog->author }} </span> | {{ date_format($blog->created_at, 'M d, Y') }} | 
                         {{-- <span>[Searched keyword here]</span> |  --}}
-                        <span>0</span> comments</p>
-                    <img src={{ $blog->cover_image }} class="img-fluid mb-4" alt="Article Image">
+                        <span>{{ $blog->comments->count() }}</span> comments</p>
+                    <img src="{{ $blog->cover_image }}" class="img-fluid mb-4" alt="Article Image">
                     <div class="blog-des-txt">
                         
                         {!! $blog->content !!}
