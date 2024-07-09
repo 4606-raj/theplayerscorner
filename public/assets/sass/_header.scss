@@ -69,18 +69,15 @@ header{
         // background: $secondary-clr;
         // background: rgba(251, 231, 70, 0.9);
         
-        
-        
-        
         .hdr-social-icons{
             margin: 0;
             display: flex;
             align-items: center;
             margin-left: 5vw;
             li{
-                // margin: 0;
-                overflow: hidden;
-                max-width: 35px;
+                margin: 0 4px;
+                // overflow: hidden;
+                max-width: 29px;
             }
             
             a{
@@ -94,9 +91,13 @@ header{
                 // padding: 14px 35px 14px 15px;
                 
                 .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
+                    // position: unset !important;
+                    // top: 0 !important;
+                    position: relative;
                     transition: .2s;
+                    left: 0;
                     // header nav ul li .bi::before {
-                    top: 7px;
+                    top: 5px;
                     margin: 0;
                     font-size: 1.1rem;       
                 }
@@ -205,6 +206,7 @@ header{
                     padding: 10px;
                     position: relative;
                     color: $text-accent;
+                    line-height: 17px;
                     font-weight: 500;
                     font-family: $open-sans;
                     

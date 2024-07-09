@@ -231,7 +231,7 @@
             <h2 class="">Follow Us</h2>
             <p class="follow-us-des">This is you Donate section paragraph. Encourge your site visitors to provide their information so that you can get in touch about how they <br> can make a donation to your Gaming Club.</p>
             <!-- Social Media Icons -->
-            <div class="social-icons col-2">
+            <div class="social-icons col-auto">
                 <ul>
                     <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i> </a></li>
@@ -279,33 +279,33 @@
 {{-- Contact Us START --}}
 <section class="container contact-us-sec">
         <div class="row">
-            <div class="left-bx col-lg-6 col-md-5 col-sm-12 col-12">
+            <div class="left-bx col-lg-6 col-md-4 col-sm-12 col-12">
                 <h2 class="sec-hdr">Speak to us!</h2>
                 <div>
                     <p class="text-center">Contact us today for an informal chat</p>
                 </div>
             </div>
     
-            <div class="right-bx col-lg-6 col-md-7 col-sm-12 col-12">
+            <div class="right-bx col-lg-6 col-md-8 col-sm-12 col-12">
                     <div class="card p-4">
                         <form method="POST" action="{{ route('contact-us.submit') }}">
                             @csrf
                             <div class="row mb-3">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                     <label for="firstName" class="form-label">First Name</label>
                                     <input type="text" class="form-control" name="first_name" id="firstName" required>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                     <label for="lastName" class="form-label">Last Name</label>
                                     <input type="text" class="form-control" name="last_name" id="lastName" required>
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <div class="col-lg-7">
+                                <div class="col-lg-7 col-md-7 col-sm-7 mb-3 mb-sm-0">
                                     <label for="email" class="form-label">Email Address</label>
                                     <input type="email" class="form-control" name="email" id="email" required>
                                 </div>
-                                <div class="col-lg-5">
+                                <div class="col-lg-5 col-md-5 col-sm-5">
                                     <label for="contactNumber" class="form-label">Contact Number</label>
                                     <input type="tel" class="form-control" name="phone" id="contactNumber" required>
                                 </div>

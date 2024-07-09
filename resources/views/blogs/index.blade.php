@@ -20,7 +20,7 @@
     </section>
 
     {{-- Our Blogs --}}
-    <section class="container mt-5">
+    <section class="container-fluid mt-5 blogView-sec">
 
         @if (isset($_GET['search']) && !empty($_GET['search']))
             <h3 class="text-white">{{ $blogs->count() > 0? $blogs->count(): 'No any' }} Blogs found with "{{ $_GET['search'] }}"</h3>
@@ -29,8 +29,8 @@
         
         <div class="row">
             {{-- Blogs --}}
-            <div class="blogs-sec col-lg-8 col-md-7">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4" data-masonry='{"percentPosition": true }'>
+            <div class="blogs-sec col-lg-8 col-md-8 col-sm-12 order-2 order-sm-2 order-md-0">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-4" data-masonry='{"percentPosition": true }'>
                     @foreach ($blogs as $blog)
                         
                         <div class="col">
@@ -45,7 +45,9 @@
                                         <a href={{route('blogs.show', $blog->id)}}>{{ $blog->title }}</a>
                                     </h5>
                                     <p class="card-text postedBy">By <span>{{ $blog->author }}</span> | {{ $blog->category }}</p>
-                                    <p class="card-text">{!! substr($blog->content, 0, 200) !!}</p>
+                                    <div class="blog-des-txt">
+                                        <p class="card-text">{!! substr($blog->content, 0, 200) !!}</p>
+                                    </div>
                                     <a href={{route('blogs.show', $blog->id)}} class="btn btn-primary readMore-btn">Read more</a>
                                 </div>
                             </div>
@@ -56,34 +58,37 @@
                 </div>
             </div>
             {{-- sidebar --}}
-            <div class="blog-sidebar col-lg-3 col-md-4">
-                <div class="search-bar">
+            <div class="col-lg-3 col-md-4 order-md-0 order-sm-1">
+                <div class="blog-sidebar">
 
+                        <div class="search-bar">
+                            
+                        </div>
+                        {{-- Search Bar --}}
+                        <form class="search-bar" action="{{ route('blogs.index') }}">
+                            <div class="input-group">
+                                <input type="search" class="form-control" name="search" value="{{ $searchText }}" placeholder="Search articles..." aria-label="Search articles" onsearch="searchBlog(this.value)">
+                                <button type="submit" class="btn btn-outline-primary srch-btn" type="button">Search</button>
+                            </div>
+                        </form>
+                        
+                        {{-- <x-autocomplete-search /> --}}
+                        {{-- @livewire('autocomplete-search') --}}
+                        
+                        {{-- Recent Blogs --}}
+                        <div class="recent-blogs">
+                            <h4>Our Recent Articles</h4>
+                            
+                            <ul>
+                                @foreach ($recentBlogs as $recentBlog)
+                                <li><a href="{{ route('blogs.show', $recentBlog->id) }}">{{ $recentBlog->title }}</a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        
+                        <hr>
+                        Social Media Stats
                 </div>
-                {{-- Search Bar --}}
-                <form class="search-bar" action="{{ route('blogs.index') }}">
-                    <div class="input-group">
-                      <input type="search" class="form-control" name="search" value="{{ $searchText }}" placeholder="Search articles..." aria-label="Search articles" onsearch="searchBlog(this.value)">
-                      <button type="submit" class="btn btn-outline-primary srch-btn" type="button">Search</button>
-                    </div>
-                </form>
-
-                {{-- <x-autocomplete-search /> --}}
-                {{-- @livewire('autocomplete-search') --}}
-                
-                {{-- Recent Blogs --}}
-                <div class="recent-blogs">
-                    <h4>Our Recent Articles</h4>
-
-                    <ul>
-                        @foreach ($recentBlogs as $recentBlog)
-                            <li><a href="{{ route('blogs.show', $recentBlog->id) }}">{{ $recentBlog->title }}</a></li>
-                        @endforeach
-                    </ul>
-                </div>
-
-                <hr>
-                Social Media Stats
             </div>
         </div>
 

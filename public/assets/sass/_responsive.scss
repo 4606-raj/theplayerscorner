@@ -7,7 +7,7 @@
 
             p{
                 top: 10px;
-                right: 10px;
+                right: 30px;
             }
             img{
                 min-width: 70px;
@@ -32,12 +32,26 @@
 @media (max-width: 1199.98px) { 
     header nav ul li{
         margin: 0;
-        // font-size: .9rem;
     }
     .srch-bar .search-box input{
         width: 85%;
     }
+    footer .footer-wrap{
+        grid-template-columns: 2fr 6fr;
+        // text-align: center !important;
+        .spacer-div{
+            display: block;
+        }
+        .copyright{
+            justify-content: flex-end;
+        }
+    }
     header{
+        .logo-1 {
+            p{
+                right: 10px;
+            }
+        }
         nav{
             ul li a{
                     padding: 10px 8px;
@@ -50,6 +64,9 @@
             padding: 8px 10px;
             font-size: 15px;
         }
+    }
+    .blogView-sec{
+        padding: 3rem 6vw 0 6vw !important;
     }
     // #promo-banner{
     //     min-height: 560px;
@@ -159,6 +176,9 @@
             } 
         }
     }
+    .heroBanner{
+        background-position: 70% -170px;
+    }
     .nav-small{
         margin: 0 auto !important;
         max-width: 95% !important;
@@ -167,7 +187,14 @@
             justify-content: center;
         }
     }
-
+    .blogView-sec{
+        padding: 3rem 8vw 0 8vw !important;
+    }
+    // .contact-container{
+    //     .ct-right-box{
+    //         margin-bottom: 30px;
+    //     }
+    // }
     // header{
 
     //     #uppr-row .uppr-row-con{
@@ -363,11 +390,12 @@
     }
     .player-multi-form{
         .sticky-sidebar{
-            width: 664px;
+            width: 100%;
+            padding-top: 20px;
             overflow-x: scroll;
-            margin-bottom: 30px;
+            // margin-bottom: 20px;
             z-index: 10;
-            background: #f7fbff;
+            background: $secondary-clr;
             top: 55px;
 
             &::-webkit-scrollbar {
@@ -376,11 +404,11 @@
             }
             /* Track */
             &::-webkit-scrollbar-track {
-                background: #f1f1f1;
+                background: rgba(251, 231, 70, 0.1);
             }
             /* Handle */
             &::-webkit-scrollbar-thumb {
-                background: #ccd7e0;
+                background: $primary-clr;
                 border-radius: 50px;
             }
             
@@ -391,7 +419,7 @@
 
         }
         #v-pills-tab{
-            width: 1735px;
+            width: 600px;
             flex-direction: row;
             justify-content: space-between;
             scroll-direction: horizontal;
@@ -420,29 +448,7 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { 
-    .fixed-hdr-small{
-        position: sticky !important;
-        width: 100%;
-        z-index: 100;
-        top: 0;
-    }
-    // .right-logos{
-        //     .chana-logo{ 
-            //         img{
-    //             min-width: 80px !important;
-    //             max-width: 80px !important;
-    //         }
-    //     }
-    //     img{
-        //         min-width: 140px !important;
-        //         max-width: 140px !important;
-        //     }
-        // }
-        
-            .about-site{
-                margin-top: 0 !important;
-            }
-        header{
+    header{
             width: 100%;
             padding-top: 10px;
             padding-bottom: 10px;
@@ -629,6 +635,41 @@
                 }
             }
         }
+    }
+    .fixed-hdr-small{
+        position: sticky !important;
+        width: 100%;
+        z-index: 100;
+        top: 0;
+    }
+    .heroBanner{
+        background-position: 60% -170px;
+    }
+    .about-site .ab-des-txt{
+        font-size: .9rem;
+    }
+    .contact-us-sec .left-bx{
+        margin-bottom: 20px;
+
+        .sec-hdr{
+            font-size: clamp(2rem, 5vw, 5rem);
+        }
+    }
+    // .right-logos{
+        //     .chana-logo{ 
+            //         img{
+    //             min-width: 80px !important;
+    //             max-width: 80px !important;
+    //         }
+    //     }
+    //     img{
+        //         min-width: 140px !important;
+        //         max-width: 140px !important;
+        //     }
+        // }
+        
+    .about-site{
+        margin-top: 0 !important;
     }
     .meetup-card{
         .card{
@@ -826,10 +867,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .player-multi-form .sticky-sidebar{
-        width: 484px;
-    }
-    .player-multi-form .sticky-sidebar{
-        top: 108px;
+        width: 100%;
+        // top: 108px;
     }
     .contact-block{
         position: relative;
@@ -910,6 +949,44 @@
             }
         } 
     } 
+    .heroBanner {
+        background-position: 50% -170px;
+    }
+    .contact-us-sec{
+        margin-bottom: 40px;
+    }
+    .blogView-sec{
+        padding: 0rem 20px 0 20px !important;
+
+        .readMore-btn{
+            width: 100%;
+            padding: 10px 15px;
+        }
+    }
+    .comment-sec{
+        .submit-btn{
+            width: 100%;
+        }
+    }
+    footer{
+        padding: 20px 10px;
+
+        .copyright{
+            margin: 6px 0;
+        }
+        .doc-links{
+            display: grid !important;
+            grid-gap: .3rem;
+            grid-template-columns: 1fr 1fr;
+            flex-direction: column;
+            margin-top: 6px !important;
+            
+        }
+    }
+    #ct-form{
+        width: 94%;
+        margin: 0 auto;
+    }
     
     // .banner-wrapper{
     //     padding: 0 20px !important;
@@ -986,13 +1063,18 @@
     //         grid-template-columns: repeat(1, 1fr);
     //     }
     // }
-    #contact-container .social-icons{
-        padding: 0 10px;
-
-        li a{
-            font-size: 1rem;
+    #contact-container{
+        .submit-btn{
+            min-width: 100%;
         }
-    }
+        .social-icons{
+            padding: 0 10px;
+    
+            li a{
+                font-size: 1rem;
+            }
+        }
+    } 
 
     // #promo-banner{
     //     margin-top: 0;
@@ -1095,9 +1177,9 @@
         margin: 35px 0;
     }
     .player-multi-form .sticky-sidebar {
-        width: 80vw;
-        margin-left: 3vw;
-        top: 93px;
+        width: 100%;
+        // margin-left: 3vw;
+        // top: 93px;
     }
     .meetup-card{
         .card-img{

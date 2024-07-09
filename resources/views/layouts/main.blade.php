@@ -54,9 +54,9 @@
                 <div class="nav-small " id="nav-row">
                     <ul>
                         <li class="{{ activeClass('home') }}"><a href="{{ route('home') }}">Home</a></li>
-                        <li class="{{ activeClass('about-us') }}"><a href="{{ route('about-us') }}">About us</a></li>
+                        <li class="{{ activeClass('about-us') }}"><a href="{{ route('about-us') }}">About Us</a></li>
                         <li class="{{ activeClass('blogs.index') }}"><a href="{{ route('blogs.index') }}">Our Blog</a></li>
-                        <li class="{{ activeClass('contact-us') }}"><a href="{{ route('contact-us') }}">Contact us</a></li>
+                        <li class="{{ activeClass('contact-us') }}"><a href="{{ route('contact-us') }}">Contact Us</a></li>
                         <li class="{{ activeClass('social-media') }}"><a href="{{ route('social-media') }}">Social Hub</a></li>
                     </ul>
                 </div>
@@ -100,8 +100,8 @@
             <div class="copyright">
                 Copyright ©<span class="currentYear"></span> &nbsp;
                 <a href="{{ route('home') }}">The Players Corner</a>. All Rights Reserved.
-    
             </div>
+            <div class="spacer-div"></div>
             <ul class="doc-links">
                 <li><a href="#" target="_blank">Privacy Policy</a></li>
                 <li><a href="#" target="_blank">Terms of use</a></li>

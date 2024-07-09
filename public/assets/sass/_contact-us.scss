@@ -79,18 +79,26 @@
         }
     }
     #ct-form{
+        font-family: $open-sans;
         margin-bottom: 40px;
         padding: 20px;
         border-radius: 6px;
         // border: 1px solid #d4dbe1;
         background: $primary-clr;
 
+        .form-floating>.form-control:focus~label, 
+        .form-floating>.form-control:not(:placeholder-shown)~label, 
+        .form-floating>.form-select~label{
+            font-weight: 600;
+        }
         .form-control:focus,
         .form-select:focus {
             border-color: $primary-clr;
             box-shadow: 0 0 0 0rem rgba(40, 167, 69, 0.25);
         } 
-        
+        .form-select{
+            padding: 1rem .75rem;
+        }
         #floatingTextarea{
             min-height: 120px;
         }
@@ -100,9 +108,13 @@
             border-bottom: 1px solid #d4dbe1;
             padding-bottom: 14px;
         }
-
+        
         .form-floating > label{
+            // font-weight: 300;
+            // transition: .2s;
             left: 10px;
+            top: 1px;
+            font-size: .9rem;
         }
         // #sub-btn{
         //     background: $primary-clr;
