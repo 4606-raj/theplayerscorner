@@ -1,6 +1,6 @@
 <div>
     
-    <form wire:submit.prevent="save" class="form-body col-sm-12 col-lg-12 col-md-12 col-12 pt-3" name="player-register">
+    <form wire:submit.prevent="save" class="form-body col-sm-12 col-lg-12 col-md-12 col-12 pt-3">
 							
         {{-- STEP 1 --}}
         <div class="tab-pane fade show active" id="v-pills-step-1" role="tabpanel" aria-labelledby="v-pills-step-1-tab">
@@ -43,7 +43,7 @@
                             </div>
                             
                             <div class="right-bl mb-3 mb-md-0">
-                                <x-text-field name="first_name" type="text" label="First Name" />
+                                <x-text-field name="first_name" wire:model="first_name" type="text" label="First Name" />
                             </div>
                         </div>
                         
@@ -54,7 +54,7 @@
                             </div>
                             
                             <div class="right-bl mb-3 mb-md-0">
-                                <x-text-field name="last_name" type="text" label="Last Name" />
+                                <x-text-field name="last_name" wire:model="last_name" type="text" label="Last Name" />
                             </div>
                         </div>
 
@@ -75,7 +75,7 @@
                         <div class="row">
                             <!-- Day Selector -->
                             <div class="col-4">
-                                <select class="form-select" id="day" required>
+                                <select class="form-select" id="day" name="day" wire:model="day" required>
                                     <option value="" selected disabled>Day</option>
                                     <!-- Populate days 1 to 31 -->
                                     <script>
@@ -87,7 +87,7 @@
                             </div>
                             <!-- Month Selector -->
                             <div class="col-4">
-                                <select class="form-select" id="month" required>
+                                <select class="form-select" id="month" name="month" wire:model="month" required>
                                     <option value="" selected disabled>Month</option>
                                     <option value="1">January</option>
                                     <option value="2">February</option>
@@ -105,7 +105,7 @@
                             </div>
                             <!-- Year Selector -->
                             <div class="col-4">
-                                <select class="form-select" id="year" required>
+                                <select class="form-select" id="year"name="year" wire:model="year" required>
                                     <option value="" selected disabled>Year</option>
                                     <!-- Populate years from 1900 to current year -->
                                     <script>
@@ -171,7 +171,7 @@
                             <div class="col-4 d-flex align-items-center">
                                 <div class="unit-switcher">
                                     <i class="bi bi-caret-down-fill"></i>
-                                    <select class="form-select" id="height-unit" required>
+                                    <select class="form-select" id="height-unit" name="height" required>
                                         <option value="feet">Feet</option>
                                         <option value="cm">Centimeters</option>
                                     </select>
@@ -259,27 +259,6 @@
                         </div>
                     </div>
                 </div>
-                @if ($heard_from == 'other')
-
-                    <div class="field-floating mb-3">
-                        <div class="col-lg-12 left-bl px-0">
- 
-                            <textarea placeholder="please state" cols="30" rows="10" name="" wire:model="heard_from"></textarea>
-                        </div>
-                    </div>
-                @endif
-                
-                {{-- Another Question --}}
-                @if ($heard_from == 1)
-
-                    <div class="field-floating mb-3">
-                        <div class="col-lg-12 left-bl px-0">
-                            <p class="field-question">If you were recommended by one of our current players, could you please let us know who?</p>
-
-                            <textarea name="" cols="30" rows="10" placeholder="Please write here..." wire:model="heard_from"></textarea>
-                        </div>
-                    </div>
-                @endif
         </div>
 
         <div class="d-flex justify-content-center mt-3 float-end">

@@ -13,12 +13,14 @@ class BasicDetails extends Component
 
     public Player $player;
     public $updatePlayer = [];
-    public $heard_from, $photo, $document;
+    public $first_name, $last_name, $day, $month, $year;
     
     protected $rules = [
-        'heard_from' => 'required',
-        'photo' => 'required|image|max:1024',
-        'document' => 'required|mimes:pdf,png,jpg,doc|max:1024',
+        'first_name' => 'required',
+        'last_name' => 'required',
+        'day' => 'required',
+        'month' => 'required',
+        'year' => 'required',
     ];
     
     public function render()
@@ -37,7 +39,6 @@ class BasicDetails extends Component
         // $docName = $this->document->storePublicly('players/documents');
         // $this->player->document = $docName;
 
-        $this->player->heard_from = $this->heard_from;
         $this->player->save();
 
         $this->emit('basicDetailsSaved');

@@ -18,4 +18,8 @@ class AuthController extends Controller
     public function store(Request $request, $role) {
         return $this->createNewUser->create($request->all());
     }
+
+    public function stepOne(Request $request) {
+        dd($request->all());
+    }
 }
