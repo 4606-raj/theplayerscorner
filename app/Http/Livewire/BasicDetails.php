@@ -35,9 +35,6 @@ class BasicDetails extends Component
 
         // $imageName = $this->photo->storePublicly('players/images');
         // $this->player->photo = $imageName;
-        
-        // $docName = $this->document->storePublicly('players/documents');
-        // $this->player->document = $docName;
 
         $this->player->save();
 

@@ -43,7 +43,7 @@
                             </div>
                             
                             <div class="right-bl mb-3 mb-md-0">
-                                <x-text-field name="first_name" wire:model="first_name" type="text" label="First Name" />
+                                <x-text-field name="first_name" type="text" label="First Name" />
                             </div>
                         </div>
                         
@@ -178,24 +178,17 @@
                                 </div>
                             </div>
                             <div class="col-8">
-                                <select class="form-select col-6 " id="height-feet" required>
-                                    <option value="" selected disabled>Select Height (Feet)</option>
-                                    <script>
-                                        for (let i = 3; i <= 7; i++) {
-                                            for (let j = 0; j < 12; j++) {
-                                                document.write(`<option value="${i}'${j}">${i}'${j}"</option>`);
-                                            }
-                                        }
-                                    </script>
+                                <select class="form-select col-6 " id="height" required>
+                                    <option value="" selected disabled>Select Height</option>
                                 </select>
-                                <select class="form-select  d-none" id="height-cm" required>
+                                {{-- <select class="form-select  d-none" id="height-cm" required>
                                     <option value="" selected disabled>Select Height (cm)</option>
                                     <script>
                                         for (let i = 90; i <= 215; i++) {
                                             document.write(`<option value="${i}">${i} cm</option>`);
                                         }
                                     </script>
-                                </select>
+                                </select> --}}
     
                             </div>
                         </div>
@@ -222,22 +215,17 @@
                             </div>
     
                             <div class="col-8 justify-content-between">
-                                <select class="form-select " id="weight-lbs" required>
-                                    <option value="" selected disabled>Select Weight (lbs)</option>
-                                    <script>
-                                        for (let i = 50; i <= 400; i++) {
-                                            document.write(`<option value="${i}">${i} lbs</option>`);
-                                        }
-                                    </script>
+                                <select class="form-select " id="weight" required>
+                                    <option value="" selected disabled>Select Weight</option>
                                 </select>
-                                <select class="form-select d-none" id="weight-kg" required>
+                                {{-- <select class="form-select d-none" id="weight-kg" required>
                                     <option value="" selected disabled>Select Weight (kg)</option>
                                     <script>
                                         for (let i = 20; i <= 180; i++) {
                                             document.write(`<option value="${i}">${i} kg</option>`);
                                         }
                                     </script>
-                                </select>
+                                </select> --}}
     
                             </div>
                         </div>
@@ -271,4 +259,48 @@
     </form>
 </div>
 
-    
+@push('script')
+<script>
+    $('#height-unit').change((e) => changeHeightOptions(e))
+
+    $('#weight-unit').change((e) => changeWeightOptions(e))
+
+    function changeHeightOptions(e) {
+
+        let options = `<option value="" selected disabled>Select Height</option>`;
+
+        if(e.target.value == 'cm') {
+            for (let i = 90; i <= 215; i++) {
+                options += `<option value="${i}">${i} cm</option>`;
+            }
+        }
+        else {
+            for (let i = 3; i <= 7; i++) {
+                for (let j = 0; j < 12; j++) {
+                    options += `<option value="${i}'${j}">${i}'${j}"</option>`;
+                }
+            }
+        }
+        $('#height').html(options)
+    }
+
+    function changeWeightOptions(e) {
+
+        let options = `<option value="" selected disabled>Select Weight</option>`;
+
+        if(e.target.value == 'kg') {
+            for (let i = 20; i <= 180; i++) {
+                options += `<option value="${i}">${i} kg</option>`;
+            }
+        }
+        else {
+            for (let i = 50; i <= 400; i++) {
+                options += `<option value="${i}">${i} lbs</option>`;
+            }
+        }
+        $('#weight').html(options)
+    }
+
+    $('#height-unit,#weight-unit').trigger('change');
+</script>
+@endpush
