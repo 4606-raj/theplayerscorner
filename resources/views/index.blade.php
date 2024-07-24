@@ -7,8 +7,8 @@
             
             <div class="heroBanner col-lg-12">
                 <div class="bannerText">
-                    <h3>the players corner</h3>
-                    <p>we're levelling the field</p>
+                    <h3 class="animate__animated animate__fadeInUp animate__fast">the players corner</h3>
+                    <p class="animate__animated animate__fadeInUp  animate__fast">we're levelling the field</p>
                 </div>
                 <div class="makeShape"></div>
                 <div class="topOverlayBanner"></div>
@@ -22,12 +22,12 @@
             <div class="about-site">
                 {{-- Site logo --}}
                 <div class="ab-logo">
-                    <img src="{{ asset('assets/images/logo-img.png') }}" alt="">
+                    <img src="{{ asset('assets/images/logo-img.png') }}" alt="" class="animate__animated animate__zoomIn" >
                 </div>
                 {{-- Site title --}}
                 <h3 class="title-hdr">The Players Corner <br> <span>The World’s First FREE Scouting and Talent Development Platform for Football Players</span></h3>
                 <div class="col-10 col-lg-6 col-md-6 col-sm-8">
-                    <p class="ab-des-txt">
+                    <p class="ab-des-txt mt-3">
                         Taking control of your footballing career can be tough, particularly if you don’t have the right connections. All the talent in the world won’t land a career on your doorstep; you’ll need to be able to get in front of the right people at the right time to succeed. This is where we come in. <br><br>
                         The Players Corner gives you the unique opportunity to connect with the wider global footballing community, giving you the best shot at success. We can even help find a club that suits your skills and talent, and represent you in negotiations to make sure you’re taken care of. 
                     </p>
@@ -197,9 +197,9 @@
 <!-- News Section END -->
 
 <!-- Promo Banner START -->
-<section id="promo-banner" class="container-fuild">
+<section id="promo-banner" class="container-fuild" >
     <div class="banner-overlay">
-        <div class="ab-overBox">
+        <div class="ab-overBox" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-duration="800">
             <ul class="ab-txt-list">
                 <div class="ab-liner">
                     <p>We’re in <span>YOUR CORNER.</span></p>
@@ -227,16 +227,17 @@
 <!-- Social Media Section START -->
 <section class="social-media-sec">
     <div class="container">
-        <div class="sec-hdr">
-            <h2 class="">Follow Us</h2>
-            <p class="follow-us-des">This is you Donate section paragraph. Encourge your site visitors to provide their information so that you can get in touch about how they <br> can make a donation to your Gaming Club.</p>
+        <div class="sec-hdr overflow-hidden">
+            <h2 class="" data-aos="zoom-in-up"
+            data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out">Follow Us</h2>
+            <p class="follow-us-des" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">This is you Donate section paragraph. Encourge your site visitors to provide their information so that you can get in touch about how they <br> can make a donation to your Gaming Club.</p>
             <!-- Social Media Icons -->
             <div class="social-icons col-auto">
                 <ul>
-                    <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i> </a></li>
-                    <li><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                    <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                    <li data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="top-bottom" data-aos-duration="500"><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="top-bottom" data-aos-duration="600"><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i> </a></li>
+                    <li data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="top-bottom" data-aos-duration="700"><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                    <li data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="top-bottom" data-aos-duration="800"><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -277,16 +278,16 @@
 <!-- Social Media Section END -->
 
 {{-- Contact Us START --}}
-<section class="container contact-us-sec">
+<section class="container contact-us-sec overflow-hidden">
         <div class="row">
-            <div class="left-bx col-lg-6 col-md-4 col-sm-12 col-12">
+            <div class="left-bx col-lg-6 col-md-4 col-sm-12 col-12" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <h2 class="sec-hdr">Speak to us!</h2>
                 <div>
                     <p class="text-center">Contact us today for an informal chat</p>
                 </div>
             </div>
     
-            <div class="right-bx col-lg-6 col-md-8 col-sm-12 col-12">
+            <div class="right-bx col-lg-6 col-md-8 col-sm-12 col-12" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
                     <div class="card p-4">
                         <form method="POST" action="{{ route('contact-us.submit') }}">
                             @csrf

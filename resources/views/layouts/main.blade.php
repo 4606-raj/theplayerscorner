@@ -20,7 +20,11 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lg-zoom.css"/>
 
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.css"/>
-     
+
+     <!--Animation-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,13 +41,13 @@
 </head>
 <body>
     
-    <header class="container-fluid"> 
+    <header class="container-fluid animate__animated animate__slideInDown animte__fast"> 
         <div class="row ">
     
             <!-- Navigation Bar -->
             <div class="logo-1 col-auto col-sm-5 col-md-2">
                 <a href="{{ route('home') }}">
-                    <img src="{{ asset('assets/images/logo-1.png') }}" alt="">
+                    <img src="{{ asset('assets/images/logo-1.png') }}" alt="" class="animate__animated animate__bounce animate__delay-1s">
                     <div class="overflow-hidden">
                         <p>The <span><br> Players Corner</span></p>
                     </div>
@@ -51,13 +55,13 @@
             </div>
             <nav class="d-flex col-lg-7 col-md-6 pe-0 justify-content-end">
                 
-                <div class="nav-small " id="nav-row">
+                <div class="nav-small" id="nav-row">
                     <ul>
-                        <li class="{{ activeClass('home') }}"><a href="{{ route('home') }}">Home</a></li>
-                        <li class="{{ activeClass('about-us') }}"><a href="{{ route('about-us') }}">About Us</a></li>
-                        <li class="{{ activeClass('blogs.index') }}"><a href="{{ route('blogs.index') }}">Our Blog</a></li>
-                        <li class="{{ activeClass('contact-us') }}"><a href="{{ route('contact-us') }}">Contact Us</a></li>
-                        <li class="{{ activeClass('social-media') }}"><a href="{{ route('social-media') }}">Social Hub</a></li>
+                        <li class="{{ activeClass('home') }} animate__animated animate__zoomIn animate__fast"><a href="{{ route('home') }}">Home</a></li>
+                        <li class="{{ activeClass('about-us') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('about-us') }}" class="">About Us</a></li>
+                        <li class="{{ activeClass('blogs.index') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('blogs.index') }}">Our Blog</a></li>
+                        <li class="{{ activeClass('contact-us') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('contact-us') }}">Contact Us</a></li>
+                        <li class="{{ activeClass('social-media') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('social-media') }}">Social Hub</a></li>
                     </ul>
                 </div>
 
@@ -91,7 +95,7 @@
     
     @yield('content')
     
-    <footer>
+    <footer class="animate__animated animate__slideInUp">
         <div class="footer-wrap" >
                             
             <div>
@@ -134,6 +138,8 @@
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     
     <script src="{{ URL::asset('assets/js/script.js') }}"></script>
     

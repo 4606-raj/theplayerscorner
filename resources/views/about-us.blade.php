@@ -4,32 +4,39 @@
 
 <section class="container aboutUs-sec">
     <h3 id="ab-hdr" class="nopadding">ABOUT US</h3>
-    <p class="ab-sub-hdr">Our Story & <span>Vision</span> </p>
+    <p class="ab-sub-hdr">Our Mission & <span>Vision</span> </p>
     <p class="ab-des-txt">
-        Football has changed almost beyond recognition in recent years, and is still evolving. While skill, commitment and talent are vital for footballers, these are often not enough for a grass roots footballer to be seen by those that matter, so they can get the support and coaching they need to truly make a career in this competitive industry.   
-        <br><br>
-        Before, the path to a successful footballing career depended on who you knew, and where you played football. Players from more affluent backgrounds and well-resourced areas had a better chance of getting in front of the people that mattered, and it was tougher for those from non-privileged areas to make the same mark.  
+        The Players Corner aims to revolutionise football scouting and talent development by providing a free platform for players worldwide to create digital profiles, develop their talents, and become national or international football stars. Our mission is to ensure that talent, regardless of economic background, is given a fair chance to be seen, recognised, and nurtured.  
     </p>
     <p class="ab-note-txt">
-        The Players Corner is a comprehensive platform that levels the playing field, allowing talented players from any background the chance to be discovered by those who can make a difference to their career. 
+        Our vision is to create a reliable, economic, and well-structured platform where football talent globally can be discovered and developed, allowing every player to reach their full potential, regardless of their financial status and lack of resources. We strive to create a future where all talent finds success, fostering inclusivity and equality in the sport. 
     </p>
     
     {{-- <p class="ab-sub-hdr">Mission</p>
     <p class="ab-des-txt" style="opacity: .9">Our aim is to educate our community about football. So, as a community we can be taken seriously within the game.</p>
     <p class="ab-des-txt">The consensus was that Asians Can’t Play Football d <br> other local clubs were non-representative of our community and did little in the way of benefiting the community. They were also not a visible presence in the community, three things we wanted to ensure we could change.  </p> --}}
     
-    <p class="ab-sub-hdr">What We Offer</p>
+    <p class="ab-sub-hdr">Our core values </p>
     <ul class="ab-list">
-        <span>Here, you’ll find the opportunity to:</span>
-        <li>Create a free player profile - Upload your stats and achievements to impress scouts, coaches and clubs.</li>
-        <li>Be part of the global scouting network - Get in front of expert scouts looking for talent just like yours.</li>
-        <li>Access expert coaching and development strategies - Connect with a coach who can develop your skills even further.</li>
-        <li>Get representation (coming soon) - For those with exceptional promise, connect with professional player representatives for expert guidance and support for career development. </li>
+        {{-- <span>Here, you’ll find the opportunity to:</span> --}}
+        <li><b>Inclusivity</b>: We believe every player, regardless of their background, deserves an equal opportunity to showcase their talent. </li>
+        <li><b>Accessibility</b>: We are committed to providing a free platform for talented individuals that removes financial barriers and allows them to be scouted and developed with less hassle. We are creating a level playing field, where talent is judged based on their merit, effort, and aptitude. </li>
+        <li><b>Empowerment</b>: We aim to empower players by giving them the tools and visibility needed to achieve their dreams. </li>
+        <li><b>Integrity</b>: We uphold the highest standards of honesty and fairness in all our operations. </li>
+        <li><b>Innovation</b>: We continuously seek innovative ways to improve our platform and better serve the football community. </li>
+        <li><b>Community</b>: We foster a supportive and collaborative environment for players, scouts, coaches, and football enthusiasts. </li>
     </ul>
     
-    <p class="ab-sub-hdr">Committed to <span>Ethical Development</span></p>
-    <p class="ab-des-txt">Not only are we committed to developing previously untapped talent, we are determined to do so with a holistic commitment to equality, diversity and inclusion in football. We envision a future in which talent is not restricted by who you are as a person, and aim to be part of the global movement towards a more inclusive game. We also protect our users by adhering to the safeguarding standards put in place by FIFA, UEFA and the FA.<br><br>
-        If you are ready to commit to more inclusive football, we’re ready to help you.  <a href="{{ route('login') }}">Join our community</a>, build your network and take the next steps in your footballing career with expert help from some of the world’s most experienced professionals. </p>
+    {{-- <p class="ab-sub-hdr">Committed to <span>Ethical Development</span></p> --}}
+    <p class="ab-sub-hdr">Our <span>Culture</span></p>
+    <p class="ab-des-txt">SJFNBASLJFBAKJLFNA;KFMAS;LKFNAKJFNASJKLFNSKJFNS;FNAS;KFNA;NANKN;KS </p>
+    
+    <p class="ab-sub-hdr">Who are <span>We?</span></p>
+    <p class="ab-des-txt">
+        Football is by far the number one sport and there is a lot of talent to be found. Sadly, millions of (unregistered) players possess the ability to make a career in football but miss out on the opportunity because they don’t get the right training and coaching or have negative experiences with illegal scouts and agents who are not delivering what they promise. 
+        <br><br>
+        We are here to ensure that every talent gets the opportunity to be recognised, appreciated, and nurtured by providing the necessary support a player needs to succeed in football. The best teams in the world have two or three outstanding individuals who can make a difference. We want to develop strong talent who are capable of unlocking matches. 
+    </p>
 </section>
 
 

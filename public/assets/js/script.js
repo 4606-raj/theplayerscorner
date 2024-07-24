@@ -19,6 +19,9 @@ $(".currentYear").html(currentYear);
     }
         
     $(document).ready(function () {
+        // Initialize animations on scroll
+        AOS.init();
+
         // Player Registration
         $('.unit-switcher').on('click', function(){
             $(this).toggleClass('activeIcon');

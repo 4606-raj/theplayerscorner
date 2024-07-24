@@ -636,6 +636,9 @@
             }
         }
     }
+    .bannerText{
+        left: 50%;
+    }
     .fixed-hdr-small{
         position: sticky !important;
         width: 100%;
@@ -949,6 +952,13 @@
             }
         } 
     } 
+    .bannerText{
+        left: 38vw;
+        
+        h3{
+            font-size: clamp(1.5rem, 10vw, 2.5rem);
+        }
+    }
     .heroBanner {
         background-position: 50% -170px;
     }

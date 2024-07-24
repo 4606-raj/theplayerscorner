@@ -6,8 +6,8 @@
         <div class="row">
             <div class="heroBanner col-lg-12">
                 <div class="bannerText">
-                    <h3>the players corner</h3>
-                    <p>we're levelling the field</p>
+                    <h3 class="animate__animated animate__fadeInUp animate__fast">the players corner</h3>
+                    <p class="animate__animated animate__fadeInUp  animate__fast">we're levelling the field</p>
                 </div>
                 <div class="topOverlayBanner"></div>
                 <div class="makeShape">sdf</div>
