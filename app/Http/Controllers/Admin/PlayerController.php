@@ -28,7 +28,7 @@ class PlayerController extends Controller
                     return $data->user->photo ?? 'NA';
                 })
                 ->editColumn('captain', function($data) {
-                    return $data->is_captain? 'Yes': 'No';
+                    // return $data->is_captain? 'Yes': 'No';
                 })
                 ->addColumn('action', function($data) {
                     $edit = route('players.edit', $data->id);

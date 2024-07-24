@@ -106,7 +106,7 @@ $(".currentYear").html(currentYear);
     // });
     
     $(document).click(function (event) {
-        console.log(!$(event.target).is('#ham-button'));
+        // console.log(!$(event.target).is('#ham-button'));
         if (!($(event.target).is('#ham-button')) && !($(event.target).is('.show-hide-menu')) && ($(event.target).is('.addBackDrop'))) {
             $('.hamRotate').removeClass('active');
             $('nav').removeClass('show-hide-menu');

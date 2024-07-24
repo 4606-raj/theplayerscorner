@@ -19,18 +19,6 @@ use App\Http\Controllers\BlogController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/contact-us', [HomeController::class, 'contactUs'])->name('contact-us.submit');
 
-// Route::view('/about-us', 'about-us')->name('about-us');
-// Route::view('/community', 'community')->name('community');
-// Route::view('/club-shop', 'club-shop')->name('club-shop');
-
-// Teams section
-Route::group(['prefix' => '/teams'], function() {
-    Route::get('/types', [TeamController::class, 'indexTeamTypes'])->name('team-types');
-    Route::get('/types/{id}', [TeamController::class, 'showTeamTypes'])->name('team-types.show');
-    Route::get('{id}', [TeamController::class, 'show'])->name('teams-show');
-});
-
-// Route::view('/teams', 'teams')->name('teams');
 Route::view('/mens-team', 'mens-team')->name('mens-team');
 Route::view('/womens-team', 'womens-team')->name('womens-team');
 Route::view('/youth-team', 'youth-team')->name('youth-team');
@@ -41,7 +29,6 @@ Route::view('/contact-us', 'contact-us')->name('contact-us');
 Route::view('/after-contact-us', 'after-contact-us')->name('after-contact-us');
 Route::view('/privacy-policy', 'legal-documents.privacy-policy')->name('privacy-policy');
 Route::view('/company-details', 'legal-documents.company-details')->name('company-details');
-// Route::view('/digital-privacy', 'legal-documents.digital-privacy')->name('digital-privacy');
 Route::view('/terms-of-use', 'legal-documents.terms-of-use')->name('terms-of-use');
 Route::view('/privacy-preference', 'legal-documents.privacy-preference')->name('privacy-preference');
 Route::view('/forgot-password', 'auth.forgot-password')->name('forgot-password');
@@ -68,20 +55,10 @@ Route::view('/user-type', 'user-type')->name('user-type');
 Route::view('/user-login', 'auth.user-login')->name('user-login');
 
 
-Route::get('/test', function() {
-    Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactReceivedMail());
-});
-
 Route::view('/player-registration', 'auth.player-registration')->name('player-registration');
 
-// Route::post('/contact', function (Request $request) {
 
-//     Mail::to('0066.navi@gmail.com')->send(new \App\Mail\ContactMail);
-//     return 'E-Mail Sent';
-    
-// })->name('contact');
-
-
+// Artisan calls
 Route::get('/artisan-migrate', function () {
     Artisan::call('migrate');
 });
@@ -89,13 +66,3 @@ Route::get('/artisan-migrate', function () {
 Route::get('/cache-clear', function () {
     Artisan::call('cache:clear');
 });
-
-Route::get('/test', function () {
-    $data1 = \App\Models\Gallery::select('id', 'name', \DB::raw('"gallery" as type'));
-    $data2 = \App\Models\Team::select('id', 'name', \DB::raw('"team" as type'));
-
-    dd($data1->union($data2)->paginate(2)->toArray());
-});
-
-// Route::view('test', 'test');
-// Route::get('/test', [HomeController::class, 'index'])->name('home');
