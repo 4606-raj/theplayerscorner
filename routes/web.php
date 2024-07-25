@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,18 @@ use App\Http\Controllers\BlogController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/contact-us', [HomeController::class, 'contactUs'])->name('contact-us.submit');
+
+// Onboarding
+Route::get('/register/{role}', [AuthController::class, 'create'])->name('register.role.create');
+Route::post('/register/{role}', [AuthController::class, 'store'])->name('register.role.store');
+Route::group(['middleware' => 'auth'], function() {
+
+    Route::get('/player-registration', [AuthController::class, 'playerRegistrationForm'])->name('player-registration.create');
+    Route::post('/step-one', [AuthController::class, 'stepOne'])->name('step-one');
+    Route::post('/step-two', [AuthController::class, 'stepTwo'])->name('step-two');
+    Route::post('/step-three', [AuthController::class, 'stepThree'])->name('step-three');
+    Route::post('/step-four', [AuthController::class, 'stepFour'])->name('step-four');
+});
 
 Route::view('/mens-team', 'mens-team')->name('mens-team');
 Route::view('/womens-team', 'womens-team')->name('womens-team');
@@ -51,11 +64,11 @@ Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('blogs.show');
 Route::post('/comments', [BlogController::class, 'storeComment'])->name('blogs.store-comment');
 
 // Routes for Web App
-Route::view('/user-type', 'user-type')->name('user-type');
-Route::view('/user-login', 'auth.user-login')->name('user-login');
+// Route::view('/user-type', 'user-type')->name('user-type');
+// Route::view('/user-login', 'auth.user-login')->name('user-login');
 
 
-Route::view('/player-registration', 'auth.player-registration')->name('player-registration');
+// Route::view('/player-registration', 'auth.player-registration')->name('player-registration');
 
 
 // Artisan calls

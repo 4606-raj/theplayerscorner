@@ -25,8 +25,8 @@
                         <p class="mb-0"> The Player Corner cannot accept liability for the services it provides or your actions.</p>
                     </div>
 
-                    <label for="terms_consent">
-                        <input type="checkbox" class="consent_checkbox" name="terms_consent" id="terms_consent" required="">
+                    <label for="consent_terms_of_use">
+                        <input type="checkbox" class="consent_checkbox" name="consent_terms_of_use" id="consent_terms_of_use" wire:model="consent_terms_of_use" required="">
                         I accept that I am responsible for my behaviour on the platform.
                     </label>
                 </div>
@@ -45,7 +45,7 @@
                     </div>
 
                     <label for="data_consent">
-                        <input type="checkbox" class="consent_checkbox" name="data_consent" id="data_consent" required="">
+                        <input type="checkbox" class="consent_checkbox" name="data_consent" id="data_consent" wire:model="consent_data_collection_privacy" required="">
                         I accept that I am responsible for my behaviour on the platform.
                     </label>
                 </div>

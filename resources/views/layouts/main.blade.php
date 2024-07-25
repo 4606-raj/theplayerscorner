@@ -30,6 +30,7 @@
 <!-- Icons -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     @stack('style')
     
@@ -119,6 +120,10 @@
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.js"></script>
     
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
+    {{-- <script src="{{ asset('js/toastr.min.js') }}"></script> --}}
+    
     <script type="text/javascript">
         lightGallery(document.getElementById('animated-thumbnails'), {
             plugins: [lgZoom],
@@ -135,8 +140,9 @@
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
-    <script src="{{ URL::asset('assets/js/script.js') }}"></script>
-    
+    {{-- <script src="{{ asset('js/toastr.js') }}"></script>     --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     
     {!! NoCaptcha::renderJs() !!}
     @include('sweetalert::alert')

@@ -24,20 +24,11 @@
                             <div class="right-bl col-12 mt-2 mt-md-0">
                                 <div class="row">
                                     <div class="col-12">
-                                        <select class="form-select" id="player_position" required>
+                                        <select class="form-select" id="player_position" wire:model="morph_position_id" required>
                                             <option value="" selected disabled>Select your position</option>
-                                            <option value="1">Goalkeeper (GK)</option>
-                                            <option value="2">Centre Back (CB)</option>
-                                            <option value="3">Right Back (RB)</option>
-                                            <option value="4">Left Back (LB)</option>
-                                            <option value="5">Centre Midfield (CM)</option>
-                                            <option value="6">Centre Defensive Midfield (CDM)</option>
-                                            <option value="7">Centre Attacking Midfield (CAM)</option>
-                                            <option value="8">Right Midfield (RM)</option>
-                                            <option value="9">Left Midfield (LM)</option>
-                                            <option value="10">Right Wing (RW)</option>
-                                            <option value="11">Left Wing (LW)</option>
-                                            <option value="12">Centre Forward (CF)</option>
+                                            @foreach (config('constants.dropdowns.postitions') as $key => $value)
+                                                <option value="{{ $key }}">{{ $value }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
@@ -53,20 +44,11 @@
                             <div class="right-bl col-12 mt-2 mt-md-0">
                                 <div class="row">
                                     <div class="col-12">
-                                        <select class="form-select" id="second_position" required>
+                                        <select class="form-select" id="second_position" wire:model="morph_second_position_id" required>
                                             <option value="" selected disabled>Select second position</option>
-                                            <option value="1">Goalkeeper (GK)</option>
-                                            <option value="2">Centre Back (CB)</option>
-                                            <option value="3">Right Back (RB)</option>
-                                            <option value="4">Left Back (LB)</option>
-                                            <option value="5">Centre Midfield (CM)</option>
-                                            <option value="6">Centre Defensive Midfield (CDM)</option>
-                                            <option value="7">Centre Attacking Midfield (CAM)</option>
-                                            <option value="8">Right Midfield (RM)</option>
-                                            <option value="9">Left Midfield (LM)</option>
-                                            <option value="10">Right Wing (RW)</option>
-                                            <option value="11">Left Wing (LW)</option>
-                                            <option value="12">Centre Forward (CF)</option>
+                                            @foreach (config('constants.dropdowns.second_positions') as $key => $value)
+                                                <option value="{{ $key }}">{{ $value }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
@@ -88,11 +70,11 @@
                             <div class="right-bl col-12 mt-2 mt-md-0">
                                 <div class="row">
                                     <div class="col-12">
-                                        <select class="form-select" id="player_foot" required>
+                                        <select class="form-select" id="player_foot" wire:model="morph_foot_id" required>
                                             <option value="" selected disabled>Select</option>
-                                            <option value="1">Right</option>
-                                            <option value="2">Left</option>
-                                            <option value="3">Both</option>
+                                            @foreach (config('constants.dropdowns.feet') as $key => $value)
+                                                <option value="{{ $key }}">{{ $value }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
@@ -100,39 +82,22 @@
                         </div>
                         
                         <!-- Traits -->
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 pe-0 sel-nationalities">
+
+                        <div class="col-6 ps-0">
                             <div class="col-12 mb-2 left-bl">
-                                <p class="field-question">Traits</p>    
+                                <p class="field-question">Traits <span class="compulsory-mark">*</span></p>
                             </div>
                             
-                            <div class="right-bl col-12">
-                                    <div class="dropdown">
-                                        <div class="form-control dropdown-toggle selInput" placeholder="test" id="selInput2" data-bs-toggle="dropdown" aria-expanded="false" contenteditable="true"></div>
-        
-                                        <ul class="dropdown-menu" aria-labelledby="selInput2">
-                                            <!-- List of countries in alphabetical order -->
-                                            <li><a class="dropdown-item" href="#">Agile </a></li>
-                                            <li><a class="dropdown-item" href="#">Aggressive Crosser</a></li>
-                                            <li><a class="dropdown-item" href="#">Distance Shooter</a></li>
-                                            <li><a class="dropdown-item" href="#">Distribution</a></li>
-                                            <li><a class="dropdown-item" href="#">Dribbler</a></li>
-                                            <li><a class="dropdown-item" href="#">Finisher</a></li>
-                                            <li><a class="dropdown-item" href="#">Handling</a></li>
-                                            <li><a class="dropdown-item" href="#">Judgement</a></li>
-                                            <li><a class="dropdown-item" href="#">Leadership</a></li>
-                                            <li><a class="dropdown-item" href="#">Long Throw-in</a></li>
-                                            <li><a class="dropdown-item" href="#">Play Maker</a></li>
-                                            <li><a class="dropdown-item" href="#">Power Header</a></li>
-                                            <li><a class="dropdown-item" href="#">Set Piece Specialist</a></li>
-                                            <li><a class="dropdown-item" href="#">Speedster</a></li>
-                                            <li><a class="dropdown-item" href="#">Strength</a></li>
-                                            <li><a class="dropdown-item" href="#">Tackler</a></li>
-                                            <li><a class="dropdown-item" href="#">Tactician</a></li>
-                                            <li><a class="dropdown-item" href="#">Team Player</a></li>
-                                            <li><a class="dropdown-item" href="#">Vocal</a></li>
-                                            <!-- Add more countries here -->
-                                        </ul>
+                            <div class="right-bl col-12 mt-2 mt-md-0">
+                                <div class="row">
+                                    <div wire:ignore class="col-12">
+                                        <select class="form-select morph_trait_id select2" id="morph_trait_id" wire:model="morph_trait_id" multiple required>
+                                            @foreach (config('constants.dropdowns.traits') as $key => $value)
+                                                <option value="{{ $key }}">{{ $value }}</option>
+                                            @endforeach
+                                        </select>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -151,6 +116,31 @@
 
     </form>
 
+@push('script')
+    <script>
+        document.addEventListener('livewire:load', function () {
+            $('.select2').select2();
+        });
 
+        $(document).ready(function() {
+            $('.select2').select2({
+                placeholder: '{{__('Select your option')}}',
+                allowClear: true
+            });
+            $('.morph_trait_id').on('change', function (e) {
+                let elementName = $(this).attr('id');
+                var data = $(this).select2("val");
+                @this.set(elementName, data);
+            });
+        });
+        
+    </script>
+@endpush
+
+<style>
+    .select2 {
+        min-width: 100px !important;
+    }
+</style>
     
 </div>

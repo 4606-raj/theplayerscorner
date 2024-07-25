@@ -41,7 +41,7 @@
 							</div>
 
 						</div>
-					  </div>
+					</div>
 
 					{{-- =======================================================Base Section END========================================================================= --}}
 	</div>
@@ -51,9 +51,44 @@
 
 @livewireScripts
 <script>
-    Livewire.on('basicDetailsSaved', () => {
-		$('.tab-pane a:first').tab('hide') 
+    Livewire.on('basicDetailsSaved', (step) => {
+		if(step == 5) {
+			window.location.replace('/');
+		}
+		$(`#v-pills-step-${step}-tab`).trigger('click') 
     })
 </script>
+
+@push('script')
+	<script>
+		$(document).ready(function() {
+			let currentStep = @json(Auth::user()->player->steps);
+			$(`#v-pills-step-${currentStep}-tab`).trigger('click') 
+		});
+
+		function canProceedToStep(stepNumber) {
+			let currentStep = @json(Auth::user()->player->steps);
+			return stepNumber <= currentStep;
+		}
+
+		$(document).ready(function() {
+			$('#v-pills-tab button').on('click', function(e) {
+				var stepNumber = $(this).find('.counter-num').text();
+				
+				if (!canProceedToStep(parseInt(stepNumber))) {
+					e.preventDefault();  // Prevent default action
+					e.stopPropagation(); // Stop the event from propagating
+					
+					// alert('You cannot proceed to this step until the previous steps are completed.');
+					
+					return false;        // Ensure function exits
+				}
+			});
+		});
+
+
+		
+	</script>
+@endpush
 
 @endsection
