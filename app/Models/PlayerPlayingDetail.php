@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class PlayerPlayingDetail extends Model
 {
     use HasFactory;
+
+    protected $guarded = [];
 }

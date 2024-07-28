@@ -18,7 +18,7 @@
                         </div>
                         
                         <div class="right-bl col-12 mb-3 mb-md-0">
-                            <x-text-field name="supported_team" type="text" label="Supported Team" required="true"/>
+                            <x-text-field name="supported_team" wire:model="supported_team" type="text" label="Supported Team" required="true"/>
                         </div>
                     </div>
 
@@ -35,19 +35,11 @@
                                 <div class="right-bl col-12 mt-2 mt-md-0">
                                     <div class="row">
                                         <div class="col-12">
-                                            <select class="form-select" id="current_level" required>
+                                            <select class="form-select" id="current_level" wire:model="current_level" required>
                                                 <option value="" selected disabled>Select current level</option>
-                                                <option value="1">Recreational</option>
-                                                <option value="2">School</option>
-                                                <option value="3">Sunday League</option>
-                                                <option value="4">District</option>
-                                                <option value="5">County</option>
-                                                <option value="6">Saturday League</option>
-                                                <option value="7">National League Academy</option>
-                                                <option value="8">EFL Academy</option>
-                                                <option value="9">Premier League Academy</option>
-                                                <option value="10">National League Senior</option>
-                                                <option value="11">EFL Senior</option>
+                                                @foreach (config('constants.dropdowns.current_levels') as $key => $value)
+                                                    <option value="{{ $key }}">{{ $value }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -63,19 +55,11 @@
                                 <div class="right-bl col-12 mt-2 mt-md-0">
                                     <div class="row">
                                         <div class="col-12">
-                                            <select class="form-select" id="highest_level" required>
+                                            <select class="form-select" id="highest_level" wire:model="highest_level" required>
                                                 <option value="" selected disabled>Select current level</option>
-                                                <option value="1">Recreational</option>
-                                                <option value="2">School</option>
-                                                <option value="3">Sunday League</option>
-                                                <option value="4">District</option>
-                                                <option value="5">County</option>
-                                                <option value="6">Saturday League</option>
-                                                <option value="7">National League Academy</option>
-                                                <option value="8">EFL Academy</option>
-                                                <option value="9">Premier League Academy</option>
-                                                <option value="10">National League Senior</option>
-                                                <option value="11">EFL Senior</option>
+                                                @foreach (config('constants.dropdowns.highest_levels') as $key => $value)
+                                                    <option value="{{ $key }}">{{ $value }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -92,7 +76,7 @@
                         </div>
                         
                         <div class="right-bl col-12 mb-3 mb-md-0">
-                            <x-text-field name="current_club" type="text" label="Current Club"/>
+                            <x-text-field name="current_club" wire:model="current_club" type="text" label="Current Club"/>
                         </div>
                     </div>
             </div>

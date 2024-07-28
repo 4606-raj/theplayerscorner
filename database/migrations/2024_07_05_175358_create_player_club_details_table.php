@@ -16,7 +16,7 @@ class CreatePlayerClubDetailsTable extends Migration
         Schema::create('player_club_details', function (Blueprint $table) {
             $table->id();
             $table->string('supported_team');
-            $table->foreignId('morph_supported_level_id');
+            $table->foreignId('morph_current_level_id');
             $table->foreignId('morph_highest_level_id');
             $table->string('current_club')->nullable();
             $table->foreignId('player_id')->constrained();

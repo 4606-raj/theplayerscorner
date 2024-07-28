@@ -16,7 +16,8 @@ class CreatePlayersTable extends Migration
         Schema::create('players', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained();
-            $table->string('nationality')->nullable();
+            $table->string('gender')->nullable();
+            $table->json('morph_nationality_id')->nullable();
             $table->double('height')->nullable();
             $table->enum('height_unit', ['feet', 'cm'])->nullable();
             $table->double('weight')->nullable();
@@ -25,6 +26,7 @@ class CreatePlayersTable extends Migration
             $table->boolean('consent_terms_of_use')->default(false);
             $table->boolean('consent_data_collection_privacy')->default(false);
             $table->string('photo')->nullable();
+            $table->integer('steps')->default(0);
             $table->timestamps();
         });
     }

@@ -22,9 +22,6 @@ class CreateNewUser implements CreatesNewUsers
     public function create(array $input)
     {
         Validator::make($input, [
-            'first_name' => ['required', 'string', 'max:255'],
-            'last_name' => ['required', 'string', 'max:255'],
-            'dob' => ['required', 'string', 'max:255'],
             'email' => [
                 'required',
                 'string',
@@ -36,9 +33,6 @@ class CreateNewUser implements CreatesNewUsers
         ])->validate();
 
         return User::create([
-            'first_name' => $input['first_name'],
-            'last_name' => $input['last_name'],
-            'dob' => Carbon::parse($input['dob']),
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
         ]);

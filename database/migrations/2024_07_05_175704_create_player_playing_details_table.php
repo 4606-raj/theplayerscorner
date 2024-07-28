@@ -18,7 +18,7 @@ class CreatePlayerPlayingDetailsTable extends Migration
             $table->foreignId('morph_position_id');
             $table->foreignId('morph_second_position_id');
             $table->foreignId('morph_foot_id');
-            $table->foreignId('morph_trait_id');
+            $table->json('morph_trait_id');
             $table->foreignId('player_id')->constrained();
             $table->timestamps();
         });

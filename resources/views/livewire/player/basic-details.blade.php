@@ -1,6 +1,6 @@
 <div>
     
-    <form wire:submit.prevent="save" class="form-body col-sm-12 col-lg-12 col-md-12 col-12 pt-3">
+    <form wire:submit.prevent="save" wire:csrf class="form-body col-sm-12 col-lg-12 col-md-12 col-12 pt-3">
 							
         {{-- STEP 1 --}}
         <div class="tab-pane fade show active" id="v-pills-step-1" role="tabpanel" aria-labelledby="v-pills-step-1-tab">
@@ -75,7 +75,7 @@
                         <div class="row">
                             <!-- Day Selector -->
                             <div class="col-4">
-                                <select class="form-select" id="day" name="day" wire:model="day" required>
+                                <select class="form-select" id="day" name="day" wire:model="day" wire:ignore required>
                                     <option value="" selected disabled>Day</option>
                                     <!-- Populate days 1 to 31 -->
                                     <script>
@@ -87,7 +87,7 @@
                             </div>
                             <!-- Month Selector -->
                             <div class="col-4">
-                                <select class="form-select" id="month" name="month" wire:model="month" required>
+                                <select class="form-select" id="month" name="month" wire:model="month" wire:ignore required>
                                     <option value="" selected disabled>Month</option>
                                     <option value="1">January</option>
                                     <option value="2">February</option>
@@ -105,7 +105,7 @@
                             </div>
                             <!-- Year Selector -->
                             <div class="col-4">
-                                <select class="form-select" id="year"name="year" wire:model="year" required>
+                                <select class="form-select" id="year"name="year" wire:model="year" wire:ignore required>
                                     <option value="" selected disabled>Year</option>
                                     <!-- Populate years from 1900 to current year -->
                                     <script>
@@ -128,7 +128,7 @@
                     
                     <div class="right-bl col-lg-8 col-md-7 col-sm-12 ps-lg-3 mb-3 mb-md-0 ps-lg-3">
                         <!-- Gender Selector -->
-                        <select class="form-select" id="gender" required>
+                        <select class="form-select" id="gender" wire:model="gender" required>
                             <option value="" selected disabled>Gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -144,7 +144,7 @@
                         <p class="field-question">Nationality <span class="compulsory-mark">*</span></p>    
                     </div>
                     
-                    <div class="right-bl col-lg-8 col-md-5 col-sm-12 ps-lg-3 mb-3 mb-md-0 ps-lg-3">
+                    {{-- <div class="right-bl col-lg-8 col-md-5 col-sm-12 ps-lg-3 mb-3 mb-md-0 ps-lg-3">
                             <div class="dropdown">
                                 <div class="form-control dropdown-toggle selInput" placeholder="test" id="selInput" data-bs-toggle="dropdown" aria-expanded="false" contenteditable="true"></div>
 
@@ -156,6 +156,18 @@
                                     <!-- Add more countries here -->
                                 </ul>
                             </div>
+                    </div> --}}
+
+                    <div class="right-bl col-12 mt-2 mt-md-0">
+                        <div class="row">
+                            <div wire:ignore class="col-12">
+                                <select class="form-select select2 morph_nationality_id" id="morph_nationality_id" wire:model="morph_nationality_id" multiple required>
+                                    @foreach (config('constants.dropdowns.nationalities') as $key => $value)
+                                        <option value="{{ $key }}">{{ $value }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -171,25 +183,18 @@
                             <div class="col-4 d-flex align-items-center">
                                 <div class="unit-switcher">
                                     <i class="bi bi-caret-down-fill"></i>
-                                    <select class="form-select" id="height-unit" name="height" required>
+                                    <select class="form-select" id="height-unit" name="height" wire:model="height_unit" required>
                                         <option value="feet">Feet</option>
                                         <option value="cm">Centimeters</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-8">
-                                <select class="form-select col-6 " id="height" required>
+                                <select class="form-select col-6 " id="height" wire:model="height" required>
                                     <option value="" selected disabled>Select Height</option>
+                                    {!! $heightList !!}
                                 </select>
-                                {{-- <select class="form-select  d-none" id="height-cm" required>
-                                    <option value="" selected disabled>Select Height (cm)</option>
-                                    <script>
-                                        for (let i = 90; i <= 215; i++) {
-                                            document.write(`<option value="${i}">${i} cm</option>`);
-                                        }
-                                    </script>
-                                </select> --}}
-    
+
                             </div>
                         </div>
                     </div>
@@ -207,7 +212,7 @@
                             <div class="col-4 d-flex align-items-center">
                                 <div class="unit-switcher">
                                     <i class="bi bi-caret-down-fill"></i>
-                                    <select class="form-select" id="weight-unit" required>
+                                    <select class="form-select" id="weight-unit" wire:model="weight_unit" required>
                                         <option value="lbs">Pounds</option>
                                         <option value="kg">Kilograms</option>
                                     </select>
@@ -215,17 +220,10 @@
                             </div>
     
                             <div class="col-8 justify-content-between">
-                                <select class="form-select " id="weight" required>
+                                <select class="form-select " id="weight" wire:model="weight" required>
                                     <option value="" selected disabled>Select Weight</option>
+                                    {!! $weightList !!}
                                 </select>
-                                {{-- <select class="form-select d-none" id="weight-kg" required>
-                                    <option value="" selected disabled>Select Weight (kg)</option>
-                                    <script>
-                                        for (let i = 20; i <= 180; i++) {
-                                            document.write(`<option value="${i}">${i} kg</option>`);
-                                        }
-                                    </script>
-                                </select> --}}
     
                             </div>
                         </div>
@@ -240,7 +238,7 @@
                     </div>
                     
                     <div class="right-bl justify-content-end col-lg-9 col-md-7 col-sm-12 ps-lg-3 mb-3 mb-md-0 ps-lg-3">
-                        <x-text-field name="last_name" type="text" label="Postcode [show dropdown]"/>
+                        <x-text-field name="location" wire:model="location" type="text" label="Postcode [show dropdown]"/>
                         
                         <div class="location-btn ">
                             <button type="button"> <i class="bi bi-crosshair"></i> current location</button>
@@ -260,47 +258,34 @@
 </div>
 
 @push('script')
-<script>
-    $('#height-unit').change((e) => changeHeightOptions(e))
+    <script>
+        toastr.options = {"positionClass": "toast-top-full-width"}
+        @if(Session::has('error'))
+            toastr.error("{{ Session::get('error') }}");
+        @endif
 
-    $('#weight-unit').change((e) => changeWeightOptions(e))
+        document.addEventListener('livewire:load', function () {
+            $('.select2').select2();
+        });
 
-    function changeHeightOptions(e) {
+        $(document).ready(function() {
+            $('.select2').select2({
+                placeholder: '{{__('Select your option')}}',
+                allowClear: true
+            });
+            $('.morph_nationality_id').on('change', function (e) {
+                let elementName = $(this).attr('id');
+                var data = $(this).select2("val");
+                @this.set(elementName, data);
+            });
+        });
+        
+    </script>
 
-        let options = `<option value="" selected disabled>Select Height</option>`;
-
-        if(e.target.value == 'cm') {
-            for (let i = 90; i <= 215; i++) {
-                options += `<option value="${i}">${i} cm</option>`;
-            }
-        }
-        else {
-            for (let i = 3; i <= 7; i++) {
-                for (let j = 0; j < 12; j++) {
-                    options += `<option value="${i}'${j}">${i}'${j}"</option>`;
-                }
-            }
-        }
-        $('#height').html(options)
+<style>
+    .select2 {
+        min-width: 100px !important;
     }
-
-    function changeWeightOptions(e) {
-
-        let options = `<option value="" selected disabled>Select Weight</option>`;
-
-        if(e.target.value == 'kg') {
-            for (let i = 20; i <= 180; i++) {
-                options += `<option value="${i}">${i} kg</option>`;
-            }
-        }
-        else {
-            for (let i = 50; i <= 400; i++) {
-                options += `<option value="${i}">${i} lbs</option>`;
-            }
-        }
-        $('#weight').html(options)
-    }
-
-    $('#height-unit,#weight-unit').trigger('change');
-</script>
+</style>
+    
 @endpush
