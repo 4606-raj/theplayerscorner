@@ -62,12 +62,12 @@
 @push('script')
 	<script>
 		$(document).ready(function() {
-			let currentStep = @json(Auth::user()->player->steps);
+			let currentStep = @json(Auth::user()->player->steps ?? 0);
 			$(`#v-pills-step-${currentStep}-tab`).trigger('click') 
 		});
 
 		function canProceedToStep(stepNumber) {
-			let currentStep = @json(Auth::user()->player->steps);
+			let currentStep = @json(Auth::user()->player->steps ?? 0);
 			return stepNumber <= currentStep;
 		}
 
