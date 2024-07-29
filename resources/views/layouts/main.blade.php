@@ -62,6 +62,7 @@
                         <li class="{{ activeClass('about-us') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('about-us') }}" class="">About Us</a></li>
                         <li class="{{ activeClass('blogs.index') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('blogs.index') }}">Our Blog</a></li>
                         <li class="{{ activeClass('contact-us') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('contact-us') }}">Contact Us</a></li>
+                        <li class="{{ activeClass('social-media') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('404') }}">Services</a></li>
                         <li class="{{ activeClass('social-media') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('social-media') }}">Social Hub</a></li>
                     </ul>
                 </div>
@@ -149,6 +150,8 @@
     {{-- <script src="{{ asset('js/toastr.js') }}"></script>     --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <script src="{{ asset('assets/js/script.js') }}"></script>
     
     {!! NoCaptcha::renderJs() !!}
     @include('sweetalert::alert')

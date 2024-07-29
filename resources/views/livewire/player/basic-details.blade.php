@@ -238,11 +238,16 @@
                     </div>
                     
                     <div class="right-bl justify-content-end col-lg-9 col-md-7 col-sm-12 ps-lg-3 mb-3 mb-md-0 ps-lg-3">
-                        <x-text-field name="location" wire:model="location" type="text" label="Postcode [show dropdown]"/>
+                        <x-text-field name="location" wire:model="location" type="text" label="Enter Postcode"/>
                         
                         <div class="location-btn ">
-                            <button type="button"> <i class="bi bi-crosshair"></i> current location</button>
-                        </div>
+                            <button type="button" id="getlocation"> <i class="bi bi-crosshair"></i> current location</button>
+                        </div>    
+                    </div>
+                    <div class="list"  id="locations-list" >
+                        @foreach ($locations as $location)
+                            <li class="location-item">{{ $location }}</li>
+                        @endforeach
                     </div>
                 </div>
         </div>
@@ -278,6 +283,48 @@
                 var data = $(this).select2("val");
                 @this.set(elementName, data);
             });
+
+            $('input[name="location"]').on('input', function() {
+                let postcode = $(this).val();
+
+                const postcodeNoSpaces = postcode.replace(/\s+/g, "").toUpperCase();
+                const postcodePattern = /^[A-Z]{1,2}[0-9R][0-9A-Z]?[0-9][ABD-HJLNP-UW-Z]{2}$/;
+
+                // Match the postcode with the regular expression
+                if (postcodePattern.test(postcodeNoSpaces)) {
+                    $.ajax({
+                    url: `{{ url('/locations-list/') }}/${postcode}`,
+                    success: function(response) {
+                        @this.set('locations', response);
+                    }
+                })
+                }
+            });
+
+            $('body').on('click', '.location-item', function() {
+                let value = $(this).html()
+                $('input[name="location"]').val(value)
+                $('.location-item').hide()
+                // $(this).html('')
+            })
+
+            $('#getlocation').click(function() {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    console.log(position.coords.latitude);
+
+
+                    let url = `https://geocode.maps.co/reverse?lat=${position.coords.latitude}&lon=${position.coords.longitude}&api_key=66a7c3879cc85576659602exsc7785d`
+                    $.ajax({
+                        url: url,
+                        success: function(response) {
+                            // console.log(response.display_name, 'rr');
+                            $('input[name="location"]').val(response.display_name)
+                        }
+                    })
+                    
+                });
+            });
+            
         });
         
     </script>
@@ -285,6 +332,23 @@
 <style>
     .select2 {
         min-width: 100px !important;
+    }
+    .list {
+        width: 65%;
+        background: #fff;
+        /* color: #f8f43c; */
+        margin-left: 35%;
+        margin-top: 1%;
+    }
+    .location-item {
+        cursor: pointer;
+        list-style-type: none;
+        padding: 2%;
+        border: 1px solid #f8f43c;
+    }
+    .location-item:hover {
+        background: #f8f43c;
+        color: #000;
     }
 </style>
     

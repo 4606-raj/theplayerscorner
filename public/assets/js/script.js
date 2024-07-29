@@ -19,6 +19,9 @@ $(".currentYear").html(currentYear);
     }
         
     $(document).ready(function () {
+
+        console.log('fdfd');
+        
         // Initialize animations on scroll
         AOS.init();
 

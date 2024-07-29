@@ -14,6 +14,7 @@ class BasicDetails extends Component
 
     public $heightList = [];
     public $weightList = [];
+    public $locations = [];
     public $first_name, $last_name, $day, $month, $year, $gender, $height, $height_unit, $weight, $weight_unit, $location, $photo;
     public $morph_nationality_id = [];
     

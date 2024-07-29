@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use GuzzleHttp\Client;
 use App\Models\Player;
 use App\Models\Gallery;
 use Mail;
 use Alert;
 use Validator;
+use Response;
 
 class HomeController extends Controller
 {
@@ -35,4 +37,28 @@ class HomeController extends Controller
         // return redirect()->back();
         return redirect()->route('after-contact-us');
     }
+
+    function locationsList($postCode)  {
+        $url = "api.postcodes.io/postcodes/$postCode";
+
+        $client = new Client();
+        $response = $client->get($url);
+        
+        $responseBody = $response->getBody()->getContents();
+        $responseDecoded = json_decode($responseBody, true);
+
+        if ($responseDecoded !== null) {
+            // \Log::info($responseDecoded);
+            $data[] = $responseDecoded['result']['pfa'];
+        } else {
+            $error = json_last_error();
+            \Log::error('Invalid JSON response: ' . $responseBody . ' (Error: ' . $error . ')');
+        }
+
+        
+        // $data = [$responseDecoded->result->region ?? null];
+        return Response::json($data ?? []);
+        
+    }
+    
 }
