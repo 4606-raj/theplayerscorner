@@ -83,7 +83,7 @@
                 @if (Auth::check())
                 <form action="{{ route('logout') }}" method="POST" class="form-inline">
                     @csrf
-                    <a href="javascript:void(0)" class="primary-btn"><button type="submit"><i class="primary-btn bi bi-box-arrow-in-left"></i> Logout</button></a>
+                    <a href="javascript:void" class="primary-btn"><button type="submit"><i class="primary-btn bi bi-box-arrow-in-left"></i> Logout</button></a>
                 </form>
                 @else
                     <a href="{{ route('login') }}" class="primary-btn"><button><i class="bi bi-box-arrow-in-right"></i> Login</button></a>

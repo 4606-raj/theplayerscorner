@@ -18,5 +18,5 @@
     }
 
     function activeClass($route) {
-        return !is_null(\Request::route()) && \Request::route()->getName() == $route? 'active-link': '';
+        return !is_null(\Request::route()) && \Request::route()->getName() == $route? 'active-link': 'active';
     }
