@@ -80,8 +80,15 @@
 
             {{-- Login button to portal --}}
             <div class="col-6 col-sm-auto col-md-auto d-flex justify-content-evenly align-items-center">
-                <a href="{{ route('login') }}" class="primary-btn"><button><i class="bi bi-box-arrow-in-right"></i> Login</button></a>
-                <a href="{{ route('register') }}" class="primary-btn register-btn"><button><i class="bi bi-pencil-square"></i> Register</button></a>
+                @if (Auth::check())
+                <form action="{{ route('logout') }}" method="POST" class="form-inline">
+                    @csrf
+                    <a href="javascript:void(0)" class="primary-btn"><button type="submit"><i class="primary-btn bi bi-box-arrow-in-left"></i> Logout</button></a>
+                </form>
+                @else
+                    <a href="{{ route('login') }}" class="primary-btn"><button><i class="bi bi-box-arrow-in-right"></i> Login</button></a>
+                    <a href="{{ route('register') }}" class="primary-btn register-btn"><button><i class="bi bi-pencil-square"></i> Register</button></a>
+                @endif
             </div>
 
             <button class="col-auto" id="ham-button">
