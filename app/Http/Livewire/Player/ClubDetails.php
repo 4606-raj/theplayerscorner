@@ -23,17 +23,23 @@ class ClubDetails extends Component
     }
 
     public function save() {
-        $attributes = $request = $this->validate();
-        $attributes['_token'] = csrf_token();
         try {
+            $attributes = $request = $this->validate();
+            $attributes['_token'] = csrf_token();
             $request = Request::create(route('step-two'), 'POST', $attributes);
             $response = app()->handle($request);
             if($response->getStatusCode() == 200) {
                 $this->emit('basicDetailsSaved', $response->getData()->step);
+                toastr()->success("Step 2 Completed");
             }
             else {
                 \Log::error($response);
                 throw new Exception($response, 500);
+            }
+        }
+        catch (\Illuminate\Validation\ValidationException $e) {
+            foreach ($e->errors() as $key => $error) {
+                toastr()->error($error[0]);
             }
         }
         catch(\Exception $e) {

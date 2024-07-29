@@ -5,9 +5,9 @@
         {{-- STEP 1 --}}
         <div class="tab-pane fade show active" id="v-pills-step-1" role="tabpanel" aria-labelledby="v-pills-step-1-tab">
 
-            @if($errors->any())
+            {{-- @if($errors->any())
                 {!! implode('', $errors->all('<div class="alert alert-danger">:message</div>')) !!}
-            @endif
+            @endif --}}
 
                 <h4 class="pane-hdr">Personal Details</h4>
                 {{-- Upload Photo --}}
@@ -76,7 +76,7 @@
                             <!-- Day Selector -->
                             <div class="col-4">
                                 <select class="form-select" id="day" name="day" wire:model="day" wire:ignore required>
-                                    <option value="" selected disabled>Day</option>
+                                    <option value="" selected>Day</option>
                                     <!-- Populate days 1 to 31 -->
                                     <script>
                                         for (let i = 1; i <= 31; i++) {
@@ -88,7 +88,7 @@
                             <!-- Month Selector -->
                             <div class="col-4">
                                 <select class="form-select" id="month" name="month" wire:model="month" wire:ignore required>
-                                    <option value="" selected disabled>Month</option>
+                                    <option value="" selected>Month</option>
                                     <option value="1">January</option>
                                     <option value="2">February</option>
                                     <option value="3">March</option>
@@ -106,7 +106,7 @@
                             <!-- Year Selector -->
                             <div class="col-4">
                                 <select class="form-select" id="year"name="year" wire:model="year" wire:ignore required>
-                                    <option value="" selected disabled>Year</option>
+                                    <option value="" selected>Year</option>
                                     <!-- Populate years from 1900 to current year -->
                                     <script>
                                         const selectYear = new Date().getFullYear();
@@ -129,7 +129,7 @@
                     <div class="right-bl col-lg-8 col-md-7 col-sm-12 ps-lg-3 mb-3 mb-md-0 ps-lg-3">
                         <!-- Gender Selector -->
                         <select class="form-select" id="gender" wire:model="gender" required>
-                            <option value="" selected disabled>Gender</option>
+                            <option value="" selected>Gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                             <option value="other">Other</option>
@@ -184,14 +184,14 @@
                                 <div class="unit-switcher">
                                     <i class="bi bi-caret-down-fill"></i>
                                     <select class="form-select" id="height-unit" name="height" wire:model="height_unit" required>
-                                        <option value="feet">Feet</option>
+                                        <option value="feet" selected>Feet</option>
                                         <option value="cm">Centimeters</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-8">
                                 <select class="form-select col-6 " id="height" wire:model="height" required>
-                                    <option value="" selected disabled>Select Height</option>
+                                    <option value="" selected>Select Height</option>
                                     {!! $heightList !!}
                                 </select>
 
@@ -213,7 +213,7 @@
                                 <div class="unit-switcher">
                                     <i class="bi bi-caret-down-fill"></i>
                                     <select class="form-select" id="weight-unit" wire:model="weight_unit" required>
-                                        <option value="lbs">Pounds</option>
+                                        <option value="lbs" selected>Pounds</option>
                                         <option value="kg">Kilograms</option>
                                     </select>
                                 </div>
@@ -221,7 +221,7 @@
     
                             <div class="col-8 justify-content-between">
                                 <select class="form-select " id="weight" wire:model="weight" required>
-                                    <option value="" selected disabled>Select Weight</option>
+                                    <option value="" selected>Select Weight</option>
                                     {!! $weightList !!}
                                 </select>
     
@@ -264,13 +264,16 @@
 
 @push('script')
     <script>
+
+        $('#weight-unit').trigger('change')
+        
         toastr.options = {"positionClass": "toast-top-full-width"}
         @if(Session::has('error'))
             toastr.error("{{ Session::get('error') }}");
         @endif
 
         document.addEventListener('livewire:load', function () {
-            $('.select2').select2();
+            $('.morph_nationality_id').select2();
         });
 
         $(document).ready(function() {
@@ -317,8 +320,7 @@
                     $.ajax({
                         url: url,
                         success: function(response) {
-                            // console.log(response.display_name, 'rr');
-                            $('input[name="location"]').val(response.display_name)
+                            @this.set('location', response.display_name);
                         }
                     })
                     

@@ -20,6 +20,9 @@ class AuthController extends Controller
 
     public function store(Request $request, $role) {
         $user = $this->createNewUser->create($request->all());
+        
+        // TODO: fetch role id
+        $user->roles()->sync(2);
 
         Auth::login($user);
 

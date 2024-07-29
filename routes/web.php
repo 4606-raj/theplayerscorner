@@ -31,12 +31,14 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('/step-two', [AuthController::class, 'stepTwo'])->name('step-two');
     Route::post('/step-three', [AuthController::class, 'stepThree'])->name('step-three');
     Route::post('/step-four', [AuthController::class, 'stepFour'])->name('step-four');
+
+    Route::view('/player-profile', 'players.profile')->name('player.profile');
 });
 
 Route::view('/mens-team', 'mens-team')->name('mens-team');
 Route::view('/womens-team', 'womens-team')->name('womens-team');
 Route::view('/youth-team', 'youth-team')->name('youth-team');
-Route::view('/player-profile', 'player-profile')->name('player-profile');
+// Route::view('/player-profile', 'player-profile')->name('player-profile');
 
 
 Route::view('/contact-us', 'contact-us')->name('contact-us');

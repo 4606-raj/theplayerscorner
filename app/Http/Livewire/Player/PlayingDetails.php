@@ -24,17 +24,24 @@ class PlayingDetails extends Component
     }
     
     public function save() {
-        $attributes =  $this->validate();
-        $attributes['_token'] = csrf_token();
         try {
+            $attributes =  $this->validate();
+            $attributes['_token'] = csrf_token();
+
             $request = Request::create(route('step-three'), 'POST', $attributes);
             $response = app()->handle($request);
             if($response->getStatusCode() == 200) {
                 $this->emit('basicDetailsSaved', $response->getData()->step);
+                toastr()->success("Step 3 Completed");
             }
             else {
                 \Log::error($response);
                 throw new Exception($response, 500);
+            }
+        }
+        catch (\Illuminate\Validation\ValidationException $e) {
+            foreach ($e->errors() as $key => $error) {
+                toastr()->error($error[0]);
             }
         }
         catch(\Exception $e) {

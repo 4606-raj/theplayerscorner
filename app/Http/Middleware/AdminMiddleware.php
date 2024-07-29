@@ -19,6 +19,8 @@ class AdminMiddleware
     {
         if(Auth::check() && Auth::user()->roles()->first() && Auth::user()->roles()->first()->name == 'admin')
             return $next($request);
+        else if(Auth::check() && Auth::user()->roles()->first() && Auth::user()->roles()->first()->name == 'player')
+            return redirect()->route('player.profile');
         else
             return redirect()->back();
     }

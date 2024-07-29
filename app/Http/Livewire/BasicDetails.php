@@ -15,7 +15,7 @@ class BasicDetails extends Component
     public $heightList = [];
     public $weightList = [];
     public $locations = [];
-    public $first_name, $last_name, $day, $month, $year, $gender, $height, $height_unit, $weight, $weight_unit, $location, $photo;
+    public $first_name, $last_name, $day, $month, $year, $gender, $height, $height_unit = 'feet', $weight, $weight_unit = 'lbs', $location, $photo;
     public $morph_nationality_id = [];
     
     protected $rules = [
@@ -44,20 +44,28 @@ class BasicDetails extends Component
 
     public function save() {
 
-        $attributes = $request = $this->validate();
-        $attributes['_token'] = csrf_token();
         try {
+            $attributes = $this->validate();
+            $attributes['_token'] = csrf_token();
 
-            $attributes['photo'] = $this->photo->storePublicly('players/images');
+            if($this->photo) {
+                $attributes['photo'] = $this->photo->storePublicly('players/images');
+            }
             
             $request = Request::create(route('step-one'), 'POST', $attributes);
             $response = app()->handle($request);
             if($response->getStatusCode() == 200) {
                 $this->emit('basicDetailsSaved', $response->getData()->step);
+                toastr()->success("Step 1 Completed");
             }
             else {
                 \Log::error($response);
                 throw new Exception($response, 500);
+            }
+        }
+        catch (\Illuminate\Validation\ValidationException $e) {
+            foreach ($e->errors() as $key => $error) {
+                toastr()->error($error[0]);
             }
         }
         catch(\Exception $e) {

@@ -51,11 +51,23 @@
 
 @livewireScripts
 <script>
+	
+	function changeTab(step) {
+		// Use Bootstrap method to show the tab
+		var tab = new bootstrap.Tab(document.getElementById(`v-pills-step-${step}-tab`));
+		tab.show();
+	}
     Livewire.on('basicDetailsSaved', (step) => {
+		
 		if(step == 5) {
-			window.location.replace('/');
+			window.location.replace("{{ route('player.profile') }}");
 		}
-		$(`#v-pills-step-${step}-tab`).trigger('click') 
+		
+		$(`#v-pills-step-${step}-tab`).trigger('click')
+
+		setTimeout(() => {
+			changeTab(step);
+		}, 100);
     })
 </script>
 
@@ -63,7 +75,7 @@
 	<script>
 		$(document).ready(function() {
 			let currentStep = @json(Auth::user()->player->steps ?? 0);
-			$(`#v-pills-step-${currentStep}-tab`).trigger('click') 
+			$(`#v-pills-step-${currentStep}-tab`).trigger('click')
 		});
 
 		function canProceedToStep(stepNumber) {

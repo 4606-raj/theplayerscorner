@@ -25,7 +25,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <select class="form-select" id="player_position" wire:model="morph_position_id" required>
-                                            <option value="" selected disabled>Select your position</option>
+                                            <option value="" selected>Select your position</option>
                                             @foreach (config('constants.dropdowns.postitions') as $key => $value)
                                                 <option value="{{ $key }}">{{ $value }}</option>
                                             @endforeach
@@ -45,7 +45,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <select class="form-select" id="second_position" wire:model="morph_second_position_id" required>
-                                            <option value="" selected disabled>Select second position</option>
+                                            <option value="" selected>Select second position</option>
                                             @foreach (config('constants.dropdowns.second_positions') as $key => $value)
                                                 <option value="{{ $key }}">{{ $value }}</option>
                                             @endforeach
@@ -71,7 +71,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <select class="form-select" id="player_foot" wire:model="morph_foot_id" required>
-                                            <option value="" selected disabled>Select</option>
+                                            <option value="" selected>Select</option>
                                             @foreach (config('constants.dropdowns.feet') as $key => $value)
                                                 <option value="{{ $key }}">{{ $value }}</option>
                                             @endforeach

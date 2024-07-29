@@ -28,6 +28,7 @@ class PlayerConsent extends Component
             $response = app()->handle($request);
             if($response->getStatusCode() == 200) {
                 $this->emit('basicDetailsSaved', $response->getData()->step);
+                toastr()->success("Step 4 Completed, Redirecting ...");
             }
             else {
                 \Log::error($response);

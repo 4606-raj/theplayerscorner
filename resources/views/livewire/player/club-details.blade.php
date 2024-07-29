@@ -36,7 +36,7 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <select class="form-select" id="current_level" wire:model="current_level" required>
-                                                <option value="" selected disabled>Select current level</option>
+                                                <option value="" selected>Select current level</option>
                                                 @foreach (config('constants.dropdowns.current_levels') as $key => $value)
                                                     <option value="{{ $key }}">{{ $value }}</option>
                                                 @endforeach
@@ -56,7 +56,7 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <select class="form-select" id="highest_level" wire:model="highest_level" required>
-                                                <option value="" selected disabled>Select current level</option>
+                                                <option value="" selected>Select current level</option>
                                                 @foreach (config('constants.dropdowns.highest_levels') as $key => $value)
                                                     <option value="{{ $key }}">{{ $value }}</option>
                                                 @endforeach
