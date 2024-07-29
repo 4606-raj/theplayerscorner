@@ -73,32 +73,50 @@
 
 @push('script')
 	<script>
-		$(document).ready(function() {
-			let currentStep = @json(Auth::user()->player->steps ?? 0);
-			$(`#v-pills-step-${currentStep}-tab`).trigger('click')
+		$(document).ready(async function() {
+			let currentStep = await getCurrentStep();
+			$(`#v-pills-step-${+currentStep + 1}-tab`).trigger('click')
 		});
 
-		function canProceedToStep(stepNumber) {
-			let currentStep = @json(Auth::user()->player->steps ?? 0);
+		function canProceedToStep(stepNumber, currentStep) {
 			return stepNumber <= currentStep;
 		}
 
 		$(document).ready(function() {
-			$('#v-pills-tab button').on('click', function(e) {
+			$('#v-pills-tab button').on('click', async function(e) {
 				var stepNumber = $(this).find('.counter-num').text();
+				let currentStep = await getCurrentStep();
+				currentStep = currentStep? +currentStep + 1: 1;
 				
-				if (!canProceedToStep(parseInt(stepNumber))) {
+				console.log(stepNumber, currentStep);
+				if (!canProceedToStep(parseInt(stepNumber), currentStep)) {
 					e.preventDefault();  // Prevent default action
 					e.stopPropagation(); // Stop the event from propagating
 					
 					// alert('You cannot proceed to this step until the previous steps are completed.');
+
+					var tab = new bootstrap.Tab(document.getElementById(`v-pills-step-${currentStep}-tab`));
+					tab.show();
 					
-					return false;        // Ensure function exits
+					return false;
 				}
 			});
 		});
 
+		async function getCurrentStep() {
 
+			var step = 0;
+			
+			await $.ajax({
+				url: "{{ route('get-current-step') }}",
+				success: function(response) {
+					step = response;
+				}
+			})
+
+			console.log(step);
+			return step;
+		}
 		
 	</script>
 @endpush

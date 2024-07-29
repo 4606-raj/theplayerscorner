@@ -60,5 +60,9 @@ class HomeController extends Controller
         return Response::json($data ?? []);
         
     }
+
+    public function getCurrentStep() {
+        return \Auth::user()->player->steps ?? 0;
+    }
     
 }

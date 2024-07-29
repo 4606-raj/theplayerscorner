@@ -20,6 +20,7 @@ use App\Http\Controllers\AuthController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/contact-us', [HomeController::class, 'contactUs'])->name('contact-us.submit');
 Route::get('/locations-list/{postCode}', [HomeController::class, 'locationsList'])->name('locations-list');
+Route::get('/get-current-step', [HomeController::class, 'getCurrentStep'])->name('get-current-step');
 
 // Onboarding
 Route::get('/register/{role}', [AuthController::class, 'create'])->name('register.role.create');
