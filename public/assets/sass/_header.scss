@@ -69,6 +69,14 @@ header{
         // background: $secondary-clr;
         // background: rgba(251, 231, 70, 0.9);
         
+        .userPro-icon{
+            margin-right: 15px;
+            i::before{
+                font-size: 1.3rem !important;
+            }
+            padding-right: 15px !important;
+            border-right: 1px solid rgba(255,255,255,0.2);
+        }
         .hdr-social-icons{
             margin: 0;
             display: flex;
@@ -200,6 +208,14 @@ header{
                 align-items: center;
                 justify-content: center;
                 
+                &:hover{
+                    .sub-menu{
+                        visibility: visible;
+                        opacity: 1;
+                        max-height: 165px;
+                        // top: 90px;
+                    }
+                }
                 a{
                     display: block;
                     text-decoration: none;
@@ -231,13 +247,9 @@ header{
                             //     background: none !important;
                             // }
                             
-                            .sub-menu{
-                                visibility: visible;
-                                opacity: 1;
-                                top: 56px;
-                            }
-                        }
+                        
                     }
+                }
                     // &:hover 
                     
                     .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
@@ -258,26 +270,51 @@ header{
                 .sub-menu{
                     opacity: 0;
                     visibility: hidden;
-                    top: 70px;
+                    top: 100%;
                     left: 0;
                     transition: .3s;
+                    max-height: 0px;
+                    overflow: hidden;
                     
                     -webkit-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.3);
                     -moz-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.3);
                     box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.3);
                     
                     position: absolute;
-                z-index: 2;
-                background: #fff;
-                
-                flex-direction: column;
-                padding: 0;
-                min-width: 202px;
-                
-                li{
-                    margin: 0;
+                    z-index: 2;
+                    background: $primary-clr;
+                    
+                    flex-direction: column;
+                    padding: 0;
+
+                    min-width: 202px;
+                    border-radius: 3px;
+                    align-items: flex-start;
+                    padding: 8px 8px;
+
+                    li{
+                        display: block;
+                        width: 100%;
+                        margin: 0;
+
+                        a{
+                            display: block;
+                            font-size: .9rem;
+                            color: $secondary-clr;
+                            border-radius: 4px;
+                            transition: .2s;
+                            background: transparent;
+
+                            &:hover{
+                                background: $secondary-clr;
+                                color: $text-accent;
+                            }
+                            &::after , &::before{
+                                display: none;
+                            }
+                        }
+                    }
                 }
-            }
             .logo-2{
                 display: flex;
                 align-items: center;

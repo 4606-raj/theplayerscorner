@@ -62,7 +62,15 @@
                         <li class="{{ activeClass('about-us') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('about-us') }}" class="">About Us</a></li>
                         <li class="{{ activeClass('blogs.index') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('blogs.index') }}">Our Blog</a></li>
                         <li class="{{ activeClass('contact-us') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('contact-us') }}">Contact Us</a></li>
-                        <li class="{{ activeClass('404') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('404') }}">Services</a></li>
+                        <li class="{{ activeClass('404') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('404') }}">Services</a>
+                            <!-- Drop Down menu -->
+                            <ul class="sub-menu">
+                                <li><a href="#">1-2-1 Coaching</a></li>
+                                <li><a href="#">⁠Performance Analysis</a></li>
+                                <li><a href="#">Representation</a></li>
+                                <li><a href="#">Scouting</a></li>
+                            </ul>
+                        </li>
                         <li class="{{ activeClass('social-media') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('social-media') }}">Social Hub</a></li>
                     </ul>
                 </div>
@@ -70,10 +78,15 @@
                 <!-- Social Media Icons -->
                 <div class="social-icons hdr-social-icons">
                     <ul>
-                        <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                        <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                        @if (Auth::check())
+                            @csrf
+                                <li><a href="{{ route('player.profile') }}" class="userPro-icon"><i class="bi bi-person-circle"></i></a></li>
+                            @else
+                                <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                                <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                            @endif
                     </ul>
                 </div>
             </nav>
