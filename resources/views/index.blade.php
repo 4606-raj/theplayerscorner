@@ -335,7 +335,9 @@
                                 </label>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button type="submit" class="send-btn">Send</button>
+                                <a href="#" class="btn-cover">
+                                    <button type="submit" class="send-btn">Send</button>
+                                </a>
                             </div>
                         </form>
                     </div>

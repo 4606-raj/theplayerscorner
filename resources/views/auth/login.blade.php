@@ -44,7 +44,9 @@
 					<p class="forgot-pswd">Forgot your password? <a href="{{ route('forgot-password') }}">Click here</a> to reset your password.</p>
 					
 					<div class="d-flex justify-content-center mt-4">
-						<input type="submit" class="submit-btn" value="Continue">
+						<a href="#" class="btn-cover">
+							<input type="submit" class="submit-btn" value="Continue">
+						</a>
 					</div>
 				</form>
 			</div>

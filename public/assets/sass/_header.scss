@@ -451,21 +451,32 @@ header{
         } 
     }
     .primary-btn{
+        box-shadow: 0px 7px 50px 2px rgba(0, 0, 0, 0.0);        
+        transition: .2s;
+        
         button{
+            transition: .2s;
             background: $secondary-clr;
             color: $text-accent !important;
-            
-            &:hover{
+        }
+        &:hover{
+            button{
                 box-shadow: 0px 7px 50px 2px rgba(0, 0, 0, 0.6);        
             }
         }
     }
     .register-btn{
         button{
-            &:hover{
-                box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0) !important;        
-                border: 1px solid $secondary-clr !important;
-            }
+            background: transparent !important;
+            border: 1px solid $secondary-clr !important;
+            color: $secondary-clr !important;
+        }
+        &:hover button{
+            border: 1px solid $secondary-clr !important;
+            color: $text-accent !important;
+            background: $secondary-clr !important;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0) !important;        
+
         }
     }
     .logo-2 img{
@@ -476,10 +487,14 @@ header{
 
 .primary-btn{
     height: fit-content;
+    transition: .2s;
+    padding-bottom: 0px;
+    
     i{
         margin-right: 8px;
     }
     button{
+        box-shadow: 0px 7px 25px 2px rgba(251, 231, 70, 0);
         background: none;
         border: none;
         padding: 8px 11px;
@@ -490,19 +505,22 @@ header{
         color: $secondary-clr !important;
         outline: none;
         font-size: 1rem;
-        box-shadow: 0px 7px 25px 2px rgba(251, 231, 70, 0);
         position: relative;
         top: 0;
-        transition: .2s;
-        
-        &:hover{
-            top: -5px;
+        margin-bottom: 0px;
+    }
+
+    &:hover{
+        padding-bottom: 10px;
+
+        button{
             box-shadow: 0px 7px 50px 2px rgba(251, 231, 70, 0.6);
         }
     }
 }
 .register-btn{
     margin-left: 8px !important;
+
     button{
         background: $secondary-clr !important;
         transition: .3s !important;
@@ -513,9 +531,12 @@ header{
         &:hover{
             top: 0px;
             box-shadow: 0px 0px 0px 0px rgba(251, 231, 70, 0.6);
-            background: $primary-clr !important;
-            color: $secondary-clr !important;
         }
+    }
+    &:hover button{
+        background: $primary-clr !important;
+        color: $secondary-clr !important;
+        box-shadow: 0px 0px 0px 0px rgba(251, 231, 70, 0.6);
     }
 }
 #ham-button{
