@@ -25,6 +25,9 @@ Route::get('/get-current-step', [HomeController::class, 'getCurrentStep'])->name
 // Onboarding
 Route::get('/register/{role}', [AuthController::class, 'create'])->name('register.role.create');
 Route::post('/register/{role}', [AuthController::class, 'store'])->name('register.role.store');
+
+Route::post('/login', [AuthController::class, 'login'])->name('login');
+
 Route::group(['middleware' => 'auth'], function() {
 
     Route::get('/player-registration', [AuthController::class, 'playerRegistrationForm'])->name('player-registration.create');

@@ -13,6 +13,23 @@ class AuthController extends Controller
     function __construct(CreateNewUser $createNewUser) {
         $this->createNewUser = $createNewUser;
     }
+
+    public function login(Request $request) {
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|min:8',
+        ]);
+
+        if (!Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+            return back()->withErrors(['Invalid email or password']);
+        }
+
+        if(!Auth::user()->player || Auth::user()->player->steps < 4) {
+            return redirect()->route('player-registration.create');
+        }
+
+        return redirect()->route('player.profile');
+    }
     
     public function create($role) {
         return view('auth.register-role', compact('role'));
