@@ -30,7 +30,9 @@
             </div>
             
             <div class="d-flex justify-content-center">
-                <input type="submit" class="submit-btn mt-0" value="Continue">
+                <a href="#" class="btn-cover">
+                    <input type="submit" class="submit-btn mt-0" value="Continue">
+                </a>
             </div>
         </form>
     </div>

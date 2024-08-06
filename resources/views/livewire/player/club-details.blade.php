@@ -83,7 +83,9 @@
     
             <div class="d-flex justify-content-center mt-3 float-end">
                 <input type="button" onclick="history.back();" value="Back" class="player-prev-btn">
-                <input type="submit" class="submit-btn" value="Continue">
+                <a href="#" class="btn-cover">
+                    <input type="submit" class="submit-btn" value="Continue">
+                </a>
             </div>
             {{-- <div class="d-flex justify-content-center float-end">
             </div> --}}

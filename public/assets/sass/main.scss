@@ -55,6 +55,7 @@ button{
 }
 $primary-clr: #FBE746;
 $secondary-clr: #141414;
+$darkShade-1: #202020;
 $text-accent: #fafafa;
 
 ::-moz-selection { /* Code for Firefox */
@@ -82,4 +83,5 @@ $text-accent: #fafafa;
 @import 'about-us';
 @import 'footer';
 @import 'player-registration';
+@import 'player-profile';
 @import 'responsive';
