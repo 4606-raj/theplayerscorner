@@ -35,7 +35,7 @@ return [
             10 => 'National League Senior',
             11 => 'EFL Senior',
         ],
-        'postitions' => [
+        'positions' => [
             1 => 'Goalkeeper (GK)',
             2 => 'Centre Back (CB)',
             3 => 'Right Back (RB)',

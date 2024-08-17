@@ -1,6 +1,12 @@
 @extends('layouts.main')
 
 @section('content')
+
+@php
+    $user = Auth::user();
+    $player = $user->player;
+@endphp
+
     {{-- <div style="min-height: 100vh">
     </div> --}}
     
@@ -18,13 +24,13 @@
                 </div>
                 <!-- player Name -->
                 <div class="player-basic-info ">
-                    <p class="player-name">{{ Auth::user()->first_name }}</p>
+                    <p class="player-name">{{ $user->first_name }}</p>
                     <div class="d-flex player-age-gender">
-                        <p><span>Age:</span> 25 </p>    
-                        <p>M</p>
+                        <p><span>Age:</span> {{ $user->age }} </p>
+                        <p>{{ strtoupper($player->gender[0]) ?? '--' }}</p>
                     </div>
                     <div class="player-num">
-                        <p><span>#</span>21</p>
+                        <p><span>#</span>{{ $user->player->id }}</p>
                     </div>
                 </div>
                 <div class="tile-overlay"></div>
@@ -35,12 +41,12 @@
                 <div class="profile-info d-flex align-items-center justify-content-between">
                     <div class="pro-info-tab">
                         <p class="pro-info-hdr">Height:</p>
-                        <p class="pro-info-dec"><span>Feet:</span> 6’8</p>
+                        <p class="pro-info-dec"><span>{{ strtoupper($player->height_unit) }}:</span> {{ $player->height }}</p>
                     </div>
                     
                     <div class="pro-info-tab">
                         <p class="pro-info-hdr">Weight:</p>
-                        <p class="pro-info-dec"><span>Pounds: </span>55 lbs</p>
+                        <p class="pro-info-dec"><span>{{ strtoupper($player->weight_unit) }}: </span>{{ strtoupper($player->weight) }}</p>
                     </div>
                     
                 </div>
@@ -52,16 +58,16 @@
                     <div class="col-lg-8">
                         <p class="pro-info-hdr">Nationality:</p>
                         <div class="info-tab-row">
-                            <div class="info-tab">UK</div>
-                            <div class="info-tab">Australia</div>
-                            <div class="info-tab">New Zealand</div>
+                            @foreach (json_decode($player->morph_nationality_id) as $index)
+                            <div class="info-tab">{{ config('constants.dropdowns.nationalities')[$index] }}</div>
+                            @endforeach
                         </div>
                     </div>
                     <div class="col-lg-4 text-center">
                         <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.11995 0.0410461C6.01152 0.0435335 3.99017 0.882205 2.49928 2.37309C1.0084 3.86397 0.169729 5.88533 0.167241 7.99375C0.165303 9.71667 0.728057 11.3927 1.76935 12.7654C1.76935 12.7654 1.98624 13.051 2.02167 13.0922L8.11995 20.2843L14.2211 13.0885C14.2529 13.0502 14.4705 12.7654 14.4705 12.7654L14.4713 12.7632C15.5119 11.3911 16.0743 9.71584 16.0727 7.99375C16.0702 5.88533 15.2315 3.86397 13.7406 2.37309C12.2497 0.882205 10.2284 0.0435335 8.11995 0.0410461ZM8.11995 10.8856C7.54799 10.8856 6.98887 10.716 6.5133 10.3983C6.03773 10.0805 5.66707 9.62886 5.44819 9.10043C5.22931 8.57201 5.17204 7.99055 5.28362 7.42957C5.39521 6.8686 5.67063 6.35331 6.07507 5.94888C6.47951 5.54444 6.9948 5.26901 7.55577 5.15743C8.11674 5.04584 8.6982 5.10311 9.22663 5.32199C9.75505 5.54087 10.2067 5.91153 10.5245 6.3871C10.8422 6.86267 11.0118 7.42179 11.0118 7.99375C11.0109 8.76044 10.7059 9.49545 10.1638 10.0376C9.62164 10.5797 8.88663 10.8847 8.11995 10.8856Z" fill="#FBE746"/>
                         </svg>                                
-                        <p class="player-location">City of London</p>
+                        <p class="player-location">{{ $player->location }}</p>
                     </div>
                 </div>
             </div>
@@ -81,7 +87,7 @@
                         </p>
     
                         <div class="pro-left-content">
-                            <p>Sint ullam quia quo </p>
+                            <p>{{ $player->playerClubDetails->supported_team ?? '--' }} </p>
                         </div>
                     </div>
     
@@ -95,7 +101,7 @@
                         </p>
     
                         <div class="pro-left-content">
-                            <p>School</p>
+                            <p>{{ $player->playerClubDetails->current_level }}</p>
                         </div>
                     </div>
                 </div>
@@ -110,7 +116,7 @@
                         </p>
     
                         <div class="pro-right-content">
-                            <p>Current Club Name </p>
+                            <p>{{ $player->playerClubDetails->highest_level }} </p>
                         </div>
                     </div>
     
@@ -124,7 +130,7 @@
                         </p>
     
                         <div class="pro-left-content">
-                            <p>Premier League Academy</p>
+                            <p>{{ $player->playerClubDetails->current_club ?? '--' }}</p>
                         </div>
                     </div>
                 </div>
@@ -137,14 +143,14 @@
                         <p class="pro-tab-hdr">Position</p>
 
                         <div class="dec-container">
-                            <p>Centre Midfield (CM)</p>
+                            <p>{{ $player->playerPlayingDetails->position ?? '--' }}</p>
                         </div>
                     </div>
                     <div class="pro-tab-box col-lg-6 pro-box-2">
                         <p class="pro-tab-hdr">Second Position</p>
 
                         <div class="dec-container">
-                            <p>Right Back (RB)</p>
+                            <p>{{ $player->playerPlayingDetails->second_position ?? '--' }}</p>
                         </div>
                     </div>
                     
@@ -175,16 +181,17 @@
                         <p class="pro-tab-hdr">Foot</p>
 
                         <div class="dec-container">
-                            <p>Left</p>
+                            <p>{{ $player->playerPlayingDetails->foot ?? '--' }}</p>
                         </div>
                     </div>
                     <div class="pro-tab-box pro-box-2 col-lg-6">
                         <p class="pro-tab-hdr">Traits</p>
                         
                         <div class="dec-container justify-content-start">
-                            <div class="info-tab">Australia</div>
-                            <div class="info-tab">Australia</div>
-                            <div class="info-tab">Australia</div>
+                            
+                            @foreach (json_decode($player->playerPlayingDetails->morph_trait_id) as $index)
+                                <div class="info-tab">{{ $player->playerPlayingDetails->traits[$index] ?? '--' }}</div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

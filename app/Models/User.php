@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Carbon\Carbon;
 
 class User extends Authenticatable
 {
@@ -52,5 +53,9 @@ class User extends Authenticatable
 
     public function player() {
         return $this->hasOne(Player::class);
+    }
+
+    public function getAgeAttribute() {
+        return $this->dob? Carbon::createFromFormat('Y-m-d', $this->dob)->age: '--';
     }
 }

@@ -26,7 +26,7 @@
                                     <div class="col-12">
                                         <select class="form-select" id="player_position" wire:model="morph_position_id" required>
                                             <option value="" selected>Select your position</option>
-                                            @foreach (config('constants.dropdowns.postitions') as $key => $value)
+                                            @foreach (config('constants.dropdowns.positions') as $key => $value)
                                                 <option value="{{ $key }}">{{ $value }}</option>
                                             @endforeach
                                         </select>
