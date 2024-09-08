@@ -24,10 +24,13 @@ class AuthController extends Controller
             return back()->withErrors(['Invalid email or password']);
         }
 
+        if(Auth::user()->roles()->first()->name == 'admin') {
+            return redirect()->route('admin.dashboard');
+        }
+        
         if(!Auth::user()->player || Auth::user()->player->steps < 4) {
             return redirect()->route('player-registration.create');
         }
-
         return redirect()->route('player.profile');
     }
     
