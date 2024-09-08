@@ -51,6 +51,7 @@ body{
         color: $primary-clr;
         font-family: $parksonBlack;
         // font-weight: 700;
+        font-size: clamp(2.5rem, 4.5vw, 4.5rem);
         line-height: 30px;
         text-transform: uppercase;
     }
@@ -58,6 +59,8 @@ body{
         margin-top: 15px;
         font-family: $open-sans;
         color: $text-accent;
+        font-size: clamp(0.9rem, 1.2vw, 1rem);
+        
         text-transform: uppercase;
     }
 }
@@ -82,10 +85,12 @@ body{
         font-family: $parksonBlack;
         text-transform: uppercase;
         font-size: clamp(2rem, 3vw, 3rem);
+
         span{
             font-family: $open-sans;
             text-transform: capitalize;
             line-height: 25px;
+            font-size: clamp(1rem, 1.5vw, 1.5rem);
             display: block;
             font-size: clamp(1rem, 1.5vw, 1.5rem);
         }
@@ -95,6 +100,7 @@ body{
         color: $text-accent;
         line-height: 25px;
         text-align: center;
+        font-size: 1rem;
         font-weight: 500;
 
         span{
@@ -495,6 +501,7 @@ body{
             color: $primary-clr;
             text-transform: uppercase;
             font-family: $AnzeigenGrotesk;
+            font-size: clamp(2.5rem, 3vw, 3rem);
             text-align: center;
         }
     } 
@@ -548,6 +555,7 @@ body{
 
     .sec-hdr{
         font-family: $AnzeigenGrotesk;
+        font-size: clamp(2rem, 4vw, 4rem);
         color: $primary-clr;
     }
     .left-bx{
@@ -571,6 +579,7 @@ body{
             opacity: .8;
             color: $text-accent;
             text-decoration: none;
+            font-size: 0.9rem;
             font-family: $open-sans;
         }
         a:hover{
@@ -939,6 +948,7 @@ body{
                 
                 .ab-liner{
                     color: $text-accent;
+                    font-size: 1.2rem;
                     
                     p{
                         margin-bottom: 5px;
@@ -952,6 +962,7 @@ body{
                 }
                 li{
                     margin: 5px 0;
+                    font-size: 15px;
                 }
             }
             .ab-last-liner{

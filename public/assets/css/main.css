@@ -627,6 +627,7 @@ body {
 .bannerText h3 {
   color: #FBE746;
   font-family: "Parkson black";
+  font-size: clamp(2.5rem, 4.5vw, 4.5rem);
   line-height: 30px;
   text-transform: uppercase;
 }
@@ -634,6 +635,7 @@ body {
   margin-top: 15px;
   font-family: "Open Sans", sans-serif;
   color: #fafafa;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
   text-transform: uppercase;
 }
 
@@ -667,6 +669,7 @@ body {
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
   line-height: 25px;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   display: block;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
@@ -675,6 +678,7 @@ body {
   color: #fafafa;
   line-height: 25px;
   text-align: center;
+  font-size: 1rem;
   font-weight: 500;
 }
 .about-site .ab-des-txt span {
@@ -924,6 +928,7 @@ body {
   color: #FBE746;
   text-transform: uppercase;
   font-family: "Anzeigen Grotesk W01 Regular";
+  font-size: clamp(2.5rem, 3vw, 3rem);
   text-align: center;
 }
 
@@ -978,6 +983,7 @@ body {
 }
 .contact-us-sec .sec-hdr {
   font-family: "Anzeigen Grotesk W01 Regular";
+  font-size: clamp(2rem, 4vw, 4rem);
   color: #FBE746;
 }
 .contact-us-sec .left-bx {
@@ -1019,6 +1025,7 @@ body {
   opacity: 0.8;
   color: #fafafa;
   text-decoration: none;
+  font-size: 0.9rem;
   font-family: "Open Sans", sans-serif;
 }
 .contact-us-sec .left-bx a:hover {
@@ -1312,6 +1319,7 @@ body {
 }
 #promo-banner .banner-overlay .ab-overBox .ab-txt-list .ab-liner {
   color: #fafafa;
+  font-size: 1.2rem;
 }
 #promo-banner .banner-overlay .ab-overBox .ab-txt-list .ab-liner p {
   margin-bottom: 5px;
@@ -1324,6 +1332,7 @@ body {
 }
 #promo-banner .banner-overlay .ab-overBox .ab-txt-list li {
   margin: 5px 0;
+  font-size: 15px;
 }
 #promo-banner .banner-overlay .ab-overBox .ab-last-liner {
   position: relative;
