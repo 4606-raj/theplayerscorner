@@ -79,7 +79,9 @@
                     @endif
 
                     <div class="col-12 d-flex justify-content-center">
-                    <button type="submit" class="submit-btn" style="background: #141414">Submit</button>
+                        <a href="#" class="btn-cover">
+                            <button type="submit" class="submit-btn" style="background: #141414">Submit</button>
+						</a>
                     </div>
                 </form>
             </div>
