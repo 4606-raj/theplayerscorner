@@ -53,7 +53,7 @@
                             <option value="1-2-1 Coaching">1-2-1 Coaching</option>
                             <option value="Performance Analysis">Performance Analysis</option>
                             <option value="Representation">Representation</option>
-                            <option value="Scouting">Scouting</option>
+                            <option value="Scouting">Talent Identification</option>
                             <option value="other">Other</option>
                         </select>
                     </div>

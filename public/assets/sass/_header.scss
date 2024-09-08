@@ -6,7 +6,10 @@ header{
     background-size: cover;
     z-index: 100;
     position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.0);
+    transition: .3s;
 
+    
     .row:first-child{
         justify-content: center;
     }
@@ -19,6 +22,11 @@ header{
     //     height: 100%;
     //     background: rgba(251, 231, 70, 0.6);
     // }
+    .primary-btn button, 
+    .register-btn button {
+        padding: 8px 10px;
+        transition: .2s;
+    }
     .logo-1{
         a{
             outline: none;
@@ -57,6 +65,7 @@ header{
             font-size: 1.1rem;
             letter-spacing: 2px;
             color: $text-accent;
+            transition: .2s;
             
             span{
                 letter-spacing: 1px;
@@ -140,7 +149,21 @@ header{
             margin: 0;
             padding-left: 0;
             
-            
+            .menu-arrow-i{
+                width: 25px;
+                height: 25px;
+                background: $secondary-clr;
+                z-index: 2;
+                fill: $secondary-clr;
+                clear: both;
+                display: none;
+                cursor: pointer;
+                
+                header nav ul li .bi::before, header nav ul li header nav ul li a [class^=bi-]::before, header nav ul li header nav ul li a [class*=" bi-"]::before{                    top: 4px !important;
+                    top: 4px;
+                    left: 4px !important;
+                }
+            }
             .active-link{
                 // bottom arrow
                 a{
@@ -281,7 +304,7 @@ header{
                     box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.3);
                     
                     position: absolute;
-                    z-index: 2;
+                    z-index: 5;
                     background: $primary-clr;
                     
                     flex-direction: column;
@@ -397,7 +420,7 @@ header{
     opacity: 1;
     z-index: 5;
     visibility: visible;
-    background: rgba(166, 149, 18, 0.5);
+    background: rgba(104, 93, 12, 0.6);
 }
 .addBackDrop{
     opacity: 1;
@@ -405,82 +428,111 @@ header{
     background: rgba(49, 45, 14, 0.3);
 }
 .fix-header-top{
-        position: fixed;
+        position: sticky;
         top: 0;
-        width: 100%;
-        background: $primary-clr;
-        transition: .3s;
-        box-shadow: 0px 0px 7px -1px rgba(166, 149, 18, 0.6);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        // width: 100%;
+        // background: $primary-clr;
+        // transition: .3s;
+        // box-shadow: 0px 0px 7px -1px rgba(166, 149, 18, 0.6);
         
         // change colors on scroll
-        .logo-1 p{
-            color: $secondary-clr;
-    }
-    nav {
+    //     .logo-1 p{
+    //         color: $secondary-clr;
+    // }
+    // nav {
+    //     .hdr-social-icons ul li a{
+    //         transition: .2s;
+            
+    //         &:hover{
+    //             position: relative;
+    //             top: -2px;
+    //         }
+    //     }
+    //     ul li .bi::before, ul li [class^=bi-]::before, ul li [class*=" bi-"]::before{
+    //         color: $secondary-clr;
+    //     }
+    //     ul{
+    //         li{
+                
+    //             a{
+    //                 &:hover{
+    //                     color: $secondary-clr;
+                        
+                        
+    //                     .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
+    //                         color: $secondary-clr;
+    //                     }
+    //                 }
+    //                 color: $secondary-clr;
+                    
+    //                 &::after, &::before{
+    //                     border-top-color: $secondary-clr;
+    //                     border-bottom-color: $secondary-clr;
+    //                 }
+    //             }
+    //         } 
+    //     } 
+    // }
+    // .primary-btn{
+    //     box-shadow: 0px 7px 50px 2px rgba(0, 0, 0, 0.0);        
+    //     transition: .2s;
+        
+    //     button{
+    //         transition: .2s;
+    //         background: $secondary-clr;
+    //         color: $text-accent !important;
+    //     }
+    //     &:hover{
+    //         button{
+    //             box-shadow: 0px 7px 50px 2px rgba(0, 0, 0, 0.6);        
+    //         }
+    //     }
+    // }
+    // .register-btn{
+    //     button{
+    //         background: transparent !important;
+    //         border: 1px solid $secondary-clr !important;
+    //         color: $secondary-clr !important;
+    //     }
+    //     &:hover button{
+    //         border: 1px solid $secondary-clr !important;
+    //         color: $text-accent !important;
+    //         background: $secondary-clr !important;
+    //         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0) !important;        
+
+    //     }
+    // }
+    // .logo-2 img{
+    //     display: block;
+    // }
+    
+     nav {
         .hdr-social-icons ul li a{
             transition: .2s;
-            
-            &:hover{
-                position: relative;
-                top: -2px;
-            }
         }
-        ul li .bi::before, ul li [class^=bi-]::before, ul li [class*=" bi-"]::before{
-            color: $secondary-clr;
+        ul .active-link a::before, ul li a:hover::before{
+            bottom: -20%;
         }
-        ul{
-            li{
-                
-                a{
-                    &:hover{
-                        color: $secondary-clr;
-                        
-                        
-                        .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
-                            color: $secondary-clr;
-                        }
-                    }
-                    color: $secondary-clr;
-                    
-                    &::after, &::before{
-                        border-top-color: $secondary-clr;
-                        border-bottom-color: $secondary-clr;
-                    }
-                }
-            } 
-        } 
-    }
-    .primary-btn{
-        box-shadow: 0px 7px 50px 2px rgba(0, 0, 0, 0.0);        
-        transition: .2s;
-        
-        button{
-            transition: .2s;
-            background: $secondary-clr;
-            color: $text-accent !important;
-        }
-        &:hover{
-            button{
-                box-shadow: 0px 7px 50px 2px rgba(0, 0, 0, 0.6);        
-            }
+        ul .active-link a::after, ul li a:hover::after{
+            top: -20%;
         }
     }
-    .register-btn{
-        button{
-            background: transparent !important;
-            border: 1px solid $secondary-clr !important;
-            color: $secondary-clr !important;
-        }
-        &:hover button{
-            border: 1px solid $secondary-clr !important;
-            color: $text-accent !important;
-            background: $secondary-clr !important;
-            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0) !important;        
-
-        }
+    .primary-btn button, 
+    .register-btn button {
+        padding: 7px 10px;
+        font-size: .95rem;
     }
-    .logo-2 img{
-        display: block;
+    .logo-1{
+        p{
+            top: 5px;
+            // font-size: 1rem;
+            right: 40px;
+        }
+        img{
+            min-width: 70px;
+            max-width: 70px;
+        }
     }
 }
 // Header END

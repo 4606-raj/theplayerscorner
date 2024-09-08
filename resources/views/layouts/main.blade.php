@@ -60,18 +60,20 @@
                     <ul>
                         <li class="{{ activeClass('home') }} animate__animated animate__zoomIn animate__fast"><a href="{{ route('home') }}">Home</a></li>
                         <li class="{{ activeClass('about-us') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('about-us') }}" class="">About Us</a></li>
-                        <li class="{{ activeClass('blogs.index') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('blogs.index') }}">Our Blog</a></li>
-                        <li class="{{ activeClass('contact-us') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('contact-us') }}">Contact Us</a></li>
-                        <li class="{{ activeClass('404') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('404') }}">Services</a>
+                        <li class="{{ activeClass('404') }} animate__animated animate__zoomIn animate__fast "><a href="#">Services</a>
+                            <i class="bi bi-caret-down-fill menu-arrow-i"></i>
+
                             <!-- Drop Down menu -->
                             <ul class="sub-menu">
-                                <li><a href="#">1-2-1 Coaching</a></li>
-                                <li><a href="#">⁠Performance Analysis</a></li>
-                                <li><a href="#">Representation</a></li>
-                                <li><a href="#">Scouting</a></li>
+                                <li><a href="{{ route('services.coaching') }}">1-2-1 Coaching</a></li>
+                                <li><a href="{{ route('services.performance_analysis') }}">⁠Performance Analysis</a></li>
+                                <li><a href="{{ route('services.representation') }}">Representation</a></li>
+                                <li><a href="{{ route('services.talent_identification') }}">Talent Identification</a></li>
                             </ul>
                         </li>
                         <li class="{{ activeClass('social-media') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('social-media') }}">Social Hub</a></li>
+                        <li class="{{ activeClass('blogs.index') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('blogs.index') }}">Our Blog</a></li>
+                        <li class="{{ activeClass('contact-us') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('contact-us') }}">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -85,7 +87,7 @@
                                 <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                                 <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                                 <li><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                                <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                                <li><a href="https://x.com/_PlayersCorner" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
                             @endif
                     </ul>
                 </div>
@@ -121,7 +123,7 @@
         <div class="footer-wrap" >
                             
             <div>
-                <span>Designed by Naveen</span> 
+                <span style="color: gray">Designed by Naveen</span> 
             </div>
             <div class="copyright">
                 Copyright ©<span class="currentYear"></span> &nbsp;

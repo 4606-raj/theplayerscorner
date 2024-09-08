@@ -7,8 +7,9 @@ html, body{
     padding: 0;
 }
 footer{
-    background: #FBE746;
+    background: #0c0b0b;
     padding: 20px 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     // position: fixed;
     bottom: 0;
     // margin-top: -220px;
@@ -18,7 +19,7 @@ footer{
 
     .footer-wrap{
 
-        color: #141414;
+        color: $text-accent;
         font-size: .9rem;
         font-family: $open-sans;
         // display: flex; 
@@ -43,9 +44,14 @@ footer{
             align-items: center;
             
             a{
-                color: #141414;
+                color: $primary-clr;
                 font-weight: 500;
                 text-decoration: none;
+                transition: .2s;
+                
+                &:hover{
+                    color: $primary-clr;
+                }
             }
             span{
                 font-size: .8rem;
@@ -58,15 +64,20 @@ footer{
             justify-content: flex-end;
             margin: 0;
             padding: 0;
-
+            
             li{
                 margin: 0 10px;
-
+                
                 a{
-                    color: #141414;
+                    color: $text-accent;
                     text-decoration: none;
                     font-weight: 500;
                     font-family: $open-sans;
+                    transition: .2s;
+            
+                    &:hover{
+                        color: $primary-clr;
+                    }
                 }
             }
         }

@@ -34,7 +34,6 @@
                     <p class="ab-des-txt">
                     </p>
                     
-                    
                 </div>
             </div>
         </div>
@@ -197,8 +196,9 @@
 <!-- News Section END -->
 
 <!-- Promo Banner START -->
-<section id="promo-banner" class="container-fuild" >
+<section id="promo-banner" class="container-fuild">
     <div class="banner-overlay">
+        
         <div class="ab-overBox" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-duration="800">
             <ul class="ab-txt-list">
                 <div class="ab-liner">
@@ -215,8 +215,9 @@
                 <span>OR</span>
                 <p><span><a href="{{ route('login') }}">Create a free profile </a></span>and explore our global footballing talent database here. </p>
             </div>
-        </div>
 
+        </div>
+        
     </div>
     {{-- <img src="{{ asset('assets/images/banner.jpg') }}" alt=""> --}}
 
@@ -237,7 +238,7 @@
                     <li data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="top-bottom" data-aos-duration="500"><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                     <li data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="top-bottom" data-aos-duration="600"><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i> </a></li>
                     <li data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="top-bottom" data-aos-duration="700"><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                    <li data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="top-bottom" data-aos-duration="800"><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                    <li data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="top-bottom" data-aos-duration="800"><a href="https://x.com/_PlayersCorner" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -319,7 +320,7 @@
                                     <option value="1-2-1 Coaching">1-2-1 Coaching</option>
                                     <option value="Performance Analysis">Performance Analysis</option>
                                     <option value="Representation">Representation</option>
-                                    <option value="Scouting">Scouting</option>
+                                    <option value="Scouting">Talent Identification</option>
                                     <option value="other">Other</option>
                                 </select>
                             </div>

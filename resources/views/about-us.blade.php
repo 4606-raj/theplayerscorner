@@ -4,7 +4,7 @@
 
 <section class="container aboutUs-sec">
     <h3 id="ab-hdr" class="nopadding">ABOUT US</h3>
-    <p class="ab-sub-hdr">Our Mission & <span>Vision</span> </p>
+    <p class="ab-sub-hdr">Our <span>Mission & Values</span> </p>
     <p class="ab-des-txt">
         The Players Corner aims to revolutionise football scouting and talent development by providing a free platform for players worldwide to create digital profiles, develop their talents, and become national or international football stars. Our mission is to ensure that talent, regardless of economic background, is given a fair chance to be seen, recognised, and nurtured.  
     </p>
@@ -16,7 +16,7 @@
     <p class="ab-des-txt" style="opacity: .9">Our aim is to educate our community about football. So, as a community we can be taken seriously within the game.</p>
     <p class="ab-des-txt">The consensus was that Asians Can’t Play Football d <br> other local clubs were non-representative of our community and did little in the way of benefiting the community. They were also not a visible presence in the community, three things we wanted to ensure we could change.  </p> --}}
     
-    <p class="ab-sub-hdr">Our core values </p>
+    <p class="ab-sub-hdr">Our <span> Core Values</span></p>
     <ul class="ab-list">
         {{-- <span>Here, you’ll find the opportunity to:</span> --}}
         <li><b>Inclusivity</b>: We believe every player, regardless of their background, deserves an equal opportunity to showcase their talent. </li>
@@ -29,7 +29,7 @@
     
     {{-- <p class="ab-sub-hdr">Committed to <span>Ethical Development</span></p> --}}
     <p class="ab-sub-hdr">Our <span>Culture</span></p>
-    <p class="ab-des-txt">SJFNBASLJFBAKJLFNA;KFMAS;LKFNAKJFNASJKLFNSKJFNS;FNAS;KFNA;NANKN;KS </p>
+    <p class="ab-des-txt">At The Players Corner (TPC), our culture is built on the principles of passion, collaboration, inclusivity, and continuous growth. We are driven by our love for football and our commitment to creating opportunities for all players, regardless of their backgrounds. We believe in the power of teamwork and continuously strive to remain at the forefront of supporting and developing football talent. </p>
     
     <p class="ab-sub-hdr">Who are <span>We?</span></p>
     <p class="ab-des-txt">
