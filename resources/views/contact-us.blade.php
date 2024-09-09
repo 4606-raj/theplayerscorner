@@ -19,7 +19,7 @@
                         <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                         <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                         <li><a href="https://www.linkedin.com/company/the-players-corner" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                        <li><a href="https://www.twitter.com/thepc_official" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                        <li><a href="https://x.com/_PlayersCorner" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -70,17 +70,17 @@
                             The Players Corner needs the contact information you provide to us to contact you about our products and services. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, check out our privacy policy.
                         </label>
                     </div>
-                    {!! NoCaptcha::display() !!}
+                    {{-- {!! NoCaptcha::display() !!}
 
                     @if ($errors->has('g-recaptcha-response'))
                         <span class="help-block">
                             <strong class="alert alert-danger">{{ $errors->first('g-recaptcha-response') }}</strong>
                         </span>
-                    @endif
+                    @endif --}}
 
                     <div class="col-12 d-flex justify-content-center">
                         <a href="#" class="btn-cover">
-                            <button type="submit" class="submit-btn" style="background: #141414">Submit</button>
+                            <button type="submit" class="submit-btn" style="background: #141414">Send</button>
 						</a>
                     </div>
                 </form>
