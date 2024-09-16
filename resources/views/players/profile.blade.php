@@ -27,7 +27,7 @@
                     <p class="player-name">{{ $user->first_name }}</p>
                     <div class="d-flex player-age-gender">
                         <p><span>Age:</span> {{ $user->age }} </p>
-                        <p>{{ strtoupper($player->gender[0]) ?? '--' }}</p>
+                        <p>{{ isset($player->gender[0])? strtoupper($player->gender[0]): '--' }}</p>
                     </div>
                     <div class="player-num">
                         <p><span>#</span>{{ $user->player->id }}</p>
