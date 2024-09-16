@@ -89,7 +89,10 @@
                     <label for="website" class="form-label">Website</label>
                     <input type="url" class="form-control" id="website" name="website" placeholder="website">
                 </div>
-                <button type="submit" class="submit-btn submit-shadow" style="background: #FBE746">Submit</button>
+                {{-- <a href="#" class="btn-cover"> --}}
+                    {{-- <button type="submit" class="submit-btn" style="background: #141414">Send</button> --}}
+                    <button type="submit" class="submit-btn submit-shadow" style="background: #FBE746">Submit</button>
+                {{-- </a> --}}
             </form>
 
             <div class="comments">
