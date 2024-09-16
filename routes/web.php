@@ -71,7 +71,7 @@ Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('blogs.show');
 Route::post('/comments', [BlogController::class, 'storeComment'])->name('blogs.store-comment');
 
 // services
-Route::view('services/coaching', 'services/coaching')->name('services.coaching');
+Route::view('services/coaching', 'services/coaching')->name('services');
 Route::view('services/performance_analysis', 'services/performance_analysis')->name('services.performance_analysis');
 Route::view('services/representation', 'services/representation')->name('services.representation');
 Route::view('services/talent_identification', 'services/talent_identification')->name('services.talent_identification');

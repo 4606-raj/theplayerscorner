@@ -60,16 +60,16 @@
                     <ul>
                         <li class="{{ activeClass('home') }} animate__animated animate__zoomIn animate__fast"><a href="{{ route('home') }}">Home</a></li>
                         <li class="{{ activeClass('about-us') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('about-us') }}" class="">About Us</a></li>
-                        <li class="{{ activeClass('404') }} animate__animated animate__zoomIn animate__fast "><a href="#">Services</a>
-                            <i class="bi bi-caret-down-fill menu-arrow-i"></i>
+                        <li class="{{ activeClass('services') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('services') }}">Services</a>
+                            {{-- <i class="bi bi-caret-down-fill menu-arrow-i"></i> --}}
 
                             <!-- Drop Down menu -->
-                            <ul class="sub-menu">
+                            {{-- <ul class="sub-menu">
                                 <li><a href="{{ route('services.coaching') }}">1-2-1 Coaching</a></li>
                                 <li><a href="{{ route('services.performance_analysis') }}">⁠Performance Analysis</a></li>
                                 <li><a href="{{ route('services.representation') }}">Representation</a></li>
                                 <li><a href="{{ route('services.talent_identification') }}">Talent Identification</a></li>
-                            </ul>
+                            </ul> --}}
                         </li>
                         <li class="{{ activeClass('social-media') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('social-media') }}">Social Hub</a></li>
                         <li class="{{ activeClass('blogs.index') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('blogs.index') }}">Our Blog</a></li>
