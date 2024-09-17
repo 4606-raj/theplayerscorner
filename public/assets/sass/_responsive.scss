@@ -1537,6 +1537,8 @@
     .service-bl:nth-child(even){
         .sr-dec-txt{
             margin-left: 17px;
+            width: 108%;
+
             p{
                 padding-left: 20px;
             }
@@ -1553,11 +1555,11 @@
         height: 662.5% !important;
     }
     .line-left-float{
-        width: 130%;
+        width: 110%;
     }
     .left-dot-float{
         // left: -10px;
-        right: 80% !important;
+        right: 84% !important;
     }
     .line-left-float{
         left: 3px !important;
@@ -1575,7 +1577,7 @@
         width: 74.3% !important;
     }
     .service-bl:nth-child(3) .hori-connector-line{
-        height: 997.5% !important;
+        height: 937.5% !important;
     }
 }
 
