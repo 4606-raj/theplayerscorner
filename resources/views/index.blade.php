@@ -231,7 +231,7 @@
         <div class="sec-hdr overflow-hidden">
             <h2 class="" data-aos="zoom-in-up"
             data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out">Follow Us</h2>
-            <p class="follow-us-des" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">This is you Donate section paragraph. Encourge your site visitors to provide their information so that you can get in touch about how they <br> can make a donation to your Gaming Club.</p>
+            {{-- <p class="follow-us-des" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">This is you Donate section paragraph. Encourge your site visitors to provide their information so that you can get in touch about how they <br> can make a donation to your Gaming Club.</p> --}}
             <!-- Social Media Icons -->
             <div class="social-icons col-auto">
                 <ul>
