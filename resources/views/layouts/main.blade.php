@@ -82,7 +82,7 @@
                     <ul>
                         @if (Auth::check())
                             @csrf
-                                <li><a href="{{ route('player.profile') }}" class="userPro-icon"><i class="bi bi-person-circle"></i></a></li>
+                                <li><a href="{{ Auth::user()->roles()->first()->name == 'admin'? route('admin.dashboard'): route('player.profile') }}" class="userPro-icon"><i class="bi bi-person-circle"></i></a></li>
                             @else
                                 <li><a href="https://www.facebook.com/the.playerscorner/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                                 <li><a href="https://www.instagram.com/the.playerscorner/" target="_blank"><i class="bi bi-instagram"></i></a></li>

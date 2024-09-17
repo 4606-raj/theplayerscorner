@@ -62,7 +62,12 @@ class BlogController extends Controller
             'content' => 'required',
         ]);
 
-        $blog->update($request->all());
+        if($request->hasFile('cover')) {
+            $fileName = saveImage($request->cover, 'storage/images/blog-covers/');
+            $request->merge(['cover_image' => $fileName]);
+        }
+
+        $blog->update($request->except('cover'));
 
         return redirect()->route('admin.blogs.index')
                         ->with('success','Blog updated successfully');
