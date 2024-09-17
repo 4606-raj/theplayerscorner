@@ -48,7 +48,7 @@ body{
     margin-bottom: 50px;
 
     h3{
-        color: $primary-clr;
+        color: $secondary-clr;
         font-family: $parksonBlack;
         // font-weight: 700;
         font-size: clamp(2.5rem, 4.5vw, 4.5rem);
@@ -58,7 +58,7 @@ body{
     p{
         margin-top: 15px;
         font-family: $open-sans;
-        color: $text-accent;
+        color: $secondary-clr;
         font-size: clamp(0.9rem, 1.2vw, 1rem);
         
         text-transform: uppercase;
