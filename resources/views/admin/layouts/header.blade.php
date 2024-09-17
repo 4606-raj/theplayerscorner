@@ -168,7 +168,7 @@
 				<div class="app-header header">
 					<div class="container-fluid">
 						<div class="d-flex">
-							<a class="header-brand sm-mob-logo d-flex justify-content-center" href="index.html">
+							<a class="header-brand sm-mob-logo d-flex justify-content-center" href="{{ route('admin.dashboard') }}">
 								<img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img mt-0 desktop-lgo" alt="players-logo" width="20%">
 								<img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img mt-0 dark-logo" alt="players-logo" width="25%">
 								<img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img mt-0 mobile-logo" alt="players-logo" width="30%">
