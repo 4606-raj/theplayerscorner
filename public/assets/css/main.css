@@ -394,6 +394,7 @@ header nav ul .logo-2 img {
 }
 
 .addBackDrop {
+  position: fixed;
   opacity: 1;
   visibility: visible;
   background: rgba(49, 45, 14, 0.3);
@@ -1303,9 +1304,9 @@ body {
   position: absolute;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  background: linear-gradient(95.93deg, rgba(129, 167, 175, 0.6) 0%, rgba(64, 73, 54, 0.4) 52%, rgba(49, 44, 3, 0.4) 100%);
+  background: linear-gradient(95.93deg, rgba(130, 118, 17, 0.6) 0%, rgba(129, 116, 20, 0.2) 52%, rgba(251, 231, 70, 0) 100%);
   border-radius: 50px 0px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgb(49, 45, 20);
   -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1;
@@ -9373,6 +9374,7 @@ footer .footer-wrap .doc-links li a:hover {
   }
   .service-bl:nth-child(even) .sr-dec-txt {
     margin-left: 17px;
+    width: 108%;
   }
   .service-bl:nth-child(even) .sr-dec-txt p {
     padding-left: 20px;
@@ -9388,10 +9390,10 @@ footer .footer-wrap .doc-links li a:hover {
     height: 662.5% !important;
   }
   .line-left-float {
-    width: 130%;
+    width: 110%;
   }
   .left-dot-float {
-    right: 80% !important;
+    right: 84% !important;
   }
   .line-left-float {
     left: 3px !important;
@@ -9409,6 +9411,6 @@ footer .footer-wrap .doc-links li a:hover {
     width: 74.3% !important;
   }
   .service-bl:nth-child(3) .hori-connector-line {
-    height: 997.5% !important;
+    height: 937.5% !important;
   }
 }/*# sourceMappingURL=main.css.map */

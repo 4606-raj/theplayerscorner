@@ -423,6 +423,8 @@ header{
     background: rgba(104, 93, 12, 0.6);
 }
 .addBackDrop{
+    position: fixed;
+    // top: 10px;
     opacity: 1;
     visibility: visible;
     background: rgba(49, 45, 14, 0.3);

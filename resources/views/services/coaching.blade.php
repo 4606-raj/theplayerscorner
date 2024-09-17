@@ -250,7 +250,7 @@
                     {{-- service image --}}
                     <div class="services-img-bl">
                         {{-- <img src="{{ asset('assets/images/services/service-4.jpg') }}" alt="services" > --}}
-                        <p>T-I</p>
+                        <p>ID</p>
                     </div>
                 </div>
                 <!-- Services Content -->
