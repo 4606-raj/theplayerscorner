@@ -6988,6 +6988,9 @@ body {
 .blog-view .blog-hdr::first-letter {
   text-transform: capitalize;
 }
+.blog-view .blog-des-txt {
+  color: #fafafa;
+}
 .blog-view .blog-des-txt p {
   color: #fafafa;
   font-family: "Open Sans", sans-serif;
