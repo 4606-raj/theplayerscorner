@@ -68,7 +68,7 @@
               <ul type="square">
                   <li>The web browser and cookies.</li>
                   <li>Through our enquiry tab <a href="contact-us.html">Contact Us</a></li>
-                  <li>When you email through to us, at any point on the Southall Athletic FC <a href="index.html">(www.southallathleticfc.com)</a> website where you login. </li>
+                  <li>When you email through to us, at any point on the Southall Athletic FC <a href="route('home')">(www.southallathleticfc.com)</a> website where you login. </li>
                   <li>Through any register your interest and any competitions you enter via our social media/google forms.</li>
               </ul>
               

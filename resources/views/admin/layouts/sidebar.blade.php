@@ -1,7 +1,7 @@
 <!--aside open-->
 <aside class="app-sidebar">
     <div class="app-sidebar__logo">
-        <a class="header-brand" href="index.html">
+        <a class="header-brand" href="{{ route('admin.dashboard') }}">
             <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img desktop-lgo" alt="players-logo" width="20%">
             <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img dark-logo" alt="players-logo" width="25%">
             <img src="{{ asset('assets/images/logo-1.png') }}" class="header-brand-img mobile-logo" alt="players-logo" width="100%">
