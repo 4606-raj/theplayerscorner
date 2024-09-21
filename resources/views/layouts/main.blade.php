@@ -72,7 +72,7 @@
                             </ul> --}}
                         </li>
                         <li class="{{ activeClass('social-media') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('social-media') }}">Social Hub</a></li>
-                        <li class="{{ activeClass('blogs.index') }} {{ activeClass('blogs.show', 0) }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('blogs.index') }}">Our Blog</a></li>
+                        <li class="{{ activeClass(['blogs.index', 'blogs.show']) }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('blogs.index') }}">Our Blog</a></li>
                         <li class="{{ activeClass('contact-us') }} animate__animated animate__zoomIn animate__fast "><a href="{{ route('contact-us') }}">Contact Us</a></li>
                     </ul>
                 </div>

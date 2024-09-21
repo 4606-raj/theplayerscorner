@@ -100,7 +100,7 @@
                     <div class="comment-box text-white">
                         <div class="cmt-hdr row">
                             <p><small><i class="bi bi-pencil-square"></i> <span>{{ $comment->name }}</span> </small></p>
-                            <p><i class="bi bi-check-lg me-2"></i><small>{{ date_format($comment->created_at, 'M d, Y') }}</small></p>
+                            <p><i class="bi bi-check-lg me-2"></i><small>{{ $comment->created_at }}</small></p>
                             
                         </div>
                         <p class="cmt-block">{{ $comment->comment }}</p>

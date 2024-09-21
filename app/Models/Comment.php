@@ -14,4 +14,9 @@ class Comment extends Model
     public function blog() {
         return $this->belongsTo(Blog::class);
     }
+
+    public function getCreatedAtAttribute($val) {
+        return \Carbon\Carbon::parse($val)->format('d-m-y, H:i');
+        
+    }
 }

@@ -31,7 +31,7 @@
             {{-- Blogs --}}
             <div class="blogs-sec col-lg-8 col-md-8 col-sm-12 order-2 order-sm-2 order-md-0">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-4" data-masonry='{"percentPosition": true }'>
-                    @foreach ($blogs as $blog)
+                    @foreach ($blogs as $key => $blog)
                         
                         <div class="col">
                             <div class="card h-100">
@@ -46,7 +46,7 @@
                                     </h5>
                                     <p class="card-text postedBy">By <span>{{ $blog->author }}</span> | {{ $blog->category }}</p>
                                     <div class="blog-des-txt">
-                                        <p class="card-text">{!! substr($blog->content, 0, 200) !!}</p>
+                                        <p class="card-text">{!! substr($blog->content, 0, ($key % 2 == 0)? 200: 100) !!}</p>
                                     </div>
                                     <a href={{route('blogs.show', $blog->id)}} class="btn btn-primary readMore-btn">Read more</a>
                                 </div>

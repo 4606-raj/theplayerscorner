@@ -28,4 +28,6 @@ Route::resource('/gallery', GalleryController::class);
 Route::group(['as' => 'admin.'], function() {
 
     Route::resource('/blogs', BlogController::class);
+    Route::get('/comments/{blogId}', [BlogController::class, 'comments'])->name('comments');
+    Route::delete('/comments/{commentId}', [BlogController::class, 'commentDestroy'])->name('blogs.comments.destroy');
 });

@@ -18,5 +18,13 @@
     }
 
     function activeClass($route) {
+        if(is_array($route)) {
+            $flag = false;
+            foreach ($route as $key => $value) {
+                if(!is_null(\Request::route()) && \Request::route()->getName() == $value)
+                    return 'active-link'; 
+            }
+            return 'active';
+        }
         return !is_null(\Request::route()) && \Request::route()->getName() == $route? 'active-link': 'active';
     }
