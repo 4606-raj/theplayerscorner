@@ -6729,7 +6729,7 @@ body {
 }
 
 .blogs-sec {
-  min-height: 50vh;
+  min-height: 800px;
   margin: 60px 0;
 }
 .blogs-sec h1, .blogs-sec h2, .blogs-sec h3, .blogs-sec h4, .blogs-sec h5, .blogs-sec h6 {
