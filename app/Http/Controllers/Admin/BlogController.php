@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Blog;
+use App\Models\{Blog, Comment};
 use Session, DB, DataTables, Response;
 
 class BlogController extends Controller
@@ -77,8 +77,17 @@ class BlogController extends Controller
     public function destroy(Blog $blog)
     {
         $blog->delete();
-
         return Response::json(['message' => 'Blog deleted successfully']);
-
     }
+
+    public function comments($blogId) {
+        $comments = Blog::findOrFail($blogId)->comments;
+        return view('admin.blogs.comments', compact('comments'));
+    }
+
+    public function commentDestroy($commentId) {
+        Comment::findOrFail($commentId)->delete();
+        return Response::json(['message' => 'Blog deleted successfully']);
+    }
+    
 }
